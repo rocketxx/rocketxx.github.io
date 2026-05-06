@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>William Ragusa — Software Developer</title>
+  <meta name="description" content="William Ragusa — .NET / C# developer from Catania, Sicily. Azure, Angular, AI-powered tools, and open source.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --bg-card: #12121a;
+      --bg-card-hover: #1a1a28;
+      --text: #e0e0e8;
+      --text-dim: #8888a0;
+      --accent: #00e5a0;
+      --accent-glow: rgba(0, 229, 160, 0.15);
+      --accent2: #6366f1;
+      --accent2-glow: rgba(99, 102, 241, 0.12);
+      --border: #1e1e2e;
+      --font-display: 'Outfit', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-display);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: var(--bg);
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(16px);
+      background: rgba(10, 10, 15, 0.7);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--text);
+      transition: all 0.3s;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 6rem 2rem 4rem;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -15%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, var(--accent2-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 800px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-tag {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid rgba(0, 229, 160, 0.3);
+      border-radius: 4px;
+      animation: fadeInUp 0.6s ease both;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.8rem, 6vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin-bottom: 1.5rem;
+      animation: fadeInUp 0.6s ease 0.15s both;
+    }
+
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: var(--text-dim);
+      max-width: 600px;
+      margin-bottom: 2.5rem;
+      font-weight: 300;
+      animation: fadeInUp 0.6s ease 0.3s both;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.6s ease 0.45s both;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.6rem;
+      border-radius: 6px;
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--bg);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 0 30px var(--accent-glow), 0 0 60px var(--accent-glow);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      padding: 6rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 3rem;
+    }
+
+    /* ── ABOUT ── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .about-text p {
+      color: var(--text-dim);
+      margin-bottom: 1.2rem;
+      font-weight: 300;
+      font-size: 1.05rem;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: all 0.3s;
+    }
+
+    .stat-card:hover {
+      border-color: var(--accent);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* ── SKILLS ── */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-group {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.3s;
+    }
+
+    .skill-group:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .skill-group-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .skill-group h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      letter-spacing: -0.5px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-tag {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 0.3rem 0.7rem;
+      background: rgba(0, 229, 160, 0.08);
+      border: 1px solid rgba(0, 229, 160, 0.15);
+      border-radius: 4px;
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    /* ── EXPERIENCE ── */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      bottom: 8px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--accent), var(--accent2), transparent);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 3rem;
+      padding-left: 1.5rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      top: 8px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid var(--bg);
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+
+    .timeline-period {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    .timeline-role {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+      letter-spacing: -0.5px;
+    }
+
+    .timeline-company {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      margin-bottom: 0.8rem;
+    }
+
+    .timeline-desc {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+      font-weight: 300;
+    }
+
+    .timeline-techs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.8rem;
+    }
+
+    .timeline-tech {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      background: var(--accent2-glow);
+      color: #a5a8fc;
+      border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+
+    /* ── FEATURED PROJECT ── */
+    .featured-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s;
+    }
+
+    .featured-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent));
+    }
+
+    .featured-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0, 229, 160, 0.08), 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .featured-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--bg);
+      background: var(--accent);
+      padding: 0.25rem 0.7rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .featured-header {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .featured-card h3 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.2;
+    }
+
+    .featured-live-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(0, 229, 160, 0.3);
+      border-radius: 6px;
+      white-space: nowrap;
+      transition: all 0.3s;
+      flex-shrink: 0;
+    }
+
+    .featured-live-link:hover {
+      background: rgba(0, 229, 160, 0.1);
+      border-color: var(--accent);
+    }
+
+    .featured-live-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse-dot 2s ease infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .featured-desc {
+      color: var(--text-dim);
+      font-size: 1.05rem;
+      font-weight: 300;
+      margin-bottom: 1.2rem;
+      max-width: 700px;
+    }
+
+    .featured-highlight {
+      background: linear-gradient(135deg, rgba(0, 229, 160, 0.06), rgba(99, 102, 241, 0.06));
+      border: 1px solid rgba(0, 229, 160, 0.12);
+      border-radius: 10px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .featured-highlight-label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    .featured-highlight p {
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    /* ── PROJECTS ── */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.4s;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .project-card:hover::before { opacity: 1; }
+
+    .project-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-type {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 0.8rem;
+    }
+
+    .project-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.5px;
+    }
+
+    .project-card p {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+      font-weight: 300;
+      margin-bottom: 1.2rem;
+    }
+
+    .project-link {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .project-link::after {
+      content: '\2192';
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover .project-link::after {
+      transform: translateX(4px);
+    }
+
+    /* ── CONTACT ── */
+    .contact-section {
+      text-align: center;
+      padding-bottom: 8rem;
+    }
+
+    .contact-section .section-title {
+      margin-bottom: 1rem;
+    }
+
+    .contact-desc {
+      color: var(--text-dim);
+      font-size: 1.1rem;
+      font-weight: 300;
+      max-width: 500px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.8rem 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+
+    .contact-pill:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-pill svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    /* ── GRID BACKGROUND ── */
+    .grid-bg {
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── SECTION DIVIDER ── */
+    .section-divider {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin: 3rem 0 1.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(10, 10, 15, 0.95);
+        padding: 1.5rem 2rem;
+        gap: 1rem;
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(16px);
+      }
+      .hamburger { display: flex; }
+      .about-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 8rem; }
+      .hero h1 { letter-spacing: -1px; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .skills-container { grid-template-columns: 1fr; }
+      .featured-header { flex-direction: column; gap: 1rem; }
+      .featured-card { padding: 1.8rem; }
+      .featured-card h3 { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">&lt;wr /&gt;</a>
+  <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Esperienza</a></li>
+    <li><a href="#projects">Progetti</a></li>
+    <li><a href="#contact">Contatti</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">// Catania, Sicilia</span>
+    <h1>Ciao, sono <span class="highlight">William Ragusa</span></h1>
+    <p class="hero-desc">
+      Software Developer .NET con la passione per le architetture cloud, l'AI, e tutto ciò che sta fuori dalla comfort zone. Costruisco software per lavoro, per curiosità, e per il piacere di risolvere problemi.
+    </p>
+    <div class="hero-ctas">
+      <a href="https://github.com/rocketxx" class="btn btn-primary" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="https://vocablio.org" class="btn btn-ghost" target="_blank" rel="noopener">Vocablio.org →</a>
+      <a href="#contact" class="btn btn-ghost">Contattami</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label">Chi sono</p>
+  <h2 class="section-title reveal">Un developer che non si ferma al framework</h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>
+        Ho 29 anni e vengo da Catania. Lavoro quotidianamente con lo stack .NET / C# / ASP.NET, ma quello che mi definisce è la curiosità: ogni progetto è un pretesto per esplorare qualcosa di nuovo.
+      </p>
+      <p>
+        In azienda ho progettato architetture su Azure (Storage, Database, Service Bus), sistemi di notifiche real-time con Angular e SignalR, integrazioni con API di Infocamere, sistemi di autenticazione con Keycloak multi-tenant, e estensioni browser potenziate dall'AI.
+      </p>
+      <p>
+        Nel tempo libero costruisco prodotti indipendenti, contribuisco all'open source, e sperimento con tecnologie fuori dal mio stack — da Python e LLM a Unity 3D e Big Data.
+      </p>
+    </div>
+    <div class="about-stats reveal">
+      <div class="stat-card">
+        <div class="stat-number">C#</div>
+        <div class="stat-label">Linguaggio principale</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Azure</div>
+        <div class="stat-label">Cloud platform</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Repo su GitHub</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Prodotti live</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label">Stack tecnologico</p>
+  <h2 class="section-title reveal">Le tecnologie con cui lavoro</h2>
+  <div class="skills-container">
+    <div class="skill-group reveal">
+      <span class="skill-group-icon">⚙️</span>
+      <h3>Backend & Core</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">C# 6+</span>
+        <span class="skill-tag">ASP.NET Core</span>
+        <span class="skill-tag">.NET Framework</span>
+        <span class="skill-tag">Entity Framework</span>
+        <span class="skill-tag">SignalR</span>
+        <span class="skill-tag">REST API</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Spring Boot</span>
+        <span class="skill-tag">Python</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <span class="skill-group-icon">☁️</span>
+      <h3>Cloud & Infrastruttura</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Azure</span>
+        <span class="skill-tag">Azure Storage</span>
+        <span class="skill-tag">Azure SQL</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">RabbitMQ</span>
+        <span class="skill-tag">Keycloak</span>
+        <span class="skill-tag">CI/CD</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <span class="skill-group-icon">🎨</span>
+      <h3>Frontend</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">Angular</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Browser Extensions</span>
+      </div>
+    </div>
+    <div class="skill-group reveal">
+      <span class="skill-group-icon">🧠</span>
+      <h3>AI & Data</h3>
+      <div class="skill-tags">
+        <span class="skill-tag">LLM / Ollama</span>
+        <span class="skill-tag">Streamlit</span>
+        <span class="skill-tag">Jupyter</span>
+        <span class="skill-tag">Kafka</span>
+        <span class="skill-tag">Elasticsearch</span>
+        <span class="skill-tag">Kibana</span>
+        <span class="skill-tag">Spark</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <p class="section-label">Esperienza</p>
+  <h2 class="section-title reveal">Dove ho lasciato il segno</h2>
+  <div class="timeline reveal">
+    <div class="timeline-item">
+      <div class="timeline-period">Attuale</div>
+      <div class="timeline-role">.NET Software Developer</div>
+      <div class="timeline-company">Azienda attuale</div>
+      <div class="timeline-desc">
+        Progettazione e sviluppo di applicazioni enterprise su stack .NET con architettura cloud Azure. Creazione di sistemi di notifiche real-time con Angular e SignalR, integrazione con API esterne (Infocamere), autenticazione multi-tenant con Keycloak, e sviluppo di estensioni browser AI-powered.
+      </div>
+      <div class="timeline-techs">
+        <span class="timeline-tech">C#</span>
+        <span class="timeline-tech">ASP.NET</span>
+        <span class="timeline-tech">Azure</span>
+        <span class="timeline-tech">Angular</span>
+        <span class="timeline-tech">SignalR</span>
+        <span class="timeline-tech">Keycloak</span>
+        <span class="timeline-tech">AI</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-period">Progetti indipendenti</div>
+      <div class="timeline-role">Prodotti live per clienti e personali</div>
+      <div class="timeline-company">Vocablio.org · freddopregiato.kiwivision.it</div>
+      <div class="timeline-desc">
+        Ideazione, sviluppo e pubblicazione di web-app indipendenti. Vocablio è una piattaforma per l'apprendimento dell'inglese attraverso la lettura, con un sistema proprietario di video-lookup per migliorare pronuncia e slang. Freddo Pregiato è un sito sviluppato per un cliente e hostato in produzione.
+      </div>
+      <div class="timeline-techs">
+        <span class="timeline-tech">Full Stack</span>
+        <span class="timeline-tech">PWA</span>
+        <span class="timeline-tech">Video API</span>
+        <span class="timeline-tech">Deploy</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-period">Università</div>
+      <div class="timeline-role">Laurea in Computer Science</div>
+      <div class="timeline-company">Tesi su Big Data & Sentiment Analysis · Game Dev con Unity 3D</div>
+      <div class="timeline-desc">
+        Progetto di tesi su analisi del sentimento con pipeline big data: Kafka per lo streaming, Spark per il processing, Elasticsearch + Kibana per l'indicizzazione e la visualizzazione. Durante il percorso universitario ho anche sviluppato videogiochi 3D con Unity e C#.
+      </div>
+      <div class="timeline-techs">
+        <span class="timeline-tech">Kafka</span>
+        <span class="timeline-tech">Spark</span>
+        <span class="timeline-tech">Elasticsearch</span>
+        <span class="timeline-tech">Kibana</span>
+        <span class="timeline-tech">Docker</span>
+        <span class="timeline-tech">Unity 3D</span>
+        <span class="timeline-tech">C#</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">Progetti</p>
+  <h2 class="section-title reveal">Cose che ho costruito</h2>
+
+  <!-- VOCABLIO — FEATURED -->
+  <div class="featured-card reveal">
+    <span class="featured-badge">★ Progetto in evidenza</span>
+    <div class="featured-header">
+      <h3>Vocablio</h3>
+      <a href="https://vocablio.org" class="featured-live-link" target="_blank" rel="noopener">
+        <span class="featured-live-dot"></span>
+        vocablio.org
+      </a>
+    </div>
+    <p class="featured-desc">
+      Web-app per imparare l'inglese leggendo libri con traduzione istantanea di parole e frasi. Pensata per chi vuole migliorare il proprio vocabolario in modo naturale, immergendosi nella lettura.
+    </p>
+    <div class="featured-highlight">
+      <div class="featured-highlight-label">🎯 Feature proprietaria</div>
+      <p>
+        Sistema di video-lookup costruito da zero: data una parola in inglese, il sistema cerca automaticamente un video e ti porta alla frase esatta dove quella parola viene pronunciata. Questo permette di imparare pronuncia, intonazione e slang direttamente dal contesto reale, non da un dizionario.
+      </p>
+    </div>
+    <div class="skill-tags">
+      <span class="skill-tag">Full Stack</span>
+      <span class="skill-tag">PWA</span>
+      <span class="skill-tag">Video Search API</span>
+      <span class="skill-tag">NLP</span>
+      <span class="skill-tag">Traduzione</span>
+    </div>
+  </div>
+
+  <!-- FREDDO PREGIATO — LIVE -->
+  <div class="projects-grid" style="margin-bottom: 2rem;">
+    <a href="https://freddopregiato.kiwivision.it" class="project-card reveal" target="_blank" rel="noopener">
+      <div class="project-type">🌐 Progetto live — Cliente</div>
+      <h3>Freddo Pregiato</h3>
+      <p>Sito web sviluppato e pubblicato per un cliente esterno. Progetto indipendente gestito end-to-end: dalla raccolta requisiti al deploy in produzione.</p>
+      <div class="skill-tags" style="margin-bottom: 1rem;">
+        <span class="skill-tag">Web Dev</span>
+        <span class="skill-tag">Hosting</span>
+        <span class="skill-tag">Client Project</span>
+      </div>
+      <span class="project-link">Visita il sito</span>
+    </a>
+  </div>
+
+  <!-- OPEN SOURCE REPOS -->
+  <div class="section-divider reveal">Open Source & Side Projects</div>
+
+  <div class="projects-grid">
+    <a href="https://github.com/rocketxx/APIFerniV2" class="project-card reveal" target="_blank" rel="noopener">
+      <div class="project-type">AI / LLM / Python</div>
+      <h3>Fern — API Chat Assistant</h3>
+      <p>Chatbot AI che permette di interagire con qualsiasi API in linguaggio naturale. Carica un file OpenAPI, e Fern usa Mistral via Ollama per interpretare le richieste, mappare parametri e chiamare le API automaticamente.</p>
+      <div class="skill-tags" style="margin-bottom: 1rem;">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Streamlit</span>
+        <span class="skill-tag">Ollama</span>
+        <span class="skill-tag">Mistral</span>
+        <span class="skill-tag">OpenAPI</span>
+        <span class="skill-tag">SQLite</span>
+      </div>
+      <span class="project-link">Vedi su GitHub</span>
+    </a>
+    <a href="https://github.com/rocketxx/queue" class="project-card reveal" target="_blank" rel="noopener">
+      <div class="project-type">Java / Message Queue</div>
+      <h3>Order Queue System</h3>
+      <p>Sistema di gestione ordini con Spring Boot e RabbitMQ. Elaborazione asincrona, generazione PDF con iText 7, e invio email automatico con allegato via SMTP Gmail.</p>
+      <div class="skill-tags" style="margin-bottom: 1rem;">
+        <span class="skill-tag">Java 17</span>
+        <span class="skill-tag">Spring Boot</span>
+        <span class="skill-tag">RabbitMQ</span>
+        <span class="skill-tag">iText 7</span>
+        <span class="skill-tag">SMTP</span>
+      </div>
+      <span class="project-link">Vedi su GitHub</span>
+    </a>
+    <a href="https://github.com/rocketxx/SentimenTitle." class="project-card reveal" target="_blank" rel="noopener">
+      <div class="project-type">Big Data / ML</div>
+      <h3>SentimenTitle</h3>
+      <p>Pipeline di sentiment analysis con architettura distribuita: streaming con Kafka, processing con Spark, visualizzazione con Elasticsearch e Kibana. Progetto di tesi.</p>
+      <div class="skill-tags" style="margin-bottom: 1rem;">
+        <span class="skill-tag">Jupyter</span>
+        <span class="skill-tag">Kafka</span>
+        <span class="skill-tag">Spark</span>
+        <span class="skill-tag">Docker</span>
+      </div>
+      <span class="project-link">Vedi su GitHub</span>
+    </a>
+    <a href="https://github.com/rocketxx/biodata_tesi" class="project-card reveal" target="_blank" rel="noopener">
+      <div class="project-type">Tesi di laurea</div>
+      <h3>BioData</h3>
+      <p>Sistema per l'elaborazione di dati biomedici con containerizzazione Docker e stack ELK per il monitoraggio e la visualizzazione dei dati.</p>
+      <div class="skill-tags" style="margin-bottom: 1rem;">
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Kibana</span>
+      </div>
+      <span class="project-link">Vedi su GitHub</span>
+    </a>
+    <a href="https://github.com/rocketxx/Gioco-Unity" class="project-card reveal" target="_blank" rel="noopener">
+      <div class="project-type">Game Dev</div>
+      <h3>Gioco Unity 3D</h3>
+      <p>Videogioco 3D sviluppato durante il percorso universitario con Unity e C#. Un progetto per esplorare il game development e la programmazione di ambienti interattivi.</p>
+      <div class="skill-tags" style="margin-bottom: 1rem;">
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">Unity 3D</span>
+      </div>
+      <span class="project-link">Vedi su GitHub</span>
+    </a>
+    <a href="https://github.com/rocketxx/gnam" class="project-card reveal" target="_blank" rel="noopener">
+      <div class="project-type">Angular App</div>
+      <h3>Gnam</h3>
+      <p>Applicazione Angular 17 — progetto personale per sperimentare con le ultime feature del framework e pratiche di sviluppo frontend moderno.</p>
+      <div class="skill-tags" style="margin-bottom: 1rem;">
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Angular 17</span>
+        <span class="skill-tag">SCSS</span>
+      </div>
+      <span class="project-link">Vedi su GitHub</span>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <p class="section-label">Contatti</p>
+  <h2 class="section-title reveal">Parliamone</h2>
+  <p class="contact-desc reveal">
+    Cerchi uno sviluppatore .NET con voglia di sperimentare? Vuoi collaborare su un progetto open source? Scrivimi.
+  </p>
+  <div class="contact-links reveal">
+    <a href="https://github.com/rocketxx" class="contact-pill" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      GitHub
+    </a>
+    <a href="https://linkedin.com" class="contact-pill" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      LinkedIn
+    </a>
+    <a href="mailto:your.email@example.com" class="contact-pill">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Email
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>&lt;/&gt; con ☕ da Catania — William Ragusa © 2026</p>
+</footer>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Close mobile nav on link click
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.remove('open');
+    });
+  });
+</script>
+
+</body>
+</html>
