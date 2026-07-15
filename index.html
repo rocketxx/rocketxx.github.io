@@ -721,6 +721,53 @@
       transform: translateY(0);
     }
 
+    /* ── OFFSCREEN / TEMPO LIBERO ── */
+    .offscreen-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .offscreen-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.3s;
+    }
+
+    .offscreen-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .offscreen-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .offscreen-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      letter-spacing: -0.5px;
+    }
+
+    .offscreen-card p {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+      font-weight: 300;
+      margin-bottom: 1.2rem;
+      line-height: 1.7;
+    }
+
+    .offscreen-card strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
     /* ── SECTION DIVIDER ── */
     .section-divider {
       font-family: var(--font-mono);
@@ -762,6 +809,7 @@
       .about-stats { grid-template-columns: repeat(2, 1fr); }
       .projects-grid { grid-template-columns: 1fr; }
       .skills-container { grid-template-columns: 1fr; }
+      .offscreen-grid { grid-template-columns: 1fr; }
       .featured-header { flex-direction: column; gap: 1rem; }
       .featured-card { padding: 1.8rem; }
       .featured-card h3 { font-size: 1.4rem; }
@@ -773,7 +821,6 @@
 
 <div class="grid-bg"></div>
 
-<!-- NAV: tutte le voci in italiano per coerenza -->
 <nav>
   <a href="#" class="nav-logo">&lt;wr /&gt;</a>
   <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
@@ -783,18 +830,18 @@
     <li><a href="#about">Chi sono</a></li>
     <li><a href="#skills">Competenze</a></li>
     <li><a href="#experience">Esperienza</a></li>
+    <li><a href="#offscreen">Tempo libero</a></li>
     <li><a href="#projects">Progetti</a></li>
     <li><a href="#contact">Contatti</a></li>
   </ul>
 </nav>
 
-<!-- HERO: bio più corta, senza ripetere ciò che c'è nella sezione About -->
 <header class="hero">
   <div class="hero-inner">
     <span class="hero-tag">// Catania, Sicilia</span>
     <h1>Ciao, sono <span class="highlight">William Ragusa</span></h1>
     <p class="hero-desc">
-      Software developer da Catania. Lavoro con .NET e Azure, ma quello che mi muove è la curiosità: se un problema mi interessa, lo risolvo con del codice — che sia un'app per imparare l'inglese, un chatbot che parla con le API, o un detector archeologico con dati LiDAR.
+      Software developer da Catania. Lavoro con .NET, Azure, Angular, TypeScript, ma quello che mi muove è la curiosità: se un problema mi interessa, lo risolvo con del codice — che sia un'app per imparare l'inglese, un chatbot che parla con le API, o un detector archeologico con dati LiDAR.
     </p>
     <div class="hero-ctas">
       <a href="https://github.com/rocketxx" class="btn btn-primary" target="_blank" rel="noopener">
@@ -807,14 +854,13 @@
   </div>
 </header>
 
-<!-- ABOUT: rimossa l'età fissa, riscritto primo paragrafo senza ripetere lo stack già nella hero -->
 <section id="about">
   <p class="section-label">Chi sono</p>
   <h2 class="section-title reveal">Un developer che non si ferma al framework</h2>
   <div class="about-grid">
     <div class="about-text reveal">
       <p>
-        Vengo da Catania e lavoro dal 2022 come sviluppatore .NET. Quello che mi definisce è la curiosità: ogni progetto è un pretesto per esplorare qualcosa di nuovo — dentro e fuori dal mio stack.
+        Vengo da Catania e lavoro dal 2022 come sviluppatore .NET e Angular. Quello che mi definisce è la curiosità: ogni progetto è un pretesto per esplorare qualcosa di nuovo — dentro e fuori dal mio stack.
       </p>
       <p>
         In azienda ho progettato architetture su Azure (Storage, Database, Service Bus), sistemi di notifiche real-time con Angular e SignalR, integrazioni con API di Infocamere, sistemi di autenticazione con Keycloak multi-tenant, e estensioni browser potenziate dall'AI.
@@ -852,7 +898,6 @@
   </div>
 </section>
 
-<!-- SKILLS: rimossi Angular/React/TypeScript da Backend, ora solo nel gruppo Frontend -->
 <section id="skills">
   <p class="section-label">Stack tecnologico</p>
   <h2 class="section-title reveal">Le tecnologie con cui lavoro</h2>
@@ -912,7 +957,6 @@
   </div>
 </section>
 
-<!-- EXPERIENCE: "Azienda attuale" → settore specificato -->
 <section id="experience">
   <p class="section-label">Esperienza</p>
   <h2 class="section-title reveal">Dove ho lasciato il segno</h2>
@@ -971,6 +1015,34 @@
         <span class="timeline-tech">Kibana</span>
         <span class="timeline-tech">Docker</span>
         <span class="timeline-tech">Unity 3D</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="offscreen">
+  <p class="section-label">Fuori dallo schermo</p>
+  <h2 class="section-title reveal">Quando non scrivo codice</h2>
+  <div class="offscreen-grid reveal">
+    <div class="offscreen-card">
+      <span class="offscreen-icon">🔧</span>
+      <h3>Elettronica & Making</h3>
+      <p>Costruisco progetti con Arduino e Raspberry Pi, dalla domotica ai robot cingolati con telecamere. Progetto e stampo in 3D i pezzi che mi servono — se non esiste, lo fabbrico.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Arduino</span>
+        <span class="skill-tag">Raspberry Pi</span>
+        <span class="skill-tag">Stampa 3D</span>
+        <span class="skill-tag">IoT</span>
+      </div>
+    </div>
+    <div class="offscreen-card">
+      <span class="offscreen-icon">🤝</span>
+      <h3>Volontariato — Damuni Versu</h3>
+      <p>Faccio parte di <strong>Damuni Versu</strong>, associazione di promozione sociale di Ramacca (CT) attiva nella solidarietà, nella cultura e nella valorizzazione del territorio. Organizziamo eventi, raccolte fondi e iniziative culturali per la comunità locale.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Volontariato</span>
+        <span class="skill-tag">Organizzazione eventi</span>
+        <span class="skill-tag">Territorio</span>
       </div>
     </div>
   </div>
@@ -1088,7 +1160,6 @@
   </div>
 </section>
 
-<!-- CONTATTI: copy più aperta, non solo open source -->
 <section id="contact" class="contact-section">
   <p class="section-label">Contatti</p>
   <h2 class="section-title reveal">Parliamone</h2>
@@ -1116,7 +1187,6 @@
 </footer>
 
 <script>
-  // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -1127,7 +1197,6 @@
 
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  // Close mobile nav on link click
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
       document.querySelector('.nav-links').classList.remove('open');
