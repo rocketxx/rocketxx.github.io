@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>William Ragusa — Software Developer</title>
-  <meta name="description" content="William Ragusa — .NET / C# developer from Catania, Sicily. Azure, Angular, AI-powered tools, and open source.">
+  <meta name="description" content="William Ragusa — Sviluppatore .NET / C# da Catania, Sicilia. Azure, Angular, AI e open source.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -262,7 +262,7 @@
 
     .about-stats {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.2rem;
     }
 
@@ -281,7 +281,7 @@
     }
 
     .stat-number {
-      font-size: 2rem;
+      font-size: 1.7rem;
       font-weight: 800;
       color: var(--accent);
       line-height: 1;
@@ -750,14 +750,22 @@
         backdrop-filter: blur(16px);
       }
       .hamburger { display: flex; }
-      .about-grid { grid-template-columns: 1fr; }
-      .hero { padding-top: 8rem; }
+      .hero {
+        min-height: auto;
+        padding: 7rem 1.5rem 3rem;
+      }
       .hero h1 { letter-spacing: -1px; }
+      .hero-desc { font-size: 1.05rem; }
+      section { padding: 3.5rem 1.5rem; }
+      .section-title { margin-bottom: 2rem; }
+      .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .about-stats { grid-template-columns: repeat(2, 1fr); }
       .projects-grid { grid-template-columns: 1fr; }
       .skills-container { grid-template-columns: 1fr; }
       .featured-header { flex-direction: column; gap: 1rem; }
       .featured-card { padding: 1.8rem; }
       .featured-card h3 { font-size: 1.4rem; }
+      .contact-section { padding-bottom: 4rem; }
     }
   </style>
 </head>
@@ -765,26 +773,28 @@
 
 <div class="grid-bg"></div>
 
+<!-- NAV: tutte le voci in italiano per coerenza -->
 <nav>
   <a href="#" class="nav-logo">&lt;wr /&gt;</a>
   <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
+    <li><a href="#about">Chi sono</a></li>
+    <li><a href="#skills">Competenze</a></li>
     <li><a href="#experience">Esperienza</a></li>
     <li><a href="#projects">Progetti</a></li>
     <li><a href="#contact">Contatti</a></li>
   </ul>
 </nav>
 
+<!-- HERO: bio più corta, senza ripetere ciò che c'è nella sezione About -->
 <header class="hero">
   <div class="hero-inner">
     <span class="hero-tag">// Catania, Sicilia</span>
     <h1>Ciao, sono <span class="highlight">William Ragusa</span></h1>
     <p class="hero-desc">
-      Software Developer .NET con la passione per le architetture cloud, l'AI, e tutto ciò che sta fuori dalla comfort zone. Costruisco software per lavoro, per curiosità, e per il piacere di risolvere problemi.
+      Software developer da Catania. Lavoro con .NET e Azure, ma quello che mi muove è la curiosità: se un problema mi interessa, lo risolvo con del codice — che sia un'app per imparare l'inglese, un chatbot che parla con le API, o un detector archeologico con dati LiDAR.
     </p>
     <div class="hero-ctas">
       <a href="https://github.com/rocketxx" class="btn btn-primary" target="_blank" rel="noopener">
@@ -797,19 +807,20 @@
   </div>
 </header>
 
+<!-- ABOUT: rimossa l'età fissa, riscritto primo paragrafo senza ripetere lo stack già nella hero -->
 <section id="about">
   <p class="section-label">Chi sono</p>
   <h2 class="section-title reveal">Un developer che non si ferma al framework</h2>
   <div class="about-grid">
     <div class="about-text reveal">
       <p>
-        Ho 29 anni e vengo da Catania. Lavoro quotidianamente con lo stack .NET / C# / ASP.NET, ma quello che mi definisce è la curiosità: ogni progetto è un pretesto per esplorare qualcosa di nuovo.
+        Vengo da Catania e lavoro dal 2022 come sviluppatore .NET. Quello che mi definisce è la curiosità: ogni progetto è un pretesto per esplorare qualcosa di nuovo — dentro e fuori dal mio stack.
       </p>
       <p>
         In azienda ho progettato architetture su Azure (Storage, Database, Service Bus), sistemi di notifiche real-time con Angular e SignalR, integrazioni con API di Infocamere, sistemi di autenticazione con Keycloak multi-tenant, e estensioni browser potenziate dall'AI.
       </p>
       <p>
-        Nel tempo libero costruisco prodotti indipendenti, contribuisco all'open source, e sperimento con tecnologie fuori dal mio stack — da Python e LLM a Unity 3D e Big Data.
+        Nel tempo libero costruisco prodotti indipendenti, contribuisco all'open source, e sperimento con tecnologie fuori dal mio stack — da Python e LLM a Unity 3D, IoT e Big Data.
       </p>
     </div>
     <div class="about-stats reveal">
@@ -818,8 +829,16 @@
         <div class="stat-label">Linguaggio principale</div>
       </div>
       <div class="stat-card">
+        <div class="stat-number">Angular</div>
+        <div class="stat-label">Frontend framework</div>
+      </div>
+      <div class="stat-card">
         <div class="stat-number">Azure</div>
         <div class="stat-label">Cloud platform</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">TS</div>
+        <div class="stat-label">TypeScript</div>
       </div>
       <div class="stat-card">
         <div class="stat-number">20+</div>
@@ -833,6 +852,7 @@
   </div>
 </section>
 
+<!-- SKILLS: rimossi Angular/React/TypeScript da Backend, ora solo nel gruppo Frontend -->
 <section id="skills">
   <p class="section-label">Stack tecnologico</p>
   <h2 class="section-title reveal">Le tecnologie con cui lavoro</h2>
@@ -845,8 +865,8 @@
         <span class="skill-tag">ASP.NET Core</span>
         <span class="skill-tag">.NET Framework</span>
         <span class="skill-tag">Entity Framework</span>
-        <span class="skill-tag">SignalR</span>
         <span class="skill-tag">REST API</span>
+        <span class="skill-tag">SignalR</span>
         <span class="skill-tag">Java</span>
         <span class="skill-tag">Spring Boot</span>
         <span class="skill-tag">Python</span>
@@ -859,6 +879,7 @@
         <span class="skill-tag">Azure</span>
         <span class="skill-tag">Azure Storage</span>
         <span class="skill-tag">Azure SQL</span>
+        <span class="skill-tag">Cloudflare</span>
         <span class="skill-tag">Docker</span>
         <span class="skill-tag">RabbitMQ</span>
         <span class="skill-tag">Keycloak</span>
@@ -870,9 +891,10 @@
       <h3>Frontend</h3>
       <div class="skill-tags">
         <span class="skill-tag">Angular</span>
+        <span class="skill-tag">React</span>
         <span class="skill-tag">TypeScript</span>
-        <span class="skill-tag">HTML/CSS</span>
         <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">HTML/CSS</span>
         <span class="skill-tag">Browser Extensions</span>
       </div>
     </div>
@@ -880,9 +902,7 @@
       <span class="skill-group-icon">🧠</span>
       <h3>AI & Data</h3>
       <div class="skill-tags">
-        <span class="skill-tag">LLM / Ollama</span>
-        <span class="skill-tag">Streamlit</span>
-        <span class="skill-tag">Jupyter</span>
+        <span class="skill-tag">LangChain</span>
         <span class="skill-tag">Kafka</span>
         <span class="skill-tag">Elasticsearch</span>
         <span class="skill-tag">Kibana</span>
@@ -892,24 +912,31 @@
   </div>
 </section>
 
+<!-- EXPERIENCE: "Azienda attuale" → settore specificato -->
 <section id="experience">
   <p class="section-label">Esperienza</p>
   <h2 class="section-title reveal">Dove ho lasciato il segno</h2>
   <div class="timeline reveal">
     <div class="timeline-item">
-      <div class="timeline-period">Attuale</div>
+      <div class="timeline-period">2022 — Attuale</div>
       <div class="timeline-role">.NET Software Developer</div>
-      <div class="timeline-company">Azienda attuale</div>
+      <div class="timeline-company">Azienda nel settore GovTech / Pubblica Amministrazione</div>
       <div class="timeline-desc">
-        Progettazione e sviluppo di applicazioni enterprise su stack .NET con architettura cloud Azure. Creazione di sistemi di notifiche real-time con Angular e SignalR, integrazione con API esterne (Infocamere), autenticazione multi-tenant con Keycloak, e sviluppo di estensioni browser AI-powered.
+        Progettazione e sviluppo di applicazioni enterprise su stack 
+        .NET con architettura cloud Azure. Tra le attività principali:
+        sistemi di notifiche real-time con Angular e SignalR, 
+        integrazione con API esterne (Infocamere), 
+        autenticazione multi-tenant con Keycloak, moduli di gestione documenti e sviluppo di estensioni browser AI-powered.
       </div>
       <div class="timeline-techs">
         <span class="timeline-tech">C#</span>
         <span class="timeline-tech">ASP.NET</span>
         <span class="timeline-tech">Azure</span>
+        <span class="timeline-tech">Azure Storage</span>
         <span class="timeline-tech">Angular</span>
         <span class="timeline-tech">SignalR</span>
         <span class="timeline-tech">Keycloak</span>
+        <span class="timeline-tech">InfoCamere</span>
         <span class="timeline-tech">AI</span>
       </div>
     </div>
@@ -918,13 +945,12 @@
       <div class="timeline-role">Prodotti live per clienti e personali</div>
       <div class="timeline-company">Vocablio.org · freddopregiato.kiwivision.it</div>
       <div class="timeline-desc">
-        Ideazione, sviluppo e pubblicazione di web-app indipendenti. Vocablio è una piattaforma per l'apprendimento dell'inglese attraverso la lettura, con un sistema proprietario di video-lookup per migliorare pronuncia e slang. Freddo Pregiato è un sito sviluppato per un cliente e hostato in produzione.
+        Ideazione, sviluppo e pubblicazione di applicazioni indipendenti. Vocablio è una piattaforma per l'apprendimento dell'inglese attraverso la lettura, con un sistema proprietario di video-lookup per migliorare pronuncia e slang. Freddo Pregiato è un'applicazione web sviluppata per un cliente e hostata in produzione.
       </div>
       <div class="timeline-techs">
         <span class="timeline-tech">Full Stack</span>
-        <span class="timeline-tech">PWA</span>
-        <span class="timeline-tech">Video API</span>
-        <span class="timeline-tech">Deploy</span>
+        <span class="timeline-tech">Cloudflare</span>
+        <span class="timeline-tech">Capacitor JS</span>
       </div>
     </div>
     <div class="timeline-item">
@@ -935,13 +961,16 @@
         Tesi su analisi del sentimento con pipeline big data: Kafka per lo streaming, Spark per il processing, Elasticsearch + Kibana per l'indicizzazione e la visualizzazione. Durante il percorso ho anche sviluppato videogiochi 3D con Unity e C#.
       </div>
       <div class="timeline-techs">
+        <span class="timeline-tech">C#</span>
+        <span class="timeline-tech">C++</span>
+        <span class="timeline-tech">C</span>
+        <span class="timeline-tech">Java</span>
         <span class="timeline-tech">Kafka</span>
         <span class="timeline-tech">Spark</span>
         <span class="timeline-tech">Elasticsearch</span>
         <span class="timeline-tech">Kibana</span>
         <span class="timeline-tech">Docker</span>
         <span class="timeline-tech">Unity 3D</span>
-        <span class="timeline-tech">C#</span>
       </div>
     </div>
   </div>
@@ -961,20 +990,21 @@
       </a>
     </div>
     <p class="featured-desc">
-      Web-app per imparare l'inglese leggendo libri con traduzione istantanea di parole e frasi. Pensata per chi vuole migliorare il proprio vocabolario in modo naturale, immergendosi nella lettura.
+      Applicazione smartphone per imparare l'inglese leggendo libri con traduzione istantanea di parole e frasi. Pensata per chi vuole migliorare il proprio vocabolario in modo naturale, immergendosi nella lettura.
     </p>
     <div class="featured-highlight">
-      <div class="featured-highlight-label">🎯 Feature proprietaria</div>
+      <div class="featured-highlight-label">Kill feature costruita e ingegnerizzata da zero</div>
       <p>
         Sistema di video-lookup costruito da zero: data una parola in inglese, il sistema cerca automaticamente un video e ti porta alla frase esatta dove quella parola viene pronunciata. Questo permette di imparare pronuncia, intonazione e slang direttamente dal contesto reale, non da un dizionario.
       </p>
     </div>
     <div class="skill-tags">
+      <span class="skill-tag">Cloudflare</span>
+      <span class="skill-tag">Cloudflare Workers</span>
       <span class="skill-tag">Full Stack</span>
-      <span class="skill-tag">PWA</span>
-      <span class="skill-tag">Video Search API</span>
-      <span class="skill-tag">NLP</span>
-      <span class="skill-tag">Traduzione</span>
+      <span class="skill-tag">Capacitor JS</span>
+      <span class="skill-tag">Scraping</span>
+      <span class="skill-tag">Google Translate API</span>
     </div>
   </div>
 
@@ -1022,7 +1052,7 @@
       </div>
       <span class="project-link">Vedi su GitHub</span>
     </a>
-    <a href="https://github.com/rocketxx/SentimenTitle." class="project-card reveal" target="_blank" rel="noopener">
+    <a href="https://github.com/rocketxx/SentimenTitle" class="project-card reveal" target="_blank" rel="noopener">
       <div class="project-type">Big Data / ML</div>
       <h3>SentimenTitle</h3>
       <p>Pipeline di sentiment analysis con architettura distribuita: streaming con Kafka, processing con Spark, visualizzazione con Elasticsearch e Kibana. Progetto di tesi.</p>
@@ -1055,25 +1085,15 @@
       </div>
       <span class="project-link">Vedi su GitHub</span>
     </a>
-    <a href="https://github.com/rocketxx/gnam" class="project-card reveal" target="_blank" rel="noopener">
-      <div class="project-type">Angular App</div>
-      <h3>Gnam</h3>
-      <p>Applicazione Angular 17 — progetto personale per sperimentare con le ultime feature del framework e pratiche di sviluppo frontend moderno.</p>
-      <div class="skill-tags" style="margin-bottom: 1rem;">
-        <span class="skill-tag">TypeScript</span>
-        <span class="skill-tag">Angular 17</span>
-        <span class="skill-tag">SCSS</span>
-      </div>
-      <span class="project-link">Vedi su GitHub</span>
-    </a>
   </div>
 </section>
 
+<!-- CONTATTI: copy più aperta, non solo open source -->
 <section id="contact" class="contact-section">
   <p class="section-label">Contatti</p>
   <h2 class="section-title reveal">Parliamone</h2>
   <p class="contact-desc reveal">
-    Vuoi collaborare su un progetto open source? Scrivimi.
+    Hai un progetto interessante, una proposta, o vuoi semplicemente parlare di tech? Scrivimi.
   </p>
   <div class="contact-links reveal">
     <a href="https://github.com/rocketxx" class="contact-pill" target="_blank" rel="noopener">
