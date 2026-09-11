@@ -8,15 +8,14 @@
   <meta name="theme-color" content="#F1EEE6">
   <meta name="color-scheme" content="light">
   <meta name="author" content="William Ragusa">
-  <!-- Sostituisci https://www.tuodominio.it/ con l'indirizzo reale del sito -->
-  <link rel="canonical" href="https://www.tuodominio.it/">
+  <link rel="canonical" href="https://rocketxx.github.io/">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.tuodominio.it/">
+  <meta property="og:url" content="https://rocketxx.github.io/">
   <meta property="og:site_name" content="William Ragusa">
   <meta property="og:locale" content="it_IT">
   <meta property="og:title" content="William Ragusa, sviluppatore software">
   <meta property="og:description" content="Sviluppatore .NET e Angular a Catania. Azure, TypeScript, Vocablio e progetti open source.">
-  <meta property="og:image" content="https://www.tuodominio.it/og-image.png">
+  <meta property="og:image" content="https://rocketxx.github.io/og-image.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="627">
@@ -36,6 +35,7 @@
     "@type": "Person",
     "name": "William Ragusa",
     "jobTitle": "Software Developer",
+    "worksFor": { "@type": "Organization", "name": "Dylog Italia", "url": "https://www.dylog.it/" },
     "email": "mailto:williamragusa@proton.me",
     "address": { "@type": "PostalAddress", "addressLocality": "Catania", "addressCountry": "IT" },
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Università di Catania" },
@@ -405,6 +405,9 @@
     .work .desc { max-width: var(--measure); }
     .work .dest { font-family: var(--sans); font-size: .875rem; color: var(--grigio); }
 
+    .more { margin-top: 1.5rem; max-width: var(--measure); color: var(--grigio); }
+    .more a { color: var(--basalto); }
+
     /* ── Contatti ── */
     .contact { background: var(--basalto); color: var(--calcare); }
     .contact .section-grid { border-top: 0; padding-block: clamp(3.5rem, 10vw, 7.5rem) clamp(3rem, 8vw, 5.5rem); }
@@ -549,7 +552,7 @@
   <div class="section hero" id="top">
     <h1>William Ragusa</h1>
     <p class="hero-lead">
-      Sviluppatore software a Catania. Lavoro soprattutto con .NET, Azure e Angular. Fuori dall’ufficio seguo la curiosità: un’app per leggere libri in inglese, un chatbot che parla con le API, un rilevatore archeologico basato su dati LiDAR.
+      Sviluppatore software a Catania. Lavoro soprattutto con .NET, Azure e Angular. Fuori dall’ufficio seguo la curiosità: un’app per leggere libri in inglese, un chatbot che parla con le API, piccoli circuiti con Arduino.
     </p>
     <p class="hero-links">
       <a href="https://github.com/rocketxx">GitHub</a>
@@ -564,7 +567,7 @@
       <h2 class="section-title" id="t-about">Chi sono</h2>
       <div class="section-body prose">
         <p>Vengo da Catania e dal 2022 lavoro come sviluppatore .NET e Angular. Per me ogni progetto è un pretesto per imparare qualcosa, dentro e fuori dal mio stack.</p>
-        <p>In azienda ho progettato architetture su Azure (Storage, Database, Service Bus), notifiche in tempo reale con Angular e SignalR, integrazioni con le API di InfoCamere, autenticazione multi-tenant con Keycloak ed estensioni del browser basate sull’intelligenza artificiale.</p>
+        <p>In Dylog lavoro su software gestionali usati da imprese, professionisti e organizzazioni. Sviluppo nuove funzionalità, mi occupo della manutenzione di quelle esistenti e lavoro spesso sull’architettura cloud su Azure (Storage, Database, Service Bus).</p>
         <p>Nel tempo libero costruisco prodotti miei, contribuisco all’open source e provo tecnologie lontane dal lavoro quotidiano: Python e modelli linguistici, Unity, IoT, big data.</p>
       </div>
     </div>
@@ -581,7 +584,7 @@
           </div>
           <div>
             <dt>Frontend e mobile</dt>
-            <dd>Angular, TypeScript, JavaScript, React, HTML e CSS, Capacitor, estensioni del browser</dd>
+            <dd>Angular, TypeScript, JavaScript, React, HTML e CSS, Capacitor</dd>
           </div>
           <div>
             <dt>Cloud e infrastruttura</dt>
@@ -605,9 +608,9 @@
             <p class="when">Dal <time datetime="2022">2022</time></p>
             <div>
               <h3 class="role">.NET Software Developer</h3>
-              <p class="org">Azienda del settore GovTech e pubblica amministrazione</p>
-              <p class="desc">Progetto e sviluppo applicazioni enterprise su .NET con architettura cloud Azure. Mi sono occupato di notifiche in tempo reale con Angular e SignalR, integrazione con le API di InfoCamere, autenticazione multi-tenant con Keycloak, moduli di gestione documentale ed estensioni del browser basate sull’AI.</p>
-              <p class="stack"><span class="sr-only">Tecnologie: </span>C#, ASP.NET, Azure, Azure Storage, Angular, SignalR, Keycloak, InfoCamere</p>
+              <p class="org"><a href="https://www.dylog.it/">Dylog Italia</a>, software gestionali per imprese, professionisti e organizzazioni</p>
+              <p class="desc">Ho lavorato in due team su prodotti diversi, contabilità e bilancio. Sviluppo nuove funzionalità su .NET e Azure e mi occupo della manutenzione dei moduli esistenti, compresi quelli che ho realizzato io. Tra i lavori principali ci sono una gestione documentale su Azure Storage, notifiche in tempo reale con Angular e SignalR, l’integrazione con le API di InfoCamere, l’autenticazione multi-tenant con Keycloak ed estensioni del browser basate sull’AI.</p>
+              <p class="stack"><span class="sr-only">Tecnologie: </span>C#, ASP.NET, Azure Storage, Azure Service Bus, Angular, SignalR, Keycloak, InfoCamere</p>
             </div>
           </li>
           <li>
@@ -639,7 +642,7 @@
       <div class="section-body pastimes">
         <div>
           <h3>Elettronica e making</h3>
-          <p>Costruisco progetti con Arduino e Raspberry Pi, dalla domotica a piccoli robot cingolati con telecamera. I pezzi che non trovo li disegno e li stampo in 3D.</p>
+          <p>Costruisco piccoli progetti con Arduino, sensori e servomotori, spesso collegati in rete in chiave IoT. Quando mi serve un pezzo lo stampo in 3D, partendo da modelli già esistenti.</p>
         </div>
         <div>
           <h3>Volontariato con Damuni Versu</h3>
@@ -716,9 +719,9 @@
             <p class="dest">GitHub</p>
           </li>
           <li>
-            <h4><a href="https://github.com/rocketxx/SentimenTitle">SentimenTitle</a></h4>
-            <p class="desc">Pipeline distribuita di sentiment analysis: Kafka per lo streaming, Spark per l’elaborazione, Elasticsearch e Kibana per la visualizzazione. Progetto di tesi.</p>
-            <p class="stack"><span class="sr-only">Tecnologie: </span>Kafka, Spark, Elasticsearch, Kibana, Docker, Jupyter</p>
+            <h4><a href="https://github.com/rocketxx/SentimenTitle.">SentimenTitle</a></h4>
+            <p class="desc">Analisi del sentiment in tempo reale sui titoli di BBC News, The Verge e TechCrunch, raccolti tramite NewsAPI. Un piccolo modello, Word2Vec con regressione logistica in Spark MLlib, addestrato sul dataset pubblico Sentiment140, classifica ogni titolo come positivo, neutro o negativo. I dati passano da Logstash e Kafka a Spark Streaming e finiscono in una dashboard Kibana. Progetto di tesi.</p>
+            <p class="stack"><span class="sr-only">Tecnologie: </span>Kafka, Spark MLlib, Logstash, Elasticsearch, Kibana, Docker Compose</p>
             <p class="dest">GitHub</p>
           </li>
           <li>
@@ -734,6 +737,7 @@
             <p class="dest">GitHub</p>
           </li>
         </ul>
+        <p class="more">Questa è solo una selezione. Diversi progetti sono in repository privati, gli altri li trovi su <a href="https://github.com/rocketxx">github.com/rocketxx</a>.</p>
 
       </div>
     </div>
