@@ -94,7 +94,7 @@
   }
 
   /* Lightbox per gli screenshot */
-  const shots = document.querySelectorAll('a.shot');
+  const shots = document.querySelectorAll('a.shot, a[data-lightbox]');
   if (shots.length && 'HTMLDialogElement' in window) {
     const dialog = document.createElement('dialog');
     dialog.className = 'lightbox';
@@ -109,7 +109,7 @@
     shots.forEach(a => a.addEventListener('click', e => {
       e.preventDefault();
       img.src = a.href;
-      img.alt = a.querySelector('img')?.alt || '';
+      img.alt = a.querySelector('img')?.alt || a.dataset.alt || '';
       dialog.showModal();
     }));
   }

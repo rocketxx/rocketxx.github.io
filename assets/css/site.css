@@ -518,7 +518,18 @@ a {
   font: italic 300 clamp(1.625rem, 1.4rem + .8vw, 2rem)/1.1 var(--serif);
   color: var(--accent);
 }
-.funfact .funfact-link { font: 500 .875rem var(--sans); }
+.funfact .funfact-link { display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1rem; font: 500 .875rem var(--sans); }
+.btn-small {
+  display: inline-flex; align-items: center; gap: .4rem;
+  min-height: 2.25rem; padding: 0 .85rem;
+  border: 1px solid var(--line-strong); border-radius: 999px;
+  color: var(--text); text-decoration: none;
+  transition: border-color .2s, color .2s;
+}
+.btn-small svg { width: .95rem; height: .95rem; flex: none; }
+@media (hover: hover) and (pointer: fine) {
+  .btn-small:hover { border-color: var(--accent); color: var(--accent); }
+}
 .funfact-link a { display: inline-flex; align-items: center; gap: .3rem; min-height: var(--tap); color: var(--accent); }
 
 .edu-logo { display: inline-flex; align-items: center; gap: .6rem; }
