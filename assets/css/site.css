@@ -501,7 +501,7 @@ a {
   border-radius: var(--radius);
   max-width: var(--measure);
 }
-.funfact-days {
+.funfact .funfact-days {
   font: italic 300 2.5rem/1 var(--serif);
   color: var(--accent);
   font-variant-numeric: tabular-nums;
@@ -509,6 +509,17 @@ a {
 .funfact-days small { display: block; font: 500 .6875rem/1.2 var(--sans); letter-spacing: .1em; text-transform: uppercase; font-style: normal; margin-top: .3rem; }
 .funfact p { font-size: 1rem; line-height: 1.55; }
 .funfact .eyebrow { display: block; margin-bottom: .3rem; }
+
+/* Più fun fact: affiancati da tablet in su */
+.funfacts { display: grid; gap: 1rem; margin-block: .5rem 1.75rem; }
+.funfacts .funfact { margin: 0; max-width: none; }
+.funfact-stack { grid-template-columns: 1fr; gap: .75rem; }
+.funfact .funfact-quote {
+  font: italic 300 clamp(1.625rem, 1.4rem + .8vw, 2rem)/1.1 var(--serif);
+  color: var(--accent);
+}
+.funfact .funfact-link { font: 500 .875rem var(--sans); }
+.funfact-link a { display: inline-flex; align-items: center; gap: .3rem; min-height: var(--tap); color: var(--accent); }
 
 .edu-logo { display: inline-flex; align-items: center; gap: .6rem; }
 .edu-logo svg, .edu-logo img { width: 3rem; height: auto; color: var(--text); }
@@ -771,7 +782,7 @@ a {
 
   .timeline > li { grid-template-columns: minmax(0, 10rem) minmax(0, 1fr); gap: .25rem 2.5rem; }
   .when { padding-top: .45em; }
-  .funfact { margin-left: 12.5rem; }
+  .funfacts { margin-left: 12.5rem; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
 
   .skills > div { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: .25rem 2rem; }
 
