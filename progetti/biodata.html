@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BioData · Tesi di laurea · 2022 · William Ragusa</title>
+  <meta name="description" content="Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo.">
+  <meta name="theme-color" content="#03110D" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ECEAE5" media="(prefers-color-scheme: light)">
+  <meta name="author" content="William Ragusa">
+  <link rel="canonical" href="https://rocketxx.github.io/progetti/biodata.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rocketxx.github.io/progetti/biodata.html">
+  <meta property="og:site_name" content="William Ragusa">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="BioData · Tesi di laurea · 2022 · William Ragusa">
+  <meta property="og:description" content="Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo.">
+  <meta property="og:image" content="https://rocketxx.github.io/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "BioData", "description": "Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo.", "url": "https://rocketxx.github.io/progetti/biodata.html", "author": {"@type": "Person", "name": "William Ragusa", "url": "https://rocketxx.github.io/"}, "inLanguage": "it", "codeRepository": "https://github.com/rocketxx/biodata_tesi"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Vai al contenuto</a>
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Principale">
+    <a href="../" class="brand"><span class="brand-mark" aria-hidden="true">W</span>William Ragusa</a>
+    <ul class="nav-list" id="nav-list" role="list">
+      <li><a href="../#progetti">Progetti</a></li>
+      <li><a href="../#servizi">Servizi</a></li>
+      <li><a href="../#esperienza">Esperienza</a></li>
+      <li><a href="../#competenze">Competenze</a></li>
+      <li><a href="../#contatti">Contatti</a></li>
+    </ul>
+    <div class="nav-tools">
+      <button class="icon-button theme-toggle" type="button" hidden><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 3a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <p class="back"><a class="text-link" href="../#progetti">← Tutti i progetti</a></p>
+    <header class="project-hero">
+      <p class="eyebrow">Tesi di laurea · 2022</p>
+      <h1>BioData</h1>
+      <p class="project-lead">Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo.</p>
+      <p class="badges"><span class="badge badge-uni">Tesi di laurea</span><span class="badge badge-oss">Open source</span></p>
+      <div class="project-actions"><a class="btn btn-primary" href="https://github.com/rocketxx/biodata_tesi">Codice su GitHub<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9"/></svg></a></div>
+      
+    </header>
+
+      <div class="media">
+        <figure>
+          <a class="shot" href="../assets/img/progetti/biodata/architettura.webp"><img src="../assets/img/progetti/biodata/architettura.webp" width="1200" height="675" alt="Schema dell'architettura: sensori Arduino, client su Raspberry Pi, invio via Wi-Fi a un'API REST in Node.js, indicizzazione in Elasticsearch, statistiche in Kibana e alert su Slack." loading="eager"></a>
+          <figcaption>L'architettura: dai sensori sul campo ad Elasticsearch, poi statistiche e allarmi su Kibana.</figcaption>
+        </figure>
+        <div class="media-row">
+          <figure>
+            <a class="shot" href="../assets/img/progetti/biodata/kibana-grafico.webp"><img src="../assets/img/progetti/biodata/kibana-grafico.webp" width="1200" height="547" alt="Grafico Kibana dei valori dei sensori nel tempo." loading="lazy"></a>
+            <figcaption>Andamento dei valori dei sensori in Kibana.</figcaption>
+          </figure>
+          <figure>
+            <a class="shot" href="../assets/img/progetti/biodata/kibana-mappa.webp"><img src="../assets/img/progetti/biodata/kibana-mappa.webp" width="1200" height="567" alt="Mappa Kibana con la posizione dei sensori e i loro valori." loading="lazy"></a>
+            <figcaption>Statistiche geospaziali: dove si trovano i sensori e cosa misurano.</figcaption>
+          </figure>
+          <figure>
+            <a class="shot" href="../assets/img/progetti/biodata/alert-slack.webp"><img src="../assets/img/progetti/biodata/alert-slack.webp" width="1063" height="195" alt="Messaggio Slack: alert «velocità vento» attivo, la velocità ha superato la soglia di 30." loading="lazy"></a>
+            <figcaption>Un alert su Slack: il vento ha superato i 30 km/h.</figcaption>
+          </figure>
+          <figure>
+            <a class="shot" href="../assets/img/progetti/biodata/payload-sensore.webp"><img src="../assets/img/progetti/biodata/payload-sensore.webp" width="677" height="499" alt="Payload JSON inviato da un dispositivo con le letture di temperatura e anemometro." loading="lazy"></a>
+            <figcaption>Il messaggio JSON inviato da un dispositivo sul campo.</figcaption>
+          </figure>
+        </div>
+      </div>
+    <div class="project-body">
+      <div>
+        <section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>I sensori nei campi misurano temperatura, umidità, vento, luce e composizione del suolo. Con questi dati un'azienda agricola può risparmiare acqua e fertilizzanti, prevenire malattie e proteggere le piante da gelo e vento. BioData è la pipeline che rende questi dati utilizzabili, sviluppata insieme ad AgrosNote.</p><p>Un esempio concreto: in una serra di pomodori le piantine giovani temono il vento forte. Quando un sensore supera i 30 km/h parte un alert sul canale Slack di chi gestisce quel lotto, che può chiudere la serra prima che ci siano danni.</p><p>Il sistema era destinato a uno scenario reale: l'azienda agricola Colle d'Oro di Ispica (RG), a supporto degli agronomi.</p><p>Tesi di laurea triennale in Informatica al Dipartimento di Matematica e Informatica dell'Università di Catania. Relatore: prof. Salvatore Nicotra. Correlatore: Daniele Contarino. Laurea il 29 aprile 2022.</p></div></section>
+        <section aria-labelledby="h-feat"><h2 id="h-feat">Cosa fa</h2><ul class="features" role="list"><li>Raccolta dei dati via API REST (Node.js ed Express) dai dispositivi sul campo, basati su Arduino e Raspberry Pi.</li><li>Indicizzazione in tempo reale in Elasticsearch.</li><li>Dashboard Kibana con statistiche sui valori e geospaziali.</li><li>Alert configurabili su Slack ed email, per lotto di terreno.</li><li>Simulatore di sensori per i test e intero stack orchestrato con Docker Compose.</li></ul></section>
+        <section aria-labelledby="h-choices"><h2 id="h-choices">Scelte tecniche</h2><ul class="choices" role="list"><li><b>Tempo reale, non batch</b><span>Un allarme sul vento serve adesso, non a fine giornata: la pipeline indicizza ogni lettura appena arriva.</span></li><li><b>ELK invece di PLG</b><span>Nella tesi ho confrontato lo stack Elastic con Prometheus, Loki e Grafana. Elastic ha vinto per le query complesse, gli alert e le mappe.</span></li><li><b>Node.js per l'IoT</b><span>Un server leggero e asincrono, adatto a tante piccole richieste da dispositivi diversi.</span></li></ul></section>
+      </div>
+      <aside class="facts" aria-label="Scheda del progetto">
+        <dl>
+          <div><dt>Università</dt><dd>Università di Catania, DMI</dd></div><div><dt>Relatore</dt><dd>Prof. Salvatore Nicotra</dd></div><div><dt>In collaborazione con</dt><dd>AgrosNote</dd></div><div><dt>Laurea</dt><dd>29 aprile 2022</dd></div><div><dt>Codice</dt><dd>Open source</dd></div>
+          <div><dt>Ingestion</dt><dd><ul class="stack-tags" role="list"><li>Node.js</li><li>Express</li><li>API REST</li></ul></dd></div><div><dt>Storage e ricerca</dt><dd><ul class="stack-tags" role="list"><li>Elasticsearch</li></ul></dd></div><div><dt>Visualizzazione e alert</dt><dd><ul class="stack-tags" role="list"><li>Kibana</li><li>Slack</li></ul></dd></div><div><dt>Infrastruttura</dt><dd><ul class="stack-tags" role="list"><li>Docker</li><li>Docker Compose</li></ul></dd></div><div><dt>IoT</dt><dd><ul class="stack-tags" role="list"><li>Arduino</li><li>Raspberry Pi</li></ul></dd></div>
+        </dl>
+      </aside>
+    </div>
+
+    <section class="cta-band" aria-labelledby="h-cta">
+      <h2 id="h-cta">Ti serve qualcosa di simile?</h2>
+      <p>Sviluppo siti, web app e app per iOS e Android, dall'idea alla pubblicazione. Raccontami il tuo progetto.</p>
+      <a class="btn btn-primary" href="../#contatti">Scrivimi<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+    </section>
+  </div>
+  <nav class="pager wrap" aria-label="Altri progetti"><a class="prev" href="maps-scraper.html" rel="prev"><span>← Precedente</span><b>Maps Scraper</b></a><a class="next" href="sentimentitle.html" rel="next"><span>Successivo →</span><b>SentimenTitle</b></a></nav>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="inner">
+      <p>© 2026 William Ragusa</p>
+      <p>Catania, Sicilia</p>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>
