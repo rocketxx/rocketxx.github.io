@@ -64,6 +64,20 @@
     </header>
 
       <div class="media">
+        <div class="media-trio" role="group" aria-label="Foto e video delle insegne stampate">
+          <figure>
+            <a class="shot" href="../assets/img/progetti/signforge/insegna-idle.webp"><img src="../assets/img/progetti/signforge/insegna-idle.webp" width="1000" height="1333" alt="Insegna LED appena stampata, accesa di luce rossa, appoggiata sul piano della stampante Bambu Lab A1." loading="eager"></a>
+            <figcaption>Appena uscita dalla stampante, già accesa.</figcaption>
+          </figure>
+          <figure>
+            <div class="shot"><video src="../assets/signforge-insegna.mp4" poster="../assets/img/progetti/signforge/video-poster.webp" width="464" height="832" autoplay muted loop playsinline preload="metadata" aria-label="Video di un'insegna LED rossa accesa sul piano della stampante 3D."></video></div>
+            <figcaption>La luce attraverso il diffusore.</figcaption>
+          </figure>
+          <figure>
+            <a class="shot" href="../assets/img/progetti/signforge/insegna-dreams.webp"><img src="../assets/img/progetti/signforge/insegna-dreams.webp" width="1000" height="1333" alt="Insegna «Dreams» con lettere bianche su base blu, sul piano della stampante." loading="lazy"></a>
+            <figcaption>«Dreams»: base blu e lettere bianche.</figcaption>
+          </figure>
+        </div>
         <figure>
           <pre class="code" tabindex="0"><code>module forma_testo(espansione = 0) {
     offset(r = espansione + ingrossamento_font, $fn = 80)
@@ -84,13 +98,13 @@ module crea_base() {
     <div class="project-body">
       <div>
         <section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>Realizzo insegne LED con la stampa 3D. Ogni insegna è fatta di due pezzi: la base, con le lettere cave in cui passa la striscia LED, e il diffusore traslucido che uniforma la luce. Disegnarle a mano per ogni scritta richiedeva ore.</p><p>SignForge genera uno script OpenSCAD parametrico a partire da testo, font e poche misure. Le dimensioni strutturali scalano con l'altezza del testo, così una scritta di 3 cm e una di 30 cm escono entrambe stampabili.</p><p>L'ho progettato e sviluppato per il mio lavoro di making: lo uso per produrre le insegne.</p></div></section>
-        <section aria-labelledby="h-feat"><h2 id="h-feat">Cosa fa</h2><ul class="features" role="list"><li>Quattro tipi di diffusore: ad appoggio, a incastro a filo, a incastro con pilastri e ibrido a gradino.</li><li>Libreria di font e parametri di spaziatura e spessore.</li><li>Editor del codice con salvataggio: se modifichi lo script a mano, i parametri vengono riletti e il modulo si aggiorna.</li><li>Apertura diretta in OpenSCAD per il rendering e l'export STL.</li><li>Misure tarate sulla stampante che uso, una Bambu Lab.</li></ul></section>
+        <section aria-labelledby="h-feat"><h2 id="h-feat">Cosa fa</h2><ul class="features" role="list"><li>Quattro tipi di diffusore: ad appoggio, a incastro a filo, a incastro con pilastri e ibrido a gradino.</li><li>Libreria di font e parametri di spaziatura e spessore.</li><li>Editor del codice con salvataggio: se modifichi lo script a mano, i parametri vengono riletti e il modulo si aggiorna.</li><li>Apertura diretta in OpenSCAD per il rendering e l'export STL.</li><li>Misure tarate sulla stampante che uso, una Bambu Lab A1.</li></ul></section>
         <section aria-labelledby="h-choices"><h2 id="h-choices">Scelte tecniche</h2><ul class="choices" role="list"><li><b>Modellazione come codice</b><span>OpenSCAD descrive il pezzo con codice: ogni insegna nasce dallo stesso template, con parametri diversi.</span></li><li><b>Un fattore di scala unico</b><span>Ogni misura è espressa in funzione di k = altezza / 50, per mantenere le proporzioni a qualsiasi dimensione.</span></li><li><b>Codice e parametri sempre allineati</b><span>Il backend rilegge i parametri dallo script con delle espressioni regolari, così modulo ed editor non vanno mai fuori sincrono.</span></li></ul></section>
       </div>
       <aside class="facts" aria-label="Scheda del progetto">
         <dl>
           <div><dt>Ruolo</dt><dd>Progettazione e sviluppo</dd></div><div><dt>Uso</dt><dd>Interno, per la mia produzione di insegne</dd></div><div><dt>Codice</dt><dd>Privato</dd></div>
-          <div><dt>Backend</dt><dd><ul class="stack-tags" role="list"><li>Python</li><li>Flask</li></ul></dd></div><div><dt>Frontend</dt><dd><ul class="stack-tags" role="list"><li>JavaScript</li><li>Ace editor</li></ul></dd></div><div><dt>3D</dt><dd><ul class="stack-tags" role="list"><li>OpenSCAD</li><li>Stampa FDM</li><li>Bambu Lab</li></ul></dd></div>
+          <div><dt>Backend</dt><dd><ul class="stack-tags" role="list"><li>Python</li><li>Flask</li></ul></dd></div><div><dt>Frontend</dt><dd><ul class="stack-tags" role="list"><li>JavaScript</li><li>Ace editor</li></ul></dd></div><div><dt>3D</dt><dd><ul class="stack-tags" role="list"><li>OpenSCAD</li><li>Stampa FDM</li><li>Bambu Lab A1</li></ul></dd></div>
         </dl>
       </aside>
     </div>

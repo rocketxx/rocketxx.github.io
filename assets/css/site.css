@@ -647,6 +647,22 @@ a {
 .shot img { width: 100%; height: auto; }
 .shot-logo { max-width: 40rem; }
 .media-row { display: grid; gap: 1rem; }
+/* Tre media verticali: carosello a scorrimento su mobile, tre colonne da tablet */
+.media-trio {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(16rem, 78%);
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin-inline: calc(var(--gutter) * -1);
+  padding: 0 var(--gutter) .5rem;
+  scroll-padding-inline: var(--gutter);
+  scrollbar-width: thin;
+}
+.media-trio figure { scroll-snap-align: start; }
+.media-trio .shot img,
+.media-trio .shot video { width: 100%; aspect-ratio: 3 / 4; height: auto; object-fit: cover; display: block; }
 
 .phone {
   width: min(100%, 300px);
@@ -782,6 +798,7 @@ a {
   .skills > div { grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: .25rem 2rem; }
 
   .media-row { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+  .media-trio { grid-auto-flow: row; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; margin-inline: 0; padding: 0; }
   .pager { grid-template-columns: 1fr 1fr; }
   .pager .next { grid-column: 2; }
 }
