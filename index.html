@@ -176,9 +176,7 @@ module crea_base() {
             </div>
           </li>
           <li class="card" data-tags="client">
-            <div class="card-media"><div class="cover" aria-hidden="true"><span class="cover-mono">GET /wp-json/wp/v2/posts
-  ?per_page=50&amp;_embed=1
-→ articoli, immagini, date</span><span class="cover-name">MARIS</span></div></div>
+            <div class="card-media"><img src="assets/img/progetti/maris-onlus/logo.webp" alt="" loading="lazy" width="1200" height="750"></div>
             <div class="card-body">
               <p class="card-kind">Sito per un'associazione</p>
               <h3><a href="progetti/maris-onlus.html">MARIS Onlus</a></h3>
@@ -370,42 +368,47 @@ Bar…        Bar         4.3</span><span class="cover-name">Maps Scraper</span>
   </section>
 
   <section class="section" id="competenze" aria-labelledby="t-competenze">
-    <div class="wrap split">
-      <div>
-        <div class="section-head">
-          <p class="eyebrow">Competenze</p>
-          <h2 class="section-title" id="t-competenze">Con cosa lavoro</h2>
-        </div>
-        <div class="spotlight">
-          <p class="eyebrow">Imparato da autodidatta</p>
-          <h3>Cloudflare, in produzione</h3>
-          <p>Ho imparato Cloudflare da solo e ci faccio girare <a href="progetti/vocablio.html">Vocablio</a> ed <a href="progetti/eko.html">Eko</a>: Workers per API e pagine, D1 come database, Cron Triggers per le attività programmate, WAF e rate limiting per proteggerle. Niente server da gestire e costi minimi, spesso zero.</p>
-          <ul class="stack-tags" role="list"><li>Workers</li><li>D1</li><li>Static Assets</li><li>Cron Triggers</li><li>WAF</li><li>Rate limiting</li></ul>
-        </div>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Competenze</p>
+        <h2 class="section-title" id="t-competenze">Con cosa lavoro</h2>
+        <p class="section-intro">Il mio stack principale è quello che uso ogni giorno al lavoro: .NET, C# e Azure. Nei progetti indipendenti uso e sperimento tutto il resto.</p>
       </div>
 
-      <dl class="skills">
-        <div>
-          <dt>Backend</dt>
-          <dd>C#, ASP.NET Core, .NET Framework, Entity Framework, API REST, SignalR, Node.js, Hono, Express, Python, Flask, Java, Spring Boot</dd>
+      <div class="split">
+        <div class="spotlight">
+          <p class="eyebrow">Stack principale · in Dylog dal 2022</p>
+          <h3>.NET, C#, Entity Framework e Azure</h3>
+          <p>È il mio lavoro quotidiano: sviluppo e mantengo software gestionale in produzione, per contabilità e bilancio. È qui che ho più esperienza: API in ASP.NET Core, accesso ai dati con Entity Framework, architetture cloud su Azure e notifiche in tempo reale con SignalR, con Angular sul frontend.</p>
+          <ul class="stack-tags" role="list"><li>C#</li><li>.NET e .NET Framework</li><li>ASP.NET Core</li><li>Entity Framework</li><li>API REST</li><li>SignalR</li><li>Azure Storage</li><li>Azure SQL</li><li>Azure Service Bus</li><li>Angular</li><li>Keycloak</li></ul>
         </div>
+
         <div>
-          <dt>Frontend e mobile</dt>
-          <dd>Angular, React, TypeScript, JavaScript, Vite, HTML e CSS, Capacitor (iOS e Android), PWA</dd>
+          <p class="eyebrow skills-sub">Nei progetti indipendenti</p>
+          <dl class="skills">
+            <div>
+              <dt>Cloudflare <span class="skills-note">da autodidatta</span></dt>
+              <dd>Workers, D1, Static Assets, Cron Triggers, WAF e rate limiting. Ci girano <a href="progetti/vocablio.html">Vocablio</a> ed <a href="progetti/eko.html">Eko</a>.</dd>
+            </div>
+            <div>
+              <dt>Frontend e mobile</dt>
+              <dd>React, TypeScript, Vite, Capacitor (iOS e Android), PWA</dd>
+            </div>
+            <div>
+              <dt>Backend</dt>
+              <dd>Node.js, Hono, Express, Python, Flask, Java, Spring Boot</dd>
+            </div>
+            <div>
+              <dt>Dati e AI</dt>
+              <dd>SQLite, Elasticsearch, Kibana, Kafka, Spark, LangChain, Ollama</dd>
+            </div>
+            <div>
+              <dt>Altro</dt>
+              <dd>Docker, RabbitMQ, estensioni per Chrome, OpenSCAD, Arduino, Unity</dd>
+            </div>
+          </dl>
         </div>
-        <div>
-          <dt>Cloud e infrastruttura</dt>
-          <dd>Azure (Storage, SQL, Service Bus), Cloudflare, Docker, RabbitMQ, Keycloak, CI/CD</dd>
-        </div>
-        <div>
-          <dt>Dati e AI</dt>
-          <dd>SQL, SQLite e D1, Elasticsearch, Kibana, Kafka, Spark, LangChain, Ollama</dd>
-        </div>
-        <div>
-          <dt>Altro</dt>
-          <dd>Estensioni per Chrome, OpenSCAD, Arduino, Unity</dd>
-        </div>
-      </dl>
+      </div>
     </div>
   </section>
 
