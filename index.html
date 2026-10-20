@@ -1,129 +1,308 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>William Ragusa · Sviluppatore full stack, web e app iOS/Android</title>
-  <meta name="description" content="William Ragusa, sviluppatore full stack a Catania, laureato in Informatica all'Università di Catania. Siti, web app e app iOS e Android. .NET, Angular, React, Cloudflare.">
-  <meta name="theme-color" content="#03110D" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#ECEAE5" media="(prefers-color-scheme: light)">
-  <meta name="author" content="William Ragusa">
-  <link rel="canonical" href="https://rocketxx.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rocketxx.github.io/">
-  <meta property="og:site_name" content="William Ragusa">
-  <meta property="og:locale" content="it_IT">
-  <meta property="og:title" content="William Ragusa · Sviluppatore full stack">
-  <meta property="og:description" content="Siti, web app e app iOS e Android. Laureato in Informatica all'Università di Catania, sviluppatore in Dylog dal 2022.">
-  <meta property="og:image" content="https://rocketxx.github.io/og-image.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="William Ragusa, sviluppatore full stack">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="favicon.ico?v=2" sizes="any">
-  <link rel="icon" href="assets/img/favicon-32.png?v=2" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=2">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      William Ragusa · Sviluppatore full stack, web e app iOS/Android
+    </title>
+    <meta
+      name="description"
+      content="William Ragusa, sviluppatore full stack a Catania, laureato in Informatica all'Università di Catania. Siti, web app e app iOS e Android. .NET, Angular, React, Cloudflare." />
+    <meta
+      name="theme-color"
+      content="#03110D"
+      media="(prefers-color-scheme: dark)" />
+    <meta
+      name="theme-color"
+      content="#ECEAE5"
+      media="(prefers-color-scheme: light)" />
+    <meta name="author" content="William Ragusa" />
+    <link rel="canonical" href="https://rocketxx.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rocketxx.github.io/" />
+    <meta property="og:site_name" content="William Ragusa" />
+    <meta property="og:locale" content="it_IT" />
+    <meta
+      property="og:title"
+      content="William Ragusa · Sviluppatore full stack" />
+    <meta
+      property="og:description"
+      content="Siti, web app e app iOS e Android. Laureato in Informatica all'Università di Catania, sviluppatore in Dylog dal 2022." />
+    <meta
+      property="og:image"
+      content="https://rocketxx.github.io/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="William Ragusa, sviluppatore full stack" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.ico?v=2" sizes="any" />
+    <link
+      rel="icon"
+      href="assets/img/favicon-32.png?v=2"
+      type="image/png"
+      sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=2" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap"
+      rel="stylesheet" />
 
-  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
-  <link rel="stylesheet" href="assets/css/site.css">
+    <script>
+      document.documentElement.classList.add('js');
+      try {
+        var t = localStorage.getItem('theme');
+        if (t === 'light' || t === 'dark')
+          document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="assets/css/site.css" />
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "William Ragusa",
-    "alternateName": "rocketxx",
-    "url": "https://rocketxx.github.io/",
-    "jobTitle": "Sviluppatore software full stack",
-    "worksFor": { "@type": "Organization", "name": "Dylog Italia (Gruppo Dylog Buffetti)", "url": "https://www.dylog.it/" },
-    "email": "mailto:williamragusa@proton.me",
-    "address": { "@type": "PostalAddress", "addressLocality": "Catania", "addressCountry": "IT" },
-    "alumniOf": [
-      { "@type": "CollegeOrUniversity", "name": "Università degli Studi di Catania, Dipartimento di Matematica e Informatica", "url": "https://www.unict.it/" },
-      { "@type": "HighSchool", "name": "IIS Ramacca-Palagonia, Istituto Tecnico Industriale", "url": "https://www.iisramacca-palagonia.edu.it/" }
-    ],
-    "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Laurea in Informatica", "dateCreated": "2022-04-29" },
-    "knowsAbout": [".NET", "C#", "Angular", "React", "TypeScript", "Azure", "Cloudflare Workers", "Capacitor", "iOS", "Android", "Elasticsearch", "Kafka"],
-    "sameAs": [
-      "https://github.com/rocketxx",
-      "https://it.linkedin.com/in/william-ragusa-ab8671152"
-    ]
-  }
-  </script>
-</head>
-<body>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "William Ragusa",
+        "alternateName": "rocketxx",
+        "url": "https://rocketxx.github.io/",
+        "jobTitle": "Sviluppatore software full stack",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Dylog Italia (Gruppo Dylog Buffetti)",
+          "url": "https://www.dylog.it/"
+        },
+        "email": "mailto:williamragusa@proton.me",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Catania",
+          "addressCountry": "IT"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Università degli Studi di Catania, Dipartimento di Matematica e Informatica",
+            "url": "https://www.unict.it/"
+          },
+          {
+            "@type": "HighSchool",
+            "name": "IIS Ramacca-Palagonia, Istituto Tecnico Industriale",
+            "url": "https://www.iisramacca-palagonia.edu.it/"
+          }
+        ],
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "degree",
+          "name": "Laurea in Informatica",
+          "dateCreated": "2022-04-29"
+        },
+        "knowsAbout": [
+          ".NET",
+          "C#",
+          "Angular",
+          "React",
+          "TypeScript",
+          "Azure",
+          "Cloudflare Workers",
+          "Capacitor",
+          "iOS",
+          "Android",
+          "Elasticsearch",
+          "Kafka"
+        ],
+        "sameAs": [
+          "https://github.com/rocketxx",
+          "https://it.linkedin.com/in/william-ragusa-ab8671152"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Vai al contenuto</a>
 
-<a class="skip-link" href="#main">Vai al contenuto</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Principale">
+        <a href="#top" class="brand">
+          <img
+            class="brand-avatar"
+            src="assets/img/avatar.webp"
+            alt=""
+            width="36"
+            height="36" />
+          <span class="brand-text">
+            <b>rocketxx</b>
+            <span>William Ragusa</span>
+          </span>
+        </a>
+        <ul class="nav-list" id="nav-list" role="list">
+          <li><a href="#progetti">Progetti</a></li>
+          <li><a href="#servizi">Servizi</a></li>
+          <li><a href="#esperienza">Esperienza</a></li>
+          <li><a href="#competenze">Competenze</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+        </ul>
+        <div class="nav-tools">
+          <button class="icon-button theme-toggle" type="button" hidden>
+            <svg
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true">
+              <circle cx="10" cy="10" r="7" />
+              <path d="M10 3a7 7 0 0 0 0 14z" fill="currentColor" />
+            </svg>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-list">
+            Menu
+          </button>
+        </div>
+      </nav>
+    </header>
 
-<header class="site-header">
-  <nav class="nav wrap" aria-label="Principale">
-    <a href="#top" class="brand"><img class="brand-avatar" src="assets/img/avatar.webp" alt="" width="36" height="36"><span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span></a>
-    <ul class="nav-list" id="nav-list" role="list">
-      <li><a href="#progetti">Progetti</a></li>
-      <li><a href="#servizi">Servizi</a></li>
-      <li><a href="#esperienza">Esperienza</a></li>
-      <li><a href="#competenze">Competenze</a></li>
-      <li><a href="#contatti">Contatti</a></li>
-    </ul>
-    <div class="nav-tools">
-      <button class="icon-button theme-toggle" type="button" hidden><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 3a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
-    </div>
-  </nav>
-</header>
+    <main id="main">
+      <div class="wrap hero" id="top">
+        <div class="hero-main">
+          <h1>
+            William
+            <em>Ragusa</em>
+          </h1>
+          <p class="hero-role">
+            Sviluppatore full stack · siti, web app e app iOS e Android
+          </p>
+          <p class="hero-lead">
+            Dal 2022 sviluppo software gestionale in Dylog, con .NET, Azure e
+            Angular. In parallelo creo prodotti miei e siti per clienti,
+            dall’idea alla pubblicazione.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#contatti">
+              Hai un progetto? Scrivimi
+              <svg
+                class="chev"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+                focusable="false">
+                <path
+                  d="M6 3.5 10.5 8 6 12.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a class="btn btn-ghost" href="#esperienza">
+              Sei un recruiter? Il mio percorso
+            </a>
+          </div>
+          <p class="degree">
+            <img
+              class="unict-logo"
+              src="assets/img/unict.svg"
+              alt="Università di Catania"
+              width="120"
+              height="42" />
+            <span>
+              <strong>Laurea in Informatica</strong>
+              , 2022
+              <br />
+              <a href="https://www.dmi.unict.it/">
+                Dipartimento di Matematica e Informatica
+              </a>
+              ,
+              <a href="https://www.unict.it/">Università di Catania</a>
+            </span>
+          </p>
+        </div>
 
-<main id="main">
-
-  <div class="wrap hero" id="top">
-    <div class="hero-main">
-      <h1>William <em>Ragusa</em></h1>
-      <p class="hero-role">Sviluppatore full stack · siti, web app e app iOS e Android</p>
-      <p class="hero-lead">Dal 2022 sviluppo software gestionale in Dylog, con .NET, Azure e Angular. In parallelo creo prodotti miei e siti per clienti, dall’idea alla pubblicazione.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#contatti">Hai un progetto? Scrivimi<svg class="chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="btn btn-ghost" href="#esperienza">Sei un recruiter? Il mio percorso</a>
+        <aside class="now" aria-labelledby="now-title">
+          <p class="now-title eyebrow" id="now-title">
+            <span class="pulse" aria-hidden="true"></span>
+            In arrivo su iOS e Android
+          </p>
+          <ul role="list">
+            <li>
+              <a href="progetti/eko.html">
+                <img
+                  src="assets/img/progetti/eko/home.webp"
+                  alt=""
+                  width="44"
+                  height="44" />
+                <span>
+                  <b>Eko</b>
+                  <span>
+                    Raccolta differenziata, promemoria e «dove lo butto?»
+                  </span>
+                </span>
+                <svg
+                  class="chev arrow"
+                  viewBox="0 0 16 16"
+                  aria-hidden="true"
+                  focusable="false">
+                  <path
+                    d="M6 3.5 10.5 8 6 12.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="progetti/vocablio.html">
+                <img
+                  src="assets/img/progetti/vocablio/demo-poster.webp"
+                  alt=""
+                  width="44"
+                  height="44" />
+                <span>
+                  <b>Vocablio</b>
+                  <span>Impari l’inglese leggendo libri veri</span>
+                </span>
+                <svg
+                  class="chev arrow"
+                  viewBox="0 0 16 16"
+                  aria-hidden="true"
+                  focusable="false">
+                  <path
+                    d="M6 3.5 10.5 8 6 12.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </aside>
       </div>
-      <p class="degree">
-        <img class="unict-logo" src="assets/img/unict.svg" alt="Università di Catania" width="120" height="42">
-        <span><strong>Laurea in Informatica</strong>, 2022<br><a href="https://www.dmi.unict.it/">Dipartimento di Matematica e Informatica</a>, <a href="https://www.unict.it/">Università di Catania</a></span>
-      </p>
-    </div>
 
-    <aside class="now" aria-labelledby="now-title">
-      <p class="now-title eyebrow" id="now-title"><span class="pulse" aria-hidden="true"></span>In arrivo su iOS e Android</p>
-      <ul role="list">
-        <li>
-          <a href="progetti/eko.html">
-            <img src="assets/img/progetti/eko/home.webp" alt="" width="44" height="44">
-            <span><b>Eko</b><span>Raccolta differenziata, promemoria e «dove lo butto?»</span></span>
-            <svg class="chev arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </li>
-        <li>
-          <a href="progetti/vocablio.html">
-            <img src="assets/img/progetti/vocablio/demo-poster.webp" alt="" width="44" height="44">
-            <span><b>Vocablio</b><span>Impari l’inglese leggendo libri veri</span></span>
-            <svg class="chev arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-        </li>
-      </ul>
-    </aside>
-  </div>
+      <section class="section" id="progetti" aria-labelledby="t-progetti">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Progetti</p>
+            <h2 class="section-title" id="t-progetti">
+              Alcune delle che ho costruito
+            </h2>
+            <p class="section-intro">
+              App mie, siti per clienti, strumenti che uso ogni giorno e i
+              progetti dell’università. Apri un progetto per vedere come
+              funziona e con quali tecnologie l’ho fatto.
+            </p>
+          </div>
 
-  <section class="section" id="progetti" aria-labelledby="t-progetti">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Progetti</p>
-        <h2 class="section-title" id="t-progetti">Cose che ho costruito</h2>
-        <p class="section-intro">App mie, siti per clienti, strumenti che uso ogni giorno e i progetti dell’università. Apri un progetto per vedere come funziona e con quali tecnologie l’ho fatto.</p>
-      </div>
-
-        <!-- GALLERY:START (generata) -->
+          <!-- GALLERY:START (generata) -->
         <div class="filters" role="group" aria-label="Filtra i progetti" hidden>
           <button type="button" class="chip" data-filter="all" aria-pressed="true">Tutti</button>
           <button type="button" class="chip" data-filter="app" aria-pressed="false">App e prodotti</button>
@@ -205,10 +384,7 @@
             </div>
           </li>
           <li class="card" data-tags="app">
-            <div class="card-media"><div class="cover" aria-hidden="true"><span class="cover-mono">Nome        Categoria   Rating
-Trattoria…  Ristorante  4.6
-Farmacia…   Farmacia    4.8
-Bar…        Bar         4.3</span><span class="cover-name">Maps Scraper</span></div></div>
+            <div class="card-media"><img src="assets/img/progetti/maps-scraper/cover.webp" alt="" loading="lazy" width="1200" height="750"></div>
             <div class="card-body">
               <p class="card-kind">Estensione per Chrome</p>
               <h3><a href="progetti/maps-scraper.html">Maps Scraper</a></h3>
@@ -228,9 +404,7 @@ Bar…        Bar         4.3</span><span class="cover-name">Maps Scraper</span>
             </div>
           </li>
           <li class="card" data-tags="oss ai uni">
-            <div class="card-media"><div class="cover" aria-hidden="true"><span class="cover-mono">{&quot;title&quot;: &quot;…&quot;, &quot;source&quot;: &quot;bbc-news&quot;,
- &quot;sentiment&quot;: &quot;positive&quot;,
- &quot;score&quot;: 0.82}</span><span class="cover-name">SentimenTitle</span></div></div>
+            <div class="card-media"><img src="assets/img/progetti/sentimentitle/cover.webp" alt="" loading="lazy" width="1200" height="750"></div>
             <div class="card-body">
               <p class="card-kind">Progetto universitario</p>
               <h3><a href="progetti/sentimentitle.html">SentimenTitle</a></h3>
@@ -240,10 +414,7 @@ Bar…        Bar         4.3</span><span class="cover-name">Maps Scraper</span>
             </div>
           </li>
           <li class="card" data-tags="oss uni">
-            <div class="card-media"><div class="cover" aria-hidden="true"><span class="cover-mono">void Update() {
-  var h = Input.GetAxis(&quot;Horizontal&quot;);
-  transform.Translate(h * speed * Time.deltaTime, 0, 0);
-}</span><span class="cover-name">Unity 3D</span></div></div>
+            <div class="card-media"><img src="assets/img/progetti/gioco-unity/cover.webp" alt="" loading="lazy" width="1200" height="750"></div>
             <div class="card-body">
               <p class="card-kind">Progetto universitario</p>
               <h3><a href="progetti/gioco-unity.html">Gioco in Unity 3D</a></h3>
@@ -255,214 +426,435 @@ Bar…        Bar         4.3</span><span class="cover-name">Maps Scraper</span>
         </ul>
         <!-- GALLERY:END -->
 
-      <div class="gallery-note">
-        <p><strong>Open source o codice privato?</strong> Alcuni progetti sono open source e il codice è su GitHub. Altri sono prodotti miei o lavori per clienti, quindi il codice resta privato: nella pagina di ogni progetto trovi comunque com’è fatto, lo stack e le scelte tecniche.</p>
-        <p>Altri esperimenti, come un sistema di code ordini con <a href="https://github.com/rocketxx/queue">Spring Boot e RabbitMQ</a>, sono su <a href="https://github.com/rocketxx">github.com/rocketxx</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="servizi" aria-labelledby="t-servizi">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Lavoriamo insieme</p>
-        <h2 class="section-title" id="t-servizi">Cosa posso fare per te</h2>
-        <p class="section-intro">Se hai un’attività, un’associazione o un’idea, posso seguire il progetto dall’inizio alla pubblicazione, e anche dopo.</p>
-      </div>
-
-      <ul class="services" role="list">
-        <li class="service">
-          <p class="service-num">01</p>
-          <h3>Siti web</h3>
-          <p>Siti veloci, curati e facili da aggiornare, per attività, professionisti e associazioni.</p>
-          <p class="examples">Per esempio: <a href="progetti/maris-onlus.html">MARIS Onlus</a>, <a href="progetti/freddo-pregiato.html">Freddo Pregiato</a></p>
-        </li>
-        <li class="service">
-          <p class="service-num">02</p>
-          <h3>Web app e PWA</h3>
-          <p>Gestionali, cataloghi, prenotazioni e dashboard. Si installano come app e funzionano anche offline.</p>
-          <p class="examples">Per esempio: <a href="progetti/eko.html">Eko</a>, <a href="progetti/mdreader.html">mdreader</a></p>
-        </li>
-        <li class="service">
-          <p class="service-num">03</p>
-          <h3>App iOS e Android</h3>
-          <p>Una sola base di codice per web, iPhone e Android, con notifiche, widget e pubblicazione sugli store.</p>
-          <p class="examples">Per esempio: <a href="progetti/eko.html">Eko</a>, <a href="progetti/vocablio.html">Vocablio</a></p>
-        </li>
-        <li class="service">
-          <p class="service-num">04</p>
-          <h3>Automazioni su misura</h3>
-          <p>Estensioni per il browser, raccolta e migrazione di dati, integrazioni con API e assistenti AI.</p>
-          <p class="examples">Per esempio: <a href="progetti/maps-scraper.html">Maps Scraper</a>, <a href="progetti/fern.html">Fern</a></p>
-        </li>
-      </ul>
-
-      <ol class="process" role="list">
-        <li>
-          <h3>Ascolto</h3>
-          <p>Capiamo insieme cosa ti serve davvero, senza gergo tecnico.</p>
-        </li>
-        <li>
-          <h3>Sviluppo</h3>
-          <p>Lavoro per versioni intermedie, che puoi provare man mano, non solo alla fine.</p>
-        </li>
-        <li>
-          <h3>Online, e dopo</h3>
-          <p>Pubblicazione, dominio e hosting a costi contenuti, spesso nel piano gratuito di Cloudflare. Poi manutenzione.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section" id="esperienza" aria-labelledby="t-esperienza">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Per i recruiter</p>
-        <h2 class="section-title" id="t-esperienza">Esperienza e formazione</h2>
-      </div>
-
-      <ol class="timeline" role="list">
-        <li>
-          <p class="when">Dal <time datetime="2022-05-02">2 maggio 2022</time></p>
-          <div>
-            <h3 class="role">.NET Software Developer</h3>
-            <p class="org"><a href="https://www.dylog.it/">Dylog Italia</a>, Gruppo Dylog Buffetti. Software gestionali per imprese, professionisti e organizzazioni.</p>
-            <p class="desc">Ho lavorato in due team, su contabilità e bilancio. Sviluppo nuove funzionalità su .NET e Azure e curo la manutenzione dei moduli esistenti, anche di quelli che ho realizzato io. Tra i lavori principali: una gestione documentale su Azure Storage, le notifiche in tempo reale con Angular e SignalR, l’integrazione con le API di InfoCamere, l’autenticazione multi-tenant con Keycloak ed estensioni del browser basate sull’AI.</p>
-            <ul class="stack-tags" role="list"><li>C#</li><li>ASP.NET</li><li>Azure Storage</li><li>Azure Service Bus</li><li>Angular</li><li>SignalR</li><li>Keycloak</li></ul>
+          <div class="gallery-note">
+            <p>
+              <strong>Open source o codice privato?</strong>
+              Alcuni progetti sono open source e il codice è su GitHub. Altri
+              sono prodotti miei o lavori per clienti, quindi il codice resta
+              privato: nella pagina di ogni progetto trovi comunque com’è fatto,
+              lo stack e le scelte tecniche.
+            </p>
+            <p>
+              Altri esperimenti, come un sistema di code ordini con
+              <a href="https://github.com/rocketxx/queue">
+                Spring Boot e RabbitMQ
+              </a>
+              , sono su
+              <a href="https://github.com/rocketxx">github.com/rocketxx</a>
+              .
+            </p>
           </div>
-        </li>
-        <li>
-          <p class="when">In parallelo</p>
-          <div>
-            <h3 class="role">Progetti indipendenti e clienti</h3>
-            <p class="org"><a href="progetti/eko.html">Eko</a>, <a href="progetti/vocablio.html">Vocablio</a>, <a href="progetti/maris-onlus.html">MARIS Onlus</a>, <a href="progetti/freddo-pregiato.html">Freddo Pregiato</a></p>
-            <p class="desc">Ideo, sviluppo e pubblico applicazioni in autonomia, dal design al backend. Eko e Vocablio arriveranno presto su iOS e Android e girano su Cloudflare, che ho imparato da autodidatta. Per i clienti realizzo siti e cataloghi online, dalla raccolta dei requisiti alla messa in produzione.</p>
-            <ul class="stack-tags" role="list"><li>React</li><li>Capacitor</li><li>Cloudflare Workers</li><li>D1</li><li>Hono</li></ul>
+        </div>
+      </section>
+
+      <section class="section" id="servizi" aria-labelledby="t-servizi">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Lavoriamo insieme</p>
+            <h2 class="section-title" id="t-servizi">Cosa posso fare per te</h2>
+            <p class="section-intro">
+              Se hai un’attività, un’associazione o un’idea, posso seguire il
+              progetto dall’inizio alla pubblicazione, e anche dopo.
+            </p>
           </div>
-        </li>
-        <li>
-          <p class="when"><time datetime="2022-04-29">29 aprile 2022</time></p>
-          <div>
-            <img class="unict-logo edu-logo" src="assets/img/unict.svg" alt="Università di Catania" width="120" height="42">
-            <h3 class="role">Laurea in Informatica</h3>
-            <p class="org"><a href="https://www.dmi.unict.it/">Dipartimento di Matematica e Informatica</a>, <a href="https://www.unict.it/">Università di Catania</a></p>
-            <p class="desc">Tesi: <a href="progetti/biodata.html">BioData</a>, un sistema di stream processing per proteggere le colture con i sensori agricoli, sviluppato insieme ad AgrosNote: Node.js, Elasticsearch, dashboard e allarmi su Kibana, tutto in Docker. Durante il percorso ho lavorato anche all’analisi del sentiment in streaming con Kafka e Spark (<a href="progetti/sentimentitle.html">SentimenTitle</a>) e a un <a href="progetti/gioco-unity.html">gioco 3D in Unity</a>.</p>
-            <ul class="stack-tags" role="list"><li>C#</li><li>C++</li><li>C</li><li>Java</li><li>Node.js</li><li>Kafka</li><li>Spark</li><li>Elasticsearch</li><li>Docker</li></ul>
+
+          <ul class="services" role="list">
+            <li class="service">
+              <p class="service-num">01</p>
+              <h3>Siti web</h3>
+              <p>
+                Siti veloci, curati e facili da aggiornare, per attività,
+                professionisti e associazioni.
+              </p>
+              <p class="examples">
+                Per esempio:
+                <a href="progetti/maris-onlus.html">MARIS Onlus</a>
+                ,
+                <a href="progetti/freddo-pregiato.html">Freddo Pregiato</a>
+              </p>
+            </li>
+            <li class="service">
+              <p class="service-num">02</p>
+              <h3>Web app e PWA</h3>
+              <p>
+                Gestionali, cataloghi, prenotazioni e dashboard. Si installano
+                come app e funzionano anche offline.
+              </p>
+              <p class="examples">
+                Per esempio:
+                <a href="progetti/eko.html">Eko</a>
+                ,
+                <a href="progetti/mdreader.html">mdreader</a>
+              </p>
+            </li>
+            <li class="service">
+              <p class="service-num">03</p>
+              <h3>App iOS e Android</h3>
+              <p>
+                Una sola base di codice per web, iPhone e Android, con
+                notifiche, widget e pubblicazione sugli store.
+              </p>
+              <p class="examples">
+                Per esempio:
+                <a href="progetti/eko.html">Eko</a>
+                ,
+                <a href="progetti/vocablio.html">Vocablio</a>
+              </p>
+            </li>
+            <li class="service">
+              <p class="service-num">04</p>
+              <h3>Automazioni su misura</h3>
+              <p>
+                Estensioni per il browser, raccolta e migrazione di dati,
+                integrazioni con API e assistenti AI.
+              </p>
+              <p class="examples">
+                Per esempio:
+                <a href="progetti/maps-scraper.html">Maps Scraper</a>
+                ,
+                <a href="progetti/fern.html">Fern</a>
+              </p>
+            </li>
+          </ul>
+
+          <ol class="process" role="list">
+            <li>
+              <h3>Ascolto</h3>
+              <p>Capiamo insieme cosa ti serve davvero, senza gergo tecnico.</p>
+            </li>
+            <li>
+              <h3>Sviluppo</h3>
+              <p>
+                Lavoro per versioni intermedie, che puoi provare man mano, non
+                solo alla fine.
+              </p>
+            </li>
+            <li>
+              <h3>Online, e dopo</h3>
+              <p>
+                Pubblicazione, dominio e hosting a costi contenuti, spesso nel
+                piano gratuito di Cloudflare. Poi manutenzione.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="esperienza" aria-labelledby="t-esperienza">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Per i recruiter</p>
+            <h2 class="section-title" id="t-esperienza">
+              Esperienza e formazione
+            </h2>
           </div>
-        </li>
-        <li>
-          <p class="when">Prima</p>
-          <div>
-            <h3 class="role">Diploma all’Istituto Tecnico Industriale (ITI)</h3>
-            <p class="org"><a href="https://www.iisramacca-palagonia.edu.it/">IIS Ramacca-Palagonia</a></p>
+
+          <ol class="timeline" role="list">
+            <li>
+              <p class="when">
+                Dal
+                <time datetime="2022-05-02">2 maggio 2022</time>
+              </p>
+              <div>
+                <h3 class="role">.NET Software Developer</h3>
+                <p class="org">
+                  <a href="https://www.dylog.it/">Dylog Italia</a>
+                  , Gruppo Dylog Buffetti. Software gestionali per imprese,
+                  professionisti e organizzazioni.
+                </p>
+                <p class="desc">
+                  Ho lavorato in due team, su contabilità e bilancio. Sviluppo
+                  nuove funzionalità su .NET e Azure e curo la manutenzione dei
+                  moduli esistenti, anche di quelli che ho realizzato io. Tra i
+                  lavori principali: una gestione documentale su Azure Storage,
+                  le notifiche in tempo reale con Angular e SignalR,
+                  l’integrazione con le API di InfoCamere, l’autenticazione
+                  multi-tenant con Keycloak ed estensioni del browser basate
+                  sull’AI.
+                </p>
+                <ul class="stack-tags" role="list">
+                  <li>C#</li>
+                  <li>ASP.NET</li>
+                  <li>Azure Storage</li>
+                  <li>Azure Service Bus</li>
+                  <li>Angular</li>
+                  <li>SignalR</li>
+                  <li>Keycloak</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <p class="when">In parallelo</p>
+              <div>
+                <h3 class="role">Progetti indipendenti e clienti</h3>
+                <p class="org">
+                  <a href="progetti/eko.html">Eko</a>
+                  ,
+                  <a href="progetti/vocablio.html">Vocablio</a>
+                  ,
+                  <a href="progetti/maris-onlus.html">MARIS Onlus</a>
+                  ,
+                  <a href="progetti/freddo-pregiato.html">Freddo Pregiato</a>
+                </p>
+                <p class="desc">
+                  Ideo, sviluppo e pubblico applicazioni in autonomia, dal
+                  design al backend. Eko e Vocablio arriveranno presto su iOS e
+                  Android e girano su Cloudflare, che ho imparato da
+                  autodidatta. Nel tempo libero realizzo prodotti per clienti,
+                  dalla raccolta dei requisiti alla messa in produzione.
+                </p>
+                <ul class="stack-tags" role="list">
+                  <li>React</li>
+                  <li>Capacitor</li>
+                  <li>Cloudflare Workers</li>
+                  <li>D1</li>
+                  <li>Hono</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <p class="when">
+                <time datetime="2022-04-29">29 aprile 2022</time>
+              </p>
+              <div>
+                <img
+                  class="unict-logo edu-logo"
+                  src="assets/img/unict.svg"
+                  alt="Università di Catania"
+                  width="120"
+                  height="42" />
+                <h3 class="role">Laurea in Informatica</h3>
+                <p class="org">
+                  <a href="https://www.dmi.unict.it/">
+                    Dipartimento di Matematica e Informatica
+                  </a>
+                  ,
+                  <a href="https://www.unict.it/">Università di Catania</a>
+                </p>
+                <p class="desc">
+                  Tesi:
+                  <a href="progetti/biodata.html">BioData</a>
+                  , un sistema di stream processing per proteggere le colture
+                  con i sensori agricoli, sviluppato insieme ad AgrosNote:
+                  Node.js, Elasticsearch, dashboard e allarmi su Kibana, tutto
+                  in Docker. Durante il percorso ho lavorato anche all’analisi
+                  del sentiment in streaming con Kafka e Spark (
+                  <a href="progetti/sentimentitle.html">SentimenTitle</a>
+                  ) e a un
+                  <a href="progetti/gioco-unity.html">gioco 3D in Unity</a>
+                  .
+                </p>
+                <ul class="stack-tags" role="list">
+                  <li>C#</li>
+                  <li>C++</li>
+                  <li>C</li>
+                  <li>Java</li>
+                  <li>Node.js</li>
+                  <li>Kafka</li>
+                  <li>Spark</li>
+                  <li>Elasticsearch</li>
+                  <li>Docker</li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <p class="when">Prima</p>
+              <div>
+                <h3 class="role">
+                  Diploma all’Istituto Tecnico Industriale (ITI)
+                </h3>
+                <p class="org">
+                  <a href="https://www.iisramacca-palagonia.edu.it/">
+                    IIS Ramacca-Palagonia
+                  </a>
+                </p>
+              </div>
+            </li>
+          </ol>
+
+          <aside class="funfact" aria-label="Curiosità">
+            <p class="funfact-days">
+              3
+              <small>giorni</small>
+            </p>
+            <p>
+              <span class="eyebrow">Fun fact</span>
+              Mi sono laureato il 29 aprile 2022. Il 2 maggio ero già al lavoro
+              in Dylog.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="competenze" aria-labelledby="t-competenze">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Competenze</p>
+            <h2 class="section-title" id="t-competenze">Con cosa lavoro</h2>
+            <p class="section-intro">
+              Il mio stack principale è quello che uso ogni giorno al lavoro:
+              .NET, C# e Azure. Nei progetti indipendenti uso e sperimento tutto
+              il resto.
+            </p>
           </div>
-        </li>
-      </ol>
 
-      <aside class="funfact" aria-label="Curiosità">
-        <p class="funfact-days">3<small>giorni</small></p>
-        <p><span class="eyebrow">Fun fact</span>Mi sono laureato il 29 aprile 2022. Il 2 maggio ero già al lavoro in Dylog.</p>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section" id="competenze" aria-labelledby="t-competenze">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Competenze</p>
-        <h2 class="section-title" id="t-competenze">Con cosa lavoro</h2>
-        <p class="section-intro">Il mio stack principale è quello che uso ogni giorno al lavoro: .NET, C# e Azure. Nei progetti indipendenti uso e sperimento tutto il resto.</p>
-      </div>
-
-      <div class="split">
-        <div class="spotlight">
-          <p class="eyebrow">Stack principale · in Dylog dal 2022</p>
-          <h3>.NET, C#, Entity Framework e Azure</h3>
-          <p>È il mio lavoro quotidiano: sviluppo e mantengo software gestionale in produzione, per contabilità e bilancio. È qui che ho più esperienza: API in ASP.NET Core, accesso ai dati con Entity Framework, architetture cloud su Azure e notifiche in tempo reale con SignalR, con Angular sul frontend.</p>
-          <ul class="stack-tags" role="list"><li>C#</li><li>.NET e .NET Framework</li><li>ASP.NET Core</li><li>Entity Framework</li><li>API REST</li><li>SignalR</li><li>Azure Storage</li><li>Azure SQL</li><li>Azure Service Bus</li><li>Angular</li><li>Keycloak</li></ul>
-        </div>
-
-        <div>
-          <p class="eyebrow skills-sub">Nei progetti indipendenti</p>
-          <dl class="skills">
-            <div>
-              <dt>Cloudflare <span class="skills-note">da autodidatta</span></dt>
-              <dd>Workers, D1, Static Assets, Cron Triggers, WAF e rate limiting. Ci girano <a href="progetti/vocablio.html">Vocablio</a> ed <a href="progetti/eko.html">Eko</a>.</dd>
+          <div class="split">
+            <div class="spotlight">
+              <p class="eyebrow">Stack principale · in Dylog dal 2022</p>
+              <h3>.NET, C#, Entity Framework e Azure</h3>
+              <p>
+                È il mio lavoro quotidiano: sviluppo e mantengo software
+                gestionale in produzione, per contabilità e bilancio. È qui che
+                ho più esperienza: API in ASP.NET Core, accesso ai dati con
+                Entity Framework, architetture cloud su Azure e notifiche in
+                tempo reale con SignalR, con Angular sul frontend.
+              </p>
+              <ul class="stack-tags" role="list">
+                <li>C#</li>
+                <li>.NET e .NET Framework</li>
+                <li>ASP.NET Core</li>
+                <li>Entity Framework</li>
+                <li>API REST</li>
+                <li>SignalR</li>
+                <li>Azure Storage</li>
+                <li>Azure SQL</li>
+                <li>Azure Service Bus</li>
+                <li>Angular</li>
+                <li>Keycloak</li>
+              </ul>
             </div>
+
             <div>
-              <dt>Frontend e mobile</dt>
-              <dd>React, TypeScript, Vite, Capacitor (iOS e Android), PWA</dd>
+              <p class="eyebrow skills-sub">Nei progetti indipendenti</p>
+              <dl class="skills">
+                <div>
+                  <dt>
+                    Cloudflare
+                    <span class="skills-note">da autodidatta</span>
+                  </dt>
+                  <dd>
+                    Workers, D1, Static Assets, Cron Triggers, WAF e rate
+                    limiting. Ci girano
+                    <a href="progetti/vocablio.html">Vocablio</a>
+                    ed
+                    <a href="progetti/eko.html">Eko</a>
+                    .
+                  </dd>
+                </div>
+                <div>
+                  <dt>Frontend e mobile</dt>
+                  <dd>
+                    React, TypeScript, Vite, Capacitor (iOS e Android), PWA
+                  </dd>
+                </div>
+                <div>
+                  <dt>Backend</dt>
+                  <dd>
+                    Node.js, Hono, Express, Python, Flask, Java, Spring Boot
+                  </dd>
+                </div>
+                <div>
+                  <dt>Dati e AI</dt>
+                  <dd>
+                    SQLite, Elasticsearch, Kibana, Kafka, Spark, LangChain,
+                    Ollama
+                  </dd>
+                </div>
+                <div>
+                  <dt>Altro</dt>
+                  <dd>
+                    Docker, RabbitMQ, estensioni per Chrome, OpenSCAD, Arduino,
+                    Unity
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <div>
-              <dt>Backend</dt>
-              <dd>Node.js, Hono, Express, Python, Flask, Java, Spring Boot</dd>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section"
+        id="tempo-libero"
+        aria-labelledby="t-tempo-libero">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Fuori dal codice</p>
+            <h2 class="section-title" id="t-tempo-libero">
+              Quando spengo il computer
+            </h2>
+          </div>
+          <div class="pastimes">
+            <div class="pastime">
+              <h3>Stampa 3D</h3>
+              <p>
+                Mi diverto a progettare e stampare pezzi, senza essere un
+                esperto. Da qui è nato
+                <a href="progetti/signforge.html">SignForge</a>
+                .
+              </p>
             </div>
-            <div>
-              <dt>Dati e AI</dt>
-              <dd>SQLite, Elasticsearch, Kibana, Kafka, Spark, LangChain, Ollama</dd>
+            <div class="pastime">
+              <h3>Arduino ed elettronica</h3>
+              <p>Costruisco circuiti, piccoli robot e droni.</p>
             </div>
-            <div>
-              <dt>Altro</dt>
-              <dd>Docker, RabbitMQ, estensioni per Chrome, OpenSCAD, Arduino, Unity</dd>
+            <div class="pastime">
+              <h3>Volontariato con Damuni Versu</h3>
+              <p>
+                Un’associazione di promozione sociale di Ramacca (CT):
+                solidarietà, cultura ed eventi per la comunità.
+              </p>
             </div>
-          </dl>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section contact"
+        id="contatti"
+        aria-labelledby="t-contatti">
+        <div class="wrap">
+          <p class="eyebrow" style="color: #c9ad86">Contatti</p>
+          <h2 class="sr-only" id="t-contatti">Contatti</h2>
+          <p class="contact-lead" style="margin-top: 0.75rem">
+            Hai un progetto o una posizione aperta? Scrivimi.
+          </p>
+          <p class="contact-sub">
+            Per un preventivo raccontami in poche righe cosa ti serve: ti dirò
+            come lo farei, in quanto tempo e con quale costo.
+          </p>
+          <div class="email-row">
+            <a class="email" href="mailto:williamragusa@proton.me">
+              williamragusa@proton.me
+            </a>
+            <button
+              type="button"
+              class="copy"
+              data-copy="williamragusa@proton.me"
+              hidden>
+              Copia indirizzo
+            </button>
+            <span class="sr-only" role="status" id="copy-status"></span>
+          </div>
+          <p class="contact-links">
+            <a href="https://it.linkedin.com/in/william-ragusa-ab8671152">
+              LinkedIn
+            </a>
+            <a href="https://github.com/rocketxx">GitHub</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="inner">
+          <p>© 2026 William Ragusa</p>
+          <p>Catania, Sicilia</p>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <section class="section" id="tempo-libero" aria-labelledby="t-tempo-libero">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Fuori dal codice</p>
-        <h2 class="section-title" id="t-tempo-libero">Quando spengo il computer</h2>
-      </div>
-      <div class="pastimes">
-        <div class="pastime">
-          <h3>Stampa 3D</h3>
-          <p>Mi diverto a progettare e stampare pezzi, senza essere un esperto. Da qui è nato <a href="progetti/signforge.html">SignForge</a>.</p>
-        </div>
-        <div class="pastime">
-          <h3>Arduino ed elettronica</h3>
-          <p>Costruisco circuiti, piccoli robot e droni.</p>
-        </div>
-        <div class="pastime">
-          <h3>Volontariato con Damuni Versu</h3>
-          <p>Un’associazione di promozione sociale di Ramacca (CT): solidarietà, cultura ed eventi per la comunità.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section contact" id="contatti" aria-labelledby="t-contatti">
-    <div class="wrap">
-      <p class="eyebrow" style="color:#C9AD86">Contatti</p>
-      <h2 class="sr-only" id="t-contatti">Contatti</h2>
-      <p class="contact-lead" style="margin-top:.75rem">Hai un progetto o una posizione aperta? Scrivimi.</p>
-      <p class="contact-sub">Per un preventivo raccontami in poche righe cosa ti serve: ti dirò come lo farei, in quanto tempo e con quale costo.</p>
-      <div class="email-row">
-        <a class="email" href="mailto:williamragusa@proton.me">williamragusa@proton.me</a>
-        <button type="button" class="copy" data-copy="williamragusa@proton.me" hidden>Copia indirizzo</button>
-        <span class="sr-only" role="status" id="copy-status"></span>
-      </div>
-      <p class="contact-links">
-        <a href="https://it.linkedin.com/in/william-ragusa-ab8671152">LinkedIn</a>
-        <a href="https://github.com/rocketxx">GitHub</a>
-      </p>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="inner">
-      <p>© 2026 William Ragusa</p>
-      <p>Catania, Sicilia</p>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/js/site.js" defer></script>
-</body>
+    <script src="assets/js/site.js" defer></script>
+  </body>
 </html>

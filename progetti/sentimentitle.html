@@ -63,6 +63,12 @@
       
     </header>
 
+      <div class="media">
+        <figure>
+          <div class="shot shot-logo"><img src="../assets/img/progetti/sentimentitle/cover.webp" width="1200" height="750" alt="Tre titoli stilizzati etichettati come positivo, neutro e negativo, sopra la pipeline Kafka, Spark, Elasticsearch." loading="eager"></div>
+          <figcaption>Ogni titolo passa da Kafka a Spark, viene classificato e finisce in Elasticsearch.</figcaption>
+        </figure>
+      </div>
     <div class="project-body">
       <div>
         <section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>I titoli arrivano da NewsAPI e passano da Logstash e Kafka a Spark Streaming. Un modello semplice, Word2Vec con regressione logistica in Spark MLlib, addestrato sul dataset pubblico Sentiment140, classifica ogni titolo come positivo, neutro o negativo. I risultati finiscono in Elasticsearch e in una dashboard Kibana.</p><p>Progetto universitario, Università di Catania.</p></div></section>
