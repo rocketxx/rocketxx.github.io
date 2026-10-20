@@ -93,21 +93,6 @@
     });
   }
 
-  /* Embed caricati solo al clic (niente cookie di terze parti prima) */
-  document.querySelectorAll('[data-embed]').forEach(box => {
-    const load = box.querySelector('.embed-load');
-    load?.addEventListener('click', e => {
-      e.preventDefault();
-      const frame = document.createElement('iframe');
-      frame.src = box.dataset.embed;
-      frame.title = box.dataset.title || '';
-      frame.allowFullscreen = true;
-      box.style.background = '#fff';
-      box.replaceChildren(frame);
-      frame.focus();
-    });
-  });
-
   /* Lightbox per gli screenshot */
   const shots = document.querySelectorAll('a.shot');
   if (shots.length && 'HTMLDialogElement' in window) {
