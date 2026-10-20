@@ -282,8 +282,6 @@ a {
   font: .875rem/1.5 var(--sans);
   color: var(--muted);
 }
-.degree img,
-.degree svg { width: 3.6rem; height: auto; flex: none; color: var(--text); opacity: .9; }
 .degree strong { color: var(--text); font-weight: 500; }
 .degree a { color: inherit; }
 
@@ -806,15 +804,8 @@ a {
   tab-size: 4;
 }
 
-/* Logo UniCT: maschera SVG colorata con currentColor, così segue il tema */
-.unict-logo {
-  display: inline-block;
-  flex: none;
-  width: 7.5rem;
-  aspect-ratio: 940 / 330;
-  background-color: currentColor;
-  -webkit-mask: url("../img/unict.svg") center / contain no-repeat;
-  mask: url("../img/unict.svg") center / contain no-repeat;
-}
-.degree .unict-logo { color: var(--text); opacity: .9; }
-.edu-logo { display: block; width: 6.5rem; margin-bottom: .75rem; color: var(--text); opacity: .85; }
+/* Logo UniCT: SVG chiaro, invertito nel tema chiaro (le maschere CSS non funzionano da file://) */
+.unict-logo { display: block; flex: none; width: 7.5rem; height: auto; aspect-ratio: 940 / 330; opacity: .9; }
+.edu-logo { width: 6.5rem; margin-bottom: .75rem; opacity: .85; }
+:root[data-theme="light"] .unict-logo { filter: invert(1); }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .unict-logo { filter: invert(1); } }
