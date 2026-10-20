@@ -163,21 +163,20 @@ a {
   display: flex; align-items: center; gap: 1rem;
 }
 .brand {
-  display: inline-flex; align-items: center; gap: .6rem;
+  display: inline-flex; align-items: center; gap: .65rem;
   min-height: var(--tap);
-  font: 500 1.0625rem var(--sans);
-  letter-spacing: -.01em;
   text-decoration: none;
   margin-right: auto;
 }
-.brand-mark {
-  display: grid; place-items: center;
-  width: 1.85rem; height: 1.85rem;
-  border: 1px solid var(--accent);
+.brand-avatar {
+  width: 2.25rem; height: 2.25rem;
   border-radius: 50%;
-  font: italic 500 1rem/1 var(--serif);
-  color: var(--accent);
+  box-shadow: 0 0 0 1px var(--line-strong);
+  flex: none;
 }
+.brand-text { display: grid; line-height: 1.15; font-family: var(--sans); }
+.brand-text b { font-size: 1rem; font-weight: 500; letter-spacing: -.01em; }
+.brand-text span { font-size: .8125rem; color: var(--muted); }
 
 .nav-tools { display: flex; align-items: center; gap: .25rem; }
 .icon-button,
