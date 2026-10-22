@@ -1,105 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>mdreader · Lettore Markdown · William Ragusa</title>
-  <meta name="description" content="Un lettore ed editor di file Markdown in una sola pagina HTML: niente da installare, funziona offline e i documenti restano sul tuo computer.">
-  <meta name="theme-color" content="#03110D" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#ECEAE5" media="(prefers-color-scheme: light)">
-  <meta name="author" content="William Ragusa">
-  <link rel="canonical" href="https://rocketxx.github.io/progetti/mdreader.html">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rocketxx.github.io/progetti/mdreader.html">
-  <meta property="og:site_name" content="William Ragusa">
-  <meta property="og:locale" content="it_IT">
-  <meta property="og:title" content="mdreader · Lettore Markdown · William Ragusa">
-  <meta property="og:description" content="Un lettore ed editor di file Markdown in una sola pagina HTML: niente da installare, funziona offline e i documenti restano sul tuo computer.">
-  <meta property="og:image" content="https://rocketxx.github.io/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="../favicon.ico?v=2" sizes="any">
-  <link rel="icon" href="../assets/img/favicon-32.png?v=2" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png?v=2">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
-  <link rel="stylesheet" href="../assets/css/site.css">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "mdreader", "description": "Un lettore ed editor di file Markdown in una sola pagina HTML: niente da installare, funziona offline e i documenti restano sul tuo computer.", "url": "https://rocketxx.github.io/progetti/mdreader.html", "author": {"@type": "Person", "name": "William Ragusa", "url": "https://rocketxx.github.io/"}, "inLanguage": "it", "codeRepository": "https://github.com/rocketxx/mdreader"}</script>
-</head>
-<body>
-<a class="skip-link" href="#main">Vai al contenuto</a>
-<header class="site-header">
-  <nav class="nav wrap" aria-label="Principale">
-    <a href="../index.html" class="brand"><img class="brand-avatar" src="../assets/img/avatar.webp" alt="" width="36" height="36"><span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span></a>
-    <ul class="nav-list" id="nav-list" role="list">
-      <li><a href="../index.html#progetti">Progetti</a></li>
-      <li><a href="../index.html#servizi">Servizi</a></li>
-      <li><a href="../index.html#esperienza">Esperienza</a></li>
-      <li><a href="../index.html#competenze">Competenze</a></li>
-      <li><a href="../index.html#contatti">Contatti</a></li>
-    </ul>
-    <div class="nav-tools">
-      <button class="icon-button theme-toggle" type="button" hidden><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 3a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
-    </div>
-  </nav>
-</header>
-
-<main id="main">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Percorso">
-      <ol role="list">
-        <li><a href="../index.html#progetti">Progetti</a></li>
-        <li aria-current="page">mdreader</li>
-      </ol>
-    </nav>
-    <header class="project-hero">
-      <p class="eyebrow">Lettore Markdown</p>
-      <h1>mdreader</h1>
-      <p class="project-lead">Un lettore ed editor di file Markdown in una sola pagina HTML: niente da installare, funziona offline e i documenti restano sul tuo computer.</p>
-      <p class="badges"><span class="badge badge-oss">Open source</span></p>
-      <div class="project-actions"><a class="btn btn-primary" href="https://rocketxx.github.io/mdreader/">Apri mdreader<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9"/></svg></a><a class="btn btn-ghost" href="https://github.com/rocketxx/mdreader">Codice su GitHub<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9"/></svg></a></div>
-      
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>mdreader · Lettore Markdown · William Ragusa</title>
+    <meta name="description" content="Un lettore ed editor di file Markdown in una sola pagina HTML: niente da installare, funziona offline e i documenti restano sul tuo computer." />
+    <meta name="author" content="William Ragusa" />
+    <meta name="theme-color" content="#0E0E0C" />
+    <link href="https://rocketxx.github.io/progetti/mdreader.html" rel="canonical"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://rocketxx.github.io/progetti/mdreader.html" property="og:url"/>
+    <meta content="William Ragusa" property="og:site_name"/>
+    <meta content="it_IT" property="og:locale"/>
+    <meta content="mdreader · Lettore Markdown · William Ragusa" property="og:title"/>
+    <meta content="Un lettore ed editor di file Markdown in una sola pagina HTML: niente da installare, funziona offline e i documenti restano sul tuo computer." property="og:description"/>
+    <meta content="https://rocketxx.github.io/og-image.png" property="og:image"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+    <link rel="preload" href="../assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "mdreader",
+        "description": "Un lettore ed editor di file Markdown in una sola pagina HTML: niente da installare, funziona offline e i documenti restano sul tuo computer.",
+        "url": "https://rocketxx.github.io/progetti/mdreader.html",
+        "author": {
+          "@type": "Person",
+          "name": "William Ragusa",
+          "url": "https://rocketxx.github.io/"
+        },
+        "inLanguage": "it",
+        "codeRepository": "https://github.com/rocketxx/mdreader"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Vai al contenuto</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="../index.html">
+          <img class="brand-avatar" src="../assets/img/avatar.webp" alt="" width="40" height="40" />
+          <span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Sezioni">
+          <ul role="list">
+            <li><a href="../index.html#progetti">Progetti</a></li>
+            <li><a href="../index.html#esperimenti">Esperimenti</a></li>
+            <li><a href="../index.html#lavori">Lavori</a></li>
+            <li><a href="../index.html#chi-sono">Chi sono</a></li>
+            <li><a href="../index.html#contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <details class="indice">
+          <summary>Indice</summary>
+          <nav aria-label="Indice">
+            <ol role="list">
+              <li><a href="../index.html#progetti"><span>Progetti in produzione</span><span class="leader"></span><span class="ref">Tav. II–III</span></a></li>
+              <li><a href="../index.html#esperimenti"><span>Esperimenti</span><span class="leader"></span><span class="ref">Tav. IV–IX</span></a></li>
+              <li><a href="../index.html#lavori"><span>Lavori</span><span class="leader"></span><span class="ref">Tav. X–XI</span></a></li>
+              <li><a href="../index.html#chi-sono"><span>Chi sono</span><span class="leader"></span><span class="ref">percorso</span></a></li>
+              <li><a href="../index.html#contatti"><span>Contatti</span><span class="leader"></span><span class="ref">email</span></a></li>
+            </ol>
+          </nav>
+        </details>
+      </div>
     </header>
 
-      <div class="media">
-        <figure>
-          <a class="shot" href="../assets/img/progetti/mdreader/home.webp"><img src="../assets/img/progetti/mdreader/home.webp" width="1200" height="750" alt="Schermata iniziale di MD Reader: incolla o trascina un file Markdown, apri un file, nuovo documento, tutti i documenti." loading="eager"></a>
-          <figcaption>La schermata iniziale. <a href="https://rocketxx.github.io/mdreader/">Provalo nel browser</a>.</figcaption>
-        </figure>
-      </div>
-    <div class="project-body">
-      <div>
-        <section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>Volevo leggere e modificare file Markdown senza installare niente e senza caricarli su un servizio online. mdreader è un unico file HTML: lo apri, trascini il documento e lo leggi con indice, ricerca, diagrammi e formule.</p><p>Progetto personale e open source.</p></div></section>
-        <section aria-labelledby="h-feat"><h2 id="h-feat">Cosa fa</h2><ul class="features" role="list"><li>Lettura: indice laterale che segue la sezione, barra di avanzamento, ricerca nel documento, temi chiaro e scuro.</li><li>Codice evidenziato con pulsante di copia, diagrammi Mermaid, formule KaTeX, box di avviso in stile GitHub.</li><li>Editor con barra di formattazione, liste che continuano da sole, checkbox cliccabili e scorrimento sincronizzato.</li><li>Esportazione in .md, HTML autonomo, testo formattato per Word e Outlook, PDF.</li><li>Archivio nel browser con ricerca, selezione multipla ed export zip.</li></ul></section>
-        <section aria-labelledby="h-choices"><h2 id="h-choices">Scelte tecniche</h2><ul class="choices" role="list"><li><b>Un solo file</b><span>Uno script di build mette tutto in un index.html: si può scaricare, mandare per email o aprire da una chiavetta.</span></li><li><b>Sicuro per default</b><span>L'HTML prodotto dal Markdown passa da DOMPurify prima di essere mostrato.</span></li><li><b>Privato</b><span>Nessun server: i documenti restano nel browser e solo se scegli di salvarli.</span></li></ul></section>
-      </div>
-      <aside class="facts" aria-label="Scheda del progetto">
-        <dl>
-          <div><dt>Ruolo</dt><dd>Sviluppo</dd></div><div><dt>Codice</dt><dd>Open source</dd></div>
-          <div><dt>App</dt><dd><ul class="stack-tags" role="list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></dd></div><div><dt>Librerie</dt><dd><ul class="stack-tags" role="list"><li>marked</li><li>DOMPurify</li><li>highlight.js</li><li>KaTeX</li><li>Mermaid</li></ul></dd></div><div><dt>Build</dt><dd><ul class="stack-tags" role="list"><li>Script Node che crea un singolo file HTML</li></ul></dd></div>
-        </dl>
-      </aside>
-    </div>
-
-    <section class="cta-band" aria-labelledby="h-cta">
-      <h2 id="h-cta">Ti serve qualcosa di simile?</h2>
-      <p>Sviluppo siti, web app e app per iOS e Android, dall'idea alla pubblicazione. Raccontami il tuo progetto.</p>
-      <a class="btn btn-primary" href="../index.html#contatti">Scrivimi<svg class="chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    </section>
-  </div>
-  <nav class="pager wrap" aria-label="Altri progetti"><a class="prev" href="freddo-pregiato.html" rel="prev"><span class="pager-label"><svg class="chev chev-left" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Progetto precedente</span><b>Freddo Pregiato</b></a><a class="next" href="maps-scraper.html" rel="next"><span class="pager-label">Progetto successivo<svg class="chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>Maps Scraper</b></a></nav>
+    <main id="main" class="project-page"><div class="equations" aria-hidden="true">
+          <math style="top: 7%; --x: 0.62; --d: 0.4s">
+            <mi>F</mi><mo>=</mo><mi>G</mi>
+            <mfrac>
+              <mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow>
+              <msup><mi>r</mi><mn>2</mn></msup>
+            </mfrac>
+          </math>
+          <!-- galassia a spirale -->
+          <svg class="glyph" style="top: 20%; --x: 0.12; --d: 0.8s" viewBox="0 0 160 160">
+            <g class="spin-slow">
+              <g transform="rotate(-25 80 80)">
+                <ellipse class="faint" cx="80" cy="80" rx="72" ry="44" stroke-dasharray="2 6" />
+                <path d="M84.0 80.0L84.2 80.9L83.8 81.8L82.9 82.8L81.3 83.5L79.3 84.0L76.8 84.0L74.3 83.4L71.9 82.3L70.1 80.7L69.3 78.5L69.7 76.1L71.6 73.7L75.1 71.6L80.0 70.1L86.0 69.7L92.5 70.6L98.9 72.9L104.0 76.7L107.1 81.8L107.2 87.8L103.6 94.1L96.0 99.9L84.6 104.3L70.0 106.4L53.4 105.4L36.8 100.7L22.3 92.1L12.4 80.0" />
+                <path d="M76.0 80.0L75.8 79.1L76.2 78.2L77.1 77.2L78.7 76.5L80.7 76.0L83.2 76.0L85.7 76.6L88.1 77.7L89.9 79.3L90.7 81.5L90.3 83.9L88.4 86.3L84.9 88.4L80.0 89.9L74.0 90.3L67.5 89.4L61.1 87.1L56.0 83.3L52.9 78.2L52.8 72.2L56.4 65.9L64.0 60.1L75.4 55.7L90.0 53.6L106.6 54.6L123.2 59.3L137.7 67.9L147.6 80.0" />
+                <circle class="dot" cx="80" cy="80" r="3" />
+                <circle class="faint" cx="80" cy="80" r="9" />
+                <circle class="dot" cx="104" cy="96" r="1.4" />
+                <circle class="dot" cx="58" cy="62" r="1.2" />
+                <circle class="dot" cx="122" cy="62" r="1.4" />
+                <circle class="dot" cx="34" cy="96" r="1.2" />
+                <circle class="dot" cx="96" cy="58" r="1" />
+              </g>
+            </g>
+          </svg>
+          <math style="top: 44%; --x: 0.78; --d: 1.2s">
+            <msup><mo>∇</mo><mn>2</mn></msup><mi>φ</mi><mo>=</mo><mn>0</mn>
+          </math>
+          <!-- sfera con assi cartesiani -->
+          <svg class="glyph" style="top: 55%; --x: 0.3; --d: 1.6s" viewBox="0 0 150 150">
+            <circle cx="75" cy="80" r="45" />
+            <ellipse class="faint" cx="75" cy="80" rx="45" ry="13" />
+            <ellipse class="faint" cx="75" cy="80" rx="16" ry="45" />
+            <path d="M75 80V16M71 23l4-7 4 7M75 80L28 122M30 114l-2 8 8-3M75 80l66 14M133 89l8 5-9 3" />
+            <circle class="dot" cx="75" cy="80" r="2.5" />
+            <text x="82" y="20">z</text>
+            <text x="18" y="134">x</text>
+            <text x="138" y="110">y</text>
+          </svg>
+          
+          <!-- sistema solare: orbite concentriche -->
+          <svg class="glyph" style="top: 80%; --x: 0.66; --d: 2.4s" viewBox="0 0 150 150">
+            <circle class="dot" cx="75" cy="75" r="4" />
+            <circle class="faint" cx="75" cy="75" r="22" />
+            <circle cx="75" cy="75" r="40" stroke-dasharray="3 5" />
+            <circle class="faint" cx="75" cy="75" r="60" />
+            <circle class="dot" cx="97" cy="75" r="2" />
+            <circle class="dot" cx="47" cy="47" r="2.5" />
+            <circle class="dot" cx="117" cy="117" r="3" />
+          </svg>
+        </div><div class="equations right" aria-hidden="true">
+          <math style="top: 5%; --x: 0.18; --d: 0.6s">
+            <msup><mi>T</mi><mn>2</mn></msup><mo>=</mo>
+            <mfrac>
+              <mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow>
+              <mrow><mi>G</mi><mi>M</mi></mrow>
+            </mfrac>
+            <msup><mi>a</mi><mn>3</mn></msup>
+          </math>
+          <!-- orbita di Keplero: ellisse, fuochi, raggio vettore -->
+          <svg class="glyph" style="top: 22%; --x: 0.7; --d: 1s" viewBox="0 0 170 120">
+            <ellipse cx="85" cy="60" rx="70" ry="42" />
+            <path class="faint" d="M15 60H155M85 18V102" stroke-dasharray="2 5" />
+            <circle class="dot" cx="141" cy="60" r="4" />
+            <path class="faint" d="M25 60h8M29 56v8" />
+            <path d="M141 60L50 23.6" />
+            <circle class="dot" cx="50" cy="23.6" r="3.5" />
+            <text x="88" y="56">a</text>
+            <text x="90" y="34">r</text>
+            <text x="22" y="76">F₁</text>
+            <text x="134" y="78">F₂</text>
+          </svg>
+          
+          
+          <math style="top: 52%; --x: 0.25; --d: 2.2s">
+            <msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mi>G</mi><mi>M</mi>
+            <mrow>
+              <mo>(</mo>
+              <mfrac><mn>2</mn><mi>r</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mi>a</mi></mfrac>
+              <mo>)</mo>
+            </mrow>
+          </math>
+          <!-- spirale aurea nei rettangoli -->
+          <svg class="glyph" style="top: 74%; --x: 0.82; --d: 2.6s" viewBox="-2 -2 166 116">
+            <path class="faint" d="M0 0H161.8V100H0ZM100 0V100M100 61.8H161.8M123.6 61.8V100M100 76.4H123.6M114.6 61.8V76.4" />
+            <path d="M0 100A100 100 0 0 1 100 0A61.8 61.8 0 0 1 161.8 61.8A38.2 38.2 0 0 1 123.6 100A23.6 23.6 0 0 1 100 76.4A14.6 14.6 0 0 1 114.6 61.8" />
+            <text x="2" y="113">φ = 1.618…</text>
+          </svg>
+        </div>
+<div class="wrap">
+<nav aria-label="Percorso" class="crumbs">
+<ol role="list">
+<li><a href="../index.html#esperimenti">Esperimenti</a></li>
+<li aria-current="page">mdreader</li>
+</ol>
+</nav>
+<header class="project-hero"><p class="tav-label">Tav. VI</p>
+<p class="eyebrow">Lettore Markdown</p>
+<h1>mdreader</h1>
+<p class="project-lead">Un lettore ed editor di file Markdown in una sola pagina HTML: niente da installare, funziona offline e i documenti restano sul tuo computer.</p>
+<p class="badges"><span class="badge badge-oss">Open source</span></p>
+<div class="project-actions"><a class="btn btn-primary" href="https://rocketxx.github.io/mdreader/">Apri mdreader</a><a class="btn" href="https://github.com/rocketxx/mdreader">Codice su GitHub</a></div>
+</header>
+<div class="media">
+<figure>
+<button aria-label="Ingrandisci: Schermata iniziale di MD Reader: incolla o trascina un file Markdown, apri un file, nuovo documento, tutti i documenti." class="shot" popovertarget="pop-0" type="button"><img alt="Schermata iniziale di MD Reader: incolla o trascina un file Markdown, apri un file, nuovo documento, tutti i documenti." height="750" loading="eager" src="../assets/img/progetti/mdreader/home.webp" width="1200"/></button><div class="shot-pop" id="pop-0" popover=""><img alt="Schermata iniziale di MD Reader: incolla o trascina un file Markdown, apri un file, nuovo documento, tutti i documenti." decoding="async" loading="lazy" src="../assets/img/progetti/mdreader/home.webp"/><p><span>Schermata iniziale di MD Reader: incolla o trascina un file Markdown, apri un file, nuovo documento, tutti i documenti.</span><button class="text-btn" popovertarget="pop-0" popovertargetaction="hide" type="button">Chiudi</button></p></div>
+<figcaption>La schermata iniziale. <a href="https://rocketxx.github.io/mdreader/">Provalo nel browser</a>.</figcaption>
+</figure>
+</div>
+<div class="project-body">
+<div><svg class="fregio-band" viewBox="0 0 360 100" aria-hidden="true" focusable="false"><defs><pattern id="hatch-le" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><rect x="24" y="17" width="62" height="62" /><circle cx="55" cy="41" r="38" /><path class="faint" d="M24 17L86 79M86 17L24 79" stroke-dasharray="2 3" /><path class="faint" d="M55 11V85M18 48H92" /><circle class="dot" cx="55" cy="41" r="1.8" /><circle class="faint" cx="180" cy="46" r="30" /><circle cx="180" cy="46" r="15" /><circle cx="193" cy="53.5" r="15" /><circle cx="180" cy="61" r="15" /><circle cx="167" cy="53.5" r="15" /><circle cx="167" cy="38.5" r="15" /><circle cx="180" cy="31" r="15" /><circle cx="193" cy="38.5" r="15" /><path d="M300 10L331.2 28L331.2 64L300 82L268.8 64L268.8 28Z" /><path class="faint" d="M300 63L285.3 37.5L314.7 37.5Z" stroke-dasharray="2 3" /><path class="faint" d="M300 63L331.2 64" stroke-dasharray="2 3" /><path class="faint" d="M300 63L300 82" stroke-dasharray="2 3" /><path class="faint" d="M300 63L268.8 64" stroke-dasharray="2 3" /><path class="faint" d="M285.3 37.5L268.8 64" stroke-dasharray="2 3" /><path class="faint" d="M285.3 37.5L268.8 28" stroke-dasharray="2 3" /><path class="faint" d="M285.3 37.5L300 10" stroke-dasharray="2 3" /><path class="faint" d="M314.7 37.5L300 10" stroke-dasharray="2 3" /><path class="faint" d="M314.7 37.5L331.2 28" stroke-dasharray="2 3" /><path class="faint" d="M314.7 37.5L331.2 64" stroke-dasharray="2 3" /><path d="M300 29L314.7 54.5L285.3 54.5Z" /><path d="M300 29L268.8 28" /><path d="M300 29L300 10" /><path d="M300 29L331.2 28" /><path d="M314.7 54.5L331.2 28" /><path d="M314.7 54.5L331.2 64" /><path d="M314.7 54.5L300 82" /><path d="M285.3 54.5L300 82" /><path d="M285.3 54.5L268.8 64" /><path d="M285.3 54.5L268.8 28" /><circle class="dot" cx="300" cy="10" r="1.3" /><circle class="dot" cx="331.2" cy="28" r="1.3" /><circle class="dot" cx="331.2" cy="64" r="1.3" /><circle class="dot" cx="300" cy="82" r="1.3" /><circle class="dot" cx="268.8" cy="64" r="1.3" /><circle class="dot" cx="268.8" cy="28" r="1.3" /><circle class="dot" cx="300" cy="29" r="1.3" /><circle class="dot" cx="314.7" cy="54.5" r="1.3" /><circle class="dot" cx="285.3" cy="54.5" r="1.3" /><text x="180" y="96" text-anchor="middle">De divina proportione</text></svg>
+<section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>Volevo leggere e modificare file Markdown senza installare niente e senza caricarli su un servizio online. mdreader è un unico file HTML: lo apri, trascini il documento e lo leggi con indice, ricerca, diagrammi e formule.</p><p>Progetto personale e open source.</p></div></section>
+<section aria-labelledby="h-feat"><h2 id="h-feat">Cosa fa</h2><ul class="features" role="list"><li>Lettura: indice laterale che segue la sezione, barra di avanzamento, ricerca nel documento, temi chiaro e scuro.</li><li>Codice evidenziato con pulsante di copia, diagrammi Mermaid, formule KaTeX, box di avviso in stile GitHub.</li><li>Editor con barra di formattazione, liste che continuano da sole, checkbox cliccabili e scorrimento sincronizzato.</li><li>Esportazione in .md, HTML autonomo, testo formattato per Word e Outlook, PDF.</li><li>Archivio nel browser con ricerca, selezione multipla ed export zip.</li></ul></section>
+<section aria-labelledby="h-choices"><h2 id="h-choices">Scelte tecniche</h2><ul class="choices" role="list"><li><b>Un solo file</b><span>Uno script di build mette tutto in un index.html: si può scaricare, mandare per email o aprire da una chiavetta.</span></li><li><b>Sicuro per default</b><span>L'HTML prodotto dal Markdown passa da DOMPurify prima di essere mostrato.</span></li><li><b>Privato</b><span>Nessun server: i documenti restano nel browser e solo se scegli di salvarli.</span></li></ul></section>
+</div>
+<aside aria-label="Scheda del progetto" class="facts">
+<dl>
+<div><dt>Ruolo</dt><dd>Sviluppo</dd></div><div><dt>Codice</dt><dd>Open source</dd></div>
+<div><dt>App</dt><dd><ul class="stack-tags" role="list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></dd></div><div><dt>Librerie</dt><dd><ul class="stack-tags" role="list"><li>marked</li><li>DOMPurify</li><li>highlight.js</li><li>KaTeX</li><li>Mermaid</li></ul></dd></div><div><dt>Build</dt><dd><ul class="stack-tags" role="list"><li>Script Node che crea un singolo file HTML</li></ul></dd></div>
+</dl>
+<figure class="study" aria-hidden="true"><svg class="study-svg" viewBox="0 0 260 420" focusable="false"><defs><pattern id="h-prop" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path d="M24 20V388" /><path d="M18 20H30" /><text x="12" y="46" text-anchor="end">1</text><path d="M18 66H30" /><text x="12" y="92" text-anchor="end">2</text><path d="M18 112H30" /><text x="12" y="138" text-anchor="end">3</text><path d="M18 158H30" /><text x="12" y="184" text-anchor="end">4</text><path d="M18 204H30" /><text x="12" y="230" text-anchor="end">5</text><path d="M18 250H30" /><text x="12" y="276" text-anchor="end">6</text><path d="M18 296H30" /><text x="12" y="322" text-anchor="end">7</text><path d="M18 342H30" /><text x="12" y="368" text-anchor="end">8</text><path d="M18 388H30" /><ellipse cx="132" cy="70" rx="36" ry="46" /><path class="faint" d="M132 16V124" stroke-dasharray="2 3" /><path class="faint" d="M86 42.7H178" /><path class="faint" d="M86 70H178" /><path class="faint" d="M86 85.3H178" /><path class="faint" d="M86 100.7H178" /><path class="faint" d="M82 116A50 50 0 0 1 182 116" /><rect x="72" y="150" width="120" height="194.2" /><path class="faint" d="M72 224.2H192" /><path class="faint" d="M146.2 150V224.2" /><path class="faint" d="M146.2 195.8H192" /><path d="M72 344.2A120 120 0 0 1 192 224.2A74.2 74.2 0 0 1 117.8 150A45.8 45.8 0 0 1 72 195.8" /><path fill="url(#h-prop)" stroke="none" d="M72 224.2H98 V344.2 H72Z" /><path class="faint" d="M212 150A194.2 194.2 0 0 0 182 344.2" stroke-dasharray="2 3" /><circle class="dot" cx="72" cy="150" r="1.6" /><circle class="dot" cx="192" cy="150" r="1.6" /><circle class="dot" cx="72" cy="344.2" r="1.6" /><circle class="dot" cx="192" cy="344.2" r="1.6" /><text class="formula" x="132" y="366.2" text-anchor="middle">φ = (1 + √5) / 2</text></svg><figcaption>Canone delle proporzioni</figcaption></figure></aside>
+</div>
+<section aria-labelledby="h-cta" class="cta-band">
+<h2 id="h-cta">Ti serve qualcosa di simile?</h2>
+<p>Sviluppo siti, web app e app per iOS e Android, dall'idea alla pubblicazione. Raccontami il tuo progetto.</p>
+<a class="btn btn-primary" href="../index.html#contatti">Scrivimi</a>
+</section>
+</div>
+<nav aria-label="Altre tavole" class="pager wrap"><a class="prev" href="signforge.html" rel="prev"><span class="pager-label">Tav. V, precedente</span><b>SignForge</b></a><a class="next" href="maps-scraper.html" rel="next"><span class="pager-label">Tav. VII, successiva</span><b>Maps Scraper</b></a></nav>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="inner">
-      <p>© 2026 William Ragusa</p>
-      <p>Catania, Sicilia</p>
-    </div>
-  </div>
-</footer>
-<script src="../assets/js/site.js" defer></script>
-</body>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© 2026 William Ragusa</p>
+        <p>Catania, Sicilia</p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,67 +1,49 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      William Ragusa · Sviluppatore full stack, web e app iOS/Android
-    </title>
+    <title>William Ragusa, sviluppatore full stack a Catania</title>
     <meta
       name="description"
-      content="William Ragusa, sviluppatore full stack a Catania, laureato in Informatica all'Università di Catania. Siti, web app e app iOS e Android. .NET, Angular, React, Cloudflare." />
-    <meta
-      name="theme-color"
-      content="#03110D"
-      media="(prefers-color-scheme: dark)" />
-    <meta
-      name="theme-color"
-      content="#ECEAE5"
-      media="(prefers-color-scheme: light)" />
+      content="William Ragusa, sviluppatore full stack a Catania, laureato in Informatica all’Università di Catania. Siti, web app e app iOS e Android. .NET, Angular, React, Cloudflare." />
     <meta name="author" content="William Ragusa" />
+    <meta name="theme-color" content="#0E0E0C" />
     <link rel="canonical" href="https://rocketxx.github.io/" />
+
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rocketxx.github.io/" />
     <meta property="og:site_name" content="William Ragusa" />
     <meta property="og:locale" content="it_IT" />
-    <meta
-      property="og:title"
-      content="William Ragusa · Sviluppatore full stack" />
+    <meta property="og:title" content="William Ragusa, sviluppatore full stack" />
     <meta
       property="og:description"
-      content="Siti, web app e app iOS e Android. Laureato in Informatica all'Università di Catania, sviluppatore in Dylog dal 2022." />
-    <meta
-      property="og:image"
-      content="https://rocketxx.github.io/og-image.png" />
+      content="Siti, web app e app iOS e Android. Laureato in Informatica all’Università di Catania, sviluppatore in Dylog dal 2022." />
+    <meta property="og:image" content="https://rocketxx.github.io/og-image.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="William Ragusa, sviluppatore full stack" />
+      content="William Ragusa, sviluppatore full stack. Incisione di una mano che lancia una sfera, con orbite disegnate." />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="favicon.ico?v=2" sizes="any" />
-    <link
-      rel="icon"
-      href="assets/img/favicon-32.png?v=2"
-      type="image/png"
-      sizes="32x32" />
-    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=2" />
+    <meta name="twitter:title" content="William Ragusa, sviluppatore full stack" />
+    <meta
+      name="twitter:description"
+      content="Siti, web app e app iOS e Android. Sviluppatore in Dylog dal 2022." />
+    <meta name="twitter:image" content="https://rocketxx.github.io/og-image.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap"
-      rel="stylesheet" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
 
-    <script>
-      document.documentElement.classList.add('js');
-      try {
-        var t = localStorage.getItem('theme');
-        if (t === 'light' || t === 'dark')
-          document.documentElement.dataset.theme = t;
-      } catch (e) {}
-    </script>
-    <link rel="stylesheet" href="assets/css/site.css" />
+    <link
+      rel="preload"
+      href="assets/fonts/instrument-serif-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <script type="application/ld+json">
       {
@@ -70,6 +52,7 @@
         "name": "William Ragusa",
         "alternateName": "rocketxx",
         "url": "https://rocketxx.github.io/",
+        "image": "https://rocketxx.github.io/og-image.png",
         "jobTitle": "Sviluppatore software full stack",
         "worksFor": {
           "@type": "Organization",
@@ -125,1206 +108,863 @@
     <a class="skip-link" href="#main">Vai al contenuto</a>
 
     <header class="site-header">
-      <nav class="nav wrap" aria-label="Principale">
-        <a href="#top" class="brand">
-          <img
-            class="brand-avatar"
-            src="assets/img/avatar.webp"
-            alt=""
-            width="36"
-            height="36" />
-          <span class="brand-text">
-            <b>rocketxx</b>
-            <span>William Ragusa</span>
-          </span>
+      <div class="wrap">
+        <a class="brand" href="./">
+          <img class="brand-avatar" src="assets/img/avatar.webp" alt="" width="40" height="40" />
+          <span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span>
         </a>
-        <ul class="nav-list" id="nav-list" role="list">
-          <li><a href="#progetti">Progetti</a></li>
-          <li><a href="#servizi">Servizi</a></li>
-          <li><a href="#esperienza">Esperienza</a></li>
-          <li><a href="#competenze">Competenze</a></li>
-          <li><a href="#contatti">Contatti</a></li>
-        </ul>
-        <div class="nav-tools">
-          <button class="icon-button theme-toggle" type="button" hidden>
-            <svg
-              viewBox="0 0 20 20"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              aria-hidden="true">
-              <circle cx="10" cy="10" r="7" />
-              <path d="M10 3a7 7 0 0 0 0 14z" fill="currentColor" />
-            </svg>
-          </button>
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="nav-list">
-            Menu
-          </button>
-        </div>
-      </nav>
+        <nav class="site-nav" aria-label="Sezioni">
+          <ul role="list">
+            <li><a href="#progetti">Progetti</a></li>
+            <li><a href="#esperimenti">Esperimenti</a></li>
+            <li><a href="#lavori">Lavori</a></li>
+            <li><a href="#chi-sono">Chi sono</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <details class="indice">
+          <summary>Indice</summary>
+          <nav aria-label="Indice">
+            <ol role="list">
+              <li><a href="#progetti"><span>Progetti in produzione</span><span class="leader"></span><span class="ref">Tav. II–III</span></a></li>
+              <li><a href="#esperimenti"><span>Esperimenti</span><span class="leader"></span><span class="ref">Tav. IV–IX</span></a></li>
+              <li><a href="#lavori"><span>Lavori</span><span class="leader"></span><span class="ref">Tav. X–XI</span></a></li>
+              <li><a href="#chi-sono"><span>Chi sono</span><span class="leader"></span><span class="ref">percorso</span></a></li>
+              <li><a href="#contatti"><span>Contatti</span><span class="leader"></span><span class="ref">email</span></a></li>
+            </ol>
+          </nav>
+        </details>
+      </div>
     </header>
 
     <main id="main">
-      <div class="wrap hero" id="top">
-        <div class="hero-main">
-          <h1>
-            William
-            <em>Ragusa</em>
-          </h1>
-          <p class="hero-role">
-            Sviluppatore full stack · siti, web app e app iOS e Android
-          </p>
-          <p class="hero-lead">
-            Dal 2022 sviluppo software gestionale in Dylog, con .NET, Azure e
-            Angular. In parallelo creo prodotti miei e su commissione, dall’idea
-            alla pubblicazione.
-          </p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#contatti">
-              Hai un progetto? Scrivimi
+      <section class="hero" aria-labelledby="t-nome">
+        <!-- margini: formule, galassie e figure geometriche che compaiono una alla volta -->
+        <div class="equations" aria-hidden="true">
+          <math style="top: 7%; --x: 0.62; --d: 0.4s">
+            <mi>F</mi><mo>=</mo><mi>G</mi>
+            <mfrac>
+              <mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow>
+              <msup><mi>r</mi><mn>2</mn></msup>
+            </mfrac>
+          </math>
+          <!-- galassia a spirale -->
+          <svg class="glyph" style="top: 20%; --x: 0.12; --d: 0.8s" viewBox="0 0 160 160">
+            <g class="spin-slow">
+              <g transform="rotate(-25 80 80)">
+                <ellipse class="faint" cx="80" cy="80" rx="72" ry="44" stroke-dasharray="2 6" />
+                <path d="M84.0 80.0L84.2 80.9L83.8 81.8L82.9 82.8L81.3 83.5L79.3 84.0L76.8 84.0L74.3 83.4L71.9 82.3L70.1 80.7L69.3 78.5L69.7 76.1L71.6 73.7L75.1 71.6L80.0 70.1L86.0 69.7L92.5 70.6L98.9 72.9L104.0 76.7L107.1 81.8L107.2 87.8L103.6 94.1L96.0 99.9L84.6 104.3L70.0 106.4L53.4 105.4L36.8 100.7L22.3 92.1L12.4 80.0" />
+                <path d="M76.0 80.0L75.8 79.1L76.2 78.2L77.1 77.2L78.7 76.5L80.7 76.0L83.2 76.0L85.7 76.6L88.1 77.7L89.9 79.3L90.7 81.5L90.3 83.9L88.4 86.3L84.9 88.4L80.0 89.9L74.0 90.3L67.5 89.4L61.1 87.1L56.0 83.3L52.9 78.2L52.8 72.2L56.4 65.9L64.0 60.1L75.4 55.7L90.0 53.6L106.6 54.6L123.2 59.3L137.7 67.9L147.6 80.0" />
+                <circle class="dot" cx="80" cy="80" r="3" />
+                <circle class="faint" cx="80" cy="80" r="9" />
+                <circle class="dot" cx="104" cy="96" r="1.4" />
+                <circle class="dot" cx="58" cy="62" r="1.2" />
+                <circle class="dot" cx="122" cy="62" r="1.4" />
+                <circle class="dot" cx="34" cy="96" r="1.2" />
+                <circle class="dot" cx="96" cy="58" r="1" />
+              </g>
+            </g>
+          </svg>
+          <math style="top: 44%; --x: 0.78; --d: 1.2s">
+            <msup><mo>∇</mo><mn>2</mn></msup><mi>φ</mi><mo>=</mo><mn>0</mn>
+          </math>
+          <!-- sfera con assi cartesiani -->
+          <svg class="glyph" style="top: 55%; --x: 0.3; --d: 1.6s" viewBox="0 0 150 150">
+            <circle cx="75" cy="80" r="45" />
+            <ellipse class="faint" cx="75" cy="80" rx="45" ry="13" />
+            <ellipse class="faint" cx="75" cy="80" rx="16" ry="45" />
+            <path d="M75 80V16M71 23l4-7 4 7M75 80L28 122M30 114l-2 8 8-3M75 80l66 14M133 89l8 5-9 3" />
+            <circle class="dot" cx="75" cy="80" r="2.5" />
+            <text x="82" y="20">z</text>
+            <text x="18" y="134">x</text>
+            <text x="138" y="110">y</text>
+          </svg>
+          
+          <!-- sistema solare: orbite concentriche -->
+          <svg class="glyph" style="top: 80%; --x: 0.66; --d: 2.4s" viewBox="0 0 150 150">
+            <circle class="dot" cx="75" cy="75" r="4" />
+            <circle class="faint" cx="75" cy="75" r="22" />
+            <circle cx="75" cy="75" r="40" stroke-dasharray="3 5" />
+            <circle class="faint" cx="75" cy="75" r="60" />
+            <circle class="dot" cx="97" cy="75" r="2" />
+            <circle class="dot" cx="47" cy="47" r="2.5" />
+            <circle class="dot" cx="117" cy="117" r="3" />
+          </svg>
+        </div>
+        <div class="equations right" aria-hidden="true">
+          <math style="top: 5%; --x: 0.18; --d: 0.6s">
+            <msup><mi>T</mi><mn>2</mn></msup><mo>=</mo>
+            <mfrac>
+              <mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow>
+              <mrow><mi>G</mi><mi>M</mi></mrow>
+            </mfrac>
+            <msup><mi>a</mi><mn>3</mn></msup>
+          </math>
+          <!-- orbita di Keplero: ellisse, fuochi, raggio vettore -->
+          <svg class="glyph" style="top: 22%; --x: 0.7; --d: 1s" viewBox="0 0 170 120">
+            <ellipse cx="85" cy="60" rx="70" ry="42" />
+            <path class="faint" d="M15 60H155M85 18V102" stroke-dasharray="2 5" />
+            <circle class="dot" cx="141" cy="60" r="4" />
+            <path class="faint" d="M25 60h8M29 56v8" />
+            <path d="M141 60L50 23.6" />
+            <circle class="dot" cx="50" cy="23.6" r="3.5" />
+            <text x="88" y="56">a</text>
+            <text x="90" y="34">r</text>
+            <text x="22" y="76">F₁</text>
+            <text x="134" y="78">F₂</text>
+          </svg>
+          
+          
+          <math style="top: 52%; --x: 0.25; --d: 2.2s">
+            <msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mi>G</mi><mi>M</mi>
+            <mrow>
+              <mo>(</mo>
+              <mfrac><mn>2</mn><mi>r</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mi>a</mi></mfrac>
+              <mo>)</mo>
+            </mrow>
+          </math>
+          <!-- spirale aurea nei rettangoli -->
+          <svg class="glyph" style="top: 74%; --x: 0.82; --d: 2.6s" viewBox="-2 -2 166 116">
+            <path class="faint" d="M0 0H161.8V100H0ZM100 0V100M100 61.8H161.8M123.6 61.8V100M100 76.4H123.6M114.6 61.8V76.4" />
+            <path d="M0 100A100 100 0 0 1 100 0A61.8 61.8 0 0 1 161.8 61.8A38.2 38.2 0 0 1 123.6 100A23.6 23.6 0 0 1 100 76.4A14.6 14.6 0 0 1 114.6 61.8" />
+            <text x="2" y="113">φ = 1.618…</text>
+          </svg>
+        </div>
+
+        <!-- spazi vuoti dentro la colonna: sopra il nome, tra testo e tavola, sotto i pulsanti -->
+        <div class="equations inner" aria-hidden="true">
+          <math style="top: 5%; left: 30%; --d: 1.4s">
+            <mi>e</mi><mo>=</mo><mn>0.0167</mn>
+          </math>
+          <!-- pentagono e pentagramma: il rapporto aureo -->
+          <svg class="glyph" style="top: 30%; left: 46%; --d: 1.8s" viewBox="0 0 120 120">
+            <circle class="faint" cx="60" cy="60" r="50" />
+            <polygon points="60,10 107.6,44.5 89.4,100.5 30.6,100.5 12.4,44.5" />
+            <polygon class="faint" points="60,10 89.4,100.5 12.4,44.5 107.6,44.5 30.6,100.5" />
+            <circle class="dot" cx="60" cy="10" r="2" />
+          </svg>
+          <math style="top: 88%; left: 4%; --d: 2s">
+            <mi>φ</mi><mo>=</mo><mi>arctan</mi>
+            <mrow><mo>(</mo><mfrac><mi>y</mi><mi>x</mi></mfrac><mo>)</mo></mrow>
+          </math>
+        </div>
+
+        <div class="wrap grid">
+          <div class="hero-text">
+            <h1 id="t-nome">William<br />Ragusa</h1>
+            <p class="lede">
+              Sviluppatore full stack a Catania. Costruisco siti, web app e app
+              iOS e Android, dall’idea alla pubblicazione.
+            </p>
+            <p class="hero-sub">
+              Dal 2022 sviluppo software gestionale in Dylog, con .NET, Azure e
+              Angular. In parallelo creo prodotti miei e su commissione.
+            </p>
+            <div class="actions">
+              <a class="btn btn-primary" href="#contatti">Scrivimi</a>
+              <a class="btn" href="#chi-sono">Il mio percorso</a>
+            </div>
+            <p class="degree">
+              <img class="unict-logo" src="assets/img/unict.svg" alt="Università di Catania" width="120" height="42" />
+              <span>
+                <strong>Laurea in Informatica</strong>, 2022<br />
+                <a href="https://www.dmi.unict.it/">Dipartimento di Matematica e Informatica</a>,
+                <a href="https://www.unict.it/">Università di Catania</a>
+              </span>
+            </p>
+          </div>
+
+          <figure class="plate">
+            <div class="plate-frame">
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    assets/img/hand-435.avif 435w,
+                    assets/img/hand-650.avif 650w,
+                    assets/img/hand-870.avif 870w
+                  "
+                  sizes="(min-width: 64em) 486px, 266px" />
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/img/hand-435.webp 435w,
+                    assets/img/hand-650.webp 650w,
+                    assets/img/hand-870.webp 870w
+                  "
+                  sizes="(min-width: 64em) 486px, 266px" />
+                <img
+                  src="assets/img/hand-650.webp"
+                  width="870"
+                  height="1360"
+                  fetchpriority="high"
+                  alt="Incisione di una mano aperta verso l’alto: ha appena lanciato una piccola sfera, sospesa sopra l’indice." />
+              </picture>
               <svg
-                class="chev"
-                viewBox="0 0 16 16"
+                class="overlay"
+                viewBox="0 0 870 1360"
+                preserveAspectRatio="xMidYMid meet"
                 aria-hidden="true"
                 focusable="false">
-                <path
-                  d="M6 3.5 10.5 8 6 12.5"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </a>
-            <a class="btn btn-ghost" href="#esperienza">
-              Sei un recruiter? Il mio percorso
-            </a>
-          </div>
-          <p class="degree">
-            <img
-              class="unict-logo"
-              src="assets/img/unict.svg"
-              alt="Università di Catania"
-              width="120"
-              height="42" />
-            <span>
-              <strong>Laurea in Informatica</strong>
-              , 2022
-              <br />
-              <a href="https://www.dmi.unict.it/">
-                Dipartimento di Matematica e Informatica
-              </a>
-              ,
-              <a href="https://www.unict.it/">Università di Catania</a>
-            </span>
-          </p>
-        </div>
+                <!-- orbita inclinata: passa per il centro della sfera (427.5, 124) -->
+                <ellipse
+                  class="line draw"
+                  style="--d: 0.1s"
+                  pathLength="1"
+                  cx="500"
+                  cy="520"
+                  rx="485.99"
+                  ry="170"
+                  transform="rotate(-115 500 520)" />
+                <ellipse
+                  class="line faint draw"
+                  style="--d: 0.35s"
+                  pathLength="1"
+                  cx="440"
+                  cy="760"
+                  rx="400"
+                  ry="96"
+                  transform="rotate(-14 440 760)" />
+                <circle class="planet appear" style="--d: 0.9s" cx="245.1" cy="174.4" r="7" />
+                <circle class="planet appear" style="--d: 1s" cx="67.3" cy="819.1" r="5" />
 
-        <aside class="now" aria-labelledby="now-title">
-          <p class="now-title" id="now-title">
-            <span class="badge badge-soon">In arrivo</span>
-            <span>su iOS e Android</span>
-          </p>
-          <ul role="list">
-            <li>
-              <a href="progetti/eko.html">
-                <img
-                  src="assets/img/progetti/eko/home.webp"
-                  alt=""
-                  width="44"
-                  height="44" />
-                <span>
-                  <b>Eko</b>
-                  <span>
-                    Raccolta differenziata, promemoria e «dove lo butto?»
-                  </span>
-                </span>
-                <svg
-                  class="chev arrow"
-                  viewBox="0 0 16 16"
-                  aria-hidden="true"
-                  focusable="false">
-                  <path
-                    d="M6 3.5 10.5 8 6 12.5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="progetti/vocablio.html">
-                <img
-                  src="assets/img/progetti/vocablio/demo-poster.webp"
-                  alt=""
-                  width="44"
-                  height="44" />
-                <span>
-                  <b>Vocablio</b>
-                  <span>Impari l’inglese leggendo libri veri</span>
-                </span>
-                <svg
-                  class="chev arrow"
-                  viewBox="0 0 16 16"
-                  aria-hidden="true"
-                  focusable="false">
-                  <path
-                    d="M6 3.5 10.5 8 6 12.5"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="1.6"
-                    stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </aside>
-      </div>
+                <!-- piccola orbita attorno alla sfera, ruota lentamente -->
+                <g class="appear" style="--d: 0.6s">
+                  <g class="spin">
+                    <circle
+                      class="line faint"
+                      cx="427.5"
+                      cy="124"
+                      r="96"
+                      stroke-dasharray="3 9" />
+                    <circle class="planet" cx="523.5" cy="124" r="5" />
+                  </g>
+                </g>
+
+                <!-- r = 1.618…: raggio dalla sfera -->
+                <path class="line accent draw" style="--d: 0.75s" pathLength="1" d="M417.5 124h20M427.5 114v20" />
+                <path class="line accent draw" style="--d: 0.85s" pathLength="1" d="M427.5 124L501 62.3H640" />
+                <text class="accent appear" style="--d: 1.15s" x="648" y="70">r = 1.618…</text>
+
+                <!-- h = 0.382: dalla sfera alla punta dell’indice -->
+                <path class="line faint draw" style="--d: 0.9s" pathLength="1" d="M486 124h86M432 205h140" />
+                <path class="line draw" style="--d: 1s" pathLength="1" d="M560 124v81M552 124h16M552 205h16" />
+                <text class="appear" style="--d: 1.25s" x="580" y="172">h = 0.382</text>
+              </svg>
+            </div>
+            <figcaption>
+              Tav. I. Una mano lancia una sfera: le orbite misurano dove andrà.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
       <section class="section" id="progetti" aria-labelledby="t-progetti">
-        <div class="wrap">
+        <div class="wrap grid">
           <div class="section-head">
-            <p class="eyebrow">Progetti</p>
-            <h2 class="section-title" id="t-progetti">
-              Alcuni progetti che ho costruito
-            </h2>
-            <p class="section-intro">
-              App mie, siti per clienti, strumenti che uso ogni giorno e i
-              progetti dell’università. Apri un progetto per vedere come
-              funziona e con quali tecnologie l’ho fatto.
+            <svg class="fregio-band" viewBox="0 0 360 96" aria-hidden="true" focusable="false"><defs><pattern id="hatch-pl" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path class="faint" d="M0 80Q180 96 360 72" stroke-dasharray="2 5" /><circle class="dot" cx="14" cy="18" r="0.8" /><circle class="dot" cx="70" cy="12" r="1" /><circle class="dot" cx="176" cy="88" r="0.8" /><circle class="dot" cx="196" cy="14" r="0.9" /><circle class="dot" cx="300" cy="86" r="0.8" /><circle class="dot" cx="348" cy="20" r="1" /><circle class="dot" cx="88" cy="84" r="0.7" /><circle class="dot" cx="214" cy="30" r="0.6" /><circle class="body" cx="38" cy="58" r="10" /><circle class="faint" cx="34" cy="54" r="2" /><circle class="faint" cx="40" cy="62" r="1.4" /><circle class="faint" cx="35" cy="63" r="1" /><circle class="faint" cx="42" cy="53" r="1" /><path fill="url(#hatch-pl)" stroke="none" d="M38 48 A10 10 0 0 1 38 68 A1 10 0 0 0 38 48 Z" /><clipPath id="cj"><circle cx="120" cy="46" r="27" /></clipPath><circle class="body" cx="120" cy="46" r="27" /><g clip-path="url(#cj)"><path class="faint" d="M93 29Q120 31 147 29" /><path class="faint" d="M93 35Q120 37 147 35" /><path class="faint" d="M93 41Q120 43 147 41" /><path class="faint" d="M93 48Q120 50 147 48" /><path class="faint" d="M93 54Q120 56 147 54" /><path class="faint" d="M93 61Q120 63 147 61" /><path class="faint" d="M93 67Q120 69 147 67" /><ellipse cx="126" cy="57" rx="6" ry="3.4" /></g><path fill="url(#hatch-pl)" stroke="none" d="M120 19 A27 27 0 0 1 120 73 A10.8 27 0 0 0 120 19 Z" /><g transform="rotate(-16 252 46)"><ellipse class="faint" cx="252" cy="46" rx="46" ry="11" /><ellipse cx="252" cy="46" rx="38" ry="8.5" /></g><clipPath id="cs"><circle cx="252" cy="46" r="19" /></clipPath><circle class="body" cx="252" cy="46" r="19" /><g clip-path="url(#cs)"><path class="faint" d="M233 35H271" /><path class="faint" d="M233 41H271" /><path class="faint" d="M233 49H271" /><path class="faint" d="M233 56H271" /></g><path fill="url(#hatch-pl)" stroke="none" d="M252 27 A19 19 0 0 1 252 65 A7.6 19 0 0 0 252 27 Z" /><g transform="rotate(-16 252 46)"><path d="M214 46A38 8.5 0 0 0 290 46" /><path class="faint" d="M206 46A46 11 0 0 0 298 46" /></g><circle class="body" cx="330" cy="42" r="6.5" /><path fill="url(#hatch-pl)" stroke="none" d="M330 35.5 A6.5 6.5 0 0 1 330 48.5 A0 6.5 0 0 1 330 35.5 Z" /></svg>
+            <h2 id="t-progetti">Progetti personali in produzione</h2>
+            <p>
+              App mie, pubblicate e usate da persone vere. Le seguo
+              dall’idea agli store, e continuo a migliorarle.
             </p>
+          <figure class="study" aria-hidden="true"><svg class="study-svg" viewBox="0 0 260 420" focusable="false"><defs><pattern id="h-arm" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><circle cx="130" cy="160" r="92" /><circle class="faint" cx="130" cy="160" r="99" /><path class="faint" d="M222 160L229 160" /><path class="faint" d="M220.6 176L224 176.6" /><path class="faint" d="M216.5 191.5L219.7 192.7" /><path class="faint" d="M209.7 206L215.7 209.5" /><path class="faint" d="M200.5 219.1L203.2 221.4" /><path class="faint" d="M189.1 230.5L191.4 233.2" /><path class="faint" d="M176 239.7L179.5 245.7" /><path class="faint" d="M161.5 246.5L162.7 249.7" /><path class="faint" d="M146 250.6L146.6 254" /><path class="faint" d="M130 252L130 259" /><path class="faint" d="M114 250.6L113.4 254" /><path class="faint" d="M98.5 246.5L97.3 249.7" /><path class="faint" d="M84 239.7L80.5 245.7" /><path class="faint" d="M70.9 230.5L68.6 233.2" /><path class="faint" d="M59.5 219.1L56.8 221.4" /><path class="faint" d="M50.3 206L44.3 209.5" /><path class="faint" d="M43.5 191.5L40.3 192.7" /><path class="faint" d="M39.4 176L36 176.6" /><path class="faint" d="M38 160L31 160" /><path class="faint" d="M39.4 144L36 143.4" /><path class="faint" d="M43.5 128.5L40.3 127.3" /><path class="faint" d="M50.3 114L44.3 110.5" /><path class="faint" d="M59.5 100.9L56.8 98.6" /><path class="faint" d="M70.9 89.5L68.6 86.8" /><path class="faint" d="M84 80.3L80.5 74.3" /><path class="faint" d="M98.5 73.5L97.3 70.3" /><path class="faint" d="M114 69.4L113.4 66" /><path class="faint" d="M130 68L130 61" /><path class="faint" d="M146 69.4L146.6 66" /><path class="faint" d="M161.5 73.5L162.7 70.3" /><path class="faint" d="M176 80.3L179.5 74.3" /><path class="faint" d="M189.1 89.5L191.4 86.8" /><path class="faint" d="M200.5 100.9L203.2 98.6" /><path class="faint" d="M209.7 114L215.7 110.5" /><path class="faint" d="M216.5 128.5L219.7 127.3" /><path class="faint" d="M220.6 144L224 143.4" /><g transform="rotate(-23.4 130 160)"><path d="M130 42V278" /><ellipse cx="130" cy="160" rx="92" ry="20" /><ellipse class="faint" cx="130" cy="123.4" rx="84.4" ry="18" /><ellipse class="faint" cx="130" cy="196.6" rx="84.4" ry="18" /><ellipse class="faint" cx="130" cy="75.6" rx="36.6" ry="8" /><ellipse class="faint" cx="130" cy="244.4" rx="36.6" ry="8" /><circle class="dot" cx="130" cy="42" r="3" /><circle class="dot" cx="130" cy="278" r="3" /></g><ellipse cx="130" cy="160" rx="92" ry="24" transform="rotate(23.4 130 160)" /><ellipse class="faint" cx="130" cy="160" rx="86" ry="19" transform="rotate(23.4 130 160)" /><circle class="dot" cx="211.7" cy="195.4" r="0.8" /><circle class="dot" cx="208.9" cy="198.3" r="0.8" /><circle class="dot" cx="203.8" cy="200" r="0.8" /><circle class="dot" cx="196.4" cy="200.5" r="0.8" /><circle class="dot" cx="187.1" cy="199.8" r="0.8" /><circle class="dot" cx="175.9" cy="197.9" r="0.8" /><circle class="dot" cx="163.4" cy="194.8" r="0.8" /><circle class="dot" cx="149.9" cy="190.6" r="0.8" /><circle class="dot" cx="135.8" cy="185.6" r="0.8" /><circle class="dot" cx="121.4" cy="179.7" r="0.8" /><circle class="dot" cx="107.4" cy="173.3" r="0.8" /><circle class="dot" cx="94" cy="166.4" r="0.8" /><circle class="dot" cx="81.8" cy="159.4" r="0.8" /><circle class="dot" cx="71" cy="152.4" r="0.8" /><circle class="dot" cx="62" cy="145.6" r="0.8" /><circle class="dot" cx="55" cy="139.2" r="0.8" /><circle class="dot" cx="50.3" cy="133.5" r="0.8" /><circle class="dot" cx="48.1" cy="128.6" r="0.8" /><circle class="dot" cx="48.3" cy="124.6" r="0.8" /><circle class="dot" cx="51.1" cy="121.7" r="0.8" /><circle class="dot" cx="211.9" cy="191.4" r="0.8" /><ellipse class="faint" cx="130" cy="160" rx="99" ry="14" stroke-dasharray="2 4" /><circle class="body" cx="130" cy="160" r="11" /><path fill="url(#h-arm)" stroke="none" d="M130 149A11 11 0 0 1 130 171A4 11 0 0 0 130 149Z" /><path d="M130 259V330" /><path d="M116 330H144L160 352H100Z" /><path fill="url(#h-arm)" stroke="none" d="M132 333H143L156 349H132Z" /><ellipse cx="130" cy="360" rx="62" ry="9" /><ellipse class="faint" cx="130" cy="366" rx="70" ry="10" /><text x="140" y="38" text-anchor="start">a</text><text x="78" y="274" text-anchor="start">b</text><text class="formula" x="130" y="400" text-anchor="middle">ε = 23,44°</text></svg><figcaption>Fig. 1, sfera armillare</figcaption></figure>
           </div>
+          <div class="section-body">
+            <ul class="products" role="list">
+              <li>
+                <div class="iphone"><img class="product-shot" src="assets/img/progetti/eko/home.webp" loading="lazy" width="444" height="935" alt="La home di Eko su iPhone: il calendario della raccolta di Ramacca con il rifiuto di stasera." /></div>
+                <div>
+                  <p class="status mono">Su App Store, Android in arrivo</p>
+                  <h3><a href="progetti/eko.html">Eko</a></h3>
+                  <p class="tav">Tav. II, schermata dell’app</p>
+                  <p class="product-desc">
+                    Il calendario della raccolta differenziata del tuo comune,
+                    con il promemoria la sera prima e il dizionario «dove lo
+                    butto?». Oggi copre circa 14 comuni e 258 rifiuti per Kalat
+                    Ambiente.
+                  </p>
+                  <p class="product-role">
+                    Ho curato il backend: un solo Worker Cloudflare con Hono e
+                    D1, gli script che estraggono i calendari dai PDF dei
+                    gestori e le notifiche. Interfaccia e app di Stefano
+                    Sallemi, frontend developer.
+                  </p>
+                  <p class="stack">Hono, Cloudflare Workers, D1, React, Capacitor. Codice privato.</p>
+                  <p class="links">
+                    <a href="https://apps.apple.com/it/app/eko/id6762419786">Scarica su App Store</a>
+                    <a href="progetti/eko.html">Pagina del progetto</a>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="iphone"><img class="product-shot" src="assets/img/progetti/vocablio/youtube.webp" loading="lazy" width="480" height="1044" alt="Vocablio su telefono: toccata la parola «muscles», si apre un video TED su YouTube già posizionato sulla frase «increasing your heart rate and tensing your muscles»." /></div>
+                <div>
+                  <p class="status mono">Online, app iOS e Android in arrivo</p>
+                  <h3><a href="progetti/vocablio.html">Vocablio</a></h3>
+                  <p class="tav">Tav. III, video demo</p>
+                  <p class="product-desc">
+                    Impari l’inglese leggendo libri e articoli veri: tocchi una
+                    parola e vedi la traduzione, poi la senti pronunciata da un
+                    madrelingua in un video reale, già posizionato sulla frase
+                    giusta.
+                  </p>
+                  <p class="product-role">
+                    Prodotto mio, dall’idea alla pubblicazione. La ricerca nei
+                    video l’ho costruita da zero, con scraping e
+                    indicizzazione dei video YouTube.
+                  </p>
+                  <p class="stack">Capacitor, Cloudflare Workers, Google Translate API. Codice privato.</p>
+                  <p class="links">
+                    <a href="https://www.vocablio.org/it/">vocablio.org</a>
+                    <a href="progetti/vocablio.html">Guarda la demo</a>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-          <!-- GALLERY:START (generata) -->
-          <div
-            class="filters"
-            role="group"
-            aria-label="Filtra i progetti"
-            hidden>
-            <button
-              type="button"
-              class="chip"
-              data-filter="all"
-              aria-pressed="true">
-              Tutti
-            </button>
-            <button
-              type="button"
-              class="chip"
-              data-filter="app"
-              aria-pressed="false">
-              App e prodotti
-            </button>
-            <button
-              type="button"
-              class="chip"
-              data-filter="client"
-              aria-pressed="false">
-              Siti per clienti
-            </button>
-            <button
-              type="button"
-              class="chip"
-              data-filter="oss"
-              aria-pressed="false">
-              Open source
-            </button>
-            <button
-              type="button"
-              class="chip"
-              data-filter="ai"
-              aria-pressed="false">
-              AI e dati
-            </button>
-            <button
-              type="button"
-              class="chip"
-              data-filter="uni"
-              aria-pressed="false">
-              Università
-            </button>
+      <section class="section" id="esperimenti" aria-labelledby="t-esperimenti">
+        <div class="wrap grid">
+          <div class="section-head">
+            <svg class="fregio-band" viewBox="0 0 360 56" aria-hidden="true" focusable="false"><path class="faint" d="M0 50H360" /><path class="faint" d="M8 50v-5" /><path class="faint" d="M37 50v-5" /><path class="faint" d="M66 50v-5" /><path class="faint" d="M95 50v-5" /><path class="faint" d="M124 50v-5" /><path class="faint" d="M153 50v-5" /><path class="faint" d="M182 50v-5" /><path class="faint" d="M211 50v-5" /><path class="faint" d="M240 50v-5" /><path class="faint" d="M269 50v-5" /><path class="faint" d="M298 50v-5" /><path class="faint" d="M327 50v-5" /><path class="faint" d="M356 50v-5" /><path d="M8 50Q180 -30 352 50" stroke-dasharray="3 4" /><path class="faint" d="M180 10V50" stroke-dasharray="1 3" /><circle class="dot" cx="94" cy="20" r="2.5" /><circle class="dot" cx="180" cy="10" r="3" /><circle class="dot" cx="266" cy="20" r="2.5" /><circle class="dot" cx="8" cy="50" r="2" /><circle class="dot" cx="352" cy="50" r="2" /><text x="186" y="24">h</text></svg>
+            <h2 id="t-esperimenti">Esperimenti</h2>
+            <p>
+              Prototipi e strumenti nati da una domanda precisa. Per ognuno:
+              cosa volevo verificare, come l’ho fatto, cosa è successo.
+            </p>
+          <figure class="study" aria-hidden="true"><svg class="study-svg" viewBox="0 70 260 330" focusable="false"><defs><pattern id="h-bal" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path d="M10 360H250" /><path class="faint" d="M26 360v7" /><path class="faint" d="M46 360v4" /><path class="faint" d="M66 360v4" /><path class="faint" d="M86 360v4" /><path class="faint" d="M106 360v4" /><path class="faint" d="M126 360v7" /><text x="126" y="378" text-anchor="middle">1</text><path class="faint" d="M146 360v4" /><path class="faint" d="M166 360v4" /><path class="faint" d="M186 360v4" /><path class="faint" d="M206 360v4" /><path class="faint" d="M226 360v7" /><text x="226" y="378" text-anchor="middle">2</text><path class="faint" d="M246 360v4" /><path class="faint" d="M26 360L28.1 345.1L30.3 330.7L32.4 316.7L34.5 303.3L36.7 290.4L38.8 278L40.9 266.1L43.1 254.8L45.2 243.9L47.3 233.5L49.5 223.6L51.6 214.3L53.7 205.4L55.9 197.1L58 189.2L60.1 181.9L62.3 175.1L64.4 168.7L66.5 162.9L68.7 157.6L70.8 152.8L72.9 148.5L75.1 144.7L77.2 141.4L79.3 138.6L81.5 136.4L83.6 134.6L85.7 133.3L87.9 132.6L90 132.3L92.1 132.6L94.3 133.3L96.4 134.6L98.5 136.4L100.7 138.6L102.8 141.4L104.9 144.7L107.1 148.5L109.2 152.8L111.3 157.6L113.5 162.9L115.6 168.7L117.7 175.1L119.9 181.9L122 189.2L124.1 197.1L126.3 205.4L128.4 214.3L130.5 223.6L132.7 233.5L134.8 243.9L136.9 254.8L139.1 266.1L141.2 278L143.3 290.4L145.5 303.3L147.6 316.7L149.7 330.7L151.9 345.1L154 360" /><circle class="dot" cx="90" cy="132.3" r="1.8" /><path class="faint" d="M90 132.3V360" stroke-dasharray="1 3" /><circle class="dot" cx="154" cy="360" r="1.5" /><path d="M26 360L29 350.5L31.9 341.2L34.9 332.3L37.9 323.8L40.8 315.5L43.8 307.6L46.8 300L49.7 292.7L52.7 285.8L55.7 279.1L58.6 272.8L61.6 266.8L64.6 261.2L67.5 255.8L70.5 250.8L73.5 246.1L76.4 241.8L79.4 237.7L82.4 234L85.3 230.6L88.3 227.5L91.3 224.8L94.2 222.4L97.2 220.3L100.2 218.5L103.1 217L106.1 215.9L109.1 215.1L112 214.6L115 214.4L118 214.6L120.9 215.1L123.9 215.9L126.9 217L129.8 218.5L132.8 220.3L135.8 222.4L138.7 224.8L141.7 227.5L144.7 230.6L147.6 234L150.6 237.7L153.6 241.8L156.5 246.1L159.5 250.8L162.5 255.8L165.4 261.2L168.4 266.8L171.4 272.8L174.3 279.1L177.3 285.8L180.3 292.7L183.2 300L186.2 307.6L189.2 315.5L192.1 323.8L195.1 332.3L198.1 341.2L201 350.5L204 360" /><circle class="dot" cx="115" cy="214.4" r="1.8" /><path class="faint" d="M115 214.4V360" stroke-dasharray="1 3" /><circle class="dot" cx="204" cy="360" r="1.5" /><path class="faint" d="M26 360L29.5 353.5L33 347.3L36.5 341.2L40 335.4L43.5 329.8L47 324.5L50.5 319.3L54 314.4L57.5 309.6L61 305.1L64.5 300.9L68 296.8L71.5 293L75 289.3L78.5 285.9L82 282.8L85.5 279.8L89 277.1L92.5 274.5L96 272.2L99.5 270.1L103 268.3L106.5 266.6L110 265.2L113.5 264L117 263L120.5 262.2L124 261.7L127.5 261.4L131 261.3L134.5 261.4L138 261.7L141.5 262.2L145 263L148.5 264L152 265.2L155.5 266.6L159 268.3L162.5 270.1L166 272.2L169.5 274.5L173 277.1L176.5 279.8L180 282.8L183.5 285.9L187 289.3L190.5 293L194 296.8L197.5 300.9L201 305.1L204.5 309.6L208 314.4L211.5 319.3L215 324.5L218.5 329.8L222 335.4L225.5 341.2L229 347.3L232.5 353.5L236 360" /><circle class="dot" cx="131" cy="261.3" r="1.8" /><path class="faint" d="M131 261.3V360" stroke-dasharray="1 3" /><circle class="dot" cx="236" cy="360" r="1.5" /><path d="M26 360L29.7 356L33.3 352.1L37 348.4L40.7 344.8L44.3 341.3L48 338L51.7 334.8L55.3 331.8L59 328.8L62.7 326.1L66.3 323.4L70 320.9L73.7 318.5L77.3 316.3L81 314.2L84.7 312.2L88.3 310.4L92 308.7L95.7 307.1L99.3 305.7L103 304.4L106.7 303.3L110.3 302.2L114 301.4L117.7 300.6L121.3 300L125 299.5L128.7 299.2L132.3 299L136 298.9L139.7 299L143.3 299.2L147 299.5L150.7 300L154.3 300.6L158 301.4L161.7 302.2L165.3 303.3L169 304.4L172.7 305.7L176.3 307.1L180 308.7L183.7 310.4L187.3 312.2L191 314.2L194.7 316.3L198.3 318.5L202 320.9L205.7 323.4L209.3 326.1L213 328.8L216.7 331.8L220.3 334.8L224 338L227.7 341.3L231.3 344.8L235 348.4L238.7 352.1L242.3 356L246 360" /><circle class="dot" cx="136" cy="298.9" r="1.8" /><path class="faint" d="M136 298.9V360" stroke-dasharray="1 3" /><circle class="dot" cx="246" cy="360" r="1.5" /><path class="faint" d="M26 360L29.3 358L32.7 356L36 354.1L39.3 352.2L42.7 350.5L46 348.8L49.3 347.1L52.7 345.6L56 344.1L59.3 342.6L62.7 341.3L66 340L69.3 338.8L72.7 337.6L76 336.6L79.3 335.6L82.7 334.6L86 333.8L89.3 333L92.7 332.2L96 331.6L99.3 331L102.7 330.5L106 330L109.3 329.6L112.7 329.3L116 329.1L119.3 328.9L122.7 328.8L126 328.8L129.3 328.8L132.7 328.9L136 329.1L139.3 329.3L142.7 329.6L146 330L149.3 330.5L152.7 331L156 331.6L159.3 332.2L162.7 333L166 333.8L169.3 334.6L172.7 335.6L176 336.6L179.3 337.6L182.7 338.8L186 340L189.3 341.3L192.7 342.6L196 344.1L199.3 345.6L202.7 347.1L206 348.8L209.3 350.5L212.7 352.2L216 354.1L219.3 356L222.7 358L226 360" /><circle class="dot" cx="126" cy="328.8" r="1.8" /><path class="faint" d="M126 328.8V360" stroke-dasharray="1 3" /><circle class="dot" cx="226" cy="360" r="1.5" /><path class="faint" d="M60 360A34 34 0 0 0 54.8 342" /><path class="faint" d="M72 360A46 46 0 0 0 56.8 325.8" /><path class="faint" d="M84 360A58 58 0 0 0 53.2 308.8" /><text x="76" y="346" text-anchor="start">θ</text><circle class="body" cx="26" cy="356" r="11" /><circle fill="url(#h-bal)" stroke="none" cx="26" cy="356" r="11" /><g transform="rotate(-48 26 356)"><rect class="body" x="22" y="352" width="34" height="9" /></g><text class="formula" x="130" y="100" text-anchor="middle">R = v² sin 2θ / g</text><text class="formula" x="130" y="118" text-anchor="middle">y = x tan θ (1 − x / R)</text></svg><figcaption>Fig. 2, traiettorie dei gravi</figcaption></figure>
           </div>
-          <p class="sr-only" role="status" id="gallery-status"></p>
-          <ul class="gallery" role="list">
-            <li class="card" data-tags="app">
-              <div class="card-media is-phone">
-                <img
-                  src="assets/img/progetti/eko/home.webp"
-                  alt=""
-                  loading="lazy" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">App web, iOS e Android</p>
-                <h3><a href="progetti/eko.html">Eko</a></h3>
-                <p class="card-desc">
-                  Il calendario della raccolta differenziata del tuo comune, con
-                  il promemoria la sera prima e il dizionario «dove lo butto?».
-                </p>
-                <p class="badges">
-                  <span class="badge badge-soon">
-                    App iOS e Android presto disponibili
-                  </span>
-                  <span class="badge badge-private">Codice privato</span>
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>React</li>
-                  <li>Capacitor</li>
-                  <li>Cloudflare Workers</li>
-                  <li>D1</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-            <li class="card" data-tags="app">
-              <div class="card-media is-phone">
-                <img
-                  src="assets/img/progetti/vocablio/demo-poster.webp"
-                  alt=""
-                  loading="lazy" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">App per imparare l'inglese</p>
-                <h3><a href="progetti/vocablio.html">Vocablio</a></h3>
-                <p class="card-desc">
-                  Impari l'inglese leggendo libri veri: tocchi una parola e vedi
-                  la traduzione, poi la senti pronunciata da un madrelingua.
-                </p>
-                <p class="badges">
-                  <span class="badge badge-soon">
-                    App iOS e Android presto disponibili
-                  </span>
-                  <span class="badge badge-private">Codice privato</span>
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>Youtube</li>
-                  <li>Capacitor</li>
-                  <li>Cloudflare Workers</li>
-                  <li>Google Translate API</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-            <li class="card" data-tags="oss ai">
-              <div class="card-media">
-                <img
-                  src="assets/img/progetti/fern/thumb.webp"
-                  alt=""
-                  loading="lazy"
-                  width="1200"
-                  height="750" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">Assistente AI per le API</p>
-                <h3><a href="progetti/fern.html">Fern</a></h3>
-                <p class="card-desc">
-                  Un chatbot che usa qualsiasi API al posto tuo: carichi la
-                  specifica OpenAPI e chiedi quello che ti serve a parole.
-                </p>
-                <p class="badges">
-                  <span class="badge badge-oss">Open source</span>
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>Python</li>
-                  <li>Streamlit</li>
-                  <li>Ollama</li>
-                  <li>Mistral</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-            <li class="card" data-tags="app">
-              <div class="card-media">
-                <img
-                  src="assets/img/progetti/signforge/cover.webp"
-                  alt=""
-                  loading="lazy"
-                  width="1200"
-                  height="750" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">Strumento interno · stampa 3D</p>
-                <h3><a href="progetti/signforge.html">SignForge</a></h3>
-                <p class="card-desc">
-                  La web app che uso per progettare le insegne LED che stampo in
-                  3D: scrivi il testo e ottieni il modello pronto per la stampa.
-                </p>
-                <p class="badges">
-                  <span class="badge badge-private">Strumento interno</span>
-                  <span class="badge badge-private">Codice privato</span>
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>Python</li>
-                  <li>Flask</li>
-                  <li>OpenSCAD</li>
-                  <li>Stampa 3D</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-            <li class="card" data-tags="client">
-              <div class="card-media">
-                <img
-                  src="assets/img/progetti/maris-onlus/logo.webp"
-                  alt=""
-                  loading="lazy"
-                  width="1200"
-                  height="750" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">Sito per un'associazione</p>
-                <h3><a href="progetti/maris-onlus.html">MARIS Onlus</a></h3>
-                <p class="card-desc">
-                  Il nuovo sito dell'Associazione Malattie Reumatiche Infantili
-                  Sicilia, con tutti gli articoli migrati dal vecchio WordPress.
-                  In corso.
-                </p>
-                <p class="badges">
-                  <span class="badge badge-wip">In corso</span>
-                  <span class="badge badge-private">Codice privato</span>
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>Sito web</li>
-                  <li>Migrazione WordPress</li>
-                  <li>Python</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-            <li class="card" data-tags="client">
-              <div class="card-media">
-                <img
-                  src="assets/img/progetti/freddo-pregiato/home.webp"
-                  alt=""
-                  loading="lazy"
-                  width="1200"
-                  height="750" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">Sito e catalogo per un cliente</p>
-                <h3>
+          <div class="section-body">
+            <table class="lab">
+              <caption class="sr-only">
+                Registro degli esperimenti: ipotesi, metodo e risultato di ogni progetto
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">N.</th>
+                  <th scope="col">Progetto</th>
+                  <th scope="col">Ipotesi</th>
+                  <th scope="col">Metodo</th>
+                  <th scope="col">Risultato</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="n">E-01</td>
+                  <th class="name" scope="row"><a href="progetti/fern.html">Fern</a><span class="tav">Tav. IV, video demo</span></th>
+                  <td class="hyp" data-label="Ipotesi">Un modello linguistico locale può usare un’API qualsiasi partendo solo dalla sua specifica OpenAPI.</td>
+                  <td class="method" data-label="Metodo">Ollama, Mistral, Python, Streamlit. Open source</td>
+                  <td class="res" data-label="Risultato">Funziona in demo. Open source con licenza MIT.</td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="5">
+                    <details class="more">
+                      <summary><span class="sum-desk">Dettagli e link</span><span class="sum-mob"><span class="sum-n">E-01</span><span class="sum-name">Fern</span><span class="leader"></span><span class="ref">Tav. IV</span></span></summary>
+                      <div class="more-body">
+                        <dl class="more-facts">
+                          <div><dt>Ipotesi</dt><dd>Un modello linguistico locale può usare un’API qualsiasi partendo solo dalla sua specifica OpenAPI.</dd></div>
+                          <div><dt>Metodo</dt><dd class="mono">Ollama, Mistral, Python, Streamlit. Open source</dd></div>
+                          <div><dt>Risultato</dt><dd>Funziona in demo. Open source con licenza MIT.</dd></div>
+                        </dl>
+                        <p class="more-tav"><a href="progetti/fern.html">Apri la Tav. IV, video demo</a></p>
+                        <p>
+                          Carichi la specifica e chiedi a parole quello che ti
+                          serve. Il modello gira in locale e scrive la
+                          richiesta in JSON strutturato, che viene controllata
+                          sulla specifica prima della chiamata.
+                        </p>
+                        <p class="links">
+                          <a href="progetti/fern.html">Guarda la demo</a>
+                          <a href="https://github.com/rocketxx/APIFerniV2">Codice su GitHub</a>
+                        </p>
+                      </div>
+                    </details>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td class="n">E-02</td>
+                  <th class="name" scope="row"><a href="progetti/signforge.html">SignForge</a><span class="tav">Tav. V, foto e video</span></th>
+                  <td class="hyp" data-label="Ipotesi">Un’insegna LED si può generare da pochi parametri invece di disegnarla a mano.</td>
+                  <td class="method" data-label="Metodo">OpenSCAD, Python, Flask. Codice privato</td>
+                  <td class="res" data-label="Risultato">Lo uso per produrre le insegne che stampo.</td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="5">
+                    <details class="more">
+                      <summary><span class="sum-desk">Dettagli e link</span><span class="sum-mob"><span class="sum-n">E-02</span><span class="sum-name">SignForge</span><span class="leader"></span><span class="ref">Tav. V</span></span></summary>
+                      <div class="more-body">
+                        <dl class="more-facts">
+                          <div><dt>Ipotesi</dt><dd>Un’insegna LED si può generare da pochi parametri invece di disegnarla a mano.</dd></div>
+                          <div><dt>Metodo</dt><dd class="mono">OpenSCAD, Python, Flask. Codice privato</dd></div>
+                          <div><dt>Risultato</dt><dd>Lo uso per produrre le insegne che stampo.</dd></div>
+                        </dl>
+                        <p class="more-tav"><a href="progetti/signforge.html">Apri la Tav. V, foto e video</a></p>
+                        <p>
+                          Disegnare ogni insegna a mano richiedeva ore. Ora un
+                          solo fattore di scala, k = altezza / 50, adatta
+                          tutto il modello: le insegne da 3 a 30 cm escono
+                          stampabili.
+                        </p>
+                        <p class="links">
+                          <a href="progetti/signforge.html">Foto e video delle stampe</a>
+                        </p>
+                      </div>
+                    </details>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td class="n">E-03</td>
+                  <th class="name" scope="row"><a href="progetti/mdreader.html">mdreader</a><span class="tav">Tav. VI, schermata</span></th>
+                  <td class="hyp" data-label="Ipotesi">Un lettore Markdown completo può stare in un solo file HTML, senza server e senza installare niente.</td>
+                  <td class="method" data-label="Metodo">marked, DOMPurify, KaTeX, Mermaid. Open source</td>
+                  <td class="res" data-label="Risultato">Online e open source.</td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="5">
+                    <details class="more">
+                      <summary><span class="sum-desk">Dettagli e link</span><span class="sum-mob"><span class="sum-n">E-03</span><span class="sum-name">mdreader</span><span class="leader"></span><span class="ref">Tav. VI</span></span></summary>
+                      <div class="more-body">
+                        <dl class="more-facts">
+                          <div><dt>Ipotesi</dt><dd>Un lettore Markdown completo può stare in un solo file HTML, senza server e senza installare niente.</dd></div>
+                          <div><dt>Metodo</dt><dd class="mono">marked, DOMPurify, KaTeX, Mermaid. Open source</dd></div>
+                          <div><dt>Risultato</dt><dd>Online e open source.</dd></div>
+                        </dl>
+                        <p class="more-tav"><a href="progetti/mdreader.html">Apri la Tav. VI, schermata</a></p>
+                        <p>
+                          Leggi e modifichi Markdown nel browser, con formule e
+                          diagrammi. Uno script Node impacchetta tutto in un
+                          unico file, che esporta in .md, HTML, testo per Word
+                          e Outlook e PDF.
+                        </p>
+                        <p class="links">
+                          <a href="https://rocketxx.github.io/mdreader/">Apri mdreader</a>
+                          <a href="https://github.com/rocketxx/mdreader">Codice su GitHub</a>
+                        </p>
+                      </div>
+                    </details>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td class="n">E-04</td>
+                  <th class="name" scope="row"><a href="progetti/maps-scraper.html">Maps Scraper</a><span class="tav">Tav. VII, scelte tecniche</span></th>
+                  <td class="hyp" data-label="Ipotesi">Una ricerca su Google Maps può diventare un Excel di attività, senza copiare a mano.</td>
+                  <td class="method" data-label="Metodo">Estensione Chrome, SheetJS. Codice privato</td>
+                  <td class="res" data-label="Risultato">La uso per trovare clienti e proporre partnership.</td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="5">
+                    <details class="more">
+                      <summary><span class="sum-desk">Dettagli e link</span><span class="sum-mob"><span class="sum-n">E-04</span><span class="sum-name">Maps Scraper</span><span class="leader"></span><span class="ref">Tav. VII</span></span></summary>
+                      <div class="more-body">
+                        <dl class="more-facts">
+                          <div><dt>Ipotesi</dt><dd>Una ricerca su Google Maps può diventare un Excel di attività, senza copiare a mano.</dd></div>
+                          <div><dt>Metodo</dt><dd class="mono">Estensione Chrome, SheetJS. Codice privato</dd></div>
+                          <div><dt>Risultato</dt><dd>La uso per trovare clienti e proporre partnership.</dd></div>
+                        </dl>
+                        <p class="more-tav"><a href="progetti/maps-scraper.html">Apri la Tav. VII, scelte tecniche</a></p>
+                        <p>
+                          Da una ricerca ottengo in pochi minuti un file con
+                          nome, categoria, valutazione, indirizzo, telefono,
+                          sito e orari di ogni attività, pronto da contattare.
+                        </p>
+                        <p class="links">
+                          <a href="progetti/maps-scraper.html">Pagina del progetto</a>
+                        </p>
+                      </div>
+                    </details>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td class="n">E-05</td>
+                  <th class="name" scope="row"><a href="progetti/biodata.html">BioData</a><span class="tav">Tav. VIII, architettura</span></th>
+                  <td class="hyp" data-label="Ipotesi">I dati dei sensori in campo, letti in tempo reale, possono avvisare quando una coltura è a rischio.</td>
+                  <td class="method" data-label="Metodo">Node, Elasticsearch, Kibana, Docker. Open source</td>
+                  <td class="res" data-label="Risultato">Tesi di laurea 2022, pensata per un’azienda agricola reale.</td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="5">
+                    <details class="more">
+                      <summary><span class="sum-desk">Dettagli e link</span><span class="sum-mob"><span class="sum-n">E-05</span><span class="sum-name">BioData</span><span class="leader"></span><span class="ref">Tav. VIII</span></span></summary>
+                      <div class="more-body">
+                        <dl class="more-facts">
+                          <div><dt>Ipotesi</dt><dd>I dati dei sensori in campo, letti in tempo reale, possono avvisare quando una coltura è a rischio.</dd></div>
+                          <div><dt>Metodo</dt><dd class="mono">Node, Elasticsearch, Kibana, Docker. Open source</dd></div>
+                          <div><dt>Risultato</dt><dd>Tesi di laurea 2022, pensata per un’azienda agricola reale.</dd></div>
+                        </dl>
+                        <p class="more-tav"><a href="progetti/biodata.html">Apri la Tav. VIII, architettura</a></p>
+                        <p>
+                          Per esempio, vento oltre 30 km/h in una serra di
+                          pomodori fa partire un avviso su Slack o via email.
+                          Progettato con AgrosNote per l’azienda agricola
+                          Colle d’Oro di Ispica (RG).
+                        </p>
+                        <p class="links">
+                          <a href="progetti/biodata.html">Architettura e dashboard</a>
+                          <a href="https://github.com/rocketxx/biodata_tesi">Codice su GitHub</a>
+                        </p>
+                      </div>
+                    </details>
+                  </td>
+                </tr>
+              </tbody>
+
+              <tbody>
+                <tr>
+                  <td class="n">E-06</td>
+                  <th class="name" scope="row"><a href="progetti/sentimentitle.html">SentimenTitle</a><span class="tav">Tav. IX, pipeline</span></th>
+                  <td class="hyp" data-label="Ipotesi">Un modello semplice può dire in tempo reale se il titolo di una notizia è positivo, neutro o negativo.</td>
+                  <td class="method" data-label="Metodo">Kafka, Spark MLlib, Word2Vec. Open source</td>
+                  <td class="res" data-label="Risultato">Il mio primo modello di machine learning: ogni titolo arriva in Kibana con classe e probabilità.</td>
+                </tr>
+                <tr class="detail-row">
+                  <td colspan="5">
+                    <details class="more">
+                      <summary><span class="sum-desk">Dettagli e link</span><span class="sum-mob"><span class="sum-n">E-06</span><span class="sum-name">SentimenTitle</span><span class="leader"></span><span class="ref">Tav. IX</span></span></summary>
+                      <div class="more-body">
+                        <dl class="more-facts">
+                          <div><dt>Ipotesi</dt><dd>Un modello semplice può dire in tempo reale se il titolo di una notizia è positivo, neutro o negativo.</dd></div>
+                          <div><dt>Metodo</dt><dd class="mono">Kafka, Spark MLlib, Word2Vec. Open source</dd></div>
+                          <div><dt>Risultato</dt><dd>Il mio primo modello di machine learning: ogni titolo arriva in Kibana con classe e probabilità.</dd></div>
+                        </dl>
+                        <p class="more-tav"><a href="progetti/sentimentitle.html">Apri la Tav. IX, pipeline</a></p>
+                        <p>
+                          Progetto universitario. I titoli di BBC News, The
+                          Verge e TechCrunch passano da NewsAPI a Kafka e Spark
+                          Streaming. Word2Vec trasforma le parole in vettori e
+                          una regressione logistica a tre classi, addestrata
+                          sui tweet annotati a mano di Sentiment140, ne stima
+                          il tono.
+                        </p>
+                        <p class="links">
+                          <a href="progetti/sentimentitle.html">Pagina del progetto</a>
+                          <a href="https://github.com/rocketxx/SentimenTitle.">Codice su GitHub</a>
+                        </p>
+                      </div>
+                    </details>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="archive">
+              <h3>Archivio</h3>
+              <p>
+                Il mio primo
+                <a href="progetti/gioco-unity.html">gioco 3D in Unity</a>, un
+                sistema di code ordini con
+                <a href="https://github.com/rocketxx/queue">Spring Boot e RabbitMQ</a>
+                e altri esperimenti su
+                <a href="https://github.com/rocketxx">github.com/rocketxx</a>.
+                Alcuni progetti sono open source, altri sono prodotti miei o
+                lavori per clienti con codice privato: nella pagina di ognuno
+                trovi comunque com’è fatto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="lavori" aria-labelledby="t-lavori">
+        <div class="wrap grid">
+          <div class="section-head">
+            <svg class="fregio-band" viewBox="0 0 360 100" aria-hidden="true" focusable="false"><defs><pattern id="hatch-le" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><rect x="24" y="17" width="62" height="62" /><circle cx="55" cy="41" r="38" /><path class="faint" d="M24 17L86 79M86 17L24 79" stroke-dasharray="2 3" /><path class="faint" d="M55 11V85M18 48H92" /><circle class="dot" cx="55" cy="41" r="1.8" /><circle class="faint" cx="180" cy="46" r="30" /><circle cx="180" cy="46" r="15" /><circle cx="193" cy="53.5" r="15" /><circle cx="180" cy="61" r="15" /><circle cx="167" cy="53.5" r="15" /><circle cx="167" cy="38.5" r="15" /><circle cx="180" cy="31" r="15" /><circle cx="193" cy="38.5" r="15" /><path d="M300 10L331.2 28L331.2 64L300 82L268.8 64L268.8 28Z" /><path class="faint" d="M300 63L285.3 37.5L314.7 37.5Z" stroke-dasharray="2 3" /><path class="faint" d="M300 63L331.2 64" stroke-dasharray="2 3" /><path class="faint" d="M300 63L300 82" stroke-dasharray="2 3" /><path class="faint" d="M300 63L268.8 64" stroke-dasharray="2 3" /><path class="faint" d="M285.3 37.5L268.8 64" stroke-dasharray="2 3" /><path class="faint" d="M285.3 37.5L268.8 28" stroke-dasharray="2 3" /><path class="faint" d="M285.3 37.5L300 10" stroke-dasharray="2 3" /><path class="faint" d="M314.7 37.5L300 10" stroke-dasharray="2 3" /><path class="faint" d="M314.7 37.5L331.2 28" stroke-dasharray="2 3" /><path class="faint" d="M314.7 37.5L331.2 64" stroke-dasharray="2 3" /><path d="M300 29L314.7 54.5L285.3 54.5Z" /><path d="M300 29L268.8 28" /><path d="M300 29L300 10" /><path d="M300 29L331.2 28" /><path d="M314.7 54.5L331.2 28" /><path d="M314.7 54.5L331.2 64" /><path d="M314.7 54.5L300 82" /><path d="M285.3 54.5L300 82" /><path d="M285.3 54.5L268.8 64" /><path d="M285.3 54.5L268.8 28" /><circle class="dot" cx="300" cy="10" r="1.3" /><circle class="dot" cx="331.2" cy="28" r="1.3" /><circle class="dot" cx="331.2" cy="64" r="1.3" /><circle class="dot" cx="300" cy="82" r="1.3" /><circle class="dot" cx="268.8" cy="64" r="1.3" /><circle class="dot" cx="268.8" cy="28" r="1.3" /><circle class="dot" cx="300" cy="29" r="1.3" /><circle class="dot" cx="314.7" cy="54.5" r="1.3" /><circle class="dot" cx="285.3" cy="54.5" r="1.3" /><text x="180" y="96" text-anchor="middle">De divina proportione</text></svg>
+            <h2 id="t-lavori">Lavori</h2>
+            <p>
+              Se hai un’attività, un’associazione o un’idea, seguo il progetto
+              dall’inizio alla pubblicazione, e anche dopo.
+            </p>
+          <figure class="study" aria-hidden="true"><svg class="study-svg" viewBox="0 0 260 322" focusable="false"><defs><pattern id="h-gear" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path d="M175 92L184.9 94.8L184.5 100.7L174.2 101.9L171.9 111.5L171.9 111.5L180.5 117.2L178.2 122.7L168.1 120.6L163 129L163 129L169.4 137.1L165.5 141.6L156.5 136.5L149 143L149 143L152.7 152.6L147.6 155.7L140.6 148.1L131.5 151.9L131.5 151.9L131.9 162.2L126.1 163.6L121.9 154.2L112 155L112 155L109.2 164.9L103.3 164.5L102.1 154.2L92.5 151.9L92.5 151.9L86.8 160.5L81.3 158.2L83.4 148.1L75 143L75 143L66.9 149.4L62.4 145.5L67.5 136.5L61 129L61 129L51.4 132.7L48.3 127.6L55.9 120.6L52.1 111.5L52.1 111.5L41.8 111.9L40.4 106.1L49.8 101.9L49 92L49 92L39.1 89.2L39.5 83.3L49.8 82.1L52.1 72.5L52.1 72.5L43.5 66.8L45.8 61.3L55.9 63.4L61 55L61 55L54.6 46.9L58.5 42.4L67.5 47.5L75 41L75 41L71.3 31.4L76.4 28.3L83.4 35.9L92.5 32.1L92.5 32.1L92.1 21.8L97.9 20.4L102.1 29.8L112 29L112 29L114.8 19.1L120.7 19.5L121.9 29.8L131.5 32.1L131.5 32.1L137.2 23.5L142.7 25.8L140.6 35.9L149 41L149 41L157.1 34.6L161.6 38.5L156.5 47.5L163 55L163 55L172.6 51.3L175.7 56.4L168.1 63.4L171.9 72.5L171.9 72.5L182.2 72.1L183.6 77.9L174.2 82.1L175 92Z" /><circle class="faint" cx="112" cy="92" r="68" stroke-dasharray="2 3" /><circle class="body" cx="112" cy="92" r="19" /><circle fill="url(#h-gear)" stroke="none" cx="112" cy="92" r="19" /><path class="faint" d="M131 92L171 92" /><path class="faint" d="M112 111L112 151" /><path class="faint" d="M93 92L53 92" /><path class="faint" d="M112 73L112 33" /><circle class="faint" cx="112" cy="92" r="59" /><path class="faint" d="M108 92h8M112 88v8" /><path d="M193.6 187.5L202.1 193.3L199.2 199L189.5 195.5L183.1 202L183.1 202L186.5 211.7L180.9 214.6L175 206.1L166.1 207.5L166.1 207.5L163.1 217.4L156.8 216.4L157.1 206.1L149 202L149 202L140.8 208.2L136.3 203.7L142.6 195.5L138.5 187.5L138.5 187.5L128.2 187.7L127.2 181.4L137.1 178.5L138.5 169.5L138.5 169.5L130 163.7L132.9 158L142.6 161.5L149 155L149 155L145.6 145.3L151.2 142.4L157.1 150.9L166.1 149.5L166.1 149.5L169 139.6L175.3 140.6L175 150.9L183.1 155L183.1 155L191.3 148.8L195.8 153.3L189.5 161.5L193.6 169.5L193.6 169.5L203.9 169.3L204.9 175.6L195.1 178.5L193.6 187.5Z" /><circle class="faint" cx="166.1" cy="178.5" r="34" stroke-dasharray="2 3" /><circle class="body" cx="166.1" cy="178.5" r="9.5" /><circle fill="url(#h-gear)" stroke="none" cx="166.1" cy="178.5" r="9.5" /><path class="faint" d="M175.1 181.4L189.8 186.2" /><path class="faint" d="M159 184.9L147.5 195.2" /><path class="faint" d="M164.1 169.2L160.9 154" /><circle class="faint" cx="166.1" cy="178.5" r="25" /><path class="faint" d="M162.1 178.5h8M166.1 174.5v8" /><path d="M155.6 241.3L163.9 247.5L160.7 253L151.3 248.8L144.6 254.4L144.6 254.4L147 264.4L141.1 266.6L136.5 257.4L127.8 257.4L127.8 257.4L123.2 266.6L117.2 264.4L119.6 254.4L113 248.8L113 248.8L103.5 253L100.4 247.5L108.6 241.3L107.1 232.8L107.1 232.8L97.3 229.8L98.4 223.6L108.6 224.2L113 216.7L113 216.7L107.3 208.1L112.2 204L119.6 211.1L127.8 208.2L127.8 208.2L129 197.9L135.3 197.9L136.5 208.2L144.6 211.1L144.6 211.1L152.1 204L157 208.1L151.3 216.7L155.6 224.2L155.6 224.2L165.9 223.6L167 229.8L157.1 232.8L155.6 241.3Z" /><circle class="faint" cx="132.1" cy="232.8" r="30" stroke-dasharray="2 3" /><circle class="body" cx="132.1" cy="232.8" r="8.4" /><circle fill="url(#h-gear)" stroke="none" cx="132.1" cy="232.8" r="8.4" /><path class="faint" d="M140 235.6L151.9 240" /><path class="faint" d="M125.7 238.2L116 246.3" /><path class="faint" d="M130.7 224.5L128.5 212.1" /><circle class="faint" cx="132.1" cy="232.8" r="21" /><path class="faint" d="M128.1 232.8h8M132.1 228.8v8" /><rect x="36" y="263.8" width="190" height="24" /><path class="faint" d="M40 263.8L46 287.8" /><path class="faint" d="M49 263.8L55 287.8" /><path class="faint" d="M58 263.8L64 287.8" /><path class="faint" d="M67 263.8L73 287.8" /><path class="faint" d="M76 263.8L82 287.8" /><path class="faint" d="M85 263.8L91 287.8" /><path class="faint" d="M94 263.8L100 287.8" /><path class="faint" d="M103 263.8L109 287.8" /><path class="faint" d="M112 263.8L118 287.8" /><path class="faint" d="M121 263.8L127 287.8" /><path class="faint" d="M130 263.8L136 287.8" /><path class="faint" d="M139 263.8L145 287.8" /><path class="faint" d="M148 263.8L154 287.8" /><path class="faint" d="M157 263.8L163 287.8" /><path class="faint" d="M166 263.8L172 287.8" /><path class="faint" d="M175 263.8L181 287.8" /><path class="faint" d="M184 263.8L190 287.8" /><path class="faint" d="M193 263.8L199 287.8" /><path class="faint" d="M202 263.8L208 287.8" /><path class="faint" d="M211 263.8L217 287.8" /><path class="faint" d="M220 263.8L226 287.8" /><path d="M14 275.8H36M226 275.8H248" /><rect class="body" x="13" y="265.8" width="10" height="20" /><rect fill="url(#h-gear)" stroke="none" x="13" y="265.8" width="10" height="20" /><rect class="body" x="231" y="265.8" width="10" height="20" /><rect fill="url(#h-gear)" stroke="none" x="231" y="265.8" width="10" height="20" /><text x="112" y="10" text-anchor="middle">a</text><text x="214.1" y="182.5" text-anchor="start">b</text><text x="88.1" y="236.8" text-anchor="end">c</text><text class="formula" x="130" y="309.8" text-anchor="middle">i = z₁ / z₂</text></svg><figcaption>Fig. 3, ruote dentate e vite perpetua</figcaption></figure>
+          </div>
+          <div class="section-body">
+            <ul class="clients" role="list">
+              <li>
+                <p class="status mono">In produzione</p>
+                <div>
+                  <h3><a href="progetti/freddo-pregiato.html">Freddo Pregiato</a></h3>
+                  <p class="tav">Tav. X, schermata del sito</p>
+                  <p>
+                    Sito e catalogo per un negozio: cerchi per prodotto,
+                    codice o categoria, vedi le offerte e ordini su WhatsApp,
+                    senza un e-commerce complesso.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <p class="status mono">In corso</p>
+                <div>
+                  <h3><a href="progetti/maris-onlus.html">MARIS Onlus</a></h3>
+                  <p class="tav">Tav. XI, migrazione e nuovo sito</p>
+                  <p>
+                    Nuovo sito per un’associazione. Anni di articoli, eventi e
+                    rassegna stampa sono già migrati dal vecchio WordPress; il
+                    nuovo sito arriva a breve.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="subhead">Cosa posso fare per te</h3>
+            <ul class="services" role="list">
+              <li>
+                <h4>Siti web</h4>
+                <p>Siti veloci, curati e facili da aggiornare, per attività, professionisti e associazioni.</p>
+                <p class="examples">
+                  Per esempio: <a href="progetti/maris-onlus.html">MARIS Onlus</a>,
                   <a href="progetti/freddo-pregiato.html">Freddo Pregiato</a>
-                </h3>
-                <p class="card-desc">
-                  Il catalogo online di un negozio di surgelati: ricerca,
-                  offerte e ordini su WhatsApp.
                 </p>
-                <p class="badges">
-                  <span class="badge badge-live">In produzione</span>
-                  <span class="badge badge-private">Codice privato</span>
+              </li>
+              <li>
+                <h4>Web app e PWA</h4>
+                <p>Gestionali, cataloghi, prenotazioni e dashboard. Si installano come app e funzionano anche offline.</p>
+                <p class="examples">
+                  Per esempio: <a href="progetti/eko.html">Eko</a>,
+                  <a href="progetti/mdreader.html">mdreader</a>
                 </p>
-                <ul class="stack-tags" role="list">
-                  <li>Sito web</li>
-                  <li>Catalogo</li>
-                  <li>WhatsApp</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-            <li class="card" data-tags="oss">
-              <div class="card-media">
-                <img
-                  src="assets/img/progetti/mdreader/home.webp"
-                  alt=""
-                  loading="lazy"
-                  width="1200"
-                  height="750" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">Lettore Markdown</p>
-                <h3><a href="progetti/mdreader.html">mdreader</a></h3>
-                <p class="card-desc">
-                  Un lettore ed editor Markdown in una sola pagina HTML:
-                  offline, privato, con diagrammi e formule.
-                </p>
-                <p class="badges">
-                  <span class="badge badge-oss">Open source</span>
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>JavaScript</li>
-                  <li>marked</li>
-                  <li>Mermaid</li>
-                  <li>KaTeX</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-            <li class="card" data-tags="app">
-              <div class="card-media">
-                <img
-                  src="assets/img/progetti/maps-scraper/cover.webp"
-                  alt=""
-                  loading="lazy"
-                  width="1200"
-                  height="750" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">Estensione per Chrome</p>
-                <h3><a href="progetti/maps-scraper.html">Maps Scraper</a></h3>
-                <p class="card-desc">
-                  Trasforma una ricerca su Google Maps in un foglio Excel di
-                  attività commerciali, con telefono, sito e orari.
-                </p>
-                <p class="badges">
-                  <span class="badge badge-private">Codice privato</span>
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>Chrome MV3</li>
-                  <li>JavaScript</li>
-                  <li>SheetJS</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-            <li class="card" data-tags="oss ai uni">
-              <div class="card-media">
-                <img
-                  src="assets/img/progetti/biodata/kibana-mappa.webp"
-                  alt=""
-                  loading="lazy"
-                  width="1200"
-                  height="750" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">Tesi di laurea · 2022</p>
-                <h3><a href="progetti/biodata.html">BioData</a></h3>
-                <p class="card-desc">
-                  La mia tesi: stream processing sui dati dei sensori agricoli,
-                  con dashboard e allarmi in tempo reale per proteggere le
-                  colture.
-                </p>
-                <p class="badges">
-                  <span class="badge badge-uni">Tesi di laurea</span>
-                  <span class="badge badge-oss">Open source</span>
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>Node.js</li>
-                  <li>Elasticsearch</li>
-                  <li>Kibana</li>
-                  <li>Docker</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-            <li class="card" data-tags="oss ai uni">
-              <div class="card-media">
-                <img
-                  src="assets/img/progetti/sentimentitle/cover.webp"
-                  alt=""
-                  loading="lazy"
-                  width="1200"
-                  height="750" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">Progetto universitario</p>
-                <h3><a href="progetti/sentimentitle.html">SentimenTitle</a></h3>
-                <p class="card-desc">
-                  Analisi del sentiment in tempo reale sui titoli di BBC News,
-                  The Verge e TechCrunch, con Kafka e Spark.
-                </p>
-                <p class="badges">
-                  <span class="badge badge-uni">Progetto universitario</span>
-                  <span class="badge badge-oss">Open source</span>
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>Kafka</li>
-                  <li>Spark MLlib</li>
-                  <li>Elasticsearch</li>
-                  <li>Kibana</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-            <li class="card" data-tags="oss uni">
-              <div class="card-media">
-                <img
-                  src="assets/img/progetti/gioco-unity/cover.webp"
-                  alt=""
-                  loading="lazy"
-                  width="1200"
-                  height="750" />
-              </div>
-              <div class="card-body">
-                <p class="card-kind">Progetto universitario</p>
-                <h3>
-                  <a href="progetti/gioco-unity.html">Gioco in Unity 3D</a>
-                </h3>
-                <p class="card-desc">
-                  Un videogioco 3D realizzato all'università per imparare il
-                  game development.
-                </p>
-                <p class="badges">
-                  <span class="badge badge-uni">Progetto universitario</span>
-                  <span class="badge badge-oss">Open source</span>
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>C#</li>
-                  <li>Unity</li>
-                </ul>
-                <span class="card-cta" aria-hidden="true">
-                  Apri il progetto
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </li>
-          </ul>
-          <!-- GALLERY:END -->
-
-          <div class="gallery-note">
-            <p>
-              <strong>Open source o codice privato?</strong>
-              Alcuni progetti sono open source e il codice è su GitHub. Altri
-              sono prodotti miei o lavori per clienti, quindi il codice resta
-              privato: nella pagina di ogni progetto trovi comunque com’è fatto,
-              lo stack e le scelte tecniche.
-            </p>
-            <p>
-              Altri esperimenti, come un sistema di code ordini con
-              <a href="https://github.com/rocketxx/queue">
-                Spring Boot e RabbitMQ
-              </a>
-              , sono su
-              <a href="https://github.com/rocketxx">github.com/rocketxx</a>
-              .
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="servizi" aria-labelledby="t-servizi">
-        <div class="wrap">
-          <div class="section-head">
-            <p class="eyebrow">Lavoriamo insieme</p>
-            <h2 class="section-title" id="t-servizi">Cosa posso fare per te</h2>
-            <p class="section-intro">
-              Se hai un’attività, un’associazione o un’idea, posso seguire il
-              progetto dall’inizio alla pubblicazione, e anche dopo.
-            </p>
-          </div>
-
-          <ul class="services" role="list">
-            <li class="service">
-              <p class="service-num">01</p>
-              <h3>Siti web</h3>
-              <p>
-                Siti veloci, curati e facili da aggiornare, per attività,
-                professionisti e associazioni.
-              </p>
-              <p class="examples">
-                Per esempio:
-                <a href="progetti/maris-onlus.html">MARIS Onlus</a>
-                ,
-                <a href="progetti/freddo-pregiato.html">Freddo Pregiato</a>
-              </p>
-            </li>
-            <li class="service">
-              <p class="service-num">02</p>
-              <h3>Web app e PWA</h3>
-              <p>
-                Gestionali, cataloghi, prenotazioni e dashboard. Si installano
-                come app e funzionano anche offline.
-              </p>
-              <p class="examples">
-                Per esempio:
-                <a href="progetti/eko.html">Eko</a>
-                ,
-                <a href="progetti/mdreader.html">mdreader</a>
-              </p>
-            </li>
-            <li class="service">
-              <p class="service-num">03</p>
-              <h3>App iOS e Android</h3>
-              <p>
-                Una sola base di codice per web, iPhone e Android, con
-                notifiche, widget e pubblicazione sugli store.
-              </p>
-              <p class="examples">
-                Per esempio:
-                <a href="progetti/eko.html">Eko</a>
-                ,
-                <a href="progetti/vocablio.html">Vocablio</a>
-              </p>
-            </li>
-            <li class="service">
-              <p class="service-num">04</p>
-              <h3>Automazioni su misura</h3>
-              <p>
-                Estensioni per il browser, raccolta e migrazione di dati,
-                integrazioni con API e assistenti AI.
-              </p>
-              <p class="examples">
-                Per esempio:
-                <a href="progetti/maps-scraper.html">Maps Scraper</a>
-                ,
-                <a href="progetti/fern.html">Fern</a>
-              </p>
-            </li>
-          </ul>
-
-          <ol class="process" role="list">
-            <li>
-              <h3>Ascolto</h3>
-              <p>Capiamo insieme cosa ti serve davvero, senza gergo tecnico.</p>
-            </li>
-            <li>
-              <h3>Sviluppo</h3>
-              <p>
-                Lavoro per versioni intermedie, che puoi provare man mano, non
-                solo alla fine.
-              </p>
-            </li>
-            <li>
-              <h3>Online, e dopo</h3>
-              <p>
-                Pubblicazione, dominio e hosting a costi contenuti, spesso nel
-                piano gratuito di Cloudflare. Poi manutenzione.
-              </p>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <section class="section" id="esperienza" aria-labelledby="t-esperienza">
-        <div class="wrap">
-          <div class="section-head">
-            <p class="eyebrow">Per i recruiter</p>
-            <h2 class="section-title" id="t-esperienza">
-              Esperienza e formazione
-            </h2>
-          </div>
-
-          <ol class="timeline" role="list">
-            <li>
-              <p class="when">
-                Dal
-                <time datetime="2022-05-02">2 maggio 2022</time>
-              </p>
-              <div>
-                <h3 class="role">.NET Software Developer</h3>
-                <p class="org">
-                  <a href="https://www.dylog.it/">Dylog Italia</a>
-                  , Gruppo Dylog Buffetti. Software gestionali per imprese,
-                  professionisti e organizzazioni.
-                </p>
-                <p class="desc">
-                  Ho lavorato in due team, su contabilità e bilancio. Sviluppo
-                  nuove funzionalità su .NET e Azure e curo la manutenzione dei
-                  moduli esistenti, anche di quelli che ho realizzato io. Tra i
-                  lavori recenti: una gestione documentale su Azure Storage, le
-                  notifiche in tempo reale con Angular e SignalR, creazione e
-                  invio Pratiche di bilancio e integrazioni con le API di
-                  InfoCamere, l’autenticazione multi-tenant con Keycloak,
-                  estensioni del browser basate sull’AI, modulo Prima Nota e
-                  fatture elettroniche.
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>C#</li>
-                  <li>ASP.NET</li>
-                  <li>Azure Storage</li>
-                  <li>Azure Service Bus</li>
-                  <li>Angular</li>
-                  <li>SignalR</li>
-                  <li>Keycloak</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <p class="when">In parallelo</p>
-              <div>
-                <h3 class="role">Progetti indipendenti e clienti</h3>
-                <p class="org">
-                  <a href="progetti/eko.html">Eko</a>
-                  ,
+              </li>
+              <li>
+                <h4>App iOS e Android</h4>
+                <p>Una sola base di codice per web, iPhone e Android, con notifiche, widget e pubblicazione sugli store.</p>
+                <p class="examples">
+                  Per esempio: <a href="progetti/eko.html">Eko</a>,
                   <a href="progetti/vocablio.html">Vocablio</a>
-                  ,
-                  <a href="progetti/maris-onlus.html">MARIS Onlus</a>
-                  ,
-                  <a href="progetti/freddo-pregiato.html">Freddo Pregiato</a>
                 </p>
-                <p class="desc">
-                  Ideo, sviluppo e pubblico applicazioni in autonomia, dal
-                  design al backend. Eko e Vocablio arriveranno presto su iOS e
-                  Android e girano su Cloudflare, che ho imparato da
-                  autodidatta. Nel tempo libero realizzo prodotti per clienti,
-                  dalla raccolta dei requisiti alla messa in produzione.
+              </li>
+              <li>
+                <h4>Automazioni su misura</h4>
+                <p>Estensioni per il browser, raccolta e migrazione di dati, integrazioni con API e assistenti AI.</p>
+                <p class="examples">
+                  Per esempio: <a href="progetti/maps-scraper.html">Maps Scraper</a>,
+                  <a href="progetti/fern.html">Fern</a>
                 </p>
-                <ul class="stack-tags" role="list">
-                  <li>React</li>
-                  <li>Capacitor</li>
-                  <li>Cloudflare Workers</li>
-                  <li>D1</li>
-                  <li>Hono</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <p class="when">
-                <time datetime="2022-04-29">29 aprile 2022</time>
-              </p>
-              <div>
-                <img
-                  class="unict-logo edu-logo"
-                  src="assets/img/unict.svg"
-                  alt="Università di Catania"
-                  width="120"
-                  height="42" />
-                <h3 class="role">Laurea in Informatica</h3>
-                <p class="org">
-                  <a href="https://www.dmi.unict.it/">
-                    Dipartimento di Matematica e Informatica
-                  </a>
-                  ,
-                  <a href="https://www.unict.it/">Università di Catania</a>
-                </p>
-                <p class="desc">
-                  Tesi:
-                  <a href="progetti/biodata.html">BioData</a>
-                  , un sistema di stream processing per proteggere le colture
-                  con i sensori agricoli, sviluppato insieme ad AgrosNote:
-                  Node.js, Elasticsearch, dashboard e allarmi su Kibana, tutto
-                  in Docker. Durante il percorso ho lavorato anche all’analisi
-                  del sentiment in streaming con Kafka e Spark (
-                  <a href="progetti/sentimentitle.html">SentimenTitle</a>
-                  ) e a un
-                  <a href="progetti/gioco-unity.html">gioco 3D in Unity</a>
-                  .
-                </p>
-                <ul class="stack-tags" role="list">
-                  <li>C#</li>
-                  <li>C++</li>
-                  <li>C</li>
-                  <li>Java</li>
-                  <li>Node.js</li>
-                  <li>Kafka</li>
-                  <li>Spark</li>
-                  <li>Elasticsearch</li>
-                  <li>Docker</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <p class="when">Prima</p>
-              <div>
-                <h3 class="role">
-                  Diploma all’Istituto Tecnico Industriale (ITI)
-                </h3>
-                <p class="org">
-                  <a href="https://www.iisramacca-palagonia.edu.it/">
-                    IIS Ramacca-Palagonia
-                  </a>
-                </p>
-              </div>
-            </li>
-          </ol>
+              </li>
+            </ul>
 
-          <div class="funfacts">
-            <aside class="funfact" aria-label="Curiosità">
-              <p class="funfact-days">
-                3
-                <small>giorni</small>
-              </p>
-              <p>
-                <span class="eyebrow">Fun fact</span>
-                Mi sono laureato il 29 aprile 2022. Il 2 maggio ero già al
-                lavoro in Dylog.
-              </p>
-            </aside>
-
-            <aside class="funfact funfact-stack" aria-label="Curiosità">
-              <p class="funfact-quote">“Benvenuto, William”</p>
-              <p>
-                <span class="eyebrow">Fun fact</span>
-                Ho integrato l’autenticazione con Keycloak nel gestionale che
-                sviluppo in Dylog. All’inizio esisteva un solo account: il mio.
-                Il marketing l’ha usato per il video ufficiale, e da allora
-                “Benvenuto, William Ragusa” è in vetrina sul sito Buffetti.
-                Diciamo che sono diventato il testimonial senza saperlo.
-              </p>
-              <p class="funfact-link">
-                <a
-                  href="https://buffetti.it/products/bilancio-cloud-gestione-completa-del-fascicolo-di-bilancio">
-                  Guarda la demo su buffetti.it
-                  <svg
-                    class="chev"
-                    viewBox="0 0 16 16"
-                    aria-hidden="true"
-                    focusable="false">
-                    <path
-                      d="M6 3.5 10.5 8 6 12.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round" />
-                  </svg>
-                </a>
-                <a
-                  class="btn-small"
-                  href="assets/img/bilancio-cloud-buffetti.webp"
-                  data-lightbox
-                  data-alt="Pagina di Bilancio Cloud su buffetti.it: lo schermo del gestionale mostra «Benvenuto, William Ragusa».">
-                  <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-                    <rect
-                      x="2"
-                      y="3"
-                      width="12"
-                      height="10"
-                      rx="1.5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.4" />
-                    <path
-                      d="m3.5 11 3-3 2.5 2.5L10.5 9l2 2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.4"
-                      stroke-linejoin="round" />
-                  </svg>
-                  Vedi immagine
-                </a>
-              </p>
-            </aside>
+            <ol class="process" role="list" aria-label="Come lavoriamo">
+              <li>
+                <h4>Ascolto</h4>
+                <p>Capiamo insieme cosa ti serve davvero, senza gergo tecnico.</p>
+              </li>
+              <li>
+                <h4>Sviluppo</h4>
+                <p>Lavoro per versioni intermedie, che puoi provare man mano, non solo alla fine.</p>
+              </li>
+              <li>
+                <h4>Online, e dopo</h4>
+                <p>Pubblicazione, dominio e hosting a costi contenuti, spesso nel piano gratuito di Cloudflare. Poi manutenzione.</p>
+              </li>
+            </ol>
           </div>
         </div>
       </section>
 
-      <section class="section" id="competenze" aria-labelledby="t-competenze">
-        <div class="wrap">
+      <section class="section" id="chi-sono" aria-labelledby="t-chi-sono">
+        <div class="wrap grid">
           <div class="section-head">
-            <p class="eyebrow">Competenze</p>
-            <h2 class="section-title" id="t-competenze">Con cosa lavoro</h2>
-            <p class="section-intro">
+            <svg class="fregio-band" viewBox="0 0 360 104" aria-hidden="true" focusable="false"><defs><pattern id="hatch-mo" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path class="faint" d="M16 70Q180 -14 344 70" stroke-dasharray="2 5" /><circle class="dot" cx="180" cy="60" r="3.5" /><circle class="faint" cx="180" cy="60" r="7.5" /><circle class="body" cx="16" cy="70" r="11" /><circle class="faint" cx="12" cy="67" r="2.2" /><circle class="faint" cx="19" cy="74" r="1.6" /><circle class="faint" cx="14" cy="75" r="1.1" /><circle class="faint" cx="21" cy="66" r="1.2" /><circle fill="url(#hatch-mo)" stroke="none" cx="16" cy="70" r="11" /><circle class="body" cx="70.7" cy="46.7" r="11" /><circle class="faint" cx="66.7" cy="43.7" r="2.2" /><circle class="faint" cx="73.7" cy="50.7" r="1.6" /><circle class="faint" cx="68.7" cy="51.7" r="1.1" /><circle class="faint" cx="75.7" cy="42.7" r="1.2" /><path fill="url(#hatch-mo)" stroke="none" d="M70.7 35.7 A11 11 0 0 0 70.7 57.7 A7.3 11 0 0 0 70.7 35.7 Z" /><circle class="body" cx="125.3" cy="32.7" r="11" /><circle class="faint" cx="121.3" cy="29.7" r="2.2" /><circle class="faint" cx="128.3" cy="36.7" r="1.6" /><circle class="faint" cx="123.3" cy="37.7" r="1.1" /><circle class="faint" cx="130.3" cy="28.7" r="1.2" /><path fill="url(#hatch-mo)" stroke="none" d="M125.3 21.7 A11 11 0 0 0 125.3 43.7 A3.7 11 0 0 0 125.3 21.7 Z" /><circle class="body" cx="180" cy="28" r="11" /><circle class="faint" cx="176" cy="25" r="2.2" /><circle class="faint" cx="183" cy="32" r="1.6" /><circle class="faint" cx="178" cy="33" r="1.1" /><circle class="faint" cx="185" cy="24" r="1.2" /><path fill="url(#hatch-mo)" stroke="none" d="M180 17 A11 11 0 0 0 180 39 A0 11 0 0 0 180 17 Z" /><circle class="body" cx="234.7" cy="32.7" r="11" /><circle class="faint" cx="230.7" cy="29.7" r="2.2" /><circle class="faint" cx="237.7" cy="36.7" r="1.6" /><circle class="faint" cx="232.7" cy="37.7" r="1.1" /><circle class="faint" cx="239.7" cy="28.7" r="1.2" /><path fill="url(#hatch-mo)" stroke="none" d="M234.7 21.7 A11 11 0 0 0 234.7 43.7 A3.7 11 0 0 1 234.7 21.7 Z" /><circle class="body" cx="289.3" cy="46.7" r="11" /><circle class="faint" cx="285.3" cy="43.7" r="2.2" /><circle class="faint" cx="292.3" cy="50.7" r="1.6" /><circle class="faint" cx="287.3" cy="51.7" r="1.1" /><circle class="faint" cx="294.3" cy="42.7" r="1.2" /><path fill="url(#hatch-mo)" stroke="none" d="M289.3 35.7 A11 11 0 0 0 289.3 57.7 A7.3 11 0 0 1 289.3 35.7 Z" /><circle class="body" cx="344" cy="70" r="11" /><circle class="faint" cx="340" cy="67" r="2.2" /><circle class="faint" cx="347" cy="74" r="1.6" /><circle class="faint" cx="342" cy="75" r="1.1" /><circle class="faint" cx="349" cy="66" r="1.2" /><text class="formula" x="92" y="98" text-anchor="middle">k = ½(1 − cos φ)</text><text class="formula" x="268" y="98" text-anchor="middle">T = 29,53 d</text></svg>
+            <h2 id="t-chi-sono">Chi sono</h2>
+            <p>
               Il mio stack principale è quello che uso ogni giorno al lavoro:
-              .NET, C# e Azure. Nei progetti indipendenti uso e sperimento tutto
-              il resto.
+              .NET, C# e Azure. Nei progetti indipendenti sperimento il resto.
+            </p>
+          <figure class="study" aria-hidden="true"><svg class="study-svg" viewBox="0 0 260 420" focusable="false"><defs><pattern id="h-prop" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path d="M24 20V388" /><path d="M18 20H30" /><text x="12" y="46" text-anchor="end">1</text><path d="M18 66H30" /><text x="12" y="92" text-anchor="end">2</text><path d="M18 112H30" /><text x="12" y="138" text-anchor="end">3</text><path d="M18 158H30" /><text x="12" y="184" text-anchor="end">4</text><path d="M18 204H30" /><text x="12" y="230" text-anchor="end">5</text><path d="M18 250H30" /><text x="12" y="276" text-anchor="end">6</text><path d="M18 296H30" /><text x="12" y="322" text-anchor="end">7</text><path d="M18 342H30" /><text x="12" y="368" text-anchor="end">8</text><path d="M18 388H30" /><ellipse cx="132" cy="70" rx="36" ry="46" /><path class="faint" d="M132 16V124" stroke-dasharray="2 3" /><path class="faint" d="M86 42.7H178" /><path class="faint" d="M86 70H178" /><path class="faint" d="M86 85.3H178" /><path class="faint" d="M86 100.7H178" /><path class="faint" d="M82 116A50 50 0 0 1 182 116" /><rect x="72" y="150" width="120" height="194.2" /><path class="faint" d="M72 224.2H192" /><path class="faint" d="M146.2 150V224.2" /><path class="faint" d="M146.2 195.8H192" /><path d="M72 344.2A120 120 0 0 1 192 224.2A74.2 74.2 0 0 1 117.8 150A45.8 45.8 0 0 1 72 195.8" /><path fill="url(#h-prop)" stroke="none" d="M72 224.2H98 V344.2 H72Z" /><path class="faint" d="M212 150A194.2 194.2 0 0 0 182 344.2" stroke-dasharray="2 3" /><circle class="dot" cx="72" cy="150" r="1.6" /><circle class="dot" cx="192" cy="150" r="1.6" /><circle class="dot" cx="72" cy="344.2" r="1.6" /><circle class="dot" cx="192" cy="344.2" r="1.6" /><text class="formula" x="132" y="366.2" text-anchor="middle">φ = (1 + √5) / 2</text></svg><figcaption>Fig. 4, canone delle proporzioni</figcaption></figure>
+          </div>
+          <div class="section-body">
+            <ol class="timeline" role="list">
+              <li>
+                <p class="when">dal <time datetime="2022-05-02">2 mag 2022</time></p>
+                <div>
+                  <h3>.NET Software Developer</h3>
+                  <p class="org">
+                    <a href="https://www.dylog.it/">Dylog Italia</a>, Gruppo
+                    Dylog Buffetti. Software gestionali per imprese,
+                    professionisti e organizzazioni.
+                  </p>
+                  <p class="desc">
+                    Lavoro in due team, su contabilità e bilancio: sviluppo
+                    nuove funzionalità su .NET e Azure e mantengo i moduli
+                    esistenti, anche quelli che ho scritto io. Tra i lavori
+                    recenti: gestione documentale su Azure Storage, notifiche
+                    in tempo reale con Angular e SignalR, creazione e invio
+                    delle Pratiche di bilancio con le API di InfoCamere,
+                    autenticazione multi-tenant con Keycloak, estensioni del
+                    browser basate sull’AI, modulo Prima Nota e fatture
+                    elettroniche.
+                  </p>
+                  <p class="stack">C#, ASP.NET Core, Entity Framework, Azure Storage, Azure SQL, Azure Service Bus, Angular, SignalR, Keycloak</p>
+                </div>
+              </li>
+              <li>
+                <p class="when">in parallelo</p>
+                <div>
+                  <h3>Progetti indipendenti e clienti</h3>
+                  <p class="org">
+                    <a href="progetti/eko.html">Eko</a>,
+                    <a href="progetti/vocablio.html">Vocablio</a>,
+                    <a href="progetti/maris-onlus.html">MARIS Onlus</a>,
+                    <a href="progetti/freddo-pregiato.html">Freddo Pregiato</a>
+                  </p>
+                  <p class="desc">
+                    Ideo, sviluppo e pubblico applicazioni, dal design al
+                    backend. Eko è su App Store e Vocablio è online: girano
+                    entrambe su Cloudflare, che ho imparato da autodidatta.
+                    Per i clienti seguo tutto, dai requisiti alla messa in
+                    produzione.
+                  </p>
+                  <p class="stack">React, TypeScript, Capacitor, Cloudflare Workers, D1, Hono</p>
+                </div>
+              </li>
+              <li>
+                <p class="when"><time datetime="2022-04-29">29 apr 2022</time></p>
+                <div>
+                  <h3>Laurea in Informatica</h3>
+                  <p class="org">
+                    <a href="https://www.dmi.unict.it/">Dipartimento di Matematica e Informatica</a>,
+                    <a href="https://www.unict.it/">Università di Catania</a>
+                  </p>
+                  <p class="desc">
+                    Tesi: <a href="progetti/biodata.html">BioData</a>, stream
+                    processing per proteggere le colture con i sensori
+                    agricoli, sviluppato con AgrosNote. Durante il percorso
+                    anche <a href="progetti/sentimentitle.html">SentimenTitle</a>
+                    e un <a href="progetti/gioco-unity.html">gioco 3D in Unity</a>.
+                  </p>
+                  <p class="stack">C#, C++, C, Java, Node.js, Kafka, Spark, Elasticsearch, Docker</p>
+                </div>
+              </li>
+              <li>
+                <p class="when">prima</p>
+                <div>
+                  <h3>Diploma all’Istituto Tecnico Industriale</h3>
+                  <p class="org">
+                    <a href="https://www.iisramacca-palagonia.edu.it/">IIS Ramacca-Palagonia</a>
+                  </p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="asides">
+              <aside class="aside" aria-labelledby="t-funfact">
+                <h4 class="aside-title" id="t-funfact">Fun fact</h4>
+                <p>
+                  Ho integrato Keycloak nel gestionale che sviluppo in Dylog.
+                  All’inizio esisteva un solo account, il mio: il marketing
+                  l’ha usato per il video ufficiale, e da allora «Benvenuto,
+                  William Ragusa» è in vetrina sul sito Buffetti. Diciamo che
+                  sono diventato il testimonial senza saperlo.
+                </p>
+                <p class="note">
+                  <a href="https://buffetti.it/products/bilancio-cloud-gestione-completa-del-fascicolo-di-bilancio">Guarda la demo su buffetti.it</a>
+                  o
+                  <button class="text-btn" type="button" popovertarget="shot-buffetti">vedi l’immagine</button>.
+                </p>
+              </aside>
+            </div>
+            <div class="shot-pop" id="shot-buffetti" popover>
+              <img
+                src="assets/img/bilancio-cloud-buffetti.webp"
+                loading="lazy"
+                width="1739"
+                height="930"
+                alt="Pagina di Bilancio Cloud su buffetti.it: lo schermo del gestionale mostra «Benvenuto, William Ragusa»." />
+              <p>
+                <span>Bilancio Cloud su buffetti.it</span>
+                <button class="text-btn" type="button" popovertarget="shot-buffetti" popovertargetaction="hide">Chiudi</button>
+              </p>
+            </div>
+
+            <h3 class="subhead">Con cosa lavoro</h3>
+            <dl class="skills">
+              <div>
+                <dt>In Dylog, ogni giorno</dt>
+                <dd>
+                  <p class="skills-lead">
+                    È il mio lavoro quotidiano: sviluppo e mantengo software
+                    gestionale in produzione, per contabilità e bilancio. È qui
+                    che ho più esperienza: API in ASP.NET Core, accesso ai dati
+                    con Entity Framework, architetture cloud su Azure e
+                    notifiche in tempo reale con SignalR, con Angular sul
+                    frontend.
+                  </p>
+                  C#, .NET e .NET Framework, ASP.NET Core, Entity Framework, API REST, SignalR, Azure Storage, Azure SQL, Azure Service Bus, Angular, Keycloak</dd>
+              </div>
+              <div>
+                <dt>Cloudflare, da autodidatta</dt>
+                <dd>Workers, D1, Static Assets, Cron Triggers, WAF e rate limiting</dd>
+              </div>
+              <div>
+                <dt>Frontend e mobile</dt>
+                <dd>React, TypeScript, Vite, Capacitor, PWA</dd>
+              </div>
+              <div>
+                <dt>Backend</dt>
+                <dd>Node.js, Hono, Express, Python, Flask, Java, Spring Boot</dd>
+              </div>
+              <div>
+                <dt>Dati e AI</dt>
+                <dd>SQLite, Elasticsearch, Kibana, Kafka, Spark, LangChain, Ollama</dd>
+              </div>
+              <div>
+                <dt>Altro</dt>
+                <dd>Docker, RabbitMQ, estensioni per Chrome, OpenSCAD, Arduino, Unity</dd>
+              </div>
+            </dl>
+
+            <p class="offline">
+              Quando spengo il computer stampo in 3D (da lì è nato
+              <a href="progetti/signforge.html">SignForge</a>), costruisco
+              circuiti, piccoli robot e droni con Arduino, e faccio
+              volontariato con Damuni Versu, un’associazione di promozione
+              sociale di Ramacca (CT): solidarietà, cultura ed eventi per la
+              comunità.
             </p>
           </div>
-
-          <div class="split">
-            <div class="spotlight">
-              <p class="eyebrow">Stack principale · in Dylog dal 2022</p>
-              <h3>.NET, C#, Entity Framework e Azure</h3>
-              <p>
-                È il mio lavoro quotidiano: sviluppo e mantengo software
-                gestionale in produzione, per contabilità e bilancio. È qui che
-                ho più esperienza: API in ASP.NET Core, accesso ai dati con
-                Entity Framework, architetture cloud su Azure e notifiche in
-                tempo reale con SignalR, con Angular sul frontend.
-              </p>
-              <ul class="stack-tags" role="list">
-                <li>C#</li>
-                <li>.NET e .NET Framework</li>
-                <li>ASP.NET Core</li>
-                <li>Entity Framework</li>
-                <li>API REST</li>
-                <li>SignalR</li>
-                <li>Azure Storage</li>
-                <li>Azure SQL</li>
-                <li>Azure Service Bus</li>
-                <li>Angular</li>
-                <li>Keycloak</li>
-              </ul>
-            </div>
-
-            <div>
-              <p class="eyebrow skills-sub">Nei progetti indipendenti</p>
-              <dl class="skills">
-                <div>
-                  <dt>
-                    Cloudflare
-                    <span class="skills-note">da autodidatta</span>
-                  </dt>
-                  <dd>
-                    Workers, D1, Static Assets, Cron Triggers, WAF e rate
-                    limiting. Ci girano
-                    <a href="progetti/vocablio.html">Vocablio</a>
-                    ed
-                    <a href="progetti/eko.html">Eko</a>
-                    .
-                  </dd>
-                </div>
-                <div>
-                  <dt>Frontend e mobile</dt>
-                  <dd>
-                    React, TypeScript, Vite, Capacitor (iOS e Android), PWA
-                  </dd>
-                </div>
-                <div>
-                  <dt>Backend</dt>
-                  <dd>
-                    Node.js, Hono, Express, Python, Flask, Java, Spring Boot
-                  </dd>
-                </div>
-                <div>
-                  <dt>Dati e AI</dt>
-                  <dd>
-                    SQLite, Elasticsearch, Kibana, Kafka, Spark, LangChain,
-                    Ollama
-                  </dd>
-                </div>
-                <div>
-                  <dt>Altro</dt>
-                  <dd>
-                    Docker, RabbitMQ, estensioni per Chrome, OpenSCAD, Arduino,
-                    Unity
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          </div>
         </div>
       </section>
 
-      <section
-        class="section"
-        id="tempo-libero"
-        aria-labelledby="t-tempo-libero">
-        <div class="wrap">
+      <section class="section contact" id="contatti" aria-labelledby="t-contatti">
+        <div class="wrap grid">
           <div class="section-head">
-            <p class="eyebrow">Fuori dal codice</p>
-            <h2 class="section-title" id="t-tempo-libero">
-              Quando spengo il computer
-            </h2>
+            <svg class="fregio-band" viewBox="0 0 360 56" aria-hidden="true" focusable="false"><circle class="dot" cx="8" cy="28" r="4" /><circle class="faint" cx="8" cy="28" r="9" /><path d="M14 28L16 22.5L18 17.5L20 13.6L22 11L24 9.8L26 10.1L28 11.8L30 14.8L32 18.7L34 23.2L36 28L38 32.6L40 36.7L42 40L44 42.2L46 43.2L48 42.9L50 41.5L52 39L54 35.7L56 31.9L58 28L60 24.1L62 20.7L64 18L66 16.2L68 15.4L70 15.6L72 16.8L74 18.9L76 21.6L78 24.7L80 28L82 31.2L84 34.1L86 36.3L88 37.8L90 38.5L92 38.3L94 37.3L96 35.6L98 33.3L100 30.7L102 28L104 25.3L106 22.9L108 21.1L110 19.8L112 19.2L114 19.4L116 20.2L118 21.7L120 23.6L122 25.8L124 28.1L126 30.3L128 32.2L130 33.8L132 34.8L134 35.3L136 35.2L138 34.5L140 33.3L142 31.7L144 29.9L146 27.9L148 26.1L150 24.5L152 23.2L154 22.3L156 21.9L158 22L160 22.6L162 23.6L164 24.9L166 26.5L168 28L170 29.6L172 30.9L174 32L176 32.7L178 33.1L180 33L182 32.5L184 31.6L186 30.5L188 29.3L190 28L192 26.7L194 25.5L196 24.7L198 24.1L200 23.8L202 23.9L204 24.3L206 25L208 25.9L210 26.9L212 28L214 29.1L216 30L218 30.8L220 31.3L222 31.5L224 31.4L226 31.1L228 30.5L230 29.8L232 28.9L234 28L236 27.1L238 26.3L240 25.7L242 25.3L244 25.1L246 25.1L248 25.4L250 25.9L252 26.5L254 27.3L256 28L258 28.8L260 29.4L262 29.9L264 30.3L266 30.4L268 30.4L270 30.1L272 29.7L274 29.2L276 28.6L278 28L280 27.4L282 26.8L284 26.4L286 26.1L288 26L290 26L292 26.2L294 26.6L296 27L298 27.5L300 28L302 28.5L304 29L306 29.3L308 29.6L310 29.7L312 29.6L314 29.5L316 29.2L318 28.8L320 28.4L322 28L324 27.5L326 27.2L328 26.9L330 26.7L332 26.6L334 26.6L336 26.8L338 27L340 27.3L342 27.7L344 28L346 28.4L348 28.7L350 28.9" /><path class="faint" d="M14 28H360" stroke-dasharray="2 5" /></svg>
+            <h2 id="t-contatti">Contatti</h2>
+          <figure class="study" aria-hidden="true"><svg class="study-svg" viewBox="0 0 260 250" focusable="false"><defs><pattern id="h-aq" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path class="faint" d="M0 40L4 40.5L8 41L12 41.4L16 41.7L20 41.9L24 42L28 42L32 41.8L36 41.6L40 41.2L44 40.8L48 40.3L52 39.8L56 39.3L60 38.9L64 35.5L68 34.6L72 34.1L76 34L80 34.2L84 34.8L88 35.8L92 37L96 38.3L100 39.8L104 41.3L108 42.7L112 43.9L116 44.9L120 45.6L124 46L128 45.9L132 45.5L136 44.8L140 43.7L144 42.5L148 41L152 39.5L156 38.1L160 36.7L164 35.6L168 34.7L172 34.2L176 34L180 34.2L184 34.7L188 35.6L192 36.8L196 38.1L200 39.9L204 40.4L208 40.8L212 41.3L216 41.6L220 41.9L224 42L228 42L232 41.9L236 41.6L240 41.3L244 40.9L248 40.4L252 39.9L256 39.4L260 39" /><path class="faint" d="M0 61.7L4 61.9L8 62L12 62L16 61.8L20 61.6L24 61.2L28 60.8L32 60.3L36 59.8L40 59.3L44 58.9L48 58.5L52 58.2L56 58L60 58L64 54.2L68 54.8L72 55.8L76 57L80 58.3L84 59.8L88 61.3L92 62.7L96 63.9L100 64.9L104 65.6L108 66L112 65.9L116 65.5L120 64.8L124 63.7L128 62.5L132 61L136 59.5L140 58.1L144 56.7L148 55.6L152 54.7L156 54.2L160 54L164 54.2L168 54.7L172 55.6L176 56.8L180 58.1L184 59.6L188 61.1L192 62.5L196 63.8L200 61.6L204 61.9L208 62L212 62L216 61.9L220 61.6L224 61.3L228 60.9L232 60.4L236 59.9L240 59.4L244 59L248 58.6L252 58.3L256 58.1L260 58" /><path class="faint" d="M0 81.8L4 81.6L8 81.2L12 80.8L16 80.3L20 79.8L24 79.3L28 78.9L32 78.5L36 78.2L40 78L44 78L48 78.1L52 78.3L56 78.6L60 79L64 78.3L68 79.8L72 81.3L76 82.7L80 83.9L84 84.9L88 85.6L92 86L96 85.9L100 85.5L104 84.8L108 83.7L112 82.5L116 81L120 79.5L124 78.1L128 76.7L132 75.6L136 74.7L140 74.2L144 74L148 74.2L152 74.7L156 75.6L160 76.8L164 78.1L168 79.6L172 81.1L176 82.5L180 83.8L184 84.8L188 85.6L192 85.9L196 86L200 81.9L204 81.6L208 81.3L212 80.9L216 80.4L220 79.9L224 79.4L228 79L232 78.6L236 78.3L240 78.1L244 78L248 78L252 78.2L256 78.5L260 78.9" /><path class="faint" d="M0 170.3L4 169.8L8 169.3L12 168.9L16 168.5L20 168.2L24 168L28 168L32 168.1L36 168.3L40 168.6L44 169L48 169.4L52 169.9L56 170.4L60 170.9L64 173.9L68 174.9L72 175.6L76 176L80 175.9L84 175.5L88 174.8L92 173.7L96 172.5L100 171L104 169.5L108 168.1L112 166.7L116 165.6L120 164.7L124 164.2L128 164L132 164.2L136 164.7L140 165.6L144 166.8L148 168.1L152 169.6L156 171.1L160 172.5L164 173.8L168 174.8L172 175.6L176 175.9L180 176L184 175.6L188 174.9L192 173.9L196 172.7L200 170.4L204 169.9L208 169.4L212 169L216 168.6L220 168.3L224 168.1L228 168L232 168L236 168.2L240 168.5L244 168.9L248 169.3L252 169.8L256 170.3L260 170.8" /><path class="faint" d="M0 190.5L4 190.2L8 190L12 190L16 190.1L20 190.3L24 190.6L28 191L32 191.4L36 191.9L40 192.4L44 192.9L48 193.3L52 193.6L56 193.9L60 194L64 197.9L68 197.5L72 196.8L76 195.7L80 194.5L84 193L88 191.5L92 190.1L96 188.7L100 187.6L104 186.7L108 186.2L112 186L116 186.2L120 186.7L124 187.6L128 188.8L132 190.1L136 191.6L140 193.1L144 194.5L148 195.8L152 196.8L156 197.6L160 197.9L164 198L168 197.6L172 196.9L176 195.9L180 194.7L184 193.2L188 191.7L192 190.3L196 188.9L200 190.6L204 190.3L208 190.1L212 190L216 190L220 190.2L224 190.5L228 190.9L232 191.3L236 191.8L240 192.3L244 192.8L248 193.2L252 193.6L256 193.8L260 194" /><path class="faint" d="M0 212.1L4 212.3L8 212.6L12 213L16 213.4L20 213.9L24 214.4L28 214.9L32 215.3L36 215.6L40 215.9L44 216L48 216L52 215.8L56 215.6L60 215.2L64 216.5L68 215L72 213.5L76 212.1L80 210.7L84 209.6L88 208.7L92 208.2L96 208L100 208.2L104 208.7L108 209.6L112 210.8L116 212.1L120 213.6L124 215.1L128 216.5L132 217.8L136 218.8L140 219.6L144 219.9L148 220L152 219.6L156 218.9L160 217.9L164 216.7L168 215.2L172 213.7L176 212.3L180 210.9L184 209.7L188 208.8L192 208.2L196 208L200 212L204 212.2L208 212.5L212 212.9L216 213.3L220 213.8L224 214.3L228 214.8L232 215.2L236 215.6L240 215.8L244 216L248 216L252 215.9L256 215.7L260 215.4" /><path d="M119.2 124L119.2 124.1L119.2 124.3L119.2 124.4L119.2 124.5L119.1 124.7L119.1 124.8L119 124.9L118.9 125L118.8 125.2L118.7 125.3L118.6 125.3L118.5 125.4L118.3 125.5L118.2 125.6L118 125.6L117.8 125.6L117.7 125.6L117.5 125.6L117.3 125.6L117.1 125.5L117 125.4L116.8 125.4L116.6 125.2L116.5 125.1L116.3 125L116.2 124.8L116.1 124.6L116 124.4L115.9 124.2L115.9 124L115.9 123.8L115.9 123.5L115.9 123.3L115.9 123.1L116 122.8L116.1 122.6L116.2 122.4L116.4 122.2L116.5 122L116.7 121.8L116.9 121.6L117.2 121.5L117.4 121.4L117.7 121.3L118 121.2L118.3 121.2L118.6 121.2L118.9 121.2L119.2 121.2L119.5 121.3L119.8 121.5L120.1 121.6L120.4 121.8L120.7 122L120.9 122.3L121.2 122.6L121.3 122.9L121.5 123.3L121.6 123.6L121.7 124L121.8 124.4L121.8 124.8L121.7 125.2L121.7 125.6L121.5 126L121.4 126.4L121.2 126.8L120.9 127.2L120.6 127.6L120.2 127.9L119.9 128.2L119.4 128.4L119 128.6L118.5 128.8L118 128.9L117.5 129L116.9 129L116.4 129L115.8 128.9L115.3 128.7L114.8 128.5L114.2 128.2L113.7 127.8L113.3 127.4L112.8 127L112.5 126.5L112.1 125.9L111.8 125.3L111.6 124.7L111.5 124L111.4 123.3L111.4 122.6L111.4 121.9L111.6 121.1L111.8 120.4L112.1 119.7L112.4 119L112.9 118.3L113.4 117.7L114 117.2L114.7 116.6L115.5 116.2L116.3 115.8L117.1 115.5L118 115.3L118.9 115.2L119.9 115.2L120.8 115.3L121.8 115.4L122.8 115.7L123.7 116.1L124.6 116.6L125.5 117.2L126.3 118L127.1 118.8L127.8 119.7L128.4 120.6L128.9 121.7L129.2 122.8L129.5 124L129.7 125.2L129.7 126.5L129.6 127.8L129.4 129.1L129 130.3L128.4 131.6L127.8 132.8L127 134L126 135L125 136L123.8 137L122.5 137.7L121.1 138.4L119.6 138.9L118 139.3L116.4 139.5L114.7 139.5L113 139.4L111.3 139.1L109.6 138.5L107.9 137.8L106.3 137L104.8 135.9L103.3 134.6L102 133.2L100.8 131.7L99.8 129.9L98.9 128.1L98.2 126.1L97.7 124L97.4 121.8L97.4 119.6L97.6 117.4L98 115.1L98.7 112.9L99.6 110.7L100.8 108.5L102.2 106.5L103.9 104.6L105.8 102.8L107.8 101.2L110.1 99.8L112.6 98.7L115.2 97.7L118 97.1L120.9 96.7L123.8 96.7L126.8 96.9L129.8 97.5L132.8 98.4L135.7 99.6L138.5 101.2L141.3 103.1L143.8 105.3L146.1 107.8L148.2 110.5L150.1 113.6L151.6 116.9L152.8 120.3L153.7 124L154.2 127.8L154.3 131.7L153.9 135.7L153.2 139.7L152 143.6L150.3 147.5L148.3 151.3L145.8 154.9L142.9 158.2L139.6 161.3L135.9 164.1" /><path class="faint" d="M116.4 124L116.4 123.8L116.4 123.7L116.4 123.5L116.4 123.3L116.5 123.1L116.6 122.9L116.6 122.8L116.8 122.6L116.9 122.5L117 122.3L117.2 122.2L117.4 122.1L117.6 122L117.8 121.9L118 121.9L118.2 121.8L118.5 121.8L118.7 121.9L118.9 121.9L119.2 122L119.4 122.1L119.6 122.2L119.8 122.3L120 122.5L120.2 122.7L120.4 122.9L120.5 123.2L120.7 123.4L120.7 123.7L120.8 124L120.9 124.3L120.9 124.6L120.8 124.9L120.8 125.2L120.7 125.5L120.6 125.9L120.4 126.2L120.2 126.4L120 126.7L119.7 126.9L119.4 127.2L119.1 127.4L118.7 127.5L118.4 127.6L118 127.7L117.6 127.8L117.2 127.8L116.8 127.8L116.4 127.7L115.9 127.6L115.5 127.4L115.1 127.2L114.8 126.9L114.4 126.6L114.1 126.3L113.8 125.9L113.5 125.4L113.3 125L113.2 124.5L113 124L113 123.5L113 122.9L113 122.4L113.1 121.8L113.3 121.3L113.5 120.7L113.8 120.2L114.1 119.7L114.5 119.2L115 118.8L115.5 118.4L116.1 118.1L116.7 117.8L117.3 117.6L118 117.4L118.7 117.3L119.4 117.3L120.2 117.4L120.9 117.5L121.6 117.7L122.3 118L123 118.4L123.7 118.9L124.3 119.4L124.9 120L125.4 120.7L125.8 121.5L126.2 122.3L126.5 123.1L126.7 124L126.8 124.9L126.9 125.9L126.8 126.9L126.6 127.8L126.3 128.8L125.9 129.7L125.4 130.7L124.8 131.5L124.1 132.4L123.3 133.1L122.4 133.8L121.4 134.4L120.3 134.9L119.2 135.3L118 135.6L116.8 135.7L115.5 135.8L114.2 135.7L112.9 135.4L111.6 135L110.4 134.5L109.2 133.8L108 133L106.9 132.1L105.9 131L105 129.8L104.2 128.5L103.5 127.1L103 125.6L102.6 124L102.4 122.4L102.4 120.7L102.5 119L102.9 117.3L103.4 115.6L104.1 113.9L105 112.3L106 110.7L107.3 109.3L108.7 107.9L110.3 106.7L112 105.7L113.9 104.8L115.9 104.1L118 103.6L120.2 103.3L122.4 103.3L124.7 103.5L126.9 103.9L129.2 104.6L131.4 105.5L133.6 106.7L135.6 108.1L137.5 109.8L139.3 111.7L140.9 113.8L142.3 116.1L143.5 118.6L144.4 121.2L145 124L145.4 126.9L145.5 129.8L145.2 132.8L144.6 135.9L143.7 138.9L142.5 141.8L140.9 144.6L139 147.4L136.8 149.9L134.3 152.3L131.5 154.4L128.5 156.2L125.2 157.8L121.7 159L118 159.9L114.2 160.4L110.3 160.4L106.3 160.1L102.3 159.3L98.3 158.1L94.4 156.5L90.6 154.4L87 151.9L83.6 149L80.5 145.7L77.7 142L75.2 137.9L73.2 133.5L71.5 128.9" /><path d="M196.5 118.8L196.5 118.9L196.4 119L196.3 119L196.2 119.1L196.1 119.1L195.9 119.1L195.8 119.1L195.7 119.1L195.6 119.1L195.4 119.1L195.3 119.1L195.2 119L195.1 118.9L195 118.8L194.8 118.7L194.8 118.6L194.7 118.5L194.6 118.4L194.5 118.2L194.5 118.1L194.5 117.9L194.4 117.7L194.4 117.6L194.5 117.4L194.5 117.2L194.6 117.1L194.6 116.9L194.7 116.7L194.9 116.6L195 116.4L195.1 116.3L195.3 116.2L195.5 116.1L195.7 116L195.9 115.9L196.1 115.9L196.4 115.9L196.6 115.9L196.8 115.9L197.1 115.9L197.3 116L197.5 116.1L197.7 116.3L198 116.4L198.2 116.6L198.3 116.8L198.5 117.1L198.6 117.3L198.8 117.6L198.8 117.9L198.9 118.2L198.9 118.5L198.9 118.8L198.9 119.1L198.8 119.5L198.7 119.8L198.6 120.1L198.4 120.4L198.2 120.7L197.9 121L197.6 121.2L197.3 121.4L196.9 121.6L196.6 121.8L196.2 121.9L195.8 122L195.3 122L194.9 122L194.5 122L194 121.8L193.6 121.7L193.1 121.5L192.7 121.2L192.3 120.9L192 120.6L191.6 120.2L191.3 119.8L191 119.3L190.8 118.8L190.7 118.3L190.6 117.7L190.5 117.1L190.5 116.5L190.6 115.9L190.7 115.3L190.9 114.7L191.2 114.1L191.6 113.5L192 113L192.4 112.5L193 112L193.6 111.6L194.2 111.2L194.9 110.9L195.7 110.7L196.4 110.5L197.2 110.5L198.1 110.5L198.9 110.6L199.7 110.8L200.6 111.1L201.4 111.4L202.1 111.9L202.9 112.5L203.6 113.1L204.2 113.9L204.8 114.7L205.3 115.6L205.7 116.5L206 117.5L206.2 118.6L206.3 119.7L206.3 120.8L206.1 122L205.9 123.1L205.5 124.2L205 125.3L204.3 126.4L203.6 127.4L202.7 128.4L201.7 129.3L200.6 130L199.3 130.7L198 131.3L196.6 131.7L195.2 132L193.7 132.1L192.1 132.1L190.6 131.9L189 131.5L187.5 131L185.9 130.3L184.5 129.4L183.1 128.3L181.8 127.1L180.6 125.8L179.5 124.2L178.6 122.6L177.8 120.8L177.3 118.9L176.9 116.9L176.7 114.8L176.7 112.7" /><path class="faint" d="M51.6 130.8L51.5 130.8L51.4 130.8L51.3 130.7L51.3 130.7L51.2 130.6L51.1 130.5L51 130.4L51 130.3L50.9 130.2L50.9 130.1L50.8 130L50.8 129.9L50.8 129.7L50.8 129.6L50.8 129.5L50.9 129.3L50.9 129.2L51 129.1L51.1 129L51.2 128.8L51.3 128.7L51.4 128.6L51.5 128.5L51.7 128.5L51.8 128.4L52 128.4L52.2 128.3L52.4 128.3L52.6 128.3L52.7 128.4L52.9 128.4L53.1 128.5L53.3 128.6L53.5 128.7L53.6 128.8L53.8 129L53.9 129.2L54.1 129.4L54.2 129.6L54.3 129.8L54.3 130L54.4 130.3L54.4 130.5L54.4 130.8L54.3 131.1L54.2 131.3L54.1 131.6L54 131.8L53.8 132.1L53.7 132.3L53.4 132.5L53.2 132.7L52.9 132.9L52.6 133.1L52.3 133.2L52 133.3L51.6 133.3L51.3 133.3L50.9 133.3L50.5 133.3L50.1 133.2L49.8 133L49.4 132.8L49.1 132.6L48.7 132.3L48.4 132L48.1 131.7L47.9 131.3L47.7 130.9L47.5 130.4L47.4 130L47.3 129.5L47.3 128.9L47.3 128.4L47.4 127.9L47.5 127.4L47.7 126.8L48 126.3L48.3 125.8L48.7 125.4L49.1 124.9L49.6 124.5L50.2 124.2L50.8 123.9L51.4 123.7L52.1 123.5L52.8 123.4L53.5 123.3L54.2 123.4L55 123.5L55.7 123.7L56.5 124L57.2 124.4L57.9 124.8L58.5 125.3L59.2 126L59.7 126.7L60.2 127.4L60.6 128.3L61 129.2L61.2 130.1L61.4 131.1L61.4 132.1L61.4 133.2L61.2 134.2L60.9 135.3L60.5 136.3L60 137.3L59.3 138.3L58.6 139.2L57.7 140.1L56.7 140.9L55.6 141.6L54.5 142.2L53.2 142.7L51.9 143L50.5 143.2L49 143.3L47.5 143.2L46.1 143L44.6 142.6L43.1 142L41.6 141.3L40.3 140.4L38.9 139.3L37.7 138.1L36.6 136.7L35.6 135.1L34.8 133.5L34.1 131.7L33.6 129.8" /><circle class="dot" cx="118" cy="124" r="2" /><text class="formula" x="130" y="244" text-anchor="middle">∇ × v = ω</text></svg><figcaption>Fig. 5, moti dell’acqua</figcaption></figure>
           </div>
-          <div class="pastimes">
-            <div class="pastime">
-              <h3>Stampa 3D</h3>
-              <p>
-                Mi diverto a progettare e stampare pezzi, senza essere un
-                esperto. Da qui è nato
-                <a href="progetti/signforge.html">SignForge</a>
-                .
-              </p>
-            </div>
-            <div class="pastime">
-              <h3>Arduino ed elettronica</h3>
-              <p>Costruisco circuiti, piccoli robot e droni.</p>
-            </div>
-            <div class="pastime">
-              <h3>Volontariato con Damuni Versu</h3>
-              <p>
-                Un’associazione di promozione sociale di Ramacca (CT):
-                solidarietà, cultura ed eventi per la comunità.
-              </p>
-            </div>
+          <div class="section-body">
+            <p>Hai un progetto o una posizione aperta? Scrivimi.</p>
+            <a class="email" href="mailto:williamragusa@proton.me">williamragusa@proton.me</a>
+            <p class="muted">
+              Per un preventivo raccontami in poche righe cosa ti serve: ti
+              dirò come lo farei, in quanto tempo e con quale costo.
+            </p>
+            <p class="contact-links">
+              <a href="https://github.com/rocketxx">GitHub</a>
+              <a href="https://it.linkedin.com/in/william-ragusa-ab8671152">LinkedIn</a>
+            </p>
           </div>
-        </div>
-      </section>
-
-      <section
-        class="section contact"
-        id="contatti"
-        aria-labelledby="t-contatti">
-        <div class="wrap">
-          <p class="eyebrow" style="color: #c9ad86">Contatti</p>
-          <h2 class="sr-only" id="t-contatti">Contatti</h2>
-          <p class="contact-lead" style="margin-top: 0.75rem">
-            Hai un progetto o una posizione aperta? Scrivimi.
-          </p>
-          <p class="contact-sub">
-            Per un preventivo raccontami in poche righe cosa ti serve: ti dirò
-            come lo farei, in quanto tempo e con quale costo.
-          </p>
-          <div class="email-row">
-            <a class="email" href="mailto:williamragusa@proton.me">
-              williamragusa@proton.me
-            </a>
-            <button
-              type="button"
-              class="copy"
-              data-copy="williamragusa@proton.me"
-              hidden>
-              Copia indirizzo
-            </button>
-            <span class="sr-only" role="status" id="copy-status"></span>
-          </div>
-          <p class="contact-links">
-            <a href="https://it.linkedin.com/in/william-ragusa-ab8671152">
-              LinkedIn
-            </a>
-            <a href="https://github.com/rocketxx">GitHub</a>
-          </p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="wrap">
-        <div class="inner">
-          <p>© 2026 William Ragusa</p>
-          <p>Catania, Sicilia</p>
-        </div>
+        <p>© 2026 William Ragusa</p>
+        <p>Catania, Sicilia</p>
       </div>
     </footer>
-
-    <script src="assets/js/site.js" defer></script>
   </body>
 </html>

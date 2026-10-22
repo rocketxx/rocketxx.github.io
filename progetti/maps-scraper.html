@@ -1,105 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Maps Scraper · Estensione per Chrome · William Ragusa</title>
-  <meta name="description" content="Un&#x27;estensione per Chrome che trasforma una ricerca su Google Maps in un foglio Excel di attività commerciali, pronto per lavorarci.">
-  <meta name="theme-color" content="#03110D" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#ECEAE5" media="(prefers-color-scheme: light)">
-  <meta name="author" content="William Ragusa">
-  <link rel="canonical" href="https://rocketxx.github.io/progetti/maps-scraper.html">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rocketxx.github.io/progetti/maps-scraper.html">
-  <meta property="og:site_name" content="William Ragusa">
-  <meta property="og:locale" content="it_IT">
-  <meta property="og:title" content="Maps Scraper · Estensione per Chrome · William Ragusa">
-  <meta property="og:description" content="Un&#x27;estensione per Chrome che trasforma una ricerca su Google Maps in un foglio Excel di attività commerciali, pronto per lavorarci.">
-  <meta property="og:image" content="https://rocketxx.github.io/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="../favicon.ico?v=2" sizes="any">
-  <link rel="icon" href="../assets/img/favicon-32.png?v=2" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png?v=2">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
-  <link rel="stylesheet" href="../assets/css/site.css">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Maps Scraper", "description": "Un'estensione per Chrome che trasforma una ricerca su Google Maps in un foglio Excel di attività commerciali, pronto per lavorarci.", "url": "https://rocketxx.github.io/progetti/maps-scraper.html", "author": {"@type": "Person", "name": "William Ragusa", "url": "https://rocketxx.github.io/"}, "inLanguage": "it", "applicationCategory": "UtilitiesApplication"}</script>
-</head>
-<body>
-<a class="skip-link" href="#main">Vai al contenuto</a>
-<header class="site-header">
-  <nav class="nav wrap" aria-label="Principale">
-    <a href="../index.html" class="brand"><img class="brand-avatar" src="../assets/img/avatar.webp" alt="" width="36" height="36"><span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span></a>
-    <ul class="nav-list" id="nav-list" role="list">
-      <li><a href="../index.html#progetti">Progetti</a></li>
-      <li><a href="../index.html#servizi">Servizi</a></li>
-      <li><a href="../index.html#esperienza">Esperienza</a></li>
-      <li><a href="../index.html#competenze">Competenze</a></li>
-      <li><a href="../index.html#contatti">Contatti</a></li>
-    </ul>
-    <div class="nav-tools">
-      <button class="icon-button theme-toggle" type="button" hidden><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 3a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
-    </div>
-  </nav>
-</header>
-
-<main id="main">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Percorso">
-      <ol role="list">
-        <li><a href="../index.html#progetti">Progetti</a></li>
-        <li aria-current="page">Maps Scraper</li>
-      </ol>
-    </nav>
-    <header class="project-hero">
-      <p class="eyebrow">Estensione per Chrome</p>
-      <h1>Maps Scraper</h1>
-      <p class="project-lead">Un'estensione per Chrome che trasforma una ricerca su Google Maps in un foglio Excel di attività commerciali, pronto per lavorarci.</p>
-      <p class="badges"><span class="badge badge-private">Codice privato</span></p>
-      <div class="project-actions"><p class="private-note">Il codice è privato. Se vuoi vederlo in azione, <a href="../index.html#contatti">scrivimi</a>.</p></div>
-      
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Maps Scraper · Estensione per Chrome · William Ragusa</title>
+    <meta name="description" content="Un'estensione per Chrome che trasforma una ricerca su Google Maps in un foglio Excel di attività commerciali, pronto per lavorarci." />
+    <meta name="author" content="William Ragusa" />
+    <meta name="theme-color" content="#0E0E0C" />
+    <link href="https://rocketxx.github.io/progetti/maps-scraper.html" rel="canonical"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://rocketxx.github.io/progetti/maps-scraper.html" property="og:url"/>
+    <meta content="William Ragusa" property="og:site_name"/>
+    <meta content="it_IT" property="og:locale"/>
+    <meta content="Maps Scraper · Estensione per Chrome · William Ragusa" property="og:title"/>
+    <meta content="Un'estensione per Chrome che trasforma una ricerca su Google Maps in un foglio Excel di attività commerciali, pronto per lavorarci." property="og:description"/>
+    <meta content="https://rocketxx.github.io/og-image.png" property="og:image"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+    <link rel="preload" href="../assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Maps Scraper",
+        "description": "Un'estensione per Chrome che trasforma una ricerca su Google Maps in un foglio Excel di attività commerciali, pronto per lavorarci.",
+        "url": "https://rocketxx.github.io/progetti/maps-scraper.html",
+        "author": {
+          "@type": "Person",
+          "name": "William Ragusa",
+          "url": "https://rocketxx.github.io/"
+        },
+        "inLanguage": "it",
+        "applicationCategory": "UtilitiesApplication"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Vai al contenuto</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="../index.html">
+          <img class="brand-avatar" src="../assets/img/avatar.webp" alt="" width="40" height="40" />
+          <span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Sezioni">
+          <ul role="list">
+            <li><a href="../index.html#progetti">Progetti</a></li>
+            <li><a href="../index.html#esperimenti">Esperimenti</a></li>
+            <li><a href="../index.html#lavori">Lavori</a></li>
+            <li><a href="../index.html#chi-sono">Chi sono</a></li>
+            <li><a href="../index.html#contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <details class="indice">
+          <summary>Indice</summary>
+          <nav aria-label="Indice">
+            <ol role="list">
+              <li><a href="../index.html#progetti"><span>Progetti in produzione</span><span class="leader"></span><span class="ref">Tav. II–III</span></a></li>
+              <li><a href="../index.html#esperimenti"><span>Esperimenti</span><span class="leader"></span><span class="ref">Tav. IV–IX</span></a></li>
+              <li><a href="../index.html#lavori"><span>Lavori</span><span class="leader"></span><span class="ref">Tav. X–XI</span></a></li>
+              <li><a href="../index.html#chi-sono"><span>Chi sono</span><span class="leader"></span><span class="ref">percorso</span></a></li>
+              <li><a href="../index.html#contatti"><span>Contatti</span><span class="leader"></span><span class="ref">email</span></a></li>
+            </ol>
+          </nav>
+        </details>
+      </div>
     </header>
 
-      <div class="media">
-        <figure>
-          <div class="shot shot-logo"><img src="../assets/img/progetti/maps-scraper/cover.webp" width="1200" height="750" alt="Loghi di Google Chrome e Google Maps con una freccia verso il logo di Excel: dalla ricerca su Maps al file Excel." loading="eager"></div>
-          <figcaption>Un’estensione di Chrome che legge i risultati di Google Maps e li esporta in Excel.</figcaption>
-        </figure>
-      </div>
-    <div class="project-body">
-      <div>
-        <section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>Cerchi, per esempio, «ristoranti Catania» su Google Maps, apri il pannello laterale, scegli tipologia e città e premi avvia. L'estensione scorre i risultati, legge le schede delle attività e scarica un file .xlsx.</p><p>Progettata e sviluppata da me.</p></div></section>
-        <section aria-labelledby="h-feat"><h2 id="h-feat">Cosa fa</h2><ul class="features" role="list"><li>Pannello laterale di Chrome, sempre accanto alla mappa.</li><li>Scorrimento automatico della lista dei risultati.</li><li>Dati raccolti: nome, categoria, voto, numero di recensioni, indirizzo, telefono, sito web e orari.</li><li>File Excel con un foglio «Attività» e un foglio «Riepilogo» con i parametri della ricerca e la data.</li></ul></section>
-        <section aria-labelledby="h-choices"><h2 id="h-choices">Scelte tecniche</h2><ul class="choices" role="list"><li><b>Responsabilità separate</b><span>Lettura del DOM, logica di scorrimento ed export sono moduli distinti, secondo i principi SOLID.</span></li><li><b>Selettori centralizzati</b><span>Google Maps cambia spesso il suo HTML: tutti i selettori stanno in un unico posto, così aggiornarli è veloce.</span></li></ul></section>
-      </div>
-      <aside class="facts" aria-label="Scheda del progetto">
-        <dl>
-          <div><dt>Ruolo</dt><dd>Sviluppo</dd></div><div><dt>Piattaforma</dt><dd>Google Chrome</dd></div><div><dt>Codice</dt><dd>Privato</dd></div>
-          <div><dt>Estensione</dt><dd><ul class="stack-tags" role="list"><li>Chrome Manifest V3</li><li>Side Panel API</li><li>Content script</li><li>Service worker</li></ul></dd></div><div><dt>Codice</dt><dd><ul class="stack-tags" role="list"><li>JavaScript</li><li>SheetJS</li></ul></dd></div>
-        </dl>
-      </aside>
-    </div>
-
-    <section class="cta-band" aria-labelledby="h-cta">
-      <h2 id="h-cta">Ti serve qualcosa di simile?</h2>
-      <p>Sviluppo siti, web app e app per iOS e Android, dall'idea alla pubblicazione. Raccontami il tuo progetto.</p>
-      <a class="btn btn-primary" href="../index.html#contatti">Scrivimi<svg class="chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    </section>
-  </div>
-  <nav class="pager wrap" aria-label="Altri progetti"><a class="prev" href="mdreader.html" rel="prev"><span class="pager-label"><svg class="chev chev-left" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Progetto precedente</span><b>mdreader</b></a><a class="next" href="biodata.html" rel="next"><span class="pager-label">Progetto successivo<svg class="chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>BioData</b></a></nav>
+    <main id="main" class="project-page"><div class="equations" aria-hidden="true">
+          <math style="top: 7%; --x: 0.62; --d: 0.4s">
+            <mi>F</mi><mo>=</mo><mi>G</mi>
+            <mfrac>
+              <mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow>
+              <msup><mi>r</mi><mn>2</mn></msup>
+            </mfrac>
+          </math>
+          <!-- galassia a spirale -->
+          <svg class="glyph" style="top: 20%; --x: 0.12; --d: 0.8s" viewBox="0 0 160 160">
+            <g class="spin-slow">
+              <g transform="rotate(-25 80 80)">
+                <ellipse class="faint" cx="80" cy="80" rx="72" ry="44" stroke-dasharray="2 6" />
+                <path d="M84.0 80.0L84.2 80.9L83.8 81.8L82.9 82.8L81.3 83.5L79.3 84.0L76.8 84.0L74.3 83.4L71.9 82.3L70.1 80.7L69.3 78.5L69.7 76.1L71.6 73.7L75.1 71.6L80.0 70.1L86.0 69.7L92.5 70.6L98.9 72.9L104.0 76.7L107.1 81.8L107.2 87.8L103.6 94.1L96.0 99.9L84.6 104.3L70.0 106.4L53.4 105.4L36.8 100.7L22.3 92.1L12.4 80.0" />
+                <path d="M76.0 80.0L75.8 79.1L76.2 78.2L77.1 77.2L78.7 76.5L80.7 76.0L83.2 76.0L85.7 76.6L88.1 77.7L89.9 79.3L90.7 81.5L90.3 83.9L88.4 86.3L84.9 88.4L80.0 89.9L74.0 90.3L67.5 89.4L61.1 87.1L56.0 83.3L52.9 78.2L52.8 72.2L56.4 65.9L64.0 60.1L75.4 55.7L90.0 53.6L106.6 54.6L123.2 59.3L137.7 67.9L147.6 80.0" />
+                <circle class="dot" cx="80" cy="80" r="3" />
+                <circle class="faint" cx="80" cy="80" r="9" />
+                <circle class="dot" cx="104" cy="96" r="1.4" />
+                <circle class="dot" cx="58" cy="62" r="1.2" />
+                <circle class="dot" cx="122" cy="62" r="1.4" />
+                <circle class="dot" cx="34" cy="96" r="1.2" />
+                <circle class="dot" cx="96" cy="58" r="1" />
+              </g>
+            </g>
+          </svg>
+          <math style="top: 44%; --x: 0.78; --d: 1.2s">
+            <msup><mo>∇</mo><mn>2</mn></msup><mi>φ</mi><mo>=</mo><mn>0</mn>
+          </math>
+          <!-- sfera con assi cartesiani -->
+          <svg class="glyph" style="top: 55%; --x: 0.3; --d: 1.6s" viewBox="0 0 150 150">
+            <circle cx="75" cy="80" r="45" />
+            <ellipse class="faint" cx="75" cy="80" rx="45" ry="13" />
+            <ellipse class="faint" cx="75" cy="80" rx="16" ry="45" />
+            <path d="M75 80V16M71 23l4-7 4 7M75 80L28 122M30 114l-2 8 8-3M75 80l66 14M133 89l8 5-9 3" />
+            <circle class="dot" cx="75" cy="80" r="2.5" />
+            <text x="82" y="20">z</text>
+            <text x="18" y="134">x</text>
+            <text x="138" y="110">y</text>
+          </svg>
+          
+          <!-- sistema solare: orbite concentriche -->
+          <svg class="glyph" style="top: 80%; --x: 0.66; --d: 2.4s" viewBox="0 0 150 150">
+            <circle class="dot" cx="75" cy="75" r="4" />
+            <circle class="faint" cx="75" cy="75" r="22" />
+            <circle cx="75" cy="75" r="40" stroke-dasharray="3 5" />
+            <circle class="faint" cx="75" cy="75" r="60" />
+            <circle class="dot" cx="97" cy="75" r="2" />
+            <circle class="dot" cx="47" cy="47" r="2.5" />
+            <circle class="dot" cx="117" cy="117" r="3" />
+          </svg>
+        </div><div class="equations right" aria-hidden="true">
+          <math style="top: 5%; --x: 0.18; --d: 0.6s">
+            <msup><mi>T</mi><mn>2</mn></msup><mo>=</mo>
+            <mfrac>
+              <mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow>
+              <mrow><mi>G</mi><mi>M</mi></mrow>
+            </mfrac>
+            <msup><mi>a</mi><mn>3</mn></msup>
+          </math>
+          <!-- orbita di Keplero: ellisse, fuochi, raggio vettore -->
+          <svg class="glyph" style="top: 22%; --x: 0.7; --d: 1s" viewBox="0 0 170 120">
+            <ellipse cx="85" cy="60" rx="70" ry="42" />
+            <path class="faint" d="M15 60H155M85 18V102" stroke-dasharray="2 5" />
+            <circle class="dot" cx="141" cy="60" r="4" />
+            <path class="faint" d="M25 60h8M29 56v8" />
+            <path d="M141 60L50 23.6" />
+            <circle class="dot" cx="50" cy="23.6" r="3.5" />
+            <text x="88" y="56">a</text>
+            <text x="90" y="34">r</text>
+            <text x="22" y="76">F₁</text>
+            <text x="134" y="78">F₂</text>
+          </svg>
+          
+          
+          <math style="top: 52%; --x: 0.25; --d: 2.2s">
+            <msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mi>G</mi><mi>M</mi>
+            <mrow>
+              <mo>(</mo>
+              <mfrac><mn>2</mn><mi>r</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mi>a</mi></mfrac>
+              <mo>)</mo>
+            </mrow>
+          </math>
+          <!-- spirale aurea nei rettangoli -->
+          <svg class="glyph" style="top: 74%; --x: 0.82; --d: 2.6s" viewBox="-2 -2 166 116">
+            <path class="faint" d="M0 0H161.8V100H0ZM100 0V100M100 61.8H161.8M123.6 61.8V100M100 76.4H123.6M114.6 61.8V76.4" />
+            <path d="M0 100A100 100 0 0 1 100 0A61.8 61.8 0 0 1 161.8 61.8A38.2 38.2 0 0 1 123.6 100A23.6 23.6 0 0 1 100 76.4A14.6 14.6 0 0 1 114.6 61.8" />
+            <text x="2" y="113">φ = 1.618…</text>
+          </svg>
+        </div>
+<div class="wrap">
+<nav aria-label="Percorso" class="crumbs">
+<ol role="list">
+<li><a href="../index.html#esperimenti">Esperimenti</a></li>
+<li aria-current="page">Maps Scraper</li>
+</ol>
+</nav>
+<header class="project-hero"><p class="tav-label">Tav. VII</p>
+<p class="eyebrow">Estensione per Chrome</p>
+<h1>Maps Scraper</h1>
+<p class="project-lead">Un'estensione per Chrome che trasforma una ricerca su Google Maps in un foglio Excel di attività commerciali, pronto per lavorarci.</p>
+<p class="badges"><span class="badge badge-private">Codice privato</span></p>
+<div class="project-actions"><p class="private-note">Il codice è privato. Se vuoi vederlo in azione, <a href="../index.html#contatti">scrivimi</a>.</p></div>
+</header>
+<div class="media">
+<figure>
+<div class="shot shot-logo"><img alt="Loghi di Google Chrome e Google Maps con una freccia verso il logo di Excel: dalla ricerca su Maps al file Excel." height="750" loading="eager" src="../assets/img/progetti/maps-scraper/cover.webp" width="1200"/></div>
+<figcaption>Un’estensione di Chrome che legge i risultati di Google Maps e li esporta in Excel.</figcaption>
+</figure>
+</div>
+<div class="project-body">
+<div><svg class="fregio-band" viewBox="0 0 360 96" aria-hidden="true" focusable="false"><defs><pattern id="hatch-pl" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path class="faint" d="M0 80Q180 96 360 72" stroke-dasharray="2 5" /><circle class="dot" cx="14" cy="18" r="0.8" /><circle class="dot" cx="70" cy="12" r="1" /><circle class="dot" cx="176" cy="88" r="0.8" /><circle class="dot" cx="196" cy="14" r="0.9" /><circle class="dot" cx="300" cy="86" r="0.8" /><circle class="dot" cx="348" cy="20" r="1" /><circle class="dot" cx="88" cy="84" r="0.7" /><circle class="dot" cx="214" cy="30" r="0.6" /><circle class="body" cx="38" cy="58" r="10" /><circle class="faint" cx="34" cy="54" r="2" /><circle class="faint" cx="40" cy="62" r="1.4" /><circle class="faint" cx="35" cy="63" r="1" /><circle class="faint" cx="42" cy="53" r="1" /><path fill="url(#hatch-pl)" stroke="none" d="M38 48 A10 10 0 0 1 38 68 A1 10 0 0 0 38 48 Z" /><clipPath id="cj"><circle cx="120" cy="46" r="27" /></clipPath><circle class="body" cx="120" cy="46" r="27" /><g clip-path="url(#cj)"><path class="faint" d="M93 29Q120 31 147 29" /><path class="faint" d="M93 35Q120 37 147 35" /><path class="faint" d="M93 41Q120 43 147 41" /><path class="faint" d="M93 48Q120 50 147 48" /><path class="faint" d="M93 54Q120 56 147 54" /><path class="faint" d="M93 61Q120 63 147 61" /><path class="faint" d="M93 67Q120 69 147 67" /><ellipse cx="126" cy="57" rx="6" ry="3.4" /></g><path fill="url(#hatch-pl)" stroke="none" d="M120 19 A27 27 0 0 1 120 73 A10.8 27 0 0 0 120 19 Z" /><g transform="rotate(-16 252 46)"><ellipse class="faint" cx="252" cy="46" rx="46" ry="11" /><ellipse cx="252" cy="46" rx="38" ry="8.5" /></g><clipPath id="cs"><circle cx="252" cy="46" r="19" /></clipPath><circle class="body" cx="252" cy="46" r="19" /><g clip-path="url(#cs)"><path class="faint" d="M233 35H271" /><path class="faint" d="M233 41H271" /><path class="faint" d="M233 49H271" /><path class="faint" d="M233 56H271" /></g><path fill="url(#hatch-pl)" stroke="none" d="M252 27 A19 19 0 0 1 252 65 A7.6 19 0 0 0 252 27 Z" /><g transform="rotate(-16 252 46)"><path d="M214 46A38 8.5 0 0 0 290 46" /><path class="faint" d="M206 46A46 11 0 0 0 298 46" /></g><circle class="body" cx="330" cy="42" r="6.5" /><path fill="url(#hatch-pl)" stroke="none" d="M330 35.5 A6.5 6.5 0 0 1 330 48.5 A0 6.5 0 0 1 330 35.5 Z" /></svg>
+<section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>Cerchi, per esempio, «ristoranti Catania» su Google Maps, apri il pannello laterale, scegli tipologia e città e premi avvia. L'estensione scorre i risultati, legge le schede delle attività e scarica un file .xlsx.</p><p>Progettata e sviluppata da me.</p></div></section>
+<section aria-labelledby="h-feat"><h2 id="h-feat">Cosa fa</h2><ul class="features" role="list"><li>Pannello laterale di Chrome, sempre accanto alla mappa.</li><li>Scorrimento automatico della lista dei risultati.</li><li>Dati raccolti: nome, categoria, voto, numero di recensioni, indirizzo, telefono, sito web e orari.</li><li>File Excel con un foglio «Attività» e un foglio «Riepilogo» con i parametri della ricerca e la data.</li></ul></section>
+<section aria-labelledby="h-choices"><h2 id="h-choices">Scelte tecniche</h2><ul class="choices" role="list"><li><b>Responsabilità separate</b><span>Lettura del DOM, logica di scorrimento ed export sono moduli distinti, secondo i principi SOLID.</span></li><li><b>Selettori centralizzati</b><span>Google Maps cambia spesso il suo HTML: tutti i selettori stanno in un unico posto, così aggiornarli è veloce.</span></li></ul></section>
+</div>
+<aside aria-label="Scheda del progetto" class="facts">
+<dl>
+<div><dt>Ruolo</dt><dd>Sviluppo</dd></div><div><dt>Piattaforma</dt><dd>Google Chrome</dd></div><div><dt>Codice</dt><dd>Privato</dd></div>
+<div><dt>Estensione</dt><dd><ul class="stack-tags" role="list"><li>Chrome Manifest V3</li><li>Side Panel API</li><li>Content script</li><li>Service worker</li></ul></dd></div><div><dt>Codice</dt><dd><ul class="stack-tags" role="list"><li>JavaScript</li><li>SheetJS</li></ul></dd></div>
+</dl>
+<figure class="study" aria-hidden="true"><svg class="study-svg" viewBox="0 0 260 420" focusable="false"><defs><pattern id="h-arm" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><circle cx="130" cy="160" r="92" /><circle class="faint" cx="130" cy="160" r="99" /><path class="faint" d="M222 160L229 160" /><path class="faint" d="M220.6 176L224 176.6" /><path class="faint" d="M216.5 191.5L219.7 192.7" /><path class="faint" d="M209.7 206L215.7 209.5" /><path class="faint" d="M200.5 219.1L203.2 221.4" /><path class="faint" d="M189.1 230.5L191.4 233.2" /><path class="faint" d="M176 239.7L179.5 245.7" /><path class="faint" d="M161.5 246.5L162.7 249.7" /><path class="faint" d="M146 250.6L146.6 254" /><path class="faint" d="M130 252L130 259" /><path class="faint" d="M114 250.6L113.4 254" /><path class="faint" d="M98.5 246.5L97.3 249.7" /><path class="faint" d="M84 239.7L80.5 245.7" /><path class="faint" d="M70.9 230.5L68.6 233.2" /><path class="faint" d="M59.5 219.1L56.8 221.4" /><path class="faint" d="M50.3 206L44.3 209.5" /><path class="faint" d="M43.5 191.5L40.3 192.7" /><path class="faint" d="M39.4 176L36 176.6" /><path class="faint" d="M38 160L31 160" /><path class="faint" d="M39.4 144L36 143.4" /><path class="faint" d="M43.5 128.5L40.3 127.3" /><path class="faint" d="M50.3 114L44.3 110.5" /><path class="faint" d="M59.5 100.9L56.8 98.6" /><path class="faint" d="M70.9 89.5L68.6 86.8" /><path class="faint" d="M84 80.3L80.5 74.3" /><path class="faint" d="M98.5 73.5L97.3 70.3" /><path class="faint" d="M114 69.4L113.4 66" /><path class="faint" d="M130 68L130 61" /><path class="faint" d="M146 69.4L146.6 66" /><path class="faint" d="M161.5 73.5L162.7 70.3" /><path class="faint" d="M176 80.3L179.5 74.3" /><path class="faint" d="M189.1 89.5L191.4 86.8" /><path class="faint" d="M200.5 100.9L203.2 98.6" /><path class="faint" d="M209.7 114L215.7 110.5" /><path class="faint" d="M216.5 128.5L219.7 127.3" /><path class="faint" d="M220.6 144L224 143.4" /><g transform="rotate(-23.4 130 160)"><path d="M130 42V278" /><ellipse cx="130" cy="160" rx="92" ry="20" /><ellipse class="faint" cx="130" cy="123.4" rx="84.4" ry="18" /><ellipse class="faint" cx="130" cy="196.6" rx="84.4" ry="18" /><ellipse class="faint" cx="130" cy="75.6" rx="36.6" ry="8" /><ellipse class="faint" cx="130" cy="244.4" rx="36.6" ry="8" /><circle class="dot" cx="130" cy="42" r="3" /><circle class="dot" cx="130" cy="278" r="3" /></g><ellipse cx="130" cy="160" rx="92" ry="24" transform="rotate(23.4 130 160)" /><ellipse class="faint" cx="130" cy="160" rx="86" ry="19" transform="rotate(23.4 130 160)" /><circle class="dot" cx="211.7" cy="195.4" r="0.8" /><circle class="dot" cx="208.9" cy="198.3" r="0.8" /><circle class="dot" cx="203.8" cy="200" r="0.8" /><circle class="dot" cx="196.4" cy="200.5" r="0.8" /><circle class="dot" cx="187.1" cy="199.8" r="0.8" /><circle class="dot" cx="175.9" cy="197.9" r="0.8" /><circle class="dot" cx="163.4" cy="194.8" r="0.8" /><circle class="dot" cx="149.9" cy="190.6" r="0.8" /><circle class="dot" cx="135.8" cy="185.6" r="0.8" /><circle class="dot" cx="121.4" cy="179.7" r="0.8" /><circle class="dot" cx="107.4" cy="173.3" r="0.8" /><circle class="dot" cx="94" cy="166.4" r="0.8" /><circle class="dot" cx="81.8" cy="159.4" r="0.8" /><circle class="dot" cx="71" cy="152.4" r="0.8" /><circle class="dot" cx="62" cy="145.6" r="0.8" /><circle class="dot" cx="55" cy="139.2" r="0.8" /><circle class="dot" cx="50.3" cy="133.5" r="0.8" /><circle class="dot" cx="48.1" cy="128.6" r="0.8" /><circle class="dot" cx="48.3" cy="124.6" r="0.8" /><circle class="dot" cx="51.1" cy="121.7" r="0.8" /><circle class="dot" cx="211.9" cy="191.4" r="0.8" /><ellipse class="faint" cx="130" cy="160" rx="99" ry="14" stroke-dasharray="2 4" /><circle class="body" cx="130" cy="160" r="11" /><path fill="url(#h-arm)" stroke="none" d="M130 149A11 11 0 0 1 130 171A4 11 0 0 0 130 149Z" /><path d="M130 259V330" /><path d="M116 330H144L160 352H100Z" /><path fill="url(#h-arm)" stroke="none" d="M132 333H143L156 349H132Z" /><ellipse cx="130" cy="360" rx="62" ry="9" /><ellipse class="faint" cx="130" cy="366" rx="70" ry="10" /><text x="140" y="38" text-anchor="start">a</text><text x="78" y="274" text-anchor="start">b</text><text class="formula" x="130" y="400" text-anchor="middle">ε = 23,44°</text></svg><figcaption>Sfera armillare</figcaption></figure></aside>
+</div>
+<section aria-labelledby="h-cta" class="cta-band">
+<h2 id="h-cta">Ti serve qualcosa di simile?</h2>
+<p>Sviluppo siti, web app e app per iOS e Android, dall'idea alla pubblicazione. Raccontami il tuo progetto.</p>
+<a class="btn btn-primary" href="../index.html#contatti">Scrivimi</a>
+</section>
+</div>
+<nav aria-label="Altre tavole" class="pager wrap"><a class="prev" href="mdreader.html" rel="prev"><span class="pager-label">Tav. VI, precedente</span><b>mdreader</b></a><a class="next" href="biodata.html" rel="next"><span class="pager-label">Tav. VIII, successiva</span><b>BioData</b></a></nav>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="inner">
-      <p>© 2026 William Ragusa</p>
-      <p>Catania, Sicilia</p>
-    </div>
-  </div>
-</footer>
-<script src="../assets/js/site.js" defer></script>
-</body>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© 2026 William Ragusa</p>
+        <p>Catania, Sicilia</p>
+      </div>
+    </footer>
+  </body>
 </html>

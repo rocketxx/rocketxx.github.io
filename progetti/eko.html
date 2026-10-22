@@ -1,61 +1,26 @@
 <!doctype html>
 <html lang="it">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Eko · App web, iOS e Android · William Ragusa</title>
-    <meta
-      name="description"
-      content="Il calendario della raccolta differenziata del tuo comune, con il promemoria la sera prima e un dizionario per sapere dove buttare ogni rifiuto." />
-    <meta
-      name="theme-color"
-      content="#03110D"
-      media="(prefers-color-scheme: dark)" />
-    <meta
-      name="theme-color"
-      content="#ECEAE5"
-      media="(prefers-color-scheme: light)" />
+    <meta name="description" content="Il calendario della raccolta differenziata del tuo comune, con il promemoria la sera prima e un dizionario per sapere dove buttare ogni rifiuto." />
     <meta name="author" content="William Ragusa" />
-    <link rel="canonical" href="https://rocketxx.github.io/progetti/eko.html" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://rocketxx.github.io/progetti/eko.html" />
-    <meta property="og:site_name" content="William Ragusa" />
-    <meta property="og:locale" content="it_IT" />
-    <meta
-      property="og:title"
-      content="Eko · App web, iOS e Android · William Ragusa" />
-    <meta
-      property="og:description"
-      content="Il calendario della raccolta differenziata del tuo comune, con il promemoria la sera prima e un dizionario per sapere dove buttare ogni rifiuto." />
-    <meta
-      property="og:image"
-      content="https://rocketxx.github.io/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="../favicon.ico?v=2" sizes="any" />
-    <link
-      rel="icon"
-      href="../assets/img/favicon-32.png?v=2"
-      type="image/png"
-      sizes="32x32" />
-    <link
-      rel="apple-touch-icon"
-      href="../assets/img/apple-touch-icon.png?v=2" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap"
-      rel="stylesheet" />
-    <script>
-      document.documentElement.classList.add('js');
-      try {
-        var t = localStorage.getItem('theme');
-        if (t === 'light' || t === 'dark')
-          document.documentElement.dataset.theme = t;
-      } catch (e) {}
-    </script>
-    <link rel="stylesheet" href="../assets/css/site.css" />
+    <meta name="theme-color" content="#0E0E0C" />
+    <link href="https://rocketxx.github.io/progetti/eko.html" rel="canonical"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://rocketxx.github.io/progetti/eko.html" property="og:url"/>
+    <meta content="William Ragusa" property="og:site_name"/>
+    <meta content="it_IT" property="og:locale"/>
+    <meta content="Eko · App web, iOS e Android · William Ragusa" property="og:title"/>
+    <meta content="Il calendario della raccolta differenziata del tuo comune, con il promemoria la sera prima e un dizionario per sapere dove buttare ogni rifiuto." property="og:description"/>
+    <meta content="https://rocketxx.github.io/og-image.png" property="og:image"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+    <link rel="preload" href="../assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -69,331 +34,345 @@
           "url": "https://rocketxx.github.io/"
         },
         "inLanguage": "it",
-        "applicationCategory": "UtilitiesApplication"
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "iOS",
+        "installUrl": "https://apps.apple.com/it/app/eko/id6762419786",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "contributor": {
+          "@type": "Person",
+          "name": "Stefano Sallemi"
+        }
       }
     </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Vai al contenuto</a>
     <header class="site-header">
-      <nav class="nav wrap" aria-label="Principale">
-        <a href="../index.html" class="brand">
-          <img
-            class="brand-avatar"
-            src="../assets/img/avatar.webp"
-            alt=""
-            width="36"
-            height="36" />
-          <span class="brand-text">
-            <b>rocketxx</b>
-            <span>William Ragusa</span>
-          </span>
+      <div class="wrap">
+        <a class="brand" href="../index.html">
+          <img class="brand-avatar" src="../assets/img/avatar.webp" alt="" width="40" height="40" />
+          <span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span>
         </a>
-        <ul class="nav-list" id="nav-list" role="list">
-          <li><a href="../index.html#progetti">Progetti</a></li>
-          <li><a href="../index.html#servizi">Servizi</a></li>
-          <li><a href="../index.html#esperienza">Esperienza</a></li>
-          <li><a href="../index.html#competenze">Competenze</a></li>
-          <li><a href="../index.html#contatti">Contatti</a></li>
-        </ul>
-        <div class="nav-tools">
-          <button class="icon-button theme-toggle" type="button" hidden>
-            <svg
-              viewBox="0 0 20 20"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              aria-hidden="true">
-              <circle cx="10" cy="10" r="7" />
-              <path d="M10 3a7 7 0 0 0 0 14z" fill="currentColor" />
-            </svg>
-          </button>
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="nav-list">
-            Menu
-          </button>
-        </div>
-      </nav>
+        <nav class="site-nav" aria-label="Sezioni">
+          <ul role="list">
+            <li><a href="../index.html#progetti">Progetti</a></li>
+            <li><a href="../index.html#esperimenti">Esperimenti</a></li>
+            <li><a href="../index.html#lavori">Lavori</a></li>
+            <li><a href="../index.html#chi-sono">Chi sono</a></li>
+            <li><a href="../index.html#contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <details class="indice">
+          <summary>Indice</summary>
+          <nav aria-label="Indice">
+            <ol role="list">
+              <li><a href="../index.html#progetti"><span>Progetti in produzione</span><span class="leader"></span><span class="ref">Tav. II–III</span></a></li>
+              <li><a href="../index.html#esperimenti"><span>Esperimenti</span><span class="leader"></span><span class="ref">Tav. IV–IX</span></a></li>
+              <li><a href="../index.html#lavori"><span>Lavori</span><span class="leader"></span><span class="ref">Tav. X–XI</span></a></li>
+              <li><a href="../index.html#chi-sono"><span>Chi sono</span><span class="leader"></span><span class="ref">percorso</span></a></li>
+              <li><a href="../index.html#contatti"><span>Contatti</span><span class="leader"></span><span class="ref">email</span></a></li>
+            </ol>
+          </nav>
+        </details>
+      </div>
     </header>
 
-    <main id="main">
-      <div class="wrap">
-        <nav class="crumbs" aria-label="Percorso">
-          <ol role="list">
-            <li><a href="../index.html#progetti">Progetti</a></li>
-            <li aria-current="page">Eko</li>
-          </ol>
-        </nav>
-        <header class="project-hero">
-          <p class="eyebrow">App web, iOS e Android</p>
-          <h1>Eko</h1>
-          <p class="project-lead">
+    <main id="main" class="project-page"><div class="equations" aria-hidden="true">
+          <math style="top: 7%; --x: 0.62; --d: 0.4s">
+            <mi>F</mi><mo>=</mo><mi>G</mi>
+            <mfrac>
+              <mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow>
+              <msup><mi>r</mi><mn>2</mn></msup>
+            </mfrac>
+          </math>
+          <!-- galassia a spirale -->
+          <svg class="glyph" style="top: 20%; --x: 0.12; --d: 0.8s" viewBox="0 0 160 160">
+            <g class="spin-slow">
+              <g transform="rotate(-25 80 80)">
+                <ellipse class="faint" cx="80" cy="80" rx="72" ry="44" stroke-dasharray="2 6" />
+                <path d="M84.0 80.0L84.2 80.9L83.8 81.8L82.9 82.8L81.3 83.5L79.3 84.0L76.8 84.0L74.3 83.4L71.9 82.3L70.1 80.7L69.3 78.5L69.7 76.1L71.6 73.7L75.1 71.6L80.0 70.1L86.0 69.7L92.5 70.6L98.9 72.9L104.0 76.7L107.1 81.8L107.2 87.8L103.6 94.1L96.0 99.9L84.6 104.3L70.0 106.4L53.4 105.4L36.8 100.7L22.3 92.1L12.4 80.0" />
+                <path d="M76.0 80.0L75.8 79.1L76.2 78.2L77.1 77.2L78.7 76.5L80.7 76.0L83.2 76.0L85.7 76.6L88.1 77.7L89.9 79.3L90.7 81.5L90.3 83.9L88.4 86.3L84.9 88.4L80.0 89.9L74.0 90.3L67.5 89.4L61.1 87.1L56.0 83.3L52.9 78.2L52.8 72.2L56.4 65.9L64.0 60.1L75.4 55.7L90.0 53.6L106.6 54.6L123.2 59.3L137.7 67.9L147.6 80.0" />
+                <circle class="dot" cx="80" cy="80" r="3" />
+                <circle class="faint" cx="80" cy="80" r="9" />
+                <circle class="dot" cx="104" cy="96" r="1.4" />
+                <circle class="dot" cx="58" cy="62" r="1.2" />
+                <circle class="dot" cx="122" cy="62" r="1.4" />
+                <circle class="dot" cx="34" cy="96" r="1.2" />
+                <circle class="dot" cx="96" cy="58" r="1" />
+              </g>
+            </g>
+          </svg>
+          <math style="top: 44%; --x: 0.78; --d: 1.2s">
+            <msup><mo>∇</mo><mn>2</mn></msup><mi>φ</mi><mo>=</mo><mn>0</mn>
+          </math>
+          <!-- sfera con assi cartesiani -->
+          <svg class="glyph" style="top: 55%; --x: 0.3; --d: 1.6s" viewBox="0 0 150 150">
+            <circle cx="75" cy="80" r="45" />
+            <ellipse class="faint" cx="75" cy="80" rx="45" ry="13" />
+            <ellipse class="faint" cx="75" cy="80" rx="16" ry="45" />
+            <path d="M75 80V16M71 23l4-7 4 7M75 80L28 122M30 114l-2 8 8-3M75 80l66 14M133 89l8 5-9 3" />
+            <circle class="dot" cx="75" cy="80" r="2.5" />
+            <text x="82" y="20">z</text>
+            <text x="18" y="134">x</text>
+            <text x="138" y="110">y</text>
+          </svg>
+          
+          <!-- sistema solare: orbite concentriche -->
+          <svg class="glyph" style="top: 80%; --x: 0.66; --d: 2.4s" viewBox="0 0 150 150">
+            <circle class="dot" cx="75" cy="75" r="4" />
+            <circle class="faint" cx="75" cy="75" r="22" />
+            <circle cx="75" cy="75" r="40" stroke-dasharray="3 5" />
+            <circle class="faint" cx="75" cy="75" r="60" />
+            <circle class="dot" cx="97" cy="75" r="2" />
+            <circle class="dot" cx="47" cy="47" r="2.5" />
+            <circle class="dot" cx="117" cy="117" r="3" />
+          </svg>
+        </div><div class="equations right" aria-hidden="true">
+          <math style="top: 5%; --x: 0.18; --d: 0.6s">
+            <msup><mi>T</mi><mn>2</mn></msup><mo>=</mo>
+            <mfrac>
+              <mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow>
+              <mrow><mi>G</mi><mi>M</mi></mrow>
+            </mfrac>
+            <msup><mi>a</mi><mn>3</mn></msup>
+          </math>
+          <!-- orbita di Keplero: ellisse, fuochi, raggio vettore -->
+          <svg class="glyph" style="top: 22%; --x: 0.7; --d: 1s" viewBox="0 0 170 120">
+            <ellipse cx="85" cy="60" rx="70" ry="42" />
+            <path class="faint" d="M15 60H155M85 18V102" stroke-dasharray="2 5" />
+            <circle class="dot" cx="141" cy="60" r="4" />
+            <path class="faint" d="M25 60h8M29 56v8" />
+            <path d="M141 60L50 23.6" />
+            <circle class="dot" cx="50" cy="23.6" r="3.5" />
+            <text x="88" y="56">a</text>
+            <text x="90" y="34">r</text>
+            <text x="22" y="76">F₁</text>
+            <text x="134" y="78">F₂</text>
+          </svg>
+          
+          
+          <math style="top: 52%; --x: 0.25; --d: 2.2s">
+            <msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mi>G</mi><mi>M</mi>
+            <mrow>
+              <mo>(</mo>
+              <mfrac><mn>2</mn><mi>r</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mi>a</mi></mfrac>
+              <mo>)</mo>
+            </mrow>
+          </math>
+          <!-- spirale aurea nei rettangoli -->
+          <svg class="glyph" style="top: 74%; --x: 0.82; --d: 2.6s" viewBox="-2 -2 166 116">
+            <path class="faint" d="M0 0H161.8V100H0ZM100 0V100M100 61.8H161.8M123.6 61.8V100M100 76.4H123.6M114.6 61.8V76.4" />
+            <path d="M0 100A100 100 0 0 1 100 0A61.8 61.8 0 0 1 161.8 61.8A38.2 38.2 0 0 1 123.6 100A23.6 23.6 0 0 1 100 76.4A14.6 14.6 0 0 1 114.6 61.8" />
+            <text x="2" y="113">φ = 1.618…</text>
+          </svg>
+        </div>
+<div class="wrap">
+<nav aria-label="Percorso" class="crumbs">
+<ol role="list">
+<li><a href="../index.html#progetti">Progetti in produzione</a></li>
+<li aria-current="page">Eko</li>
+</ol>
+</nav>
+<header class="project-hero"><p class="tav-label">Tav. II</p>
+<p class="eyebrow">App web, iOS e Android</p>
+<h1>Eko</h1>
+<p class="project-lead">
             Il calendario della raccolta differenziata del tuo comune, con il
             promemoria la sera prima e un dizionario per sapere dove buttare
             ogni rifiuto.
           </p>
-          <p class="badges">
-            <span class="badge badge-soon">
-              App iOS e Android presto disponibili
-            </span>
-            <span class="badge badge-private">Codice privato</span>
-          </p>
-          <div class="project-actions">
-            <a class="btn btn-primary" href="https://eko.gnamfood.workers.dev/">
+<p class="badges">
+<span class="badge badge-soon">Su App Store</span><span class="badge badge-soon">Android in arrivo</span>
+<span class="badge badge-private">Codice privato</span>
+</p>
+<div class="project-actions"><a class="btn btn-primary" href="https://apps.apple.com/it/app/eko/id6762419786">Scarica su App Store</a>
+<a class="btn" href="https://eko.gnamfood.workers.dev/">
               Prova la web app
-              <svg
-                viewBox="0 0 16 16"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                aria-hidden="true">
-                <path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9" />
-              </svg>
-            </a>
-          </div>
-          <p class="private-note">
+              
+</a>
+</div>
+<p class="private-note">
             È la versione di sviluppo: dati e funzioni possono ancora cambiare.
           </p>
-        </header>
-
-        <div class="media has-phone">
-          <figure>
-            <div class="phone">
-              <img
-                src="../assets/img/progetti/eko/home.webp"
-                width="444"
-                height="935"
-                alt="Schermata principale di Eko per Ramacca: meteo, raccolta di domani (plastica e metalli), i prossimi 7 giorni, scorciatoie per ingombranti, centri, guida e calendario, e la ricerca «Dove lo butto?»."
-                loading="eager" />
-            </div>
-          </figure>
-          <div class="prose">
-            <p class="eyebrow">La home, a Ramacca</p>
-            <p style="margin-top: 0.6rem">
+</header>
+<div class="media has-phone">
+<figure>
+<div class="phone">
+<img alt="Schermata principale di Eko per Ramacca: meteo, raccolta di domani (plastica e metalli), i prossimi 7 giorni, scorciatoie per ingombranti, centri, guida e calendario, e la ricerca «Dove lo butto?»." height="935" loading="eager" src="../assets/img/progetti/eko/home.webp" width="444"/>
+</div>
+</figure>
+<div class="prose">
+<p class="eyebrow">La home, a Ramacca</p>
+<p style="margin-top: 0.6rem">
               In una sola schermata vedi cosa esporre domani e quanto manca, la
               settimana di raccolta, le scorciatoie per ingombranti, centri di
               raccolta e guida, e la ricerca nel dizionario ufficiale dei
               rifiuti.
             </p>
-            <p>
-              Le app per iOS e Android sono quasi pronte. Intanto puoi provare
-              la
-              <a href="https://eko.gnamfood.workers.dev/">
-                versione web di sviluppo
-              </a>
-              .
-            </p>
-          </div>
-        </div>
-        <div class="project-body">
-          <div>
-            <section aria-labelledby="h-what">
-              <h2 id="h-what">Di cosa si tratta</h2>
-              <div class="prose">
-                <p>
+<p>L’app per iOS è su App Store, quella per Android è quasi pronta. Intanto puoi provare la <a href="https://eko.gnamfood.workers.dev/">versione web di sviluppo</a>.</p>
+</div>
+</div>
+<div class="project-body">
+<div><svg class="fregio-band" viewBox="0 0 360 104" aria-hidden="true" focusable="false"><defs><pattern id="hatch-mo" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path class="faint" d="M16 70Q180 -14 344 70" stroke-dasharray="2 5" /><circle class="dot" cx="180" cy="60" r="3.5" /><circle class="faint" cx="180" cy="60" r="7.5" /><circle class="body" cx="16" cy="70" r="11" /><circle class="faint" cx="12" cy="67" r="2.2" /><circle class="faint" cx="19" cy="74" r="1.6" /><circle class="faint" cx="14" cy="75" r="1.1" /><circle class="faint" cx="21" cy="66" r="1.2" /><circle fill="url(#hatch-mo)" stroke="none" cx="16" cy="70" r="11" /><circle class="body" cx="70.7" cy="46.7" r="11" /><circle class="faint" cx="66.7" cy="43.7" r="2.2" /><circle class="faint" cx="73.7" cy="50.7" r="1.6" /><circle class="faint" cx="68.7" cy="51.7" r="1.1" /><circle class="faint" cx="75.7" cy="42.7" r="1.2" /><path fill="url(#hatch-mo)" stroke="none" d="M70.7 35.7 A11 11 0 0 0 70.7 57.7 A7.3 11 0 0 0 70.7 35.7 Z" /><circle class="body" cx="125.3" cy="32.7" r="11" /><circle class="faint" cx="121.3" cy="29.7" r="2.2" /><circle class="faint" cx="128.3" cy="36.7" r="1.6" /><circle class="faint" cx="123.3" cy="37.7" r="1.1" /><circle class="faint" cx="130.3" cy="28.7" r="1.2" /><path fill="url(#hatch-mo)" stroke="none" d="M125.3 21.7 A11 11 0 0 0 125.3 43.7 A3.7 11 0 0 0 125.3 21.7 Z" /><circle class="body" cx="180" cy="28" r="11" /><circle class="faint" cx="176" cy="25" r="2.2" /><circle class="faint" cx="183" cy="32" r="1.6" /><circle class="faint" cx="178" cy="33" r="1.1" /><circle class="faint" cx="185" cy="24" r="1.2" /><path fill="url(#hatch-mo)" stroke="none" d="M180 17 A11 11 0 0 0 180 39 A0 11 0 0 0 180 17 Z" /><circle class="body" cx="234.7" cy="32.7" r="11" /><circle class="faint" cx="230.7" cy="29.7" r="2.2" /><circle class="faint" cx="237.7" cy="36.7" r="1.6" /><circle class="faint" cx="232.7" cy="37.7" r="1.1" /><circle class="faint" cx="239.7" cy="28.7" r="1.2" /><path fill="url(#hatch-mo)" stroke="none" d="M234.7 21.7 A11 11 0 0 0 234.7 43.7 A3.7 11 0 0 1 234.7 21.7 Z" /><circle class="body" cx="289.3" cy="46.7" r="11" /><circle class="faint" cx="285.3" cy="43.7" r="2.2" /><circle class="faint" cx="292.3" cy="50.7" r="1.6" /><circle class="faint" cx="287.3" cy="51.7" r="1.1" /><circle class="faint" cx="294.3" cy="42.7" r="1.2" /><path fill="url(#hatch-mo)" stroke="none" d="M289.3 35.7 A11 11 0 0 0 289.3 57.7 A7.3 11 0 0 1 289.3 35.7 Z" /><circle class="body" cx="344" cy="70" r="11" /><circle class="faint" cx="340" cy="67" r="2.2" /><circle class="faint" cx="347" cy="74" r="1.6" /><circle class="faint" cx="342" cy="75" r="1.1" /><circle class="faint" cx="349" cy="66" r="1.2" /><text class="formula" x="92" y="98" text-anchor="middle">k = ½(1 − cos φ)</text><text class="formula" x="268" y="98" text-anchor="middle">T = 29,53 d</text></svg>
+<section aria-labelledby="h-what">
+<h2 id="h-what">Di cosa si tratta</h2>
+<div class="prose">
+<p>
                   Nei comuni con la raccolta porta a porta il calendario cambia
                   tra zone, festività e tipi di utenza, ed è facile sbagliare
                   giorno. Eko ti dice cosa esporre domani, te lo ricorda la sera
                   prima e risponde alla domanda di tutti: dove lo butto?
                 </p>
-                <p>
+<p>
                   Oggi copre circa 14 comuni. Aggiungere un comune o un gestore
                   non richiede di toccare il codice: dizionari, contatti e
                   calendari sono dati.
                 </p>
-                <p>
-                  Ho fatto tutto io: raccolta e pulizia dei dati, design,
-                  sviluppo web e mobile, backend e messa online.
-                </p>
-              </div>
-            </section>
-            <section aria-labelledby="h-feat">
-              <h2 id="h-feat">Cosa fa</h2>
-              <ul class="features" role="list">
-                <li>
+<p>Ho curato il backend: il Worker Cloudflare con Hono e D1, la raccolta e la pulizia dei dati, gli script che estraggono i calendari dai PDF dei gestori, le notifiche e la messa online. Stefano Sallemi, frontend developer, ha costruito l’interfaccia React e l’app.</p>
+</div>
+</section>
+<section aria-labelledby="h-feat">
+<h2 id="h-feat">Cosa fa</h2>
+<ul class="features" role="list">
+<li>
                   Raccolta di domani e dei prossimi 7 giorni, per comune, zona e
                   tipo di utenza.
                 </li>
-                <li>
+<li>
                   Promemoria la sera prima, come notifiche locali: arrivano
                   anche senza connessione.
                 </li>
-                <li>
+<li>
                   «Dove lo butto?»: ricerca nel dizionario ufficiale del gestore
                   (258 rifiuti per Kalat Ambiente).
                 </li>
-                <li>
+<li>
                   Centri di raccolta, ingombranti, contatti e avvisi
                   straordinari con notifiche push.
                 </li>
-                <li>
+<li>
                   Widget per iOS e una pagina statica per ogni comune,
                   indicizzabile dai motori di ricerca.
                 </li>
-              </ul>
-            </section>
-            <section aria-labelledby="h-choices">
-              <h2 id="h-choices">Scelte tecniche</h2>
-              <ul class="choices" role="list">
-                <li>
-                  <b>Un solo Worker Cloudflare per tutto</b>
-                  <span>
+</ul>
+</section>
+<section aria-labelledby="h-choices">
+<h2 id="h-choices">Scelte tecniche</h2>
+<ul class="choices" role="list">
+<li>
+<b>Un solo Worker Cloudflare per tutto</b>
+<span>
                     SPA, pagine SEO e API sono servite dallo stesso Worker. I
                     file statici non consumano richieste e il progetto resta nel
                     piano gratuito.
                   </span>
-                </li>
-                <li>
-                  <b>Offline first</b>
-                  <span>
+</li>
+<li>
+<b>Offline first</b>
+<span>
                     La cache dei dati è salvata sul dispositivo e i promemoria
                     sono locali. L'app funziona senza rete e il server non deve
                     mandare un messaggio a ogni utente ogni sera.
                   </span>
-                </li>
-                <li>
-                  <b>I dati trattati come codice</b>
-                  <span>
+</li>
+<li>
+<b>I dati trattati come codice</b>
+<span>
                     Calendari e dizionari sono file JSON e CSV versionati. Degli
                     script estraggono i calendari dai PDF dei gestori, li
                     validano e generano il database.
                   </span>
-                </li>
-                <li>
-                  <b>Un contratto condiviso</b>
-                  <span>
+</li>
+<li>
+<b>Un contratto condiviso</b>
+<span>
                     Gli schemi zod e la logica del calendario stanno in un
                     pacchetto comune a web e API: i tipi sono gli stessi da
                     entrambe le parti.
                   </span>
-                </li>
-              </ul>
-            </section>
-          </div>
-          <aside class="facts" aria-label="Scheda del progetto">
-            <dl>
-              <div>
-                <dt>Ruolo</dt>
-                <dd>Ideazione, design e sviluppo</dd>
-              </div>
-              <div>
-                <dt>Piattaforme</dt>
-                <dd>Web (PWA), iOS, Android</dd>
-              </div>
-              <div>
-                <dt>Stato</dt>
-                <dd>Web app in sviluppo, app in arrivo sugli store</dd>
-              </div>
-              <div>
-                <dt>Codice</dt>
-                <dd>Privato</dd>
-              </div>
-              <div>
-                <dt>Frontend</dt>
-                <dd>
-                  <ul class="stack-tags" role="list">
-                    <li>React</li>
-                    <li>TypeScript</li>
-                    <li>Vite</li>
-                    <li>shadcn/ui</li>
-                    <li>TanStack Query</li>
-                  </ul>
-                </dd>
-              </div>
-              <div>
-                <dt>Mobile</dt>
-                <dd>
-                  <ul class="stack-tags" role="list">
-                    <li>Capacitor (iOS e Android)</li>
-                    <li>Widget iOS</li>
-                    <li>Firebase Cloud Messaging</li>
-                  </ul>
-                </dd>
-              </div>
-              <div>
-                <dt>Backend</dt>
-                <dd>
-                  <ul class="stack-tags" role="list">
-                    <li>Hono</li>
-                    <li>Cloudflare Workers</li>
-                    <li>Cloudflare D1</li>
-                    <li>zod</li>
-                  </ul>
-                </dd>
-              </div>
-              <div>
-                <dt>Infrastruttura</dt>
-                <dd>
-                  <ul class="stack-tags" role="list">
-                    <li>Static Assets</li>
-                    <li>Cron Triggers</li>
-                    <li>WAF e rate limiting</li>
-                    <li>npm workspaces</li>
-                  </ul>
-                </dd>
-              </div>
-            </dl>
-          </aside>
-        </div>
+</li>
+</ul>
+</section>
+</div>
+<aside aria-label="Scheda del progetto" class="facts">
+<dl>
+<div>
+<dt>Ruolo</dt>
+<dd>Backend, dati e messa online</dd>
+</div><div><dt>Frontend e app</dt><dd>Stefano Sallemi</dd></div>
+<div>
+<dt>Piattaforme</dt>
+<dd>Web (PWA), iOS, Android</dd>
+</div>
+<div>
+<dt>Stato</dt>
+<dd>Su App Store dal 21 ottobre 2026, Android in arrivo, web app in sviluppo</dd>
+</div>
+<div>
+<dt>Codice</dt>
+<dd>Privato</dd>
+</div>
+<div>
+<dt>Frontend</dt>
+<dd>
+<ul class="stack-tags" role="list">
+<li>React</li>
+<li>TypeScript</li>
+<li>Vite</li>
+<li>shadcn/ui</li>
+<li>TanStack Query</li>
+</ul>
+</dd>
+</div>
+<div>
+<dt>Mobile</dt>
+<dd>
+<ul class="stack-tags" role="list">
+<li>Capacitor (iOS e Android)</li>
+<li>Widget iOS</li>
+<li>Firebase Cloud Messaging</li>
+</ul>
+</dd>
+</div>
+<div>
+<dt>Backend</dt>
+<dd>
+<ul class="stack-tags" role="list">
+<li>Hono</li>
+<li>Cloudflare Workers</li>
+<li>Cloudflare D1</li>
+<li>zod</li>
+</ul>
+</dd>
+</div>
 
-        <section class="cta-band" aria-labelledby="h-cta">
-          <h2 id="h-cta">Ti serve qualcosa di simile?</h2>
-          <p>
+</dl>
+<figure class="study" aria-hidden="true"><svg class="study-svg" viewBox="0 0 260 420" focusable="false"><defs><pattern id="h-arm" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><circle cx="130" cy="160" r="92" /><circle class="faint" cx="130" cy="160" r="99" /><path class="faint" d="M222 160L229 160" /><path class="faint" d="M220.6 176L224 176.6" /><path class="faint" d="M216.5 191.5L219.7 192.7" /><path class="faint" d="M209.7 206L215.7 209.5" /><path class="faint" d="M200.5 219.1L203.2 221.4" /><path class="faint" d="M189.1 230.5L191.4 233.2" /><path class="faint" d="M176 239.7L179.5 245.7" /><path class="faint" d="M161.5 246.5L162.7 249.7" /><path class="faint" d="M146 250.6L146.6 254" /><path class="faint" d="M130 252L130 259" /><path class="faint" d="M114 250.6L113.4 254" /><path class="faint" d="M98.5 246.5L97.3 249.7" /><path class="faint" d="M84 239.7L80.5 245.7" /><path class="faint" d="M70.9 230.5L68.6 233.2" /><path class="faint" d="M59.5 219.1L56.8 221.4" /><path class="faint" d="M50.3 206L44.3 209.5" /><path class="faint" d="M43.5 191.5L40.3 192.7" /><path class="faint" d="M39.4 176L36 176.6" /><path class="faint" d="M38 160L31 160" /><path class="faint" d="M39.4 144L36 143.4" /><path class="faint" d="M43.5 128.5L40.3 127.3" /><path class="faint" d="M50.3 114L44.3 110.5" /><path class="faint" d="M59.5 100.9L56.8 98.6" /><path class="faint" d="M70.9 89.5L68.6 86.8" /><path class="faint" d="M84 80.3L80.5 74.3" /><path class="faint" d="M98.5 73.5L97.3 70.3" /><path class="faint" d="M114 69.4L113.4 66" /><path class="faint" d="M130 68L130 61" /><path class="faint" d="M146 69.4L146.6 66" /><path class="faint" d="M161.5 73.5L162.7 70.3" /><path class="faint" d="M176 80.3L179.5 74.3" /><path class="faint" d="M189.1 89.5L191.4 86.8" /><path class="faint" d="M200.5 100.9L203.2 98.6" /><path class="faint" d="M209.7 114L215.7 110.5" /><path class="faint" d="M216.5 128.5L219.7 127.3" /><path class="faint" d="M220.6 144L224 143.4" /><g transform="rotate(-23.4 130 160)"><path d="M130 42V278" /><ellipse cx="130" cy="160" rx="92" ry="20" /><ellipse class="faint" cx="130" cy="123.4" rx="84.4" ry="18" /><ellipse class="faint" cx="130" cy="196.6" rx="84.4" ry="18" /><ellipse class="faint" cx="130" cy="75.6" rx="36.6" ry="8" /><ellipse class="faint" cx="130" cy="244.4" rx="36.6" ry="8" /><circle class="dot" cx="130" cy="42" r="3" /><circle class="dot" cx="130" cy="278" r="3" /></g><ellipse cx="130" cy="160" rx="92" ry="24" transform="rotate(23.4 130 160)" /><ellipse class="faint" cx="130" cy="160" rx="86" ry="19" transform="rotate(23.4 130 160)" /><circle class="dot" cx="211.7" cy="195.4" r="0.8" /><circle class="dot" cx="208.9" cy="198.3" r="0.8" /><circle class="dot" cx="203.8" cy="200" r="0.8" /><circle class="dot" cx="196.4" cy="200.5" r="0.8" /><circle class="dot" cx="187.1" cy="199.8" r="0.8" /><circle class="dot" cx="175.9" cy="197.9" r="0.8" /><circle class="dot" cx="163.4" cy="194.8" r="0.8" /><circle class="dot" cx="149.9" cy="190.6" r="0.8" /><circle class="dot" cx="135.8" cy="185.6" r="0.8" /><circle class="dot" cx="121.4" cy="179.7" r="0.8" /><circle class="dot" cx="107.4" cy="173.3" r="0.8" /><circle class="dot" cx="94" cy="166.4" r="0.8" /><circle class="dot" cx="81.8" cy="159.4" r="0.8" /><circle class="dot" cx="71" cy="152.4" r="0.8" /><circle class="dot" cx="62" cy="145.6" r="0.8" /><circle class="dot" cx="55" cy="139.2" r="0.8" /><circle class="dot" cx="50.3" cy="133.5" r="0.8" /><circle class="dot" cx="48.1" cy="128.6" r="0.8" /><circle class="dot" cx="48.3" cy="124.6" r="0.8" /><circle class="dot" cx="51.1" cy="121.7" r="0.8" /><circle class="dot" cx="211.9" cy="191.4" r="0.8" /><ellipse class="faint" cx="130" cy="160" rx="99" ry="14" stroke-dasharray="2 4" /><circle class="body" cx="130" cy="160" r="11" /><path fill="url(#h-arm)" stroke="none" d="M130 149A11 11 0 0 1 130 171A4 11 0 0 0 130 149Z" /><path d="M130 259V330" /><path d="M116 330H144L160 352H100Z" /><path fill="url(#h-arm)" stroke="none" d="M132 333H143L156 349H132Z" /><ellipse cx="130" cy="360" rx="62" ry="9" /><ellipse class="faint" cx="130" cy="366" rx="70" ry="10" /><text x="140" y="38" text-anchor="start">a</text><text x="78" y="274" text-anchor="start">b</text><text class="formula" x="130" y="400" text-anchor="middle">ε = 23,44°</text></svg><figcaption>Sfera armillare</figcaption></figure></aside>
+</div>
+<section aria-labelledby="h-cta" class="cta-band">
+<h2 id="h-cta">Ti serve qualcosa di simile?</h2>
+<p>
             Sviluppo siti, web app e app per iOS e Android, dall'idea alla
             pubblicazione. Raccontami il tuo progetto.
           </p>
-          <a class="btn btn-primary" href="../index.html#contatti">
+<a class="btn btn-primary" href="../index.html#contatti">
             Scrivimi
-            <svg
-              class="chev"
-              viewBox="0 0 16 16"
-              aria-hidden="true"
-              focusable="false">
-              <path
-                d="M6 3.5 10.5 8 6 12.5"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-        </section>
-      </div>
-      <nav class="pager wrap" aria-label="Altri progetti">
-        <a class="next" href="vocablio.html" rel="next">
-          <span class="pager-label">
-            Progetto successivo
-            <svg
-              class="chev"
-              viewBox="0 0 16 16"
-              aria-hidden="true"
-              focusable="false">
-              <path
-                d="M6 3.5 10.5 8 6 12.5"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </span>
-          <b>Vocablio</b>
-        </a>
-      </nav>
-    </main>
+            
+</a>
+</section>
+</div>
+<nav aria-label="Altre tavole" class="pager wrap"><span></span><a class="next" href="vocablio.html" rel="next"><span class="pager-label">Tav. III, successiva</span><b>Vocablio</b></a></nav>
+</main>
 
     <footer class="site-footer">
       <div class="wrap">
-        <div class="inner">
-          <p>© 2026 William Ragusa</p>
-          <p>Catania, Sicilia</p>
-        </div>
+        <p>© 2026 William Ragusa</p>
+        <p>Catania, Sicilia</p>
       </div>
     </footer>
-    <script src="../assets/js/site.js" defer></script>
   </body>
 </html>

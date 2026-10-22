@@ -1,105 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gioco in Unity 3D · Progetto universitario · William Ragusa</title>
-  <meta name="description" content="Un videogioco 3D realizzato all&#x27;università per imparare il game development e la programmazione di ambienti interattivi.">
-  <meta name="theme-color" content="#03110D" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#ECEAE5" media="(prefers-color-scheme: light)">
-  <meta name="author" content="William Ragusa">
-  <link rel="canonical" href="https://rocketxx.github.io/progetti/gioco-unity.html">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rocketxx.github.io/progetti/gioco-unity.html">
-  <meta property="og:site_name" content="William Ragusa">
-  <meta property="og:locale" content="it_IT">
-  <meta property="og:title" content="Gioco in Unity 3D · Progetto universitario · William Ragusa">
-  <meta property="og:description" content="Un videogioco 3D realizzato all&#x27;università per imparare il game development e la programmazione di ambienti interattivi.">
-  <meta property="og:image" content="https://rocketxx.github.io/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="../favicon.ico?v=2" sizes="any">
-  <link rel="icon" href="../assets/img/favicon-32.png?v=2" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png?v=2">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
-  <link rel="stylesheet" href="../assets/css/site.css">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "Gioco in Unity 3D", "description": "Un videogioco 3D realizzato all'università per imparare il game development e la programmazione di ambienti interattivi.", "url": "https://rocketxx.github.io/progetti/gioco-unity.html", "author": {"@type": "Person", "name": "William Ragusa", "url": "https://rocketxx.github.io/"}, "inLanguage": "it", "codeRepository": "https://github.com/rocketxx/Gioco-Unity"}</script>
-</head>
-<body>
-<a class="skip-link" href="#main">Vai al contenuto</a>
-<header class="site-header">
-  <nav class="nav wrap" aria-label="Principale">
-    <a href="../index.html" class="brand"><img class="brand-avatar" src="../assets/img/avatar.webp" alt="" width="36" height="36"><span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span></a>
-    <ul class="nav-list" id="nav-list" role="list">
-      <li><a href="../index.html#progetti">Progetti</a></li>
-      <li><a href="../index.html#servizi">Servizi</a></li>
-      <li><a href="../index.html#esperienza">Esperienza</a></li>
-      <li><a href="../index.html#competenze">Competenze</a></li>
-      <li><a href="../index.html#contatti">Contatti</a></li>
-    </ul>
-    <div class="nav-tools">
-      <button class="icon-button theme-toggle" type="button" hidden><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 3a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
-    </div>
-  </nav>
-</header>
-
-<main id="main">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Percorso">
-      <ol role="list">
-        <li><a href="../index.html#progetti">Progetti</a></li>
-        <li aria-current="page">Gioco in Unity 3D</li>
-      </ol>
-    </nav>
-    <header class="project-hero">
-      <p class="eyebrow">Progetto universitario</p>
-      <h1>Gioco in Unity 3D</h1>
-      <p class="project-lead">Un videogioco 3D realizzato all'università per imparare il game development e la programmazione di ambienti interattivi.</p>
-      <p class="badges"><span class="badge badge-uni">Progetto universitario</span><span class="badge badge-oss">Open source</span></p>
-      <div class="project-actions"><a class="btn btn-primary" href="https://github.com/rocketxx/Gioco-Unity">Codice su GitHub<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9"/></svg></a></div>
-      
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gioco in Unity 3D · Progetto universitario · William Ragusa</title>
+    <meta name="description" content="Un videogioco 3D realizzato all'università per imparare il game development e la programmazione di ambienti interattivi." />
+    <meta name="author" content="William Ragusa" />
+    <meta name="theme-color" content="#0E0E0C" />
+    <link href="https://rocketxx.github.io/progetti/gioco-unity.html" rel="canonical"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://rocketxx.github.io/progetti/gioco-unity.html" property="og:url"/>
+    <meta content="William Ragusa" property="og:site_name"/>
+    <meta content="it_IT" property="og:locale"/>
+    <meta content="Gioco in Unity 3D · Progetto universitario · William Ragusa" property="og:title"/>
+    <meta content="Un videogioco 3D realizzato all'università per imparare il game development e la programmazione di ambienti interattivi." property="og:description"/>
+    <meta content="https://rocketxx.github.io/og-image.png" property="og:image"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+    <link rel="preload" href="../assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "Gioco in Unity 3D",
+        "description": "Un videogioco 3D realizzato all'università per imparare il game development e la programmazione di ambienti interattivi.",
+        "url": "https://rocketxx.github.io/progetti/gioco-unity.html",
+        "author": {
+          "@type": "Person",
+          "name": "William Ragusa",
+          "url": "https://rocketxx.github.io/"
+        },
+        "inLanguage": "it",
+        "codeRepository": "https://github.com/rocketxx/Gioco-Unity"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Vai al contenuto</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="../index.html">
+          <img class="brand-avatar" src="../assets/img/avatar.webp" alt="" width="40" height="40" />
+          <span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Sezioni">
+          <ul role="list">
+            <li><a href="../index.html#progetti">Progetti</a></li>
+            <li><a href="../index.html#esperimenti">Esperimenti</a></li>
+            <li><a href="../index.html#lavori">Lavori</a></li>
+            <li><a href="../index.html#chi-sono">Chi sono</a></li>
+            <li><a href="../index.html#contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <details class="indice">
+          <summary>Indice</summary>
+          <nav aria-label="Indice">
+            <ol role="list">
+              <li><a href="../index.html#progetti"><span>Progetti in produzione</span><span class="leader"></span><span class="ref">Tav. II–III</span></a></li>
+              <li><a href="../index.html#esperimenti"><span>Esperimenti</span><span class="leader"></span><span class="ref">Tav. IV–IX</span></a></li>
+              <li><a href="../index.html#lavori"><span>Lavori</span><span class="leader"></span><span class="ref">Tav. X–XI</span></a></li>
+              <li><a href="../index.html#chi-sono"><span>Chi sono</span><span class="leader"></span><span class="ref">percorso</span></a></li>
+              <li><a href="../index.html#contatti"><span>Contatti</span><span class="leader"></span><span class="ref">email</span></a></li>
+            </ol>
+          </nav>
+        </details>
+      </div>
     </header>
 
-      <div class="media">
-        <figure>
-          <div class="shot shot-logo"><img src="../assets/img/progetti/gioco-unity/cover.webp" width="1200" height="750" alt="Logo di Unity." loading="eager"></div>
-          <figcaption>Realizzato con il motore Unity, programmando in C#.</figcaption>
-        </figure>
-      </div>
-    <div class="project-body">
-      <div>
-        <section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>Il mio primo contatto con il game development: scene 3D, fisica, input del giocatore e logica di gioco scritta in C#.</p><p>Progetto universitario.</p></div></section>
-        
-        
-      </div>
-      <aside class="facts" aria-label="Scheda del progetto">
-        <dl>
-          <div><dt>Contesto</dt><dd>Progetto universitario</dd></div><div><dt>Codice</dt><dd>Open source</dd></div>
-          <div><dt>Engine</dt><dd><ul class="stack-tags" role="list"><li>Unity</li></ul></dd></div><div><dt>Linguaggio</dt><dd><ul class="stack-tags" role="list"><li>C#</li></ul></dd></div>
-        </dl>
-      </aside>
-    </div>
-
-    <section class="cta-band" aria-labelledby="h-cta">
-      <h2 id="h-cta">Ti serve qualcosa di simile?</h2>
-      <p>Sviluppo siti, web app e app per iOS e Android, dall'idea alla pubblicazione. Raccontami il tuo progetto.</p>
-      <a class="btn btn-primary" href="../index.html#contatti">Scrivimi<svg class="chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    </section>
-  </div>
-  <nav class="pager wrap" aria-label="Altri progetti"><a class="prev" href="sentimentitle.html" rel="prev"><span class="pager-label"><svg class="chev chev-left" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Progetto precedente</span><b>SentimenTitle</b></a></nav>
+    <main id="main" class="project-page"><div class="equations" aria-hidden="true">
+          <math style="top: 7%; --x: 0.62; --d: 0.4s">
+            <mi>F</mi><mo>=</mo><mi>G</mi>
+            <mfrac>
+              <mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow>
+              <msup><mi>r</mi><mn>2</mn></msup>
+            </mfrac>
+          </math>
+          <!-- galassia a spirale -->
+          <svg class="glyph" style="top: 20%; --x: 0.12; --d: 0.8s" viewBox="0 0 160 160">
+            <g class="spin-slow">
+              <g transform="rotate(-25 80 80)">
+                <ellipse class="faint" cx="80" cy="80" rx="72" ry="44" stroke-dasharray="2 6" />
+                <path d="M84.0 80.0L84.2 80.9L83.8 81.8L82.9 82.8L81.3 83.5L79.3 84.0L76.8 84.0L74.3 83.4L71.9 82.3L70.1 80.7L69.3 78.5L69.7 76.1L71.6 73.7L75.1 71.6L80.0 70.1L86.0 69.7L92.5 70.6L98.9 72.9L104.0 76.7L107.1 81.8L107.2 87.8L103.6 94.1L96.0 99.9L84.6 104.3L70.0 106.4L53.4 105.4L36.8 100.7L22.3 92.1L12.4 80.0" />
+                <path d="M76.0 80.0L75.8 79.1L76.2 78.2L77.1 77.2L78.7 76.5L80.7 76.0L83.2 76.0L85.7 76.6L88.1 77.7L89.9 79.3L90.7 81.5L90.3 83.9L88.4 86.3L84.9 88.4L80.0 89.9L74.0 90.3L67.5 89.4L61.1 87.1L56.0 83.3L52.9 78.2L52.8 72.2L56.4 65.9L64.0 60.1L75.4 55.7L90.0 53.6L106.6 54.6L123.2 59.3L137.7 67.9L147.6 80.0" />
+                <circle class="dot" cx="80" cy="80" r="3" />
+                <circle class="faint" cx="80" cy="80" r="9" />
+                <circle class="dot" cx="104" cy="96" r="1.4" />
+                <circle class="dot" cx="58" cy="62" r="1.2" />
+                <circle class="dot" cx="122" cy="62" r="1.4" />
+                <circle class="dot" cx="34" cy="96" r="1.2" />
+                <circle class="dot" cx="96" cy="58" r="1" />
+              </g>
+            </g>
+          </svg>
+          <math style="top: 44%; --x: 0.78; --d: 1.2s">
+            <msup><mo>∇</mo><mn>2</mn></msup><mi>φ</mi><mo>=</mo><mn>0</mn>
+          </math>
+          <!-- sfera con assi cartesiani -->
+          <svg class="glyph" style="top: 55%; --x: 0.3; --d: 1.6s" viewBox="0 0 150 150">
+            <circle cx="75" cy="80" r="45" />
+            <ellipse class="faint" cx="75" cy="80" rx="45" ry="13" />
+            <ellipse class="faint" cx="75" cy="80" rx="16" ry="45" />
+            <path d="M75 80V16M71 23l4-7 4 7M75 80L28 122M30 114l-2 8 8-3M75 80l66 14M133 89l8 5-9 3" />
+            <circle class="dot" cx="75" cy="80" r="2.5" />
+            <text x="82" y="20">z</text>
+            <text x="18" y="134">x</text>
+            <text x="138" y="110">y</text>
+          </svg>
+          
+          <!-- sistema solare: orbite concentriche -->
+          <svg class="glyph" style="top: 80%; --x: 0.66; --d: 2.4s" viewBox="0 0 150 150">
+            <circle class="dot" cx="75" cy="75" r="4" />
+            <circle class="faint" cx="75" cy="75" r="22" />
+            <circle cx="75" cy="75" r="40" stroke-dasharray="3 5" />
+            <circle class="faint" cx="75" cy="75" r="60" />
+            <circle class="dot" cx="97" cy="75" r="2" />
+            <circle class="dot" cx="47" cy="47" r="2.5" />
+            <circle class="dot" cx="117" cy="117" r="3" />
+          </svg>
+        </div><div class="equations right" aria-hidden="true">
+          <math style="top: 5%; --x: 0.18; --d: 0.6s">
+            <msup><mi>T</mi><mn>2</mn></msup><mo>=</mo>
+            <mfrac>
+              <mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow>
+              <mrow><mi>G</mi><mi>M</mi></mrow>
+            </mfrac>
+            <msup><mi>a</mi><mn>3</mn></msup>
+          </math>
+          <!-- orbita di Keplero: ellisse, fuochi, raggio vettore -->
+          <svg class="glyph" style="top: 22%; --x: 0.7; --d: 1s" viewBox="0 0 170 120">
+            <ellipse cx="85" cy="60" rx="70" ry="42" />
+            <path class="faint" d="M15 60H155M85 18V102" stroke-dasharray="2 5" />
+            <circle class="dot" cx="141" cy="60" r="4" />
+            <path class="faint" d="M25 60h8M29 56v8" />
+            <path d="M141 60L50 23.6" />
+            <circle class="dot" cx="50" cy="23.6" r="3.5" />
+            <text x="88" y="56">a</text>
+            <text x="90" y="34">r</text>
+            <text x="22" y="76">F₁</text>
+            <text x="134" y="78">F₂</text>
+          </svg>
+          
+          
+          <math style="top: 52%; --x: 0.25; --d: 2.2s">
+            <msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mi>G</mi><mi>M</mi>
+            <mrow>
+              <mo>(</mo>
+              <mfrac><mn>2</mn><mi>r</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mi>a</mi></mfrac>
+              <mo>)</mo>
+            </mrow>
+          </math>
+          <!-- spirale aurea nei rettangoli -->
+          <svg class="glyph" style="top: 74%; --x: 0.82; --d: 2.6s" viewBox="-2 -2 166 116">
+            <path class="faint" d="M0 0H161.8V100H0ZM100 0V100M100 61.8H161.8M123.6 61.8V100M100 76.4H123.6M114.6 61.8V76.4" />
+            <path d="M0 100A100 100 0 0 1 100 0A61.8 61.8 0 0 1 161.8 61.8A38.2 38.2 0 0 1 123.6 100A23.6 23.6 0 0 1 100 76.4A14.6 14.6 0 0 1 114.6 61.8" />
+            <text x="2" y="113">φ = 1.618…</text>
+          </svg>
+        </div>
+<div class="wrap">
+<nav aria-label="Percorso" class="crumbs">
+<ol role="list">
+<li><a href="../index.html#esperimenti">Archivio</a></li>
+<li aria-current="page">Gioco in Unity 3D</li>
+</ol>
+</nav>
+<header class="project-hero"><p class="tav-label">Tav. XII</p>
+<p class="eyebrow">Progetto universitario</p>
+<h1>Gioco in Unity 3D</h1>
+<p class="project-lead">Un videogioco 3D realizzato all'università per imparare il game development e la programmazione di ambienti interattivi.</p>
+<p class="badges"><span class="badge badge-uni">Progetto universitario</span><span class="badge badge-oss">Open source</span></p>
+<div class="project-actions"><a class="btn btn-primary" href="https://github.com/rocketxx/Gioco-Unity">Codice su GitHub</a></div>
+</header>
+<div class="media">
+<figure>
+<div class="shot shot-logo"><img alt="Logo di Unity." height="750" loading="eager" src="../assets/img/progetti/gioco-unity/cover.webp" width="1200"/></div>
+<figcaption>Realizzato con il motore Unity, programmando in C#.</figcaption>
+</figure>
+</div>
+<div class="project-body">
+<div><svg class="fregio-band" viewBox="0 0 360 100" aria-hidden="true" focusable="false"><defs><pattern id="hatch-le" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><rect x="24" y="17" width="62" height="62" /><circle cx="55" cy="41" r="38" /><path class="faint" d="M24 17L86 79M86 17L24 79" stroke-dasharray="2 3" /><path class="faint" d="M55 11V85M18 48H92" /><circle class="dot" cx="55" cy="41" r="1.8" /><circle class="faint" cx="180" cy="46" r="30" /><circle cx="180" cy="46" r="15" /><circle cx="193" cy="53.5" r="15" /><circle cx="180" cy="61" r="15" /><circle cx="167" cy="53.5" r="15" /><circle cx="167" cy="38.5" r="15" /><circle cx="180" cy="31" r="15" /><circle cx="193" cy="38.5" r="15" /><path d="M300 10L331.2 28L331.2 64L300 82L268.8 64L268.8 28Z" /><path class="faint" d="M300 63L285.3 37.5L314.7 37.5Z" stroke-dasharray="2 3" /><path class="faint" d="M300 63L331.2 64" stroke-dasharray="2 3" /><path class="faint" d="M300 63L300 82" stroke-dasharray="2 3" /><path class="faint" d="M300 63L268.8 64" stroke-dasharray="2 3" /><path class="faint" d="M285.3 37.5L268.8 64" stroke-dasharray="2 3" /><path class="faint" d="M285.3 37.5L268.8 28" stroke-dasharray="2 3" /><path class="faint" d="M285.3 37.5L300 10" stroke-dasharray="2 3" /><path class="faint" d="M314.7 37.5L300 10" stroke-dasharray="2 3" /><path class="faint" d="M314.7 37.5L331.2 28" stroke-dasharray="2 3" /><path class="faint" d="M314.7 37.5L331.2 64" stroke-dasharray="2 3" /><path d="M300 29L314.7 54.5L285.3 54.5Z" /><path d="M300 29L268.8 28" /><path d="M300 29L300 10" /><path d="M300 29L331.2 28" /><path d="M314.7 54.5L331.2 28" /><path d="M314.7 54.5L331.2 64" /><path d="M314.7 54.5L300 82" /><path d="M285.3 54.5L300 82" /><path d="M285.3 54.5L268.8 64" /><path d="M285.3 54.5L268.8 28" /><circle class="dot" cx="300" cy="10" r="1.3" /><circle class="dot" cx="331.2" cy="28" r="1.3" /><circle class="dot" cx="331.2" cy="64" r="1.3" /><circle class="dot" cx="300" cy="82" r="1.3" /><circle class="dot" cx="268.8" cy="64" r="1.3" /><circle class="dot" cx="268.8" cy="28" r="1.3" /><circle class="dot" cx="300" cy="29" r="1.3" /><circle class="dot" cx="314.7" cy="54.5" r="1.3" /><circle class="dot" cx="285.3" cy="54.5" r="1.3" /><text x="180" y="96" text-anchor="middle">De divina proportione</text></svg>
+<section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>Il mio primo contatto con il game development: scene 3D, fisica, input del giocatore e logica di gioco scritta in C#.</p><p>Progetto universitario.</p></div></section>
+</div>
+<aside aria-label="Scheda del progetto" class="facts">
+<dl>
+<div><dt>Contesto</dt><dd>Progetto universitario</dd></div><div><dt>Codice</dt><dd>Open source</dd></div>
+<div><dt>Engine</dt><dd><ul class="stack-tags" role="list"><li>Unity</li></ul></dd></div><div><dt>Linguaggio</dt><dd><ul class="stack-tags" role="list"><li>C#</li></ul></dd></div>
+</dl>
+<figure class="study" aria-hidden="true"><svg class="study-svg" viewBox="0 70 260 330" focusable="false"><defs><pattern id="h-bal" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path d="M10 360H250" /><path class="faint" d="M26 360v7" /><path class="faint" d="M46 360v4" /><path class="faint" d="M66 360v4" /><path class="faint" d="M86 360v4" /><path class="faint" d="M106 360v4" /><path class="faint" d="M126 360v7" /><text x="126" y="378" text-anchor="middle">1</text><path class="faint" d="M146 360v4" /><path class="faint" d="M166 360v4" /><path class="faint" d="M186 360v4" /><path class="faint" d="M206 360v4" /><path class="faint" d="M226 360v7" /><text x="226" y="378" text-anchor="middle">2</text><path class="faint" d="M246 360v4" /><path class="faint" d="M26 360L28.1 345.1L30.3 330.7L32.4 316.7L34.5 303.3L36.7 290.4L38.8 278L40.9 266.1L43.1 254.8L45.2 243.9L47.3 233.5L49.5 223.6L51.6 214.3L53.7 205.4L55.9 197.1L58 189.2L60.1 181.9L62.3 175.1L64.4 168.7L66.5 162.9L68.7 157.6L70.8 152.8L72.9 148.5L75.1 144.7L77.2 141.4L79.3 138.6L81.5 136.4L83.6 134.6L85.7 133.3L87.9 132.6L90 132.3L92.1 132.6L94.3 133.3L96.4 134.6L98.5 136.4L100.7 138.6L102.8 141.4L104.9 144.7L107.1 148.5L109.2 152.8L111.3 157.6L113.5 162.9L115.6 168.7L117.7 175.1L119.9 181.9L122 189.2L124.1 197.1L126.3 205.4L128.4 214.3L130.5 223.6L132.7 233.5L134.8 243.9L136.9 254.8L139.1 266.1L141.2 278L143.3 290.4L145.5 303.3L147.6 316.7L149.7 330.7L151.9 345.1L154 360" /><circle class="dot" cx="90" cy="132.3" r="1.8" /><path class="faint" d="M90 132.3V360" stroke-dasharray="1 3" /><circle class="dot" cx="154" cy="360" r="1.5" /><path d="M26 360L29 350.5L31.9 341.2L34.9 332.3L37.9 323.8L40.8 315.5L43.8 307.6L46.8 300L49.7 292.7L52.7 285.8L55.7 279.1L58.6 272.8L61.6 266.8L64.6 261.2L67.5 255.8L70.5 250.8L73.5 246.1L76.4 241.8L79.4 237.7L82.4 234L85.3 230.6L88.3 227.5L91.3 224.8L94.2 222.4L97.2 220.3L100.2 218.5L103.1 217L106.1 215.9L109.1 215.1L112 214.6L115 214.4L118 214.6L120.9 215.1L123.9 215.9L126.9 217L129.8 218.5L132.8 220.3L135.8 222.4L138.7 224.8L141.7 227.5L144.7 230.6L147.6 234L150.6 237.7L153.6 241.8L156.5 246.1L159.5 250.8L162.5 255.8L165.4 261.2L168.4 266.8L171.4 272.8L174.3 279.1L177.3 285.8L180.3 292.7L183.2 300L186.2 307.6L189.2 315.5L192.1 323.8L195.1 332.3L198.1 341.2L201 350.5L204 360" /><circle class="dot" cx="115" cy="214.4" r="1.8" /><path class="faint" d="M115 214.4V360" stroke-dasharray="1 3" /><circle class="dot" cx="204" cy="360" r="1.5" /><path class="faint" d="M26 360L29.5 353.5L33 347.3L36.5 341.2L40 335.4L43.5 329.8L47 324.5L50.5 319.3L54 314.4L57.5 309.6L61 305.1L64.5 300.9L68 296.8L71.5 293L75 289.3L78.5 285.9L82 282.8L85.5 279.8L89 277.1L92.5 274.5L96 272.2L99.5 270.1L103 268.3L106.5 266.6L110 265.2L113.5 264L117 263L120.5 262.2L124 261.7L127.5 261.4L131 261.3L134.5 261.4L138 261.7L141.5 262.2L145 263L148.5 264L152 265.2L155.5 266.6L159 268.3L162.5 270.1L166 272.2L169.5 274.5L173 277.1L176.5 279.8L180 282.8L183.5 285.9L187 289.3L190.5 293L194 296.8L197.5 300.9L201 305.1L204.5 309.6L208 314.4L211.5 319.3L215 324.5L218.5 329.8L222 335.4L225.5 341.2L229 347.3L232.5 353.5L236 360" /><circle class="dot" cx="131" cy="261.3" r="1.8" /><path class="faint" d="M131 261.3V360" stroke-dasharray="1 3" /><circle class="dot" cx="236" cy="360" r="1.5" /><path d="M26 360L29.7 356L33.3 352.1L37 348.4L40.7 344.8L44.3 341.3L48 338L51.7 334.8L55.3 331.8L59 328.8L62.7 326.1L66.3 323.4L70 320.9L73.7 318.5L77.3 316.3L81 314.2L84.7 312.2L88.3 310.4L92 308.7L95.7 307.1L99.3 305.7L103 304.4L106.7 303.3L110.3 302.2L114 301.4L117.7 300.6L121.3 300L125 299.5L128.7 299.2L132.3 299L136 298.9L139.7 299L143.3 299.2L147 299.5L150.7 300L154.3 300.6L158 301.4L161.7 302.2L165.3 303.3L169 304.4L172.7 305.7L176.3 307.1L180 308.7L183.7 310.4L187.3 312.2L191 314.2L194.7 316.3L198.3 318.5L202 320.9L205.7 323.4L209.3 326.1L213 328.8L216.7 331.8L220.3 334.8L224 338L227.7 341.3L231.3 344.8L235 348.4L238.7 352.1L242.3 356L246 360" /><circle class="dot" cx="136" cy="298.9" r="1.8" /><path class="faint" d="M136 298.9V360" stroke-dasharray="1 3" /><circle class="dot" cx="246" cy="360" r="1.5" /><path class="faint" d="M26 360L29.3 358L32.7 356L36 354.1L39.3 352.2L42.7 350.5L46 348.8L49.3 347.1L52.7 345.6L56 344.1L59.3 342.6L62.7 341.3L66 340L69.3 338.8L72.7 337.6L76 336.6L79.3 335.6L82.7 334.6L86 333.8L89.3 333L92.7 332.2L96 331.6L99.3 331L102.7 330.5L106 330L109.3 329.6L112.7 329.3L116 329.1L119.3 328.9L122.7 328.8L126 328.8L129.3 328.8L132.7 328.9L136 329.1L139.3 329.3L142.7 329.6L146 330L149.3 330.5L152.7 331L156 331.6L159.3 332.2L162.7 333L166 333.8L169.3 334.6L172.7 335.6L176 336.6L179.3 337.6L182.7 338.8L186 340L189.3 341.3L192.7 342.6L196 344.1L199.3 345.6L202.7 347.1L206 348.8L209.3 350.5L212.7 352.2L216 354.1L219.3 356L222.7 358L226 360" /><circle class="dot" cx="126" cy="328.8" r="1.8" /><path class="faint" d="M126 328.8V360" stroke-dasharray="1 3" /><circle class="dot" cx="226" cy="360" r="1.5" /><path class="faint" d="M60 360A34 34 0 0 0 54.8 342" /><path class="faint" d="M72 360A46 46 0 0 0 56.8 325.8" /><path class="faint" d="M84 360A58 58 0 0 0 53.2 308.8" /><text x="76" y="346" text-anchor="start">θ</text><circle class="body" cx="26" cy="356" r="11" /><circle fill="url(#h-bal)" stroke="none" cx="26" cy="356" r="11" /><g transform="rotate(-48 26 356)"><rect class="body" x="22" y="352" width="34" height="9" /></g><text class="formula" x="130" y="100" text-anchor="middle">R = v² sin 2θ / g</text><text class="formula" x="130" y="118" text-anchor="middle">y = x tan θ (1 − x / R)</text></svg><figcaption>Traiettorie dei gravi</figcaption></figure></aside>
+</div>
+<section aria-labelledby="h-cta" class="cta-band">
+<h2 id="h-cta">Ti serve qualcosa di simile?</h2>
+<p>Sviluppo siti, web app e app per iOS e Android, dall'idea alla pubblicazione. Raccontami il tuo progetto.</p>
+<a class="btn btn-primary" href="../index.html#contatti">Scrivimi</a>
+</section>
+</div>
+<nav aria-label="Altre tavole" class="pager wrap"><a class="prev" href="maris-onlus.html" rel="prev"><span class="pager-label">Tav. XI, precedente</span><b>MARIS Onlus</b></a></nav>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="inner">
-      <p>© 2026 William Ragusa</p>
-      <p>Catania, Sicilia</p>
-    </div>
-  </div>
-</footer>
-<script src="../assets/js/site.js" defer></script>
-</body>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© 2026 William Ragusa</p>
+        <p>Catania, Sicilia</p>
+      </div>
+    </footer>
+  </body>
 </html>

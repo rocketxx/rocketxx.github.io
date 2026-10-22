@@ -1,123 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BioData · Tesi di laurea · 2022 · William Ragusa</title>
-  <meta name="description" content="Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo.">
-  <meta name="theme-color" content="#03110D" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#ECEAE5" media="(prefers-color-scheme: light)">
-  <meta name="author" content="William Ragusa">
-  <link rel="canonical" href="https://rocketxx.github.io/progetti/biodata.html">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rocketxx.github.io/progetti/biodata.html">
-  <meta property="og:site_name" content="William Ragusa">
-  <meta property="og:locale" content="it_IT">
-  <meta property="og:title" content="BioData · Tesi di laurea · 2022 · William Ragusa">
-  <meta property="og:description" content="Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo.">
-  <meta property="og:image" content="https://rocketxx.github.io/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="../favicon.ico?v=2" sizes="any">
-  <link rel="icon" href="../assets/img/favicon-32.png?v=2" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png?v=2">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
-  <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
-  <link rel="stylesheet" href="../assets/css/site.css">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareSourceCode", "name": "BioData", "description": "Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo.", "url": "https://rocketxx.github.io/progetti/biodata.html", "author": {"@type": "Person", "name": "William Ragusa", "url": "https://rocketxx.github.io/"}, "inLanguage": "it", "codeRepository": "https://github.com/rocketxx/biodata_tesi"}</script>
-</head>
-<body>
-<a class="skip-link" href="#main">Vai al contenuto</a>
-<header class="site-header">
-  <nav class="nav wrap" aria-label="Principale">
-    <a href="../index.html" class="brand"><img class="brand-avatar" src="../assets/img/avatar.webp" alt="" width="36" height="36"><span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span></a>
-    <ul class="nav-list" id="nav-list" role="list">
-      <li><a href="../index.html#progetti">Progetti</a></li>
-      <li><a href="../index.html#servizi">Servizi</a></li>
-      <li><a href="../index.html#esperienza">Esperienza</a></li>
-      <li><a href="../index.html#competenze">Competenze</a></li>
-      <li><a href="../index.html#contatti">Contatti</a></li>
-    </ul>
-    <div class="nav-tools">
-      <button class="icon-button theme-toggle" type="button" hidden><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M10 3a7 7 0 0 0 0 14z" fill="currentColor"/></svg></button>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
-    </div>
-  </nav>
-</header>
-
-<main id="main">
-  <div class="wrap">
-    <nav class="crumbs" aria-label="Percorso">
-      <ol role="list">
-        <li><a href="../index.html#progetti">Progetti</a></li>
-        <li aria-current="page">BioData</li>
-      </ol>
-    </nav>
-    <header class="project-hero">
-      <p class="eyebrow">Tesi di laurea · 2022</p>
-      <h1>BioData</h1>
-      <p class="project-lead">Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo.</p>
-      <p class="badges"><span class="badge badge-uni">Tesi di laurea</span><span class="badge badge-oss">Open source</span></p>
-      <div class="project-actions"><a class="btn btn-primary" href="https://github.com/rocketxx/biodata_tesi">Codice su GitHub<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M6 3H3v10h10v-3M9 3h4v4M13 3 7 9"/></svg></a></div>
-      
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BioData · Tesi di laurea · 2022 · William Ragusa</title>
+    <meta name="description" content="Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo." />
+    <meta name="author" content="William Ragusa" />
+    <meta name="theme-color" content="#0E0E0C" />
+    <link href="https://rocketxx.github.io/progetti/biodata.html" rel="canonical"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://rocketxx.github.io/progetti/biodata.html" property="og:url"/>
+    <meta content="William Ragusa" property="og:site_name"/>
+    <meta content="it_IT" property="og:locale"/>
+    <meta content="BioData · Tesi di laurea · 2022 · William Ragusa" property="og:title"/>
+    <meta content="Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo." property="og:description"/>
+    <meta content="https://rocketxx.github.io/og-image.png" property="og:image"/>
+    <meta content="summary_large_image" name="twitter:card"/>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="../favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
+    <link rel="preload" href="../assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "BioData",
+        "description": "Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo.",
+        "url": "https://rocketxx.github.io/progetti/biodata.html",
+        "author": {
+          "@type": "Person",
+          "name": "William Ragusa",
+          "url": "https://rocketxx.github.io/"
+        },
+        "inLanguage": "it",
+        "codeRepository": "https://github.com/rocketxx/biodata_tesi"
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Vai al contenuto</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="../index.html">
+          <img class="brand-avatar" src="../assets/img/avatar.webp" alt="" width="40" height="40" />
+          <span class="brand-text"><b>rocketxx</b><span>William Ragusa</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Sezioni">
+          <ul role="list">
+            <li><a href="../index.html#progetti">Progetti</a></li>
+            <li><a href="../index.html#esperimenti">Esperimenti</a></li>
+            <li><a href="../index.html#lavori">Lavori</a></li>
+            <li><a href="../index.html#chi-sono">Chi sono</a></li>
+            <li><a href="../index.html#contatti">Contatti</a></li>
+          </ul>
+        </nav>
+        <details class="indice">
+          <summary>Indice</summary>
+          <nav aria-label="Indice">
+            <ol role="list">
+              <li><a href="../index.html#progetti"><span>Progetti in produzione</span><span class="leader"></span><span class="ref">Tav. II–III</span></a></li>
+              <li><a href="../index.html#esperimenti"><span>Esperimenti</span><span class="leader"></span><span class="ref">Tav. IV–IX</span></a></li>
+              <li><a href="../index.html#lavori"><span>Lavori</span><span class="leader"></span><span class="ref">Tav. X–XI</span></a></li>
+              <li><a href="../index.html#chi-sono"><span>Chi sono</span><span class="leader"></span><span class="ref">percorso</span></a></li>
+              <li><a href="../index.html#contatti"><span>Contatti</span><span class="leader"></span><span class="ref">email</span></a></li>
+            </ol>
+          </nav>
+        </details>
+      </div>
     </header>
 
-      <div class="media">
-        <figure>
-          <a class="shot" href="../assets/img/progetti/biodata/architettura.webp"><img src="../assets/img/progetti/biodata/architettura.webp" width="1200" height="675" alt="Schema dell'architettura: sensori Arduino, client su Raspberry Pi, invio via Wi-Fi a un'API REST in Node.js, indicizzazione in Elasticsearch, statistiche in Kibana e alert su Slack." loading="eager"></a>
-          <figcaption>L'architettura: dai sensori sul campo ad Elasticsearch, poi statistiche e allarmi su Kibana.</figcaption>
-        </figure>
-        <div class="media-row">
-          <figure>
-            <a class="shot" href="../assets/img/progetti/biodata/kibana-grafico.webp"><img src="../assets/img/progetti/biodata/kibana-grafico.webp" width="1200" height="547" alt="Grafico Kibana dei valori dei sensori nel tempo." loading="lazy"></a>
-            <figcaption>Andamento dei valori dei sensori in Kibana.</figcaption>
-          </figure>
-          <figure>
-            <a class="shot" href="../assets/img/progetti/biodata/kibana-mappa.webp"><img src="../assets/img/progetti/biodata/kibana-mappa.webp" width="1200" height="567" alt="Mappa Kibana con la posizione dei sensori e i loro valori." loading="lazy"></a>
-            <figcaption>Statistiche geospaziali: dove si trovano i sensori e cosa misurano.</figcaption>
-          </figure>
-          <figure>
-            <a class="shot" href="../assets/img/progetti/biodata/alert-slack.webp"><img src="../assets/img/progetti/biodata/alert-slack.webp" width="1063" height="195" alt="Messaggio Slack: alert «velocità vento» attivo, la velocità ha superato la soglia di 30." loading="lazy"></a>
-            <figcaption>Un alert su Slack: il vento ha superato i 30 km/h.</figcaption>
-          </figure>
-          <figure>
-            <a class="shot" href="../assets/img/progetti/biodata/payload-sensore.webp"><img src="../assets/img/progetti/biodata/payload-sensore.webp" width="677" height="499" alt="Payload JSON inviato da un dispositivo con le letture di temperatura e anemometro." loading="lazy"></a>
-            <figcaption>Il messaggio JSON inviato da un dispositivo sul campo.</figcaption>
-          </figure>
+    <main id="main" class="project-page"><div class="equations" aria-hidden="true">
+          <math style="top: 7%; --x: 0.62; --d: 0.4s">
+            <mi>F</mi><mo>=</mo><mi>G</mi>
+            <mfrac>
+              <mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow>
+              <msup><mi>r</mi><mn>2</mn></msup>
+            </mfrac>
+          </math>
+          <!-- galassia a spirale -->
+          <svg class="glyph" style="top: 20%; --x: 0.12; --d: 0.8s" viewBox="0 0 160 160">
+            <g class="spin-slow">
+              <g transform="rotate(-25 80 80)">
+                <ellipse class="faint" cx="80" cy="80" rx="72" ry="44" stroke-dasharray="2 6" />
+                <path d="M84.0 80.0L84.2 80.9L83.8 81.8L82.9 82.8L81.3 83.5L79.3 84.0L76.8 84.0L74.3 83.4L71.9 82.3L70.1 80.7L69.3 78.5L69.7 76.1L71.6 73.7L75.1 71.6L80.0 70.1L86.0 69.7L92.5 70.6L98.9 72.9L104.0 76.7L107.1 81.8L107.2 87.8L103.6 94.1L96.0 99.9L84.6 104.3L70.0 106.4L53.4 105.4L36.8 100.7L22.3 92.1L12.4 80.0" />
+                <path d="M76.0 80.0L75.8 79.1L76.2 78.2L77.1 77.2L78.7 76.5L80.7 76.0L83.2 76.0L85.7 76.6L88.1 77.7L89.9 79.3L90.7 81.5L90.3 83.9L88.4 86.3L84.9 88.4L80.0 89.9L74.0 90.3L67.5 89.4L61.1 87.1L56.0 83.3L52.9 78.2L52.8 72.2L56.4 65.9L64.0 60.1L75.4 55.7L90.0 53.6L106.6 54.6L123.2 59.3L137.7 67.9L147.6 80.0" />
+                <circle class="dot" cx="80" cy="80" r="3" />
+                <circle class="faint" cx="80" cy="80" r="9" />
+                <circle class="dot" cx="104" cy="96" r="1.4" />
+                <circle class="dot" cx="58" cy="62" r="1.2" />
+                <circle class="dot" cx="122" cy="62" r="1.4" />
+                <circle class="dot" cx="34" cy="96" r="1.2" />
+                <circle class="dot" cx="96" cy="58" r="1" />
+              </g>
+            </g>
+          </svg>
+          <math style="top: 44%; --x: 0.78; --d: 1.2s">
+            <msup><mo>∇</mo><mn>2</mn></msup><mi>φ</mi><mo>=</mo><mn>0</mn>
+          </math>
+          <!-- sfera con assi cartesiani -->
+          <svg class="glyph" style="top: 55%; --x: 0.3; --d: 1.6s" viewBox="0 0 150 150">
+            <circle cx="75" cy="80" r="45" />
+            <ellipse class="faint" cx="75" cy="80" rx="45" ry="13" />
+            <ellipse class="faint" cx="75" cy="80" rx="16" ry="45" />
+            <path d="M75 80V16M71 23l4-7 4 7M75 80L28 122M30 114l-2 8 8-3M75 80l66 14M133 89l8 5-9 3" />
+            <circle class="dot" cx="75" cy="80" r="2.5" />
+            <text x="82" y="20">z</text>
+            <text x="18" y="134">x</text>
+            <text x="138" y="110">y</text>
+          </svg>
+          
+          <!-- sistema solare: orbite concentriche -->
+          <svg class="glyph" style="top: 80%; --x: 0.66; --d: 2.4s" viewBox="0 0 150 150">
+            <circle class="dot" cx="75" cy="75" r="4" />
+            <circle class="faint" cx="75" cy="75" r="22" />
+            <circle cx="75" cy="75" r="40" stroke-dasharray="3 5" />
+            <circle class="faint" cx="75" cy="75" r="60" />
+            <circle class="dot" cx="97" cy="75" r="2" />
+            <circle class="dot" cx="47" cy="47" r="2.5" />
+            <circle class="dot" cx="117" cy="117" r="3" />
+          </svg>
+        </div><div class="equations right" aria-hidden="true">
+          <math style="top: 5%; --x: 0.18; --d: 0.6s">
+            <msup><mi>T</mi><mn>2</mn></msup><mo>=</mo>
+            <mfrac>
+              <mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow>
+              <mrow><mi>G</mi><mi>M</mi></mrow>
+            </mfrac>
+            <msup><mi>a</mi><mn>3</mn></msup>
+          </math>
+          <!-- orbita di Keplero: ellisse, fuochi, raggio vettore -->
+          <svg class="glyph" style="top: 22%; --x: 0.7; --d: 1s" viewBox="0 0 170 120">
+            <ellipse cx="85" cy="60" rx="70" ry="42" />
+            <path class="faint" d="M15 60H155M85 18V102" stroke-dasharray="2 5" />
+            <circle class="dot" cx="141" cy="60" r="4" />
+            <path class="faint" d="M25 60h8M29 56v8" />
+            <path d="M141 60L50 23.6" />
+            <circle class="dot" cx="50" cy="23.6" r="3.5" />
+            <text x="88" y="56">a</text>
+            <text x="90" y="34">r</text>
+            <text x="22" y="76">F₁</text>
+            <text x="134" y="78">F₂</text>
+          </svg>
+          
+          
+          <math style="top: 52%; --x: 0.25; --d: 2.2s">
+            <msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mi>G</mi><mi>M</mi>
+            <mrow>
+              <mo>(</mo>
+              <mfrac><mn>2</mn><mi>r</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mi>a</mi></mfrac>
+              <mo>)</mo>
+            </mrow>
+          </math>
+          <!-- spirale aurea nei rettangoli -->
+          <svg class="glyph" style="top: 74%; --x: 0.82; --d: 2.6s" viewBox="-2 -2 166 116">
+            <path class="faint" d="M0 0H161.8V100H0ZM100 0V100M100 61.8H161.8M123.6 61.8V100M100 76.4H123.6M114.6 61.8V76.4" />
+            <path d="M0 100A100 100 0 0 1 100 0A61.8 61.8 0 0 1 161.8 61.8A38.2 38.2 0 0 1 123.6 100A23.6 23.6 0 0 1 100 76.4A14.6 14.6 0 0 1 114.6 61.8" />
+            <text x="2" y="113">φ = 1.618…</text>
+          </svg>
         </div>
-      </div>
-    <div class="project-body">
-      <div>
-        <section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>I sensori nei campi misurano temperatura, umidità, vento, luce e composizione del suolo. Con questi dati un'azienda agricola può risparmiare acqua e fertilizzanti, prevenire malattie e proteggere le piante da gelo e vento. BioData è la pipeline che rende questi dati utilizzabili, sviluppata insieme ad AgrosNote.</p><p>Un esempio concreto: in una serra di pomodori le piantine giovani temono il vento forte. Quando un sensore supera i 30 km/h parte un alert sul canale Slack di chi gestisce quel lotto, che può chiudere la serra prima che ci siano danni.</p><p>Il sistema era destinato a uno scenario reale: l'azienda agricola Colle d'Oro di Ispica (RG), a supporto degli agronomi.</p><p>Tesi di laurea triennale in Informatica al Dipartimento di Matematica e Informatica dell'Università di Catania. Relatore: prof. Salvatore Nicotra. Correlatore: Daniele Contarino. Laurea il 29 aprile 2022.</p></div></section>
-        <section aria-labelledby="h-feat"><h2 id="h-feat">Cosa fa</h2><ul class="features" role="list"><li>Raccolta dei dati via API REST (Node.js ed Express) dai dispositivi sul campo, basati su Arduino e Raspberry Pi.</li><li>Indicizzazione in tempo reale in Elasticsearch.</li><li>Dashboard Kibana con statistiche sui valori e geospaziali.</li><li>Alert configurabili su Slack ed email, per lotto di terreno.</li><li>Simulatore di sensori per i test e intero stack orchestrato con Docker Compose.</li></ul></section>
-        <section aria-labelledby="h-choices"><h2 id="h-choices">Scelte tecniche</h2><ul class="choices" role="list"><li><b>Tempo reale, non batch</b><span>Un allarme sul vento serve adesso, non a fine giornata: la pipeline indicizza ogni lettura appena arriva.</span></li><li><b>ELK invece di PLG</b><span>Nella tesi ho confrontato lo stack Elastic con Prometheus, Loki e Grafana. Elastic ha vinto per le query complesse, gli alert e le mappe.</span></li><li><b>Node.js per l'IoT</b><span>Un server leggero e asincrono, adatto a tante piccole richieste da dispositivi diversi.</span></li></ul></section>
-      </div>
-      <aside class="facts" aria-label="Scheda del progetto">
-        <dl>
-          <div><dt>Università</dt><dd>Università di Catania, DMI</dd></div><div><dt>Relatore</dt><dd>Prof. Salvatore Nicotra</dd></div><div><dt>In collaborazione con</dt><dd>AgrosNote</dd></div><div><dt>Laurea</dt><dd>29 aprile 2022</dd></div><div><dt>Codice</dt><dd>Open source</dd></div>
-          <div><dt>Ingestion</dt><dd><ul class="stack-tags" role="list"><li>Node.js</li><li>Express</li><li>API REST</li></ul></dd></div><div><dt>Storage e ricerca</dt><dd><ul class="stack-tags" role="list"><li>Elasticsearch</li></ul></dd></div><div><dt>Visualizzazione e alert</dt><dd><ul class="stack-tags" role="list"><li>Kibana</li><li>Slack</li></ul></dd></div><div><dt>Infrastruttura</dt><dd><ul class="stack-tags" role="list"><li>Docker</li><li>Docker Compose</li></ul></dd></div><div><dt>IoT</dt><dd><ul class="stack-tags" role="list"><li>Arduino</li><li>Raspberry Pi</li></ul></dd></div>
-        </dl>
-      </aside>
-    </div>
-
-    <section class="cta-band" aria-labelledby="h-cta">
-      <h2 id="h-cta">Ti serve qualcosa di simile?</h2>
-      <p>Sviluppo siti, web app e app per iOS e Android, dall'idea alla pubblicazione. Raccontami il tuo progetto.</p>
-      <a class="btn btn-primary" href="../index.html#contatti">Scrivimi<svg class="chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    </section>
-  </div>
-  <nav class="pager wrap" aria-label="Altri progetti"><a class="prev" href="maps-scraper.html" rel="prev"><span class="pager-label"><svg class="chev chev-left" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Progetto precedente</span><b>Maps Scraper</b></a><a class="next" href="sentimentitle.html" rel="next"><span class="pager-label">Progetto successivo<svg class="chev" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><b>SentimenTitle</b></a></nav>
+<div class="wrap">
+<nav aria-label="Percorso" class="crumbs">
+<ol role="list">
+<li><a href="../index.html#esperimenti">Esperimenti</a></li>
+<li aria-current="page">BioData</li>
+</ol>
+</nav>
+<header class="project-hero"><p class="tav-label">Tav. VIII</p>
+<p class="eyebrow">Tesi di laurea · 2022</p>
+<h1>BioData</h1>
+<p class="project-lead">Un sistema di stream processing che raccoglie i dati dei sensori agricoli, li analizza in tempo reale e avvisa quando una coltura è in pericolo.</p>
+<p class="badges"><span class="badge badge-uni">Tesi di laurea</span><span class="badge badge-oss">Open source</span></p>
+<div class="project-actions"><a class="btn btn-primary" href="https://github.com/rocketxx/biodata_tesi">Codice su GitHub</a></div>
+</header>
+<div class="media">
+<figure>
+<button aria-label="Ingrandisci: Schema dell'architettura: sensori Arduino, client su Raspberry Pi, invio via Wi-Fi a un'API REST in Node.js, indicizzazione in Elasticsearch, statistiche in Kibana e alert su Slack." class="shot" popovertarget="pop-0" type="button"><img alt="Schema dell'architettura: sensori Arduino, client su Raspberry Pi, invio via Wi-Fi a un'API REST in Node.js, indicizzazione in Elasticsearch, statistiche in Kibana e alert su Slack." height="675" loading="eager" src="../assets/img/progetti/biodata/architettura.webp" width="1200"/></button><div class="shot-pop" id="pop-0" popover=""><img alt="Schema dell'architettura: sensori Arduino, client su Raspberry Pi, invio via Wi-Fi a un'API REST in Node.js, indicizzazione in Elasticsearch, statistiche in Kibana e alert su Slack." decoding="async" loading="lazy" src="../assets/img/progetti/biodata/architettura.webp"/><p><span>Schema dell'architettura: sensori Arduino, client su Raspberry Pi, invio via Wi-Fi a un'API REST in Node.js, indicizzazione in Elasticsearch, statistiche in Kibana e alert su Slack.</span><button class="text-btn" popovertarget="pop-0" popovertargetaction="hide" type="button">Chiudi</button></p></div>
+<figcaption>L'architettura: dai sensori sul campo ad Elasticsearch, poi statistiche e allarmi su Kibana.</figcaption>
+</figure>
+<div class="media-row">
+<figure>
+<button aria-label="Ingrandisci: Grafico Kibana dei valori dei sensori nel tempo." class="shot" popovertarget="pop-1" type="button"><img alt="Grafico Kibana dei valori dei sensori nel tempo." height="547" loading="lazy" src="../assets/img/progetti/biodata/kibana-grafico.webp" width="1200"/></button><div class="shot-pop" id="pop-1" popover=""><img alt="Grafico Kibana dei valori dei sensori nel tempo." decoding="async" loading="lazy" src="../assets/img/progetti/biodata/kibana-grafico.webp"/><p><span>Grafico Kibana dei valori dei sensori nel tempo.</span><button class="text-btn" popovertarget="pop-1" popovertargetaction="hide" type="button">Chiudi</button></p></div>
+<figcaption>Andamento dei valori dei sensori in Kibana.</figcaption>
+</figure>
+<figure>
+<button aria-label="Ingrandisci: Mappa Kibana con la posizione dei sensori e i loro valori." class="shot" popovertarget="pop-2" type="button"><img alt="Mappa Kibana con la posizione dei sensori e i loro valori." height="567" loading="lazy" src="../assets/img/progetti/biodata/kibana-mappa.webp" width="1200"/></button><div class="shot-pop" id="pop-2" popover=""><img alt="Mappa Kibana con la posizione dei sensori e i loro valori." decoding="async" loading="lazy" src="../assets/img/progetti/biodata/kibana-mappa.webp"/><p><span>Mappa Kibana con la posizione dei sensori e i loro valori.</span><button class="text-btn" popovertarget="pop-2" popovertargetaction="hide" type="button">Chiudi</button></p></div>
+<figcaption>Statistiche geospaziali: dove si trovano i sensori e cosa misurano.</figcaption>
+</figure>
+<figure>
+<button aria-label="Ingrandisci: Messaggio Slack: alert «velocità vento» attivo, la velocità ha superato la soglia di 30." class="shot" popovertarget="pop-3" type="button"><img alt="Messaggio Slack: alert «velocità vento» attivo, la velocità ha superato la soglia di 30." height="195" loading="lazy" src="../assets/img/progetti/biodata/alert-slack.webp" width="1063"/></button><div class="shot-pop" id="pop-3" popover=""><img alt="Messaggio Slack: alert «velocità vento» attivo, la velocità ha superato la soglia di 30." decoding="async" loading="lazy" src="../assets/img/progetti/biodata/alert-slack.webp"/><p><span>Messaggio Slack: alert «velocità vento» attivo, la velocità ha superato la soglia di 30.</span><button class="text-btn" popovertarget="pop-3" popovertargetaction="hide" type="button">Chiudi</button></p></div>
+<figcaption>Un alert su Slack: il vento ha superato i 30 km/h.</figcaption>
+</figure>
+<figure>
+<button aria-label="Ingrandisci: Payload JSON inviato da un dispositivo con le letture di temperatura e anemometro." class="shot" popovertarget="pop-4" type="button"><img alt="Payload JSON inviato da un dispositivo con le letture di temperatura e anemometro." height="499" loading="lazy" src="../assets/img/progetti/biodata/payload-sensore.webp" width="677"/></button><div class="shot-pop" id="pop-4" popover=""><img alt="Payload JSON inviato da un dispositivo con le letture di temperatura e anemometro." decoding="async" loading="lazy" src="../assets/img/progetti/biodata/payload-sensore.webp"/><p><span>Payload JSON inviato da un dispositivo con le letture di temperatura e anemometro.</span><button class="text-btn" popovertarget="pop-4" popovertargetaction="hide" type="button">Chiudi</button></p></div>
+<figcaption>Il messaggio JSON inviato da un dispositivo sul campo.</figcaption>
+</figure>
+</div>
+</div>
+<div class="project-body">
+<div><svg class="fregio-band" viewBox="0 0 360 56" aria-hidden="true" focusable="false"><circle class="dot" cx="8" cy="28" r="4" /><circle class="faint" cx="8" cy="28" r="9" /><path d="M14 28L16 22.5L18 17.5L20 13.6L22 11L24 9.8L26 10.1L28 11.8L30 14.8L32 18.7L34 23.2L36 28L38 32.6L40 36.7L42 40L44 42.2L46 43.2L48 42.9L50 41.5L52 39L54 35.7L56 31.9L58 28L60 24.1L62 20.7L64 18L66 16.2L68 15.4L70 15.6L72 16.8L74 18.9L76 21.6L78 24.7L80 28L82 31.2L84 34.1L86 36.3L88 37.8L90 38.5L92 38.3L94 37.3L96 35.6L98 33.3L100 30.7L102 28L104 25.3L106 22.9L108 21.1L110 19.8L112 19.2L114 19.4L116 20.2L118 21.7L120 23.6L122 25.8L124 28.1L126 30.3L128 32.2L130 33.8L132 34.8L134 35.3L136 35.2L138 34.5L140 33.3L142 31.7L144 29.9L146 27.9L148 26.1L150 24.5L152 23.2L154 22.3L156 21.9L158 22L160 22.6L162 23.6L164 24.9L166 26.5L168 28L170 29.6L172 30.9L174 32L176 32.7L178 33.1L180 33L182 32.5L184 31.6L186 30.5L188 29.3L190 28L192 26.7L194 25.5L196 24.7L198 24.1L200 23.8L202 23.9L204 24.3L206 25L208 25.9L210 26.9L212 28L214 29.1L216 30L218 30.8L220 31.3L222 31.5L224 31.4L226 31.1L228 30.5L230 29.8L232 28.9L234 28L236 27.1L238 26.3L240 25.7L242 25.3L244 25.1L246 25.1L248 25.4L250 25.9L252 26.5L254 27.3L256 28L258 28.8L260 29.4L262 29.9L264 30.3L266 30.4L268 30.4L270 30.1L272 29.7L274 29.2L276 28.6L278 28L280 27.4L282 26.8L284 26.4L286 26.1L288 26L290 26L292 26.2L294 26.6L296 27L298 27.5L300 28L302 28.5L304 29L306 29.3L308 29.6L310 29.7L312 29.6L314 29.5L316 29.2L318 28.8L320 28.4L322 28L324 27.5L326 27.2L328 26.9L330 26.7L332 26.6L334 26.6L336 26.8L338 27L340 27.3L342 27.7L344 28L346 28.4L348 28.7L350 28.9" /><path class="faint" d="M14 28H360" stroke-dasharray="2 5" /></svg>
+<section aria-labelledby="h-what"><h2 id="h-what">Di cosa si tratta</h2><div class="prose"><p>I sensori nei campi misurano temperatura, umidità, vento, luce e composizione del suolo. Con questi dati un'azienda agricola può risparmiare acqua e fertilizzanti, prevenire malattie e proteggere le piante da gelo e vento. BioData è la pipeline che rende questi dati utilizzabili, sviluppata insieme ad AgrosNote.</p><p>Un esempio concreto: in una serra di pomodori le piantine giovani temono il vento forte. Quando un sensore supera i 30 km/h parte un alert sul canale Slack di chi gestisce quel lotto, che può chiudere la serra prima che ci siano danni.</p><p>Il sistema era destinato a uno scenario reale: l'azienda agricola Colle d'Oro di Ispica (RG), a supporto degli agronomi.</p><p>Tesi di laurea triennale in Informatica al Dipartimento di Matematica e Informatica dell'Università di Catania. Relatore: prof. Salvatore Nicotra. Correlatore: Daniele Contarino. Laurea il 29 aprile 2022.</p></div></section>
+<section aria-labelledby="h-feat"><h2 id="h-feat">Cosa fa</h2><ul class="features" role="list"><li>Raccolta dei dati via API REST (Node.js ed Express) dai dispositivi sul campo, basati su Arduino e Raspberry Pi.</li><li>Indicizzazione in tempo reale in Elasticsearch.</li><li>Dashboard Kibana con statistiche sui valori e geospaziali.</li><li>Alert configurabili su Slack ed email, per lotto di terreno.</li><li>Simulatore di sensori per i test e intero stack orchestrato con Docker Compose.</li></ul></section>
+<section aria-labelledby="h-choices"><h2 id="h-choices">Scelte tecniche</h2><ul class="choices" role="list"><li><b>Tempo reale, non batch</b><span>Un allarme sul vento serve adesso, non a fine giornata: la pipeline indicizza ogni lettura appena arriva.</span></li><li><b>ELK invece di PLG</b><span>Nella tesi ho confrontato lo stack Elastic con Prometheus, Loki e Grafana. Elastic ha vinto per le query complesse, gli alert e le mappe.</span></li><li><b>Node.js per l'IoT</b><span>Un server leggero e asincrono, adatto a tante piccole richieste da dispositivi diversi.</span></li></ul></section>
+</div>
+<aside aria-label="Scheda del progetto" class="facts">
+<dl>
+<div><dt>Università</dt><dd>Università di Catania, DMI</dd></div><div><dt>Relatore</dt><dd>Prof. Salvatore Nicotra</dd></div><div><dt>In collaborazione con</dt><dd>AgrosNote</dd></div><div><dt>Laurea</dt><dd>29 aprile 2022</dd></div><div><dt>Codice</dt><dd>Open source</dd></div>
+<div><dt>Ingestion</dt><dd><ul class="stack-tags" role="list"><li>Node.js</li><li>Express</li><li>API REST</li></ul></dd></div><div><dt>Storage e ricerca</dt><dd><ul class="stack-tags" role="list"><li>Elasticsearch</li></ul></dd></div><div><dt>Visualizzazione e alert</dt><dd><ul class="stack-tags" role="list"><li>Kibana</li><li>Slack</li></ul></dd></div><div><dt>Infrastruttura</dt><dd><ul class="stack-tags" role="list"><li>Docker</li><li>Docker Compose</li></ul></dd></div><div><dt>IoT</dt><dd><ul class="stack-tags" role="list"><li>Arduino</li><li>Raspberry Pi</li></ul></dd></div>
+</dl>
+<figure class="study" aria-hidden="true"><svg class="study-svg" viewBox="0 0 260 250" focusable="false"><defs><pattern id="h-aq" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line class="hatch" x1="0" y1="0" x2="0" y2="3" /></pattern></defs><path class="faint" d="M0 40L4 40.5L8 41L12 41.4L16 41.7L20 41.9L24 42L28 42L32 41.8L36 41.6L40 41.2L44 40.8L48 40.3L52 39.8L56 39.3L60 38.9L64 35.5L68 34.6L72 34.1L76 34L80 34.2L84 34.8L88 35.8L92 37L96 38.3L100 39.8L104 41.3L108 42.7L112 43.9L116 44.9L120 45.6L124 46L128 45.9L132 45.5L136 44.8L140 43.7L144 42.5L148 41L152 39.5L156 38.1L160 36.7L164 35.6L168 34.7L172 34.2L176 34L180 34.2L184 34.7L188 35.6L192 36.8L196 38.1L200 39.9L204 40.4L208 40.8L212 41.3L216 41.6L220 41.9L224 42L228 42L232 41.9L236 41.6L240 41.3L244 40.9L248 40.4L252 39.9L256 39.4L260 39" /><path class="faint" d="M0 61.7L4 61.9L8 62L12 62L16 61.8L20 61.6L24 61.2L28 60.8L32 60.3L36 59.8L40 59.3L44 58.9L48 58.5L52 58.2L56 58L60 58L64 54.2L68 54.8L72 55.8L76 57L80 58.3L84 59.8L88 61.3L92 62.7L96 63.9L100 64.9L104 65.6L108 66L112 65.9L116 65.5L120 64.8L124 63.7L128 62.5L132 61L136 59.5L140 58.1L144 56.7L148 55.6L152 54.7L156 54.2L160 54L164 54.2L168 54.7L172 55.6L176 56.8L180 58.1L184 59.6L188 61.1L192 62.5L196 63.8L200 61.6L204 61.9L208 62L212 62L216 61.9L220 61.6L224 61.3L228 60.9L232 60.4L236 59.9L240 59.4L244 59L248 58.6L252 58.3L256 58.1L260 58" /><path class="faint" d="M0 81.8L4 81.6L8 81.2L12 80.8L16 80.3L20 79.8L24 79.3L28 78.9L32 78.5L36 78.2L40 78L44 78L48 78.1L52 78.3L56 78.6L60 79L64 78.3L68 79.8L72 81.3L76 82.7L80 83.9L84 84.9L88 85.6L92 86L96 85.9L100 85.5L104 84.8L108 83.7L112 82.5L116 81L120 79.5L124 78.1L128 76.7L132 75.6L136 74.7L140 74.2L144 74L148 74.2L152 74.7L156 75.6L160 76.8L164 78.1L168 79.6L172 81.1L176 82.5L180 83.8L184 84.8L188 85.6L192 85.9L196 86L200 81.9L204 81.6L208 81.3L212 80.9L216 80.4L220 79.9L224 79.4L228 79L232 78.6L236 78.3L240 78.1L244 78L248 78L252 78.2L256 78.5L260 78.9" /><path class="faint" d="M0 170.3L4 169.8L8 169.3L12 168.9L16 168.5L20 168.2L24 168L28 168L32 168.1L36 168.3L40 168.6L44 169L48 169.4L52 169.9L56 170.4L60 170.9L64 173.9L68 174.9L72 175.6L76 176L80 175.9L84 175.5L88 174.8L92 173.7L96 172.5L100 171L104 169.5L108 168.1L112 166.7L116 165.6L120 164.7L124 164.2L128 164L132 164.2L136 164.7L140 165.6L144 166.8L148 168.1L152 169.6L156 171.1L160 172.5L164 173.8L168 174.8L172 175.6L176 175.9L180 176L184 175.6L188 174.9L192 173.9L196 172.7L200 170.4L204 169.9L208 169.4L212 169L216 168.6L220 168.3L224 168.1L228 168L232 168L236 168.2L240 168.5L244 168.9L248 169.3L252 169.8L256 170.3L260 170.8" /><path class="faint" d="M0 190.5L4 190.2L8 190L12 190L16 190.1L20 190.3L24 190.6L28 191L32 191.4L36 191.9L40 192.4L44 192.9L48 193.3L52 193.6L56 193.9L60 194L64 197.9L68 197.5L72 196.8L76 195.7L80 194.5L84 193L88 191.5L92 190.1L96 188.7L100 187.6L104 186.7L108 186.2L112 186L116 186.2L120 186.7L124 187.6L128 188.8L132 190.1L136 191.6L140 193.1L144 194.5L148 195.8L152 196.8L156 197.6L160 197.9L164 198L168 197.6L172 196.9L176 195.9L180 194.7L184 193.2L188 191.7L192 190.3L196 188.9L200 190.6L204 190.3L208 190.1L212 190L216 190L220 190.2L224 190.5L228 190.9L232 191.3L236 191.8L240 192.3L244 192.8L248 193.2L252 193.6L256 193.8L260 194" /><path class="faint" d="M0 212.1L4 212.3L8 212.6L12 213L16 213.4L20 213.9L24 214.4L28 214.9L32 215.3L36 215.6L40 215.9L44 216L48 216L52 215.8L56 215.6L60 215.2L64 216.5L68 215L72 213.5L76 212.1L80 210.7L84 209.6L88 208.7L92 208.2L96 208L100 208.2L104 208.7L108 209.6L112 210.8L116 212.1L120 213.6L124 215.1L128 216.5L132 217.8L136 218.8L140 219.6L144 219.9L148 220L152 219.6L156 218.9L160 217.9L164 216.7L168 215.2L172 213.7L176 212.3L180 210.9L184 209.7L188 208.8L192 208.2L196 208L200 212L204 212.2L208 212.5L212 212.9L216 213.3L220 213.8L224 214.3L228 214.8L232 215.2L236 215.6L240 215.8L244 216L248 216L252 215.9L256 215.7L260 215.4" /><path d="M119.2 124L119.2 124.1L119.2 124.3L119.2 124.4L119.2 124.5L119.1 124.7L119.1 124.8L119 124.9L118.9 125L118.8 125.2L118.7 125.3L118.6 125.3L118.5 125.4L118.3 125.5L118.2 125.6L118 125.6L117.8 125.6L117.7 125.6L117.5 125.6L117.3 125.6L117.1 125.5L117 125.4L116.8 125.4L116.6 125.2L116.5 125.1L116.3 125L116.2 124.8L116.1 124.6L116 124.4L115.9 124.2L115.9 124L115.9 123.8L115.9 123.5L115.9 123.3L115.9 123.1L116 122.8L116.1 122.6L116.2 122.4L116.4 122.2L116.5 122L116.7 121.8L116.9 121.6L117.2 121.5L117.4 121.4L117.7 121.3L118 121.2L118.3 121.2L118.6 121.2L118.9 121.2L119.2 121.2L119.5 121.3L119.8 121.5L120.1 121.6L120.4 121.8L120.7 122L120.9 122.3L121.2 122.6L121.3 122.9L121.5 123.3L121.6 123.6L121.7 124L121.8 124.4L121.8 124.8L121.7 125.2L121.7 125.6L121.5 126L121.4 126.4L121.2 126.8L120.9 127.2L120.6 127.6L120.2 127.9L119.9 128.2L119.4 128.4L119 128.6L118.5 128.8L118 128.9L117.5 129L116.9 129L116.4 129L115.8 128.9L115.3 128.7L114.8 128.5L114.2 128.2L113.7 127.8L113.3 127.4L112.8 127L112.5 126.5L112.1 125.9L111.8 125.3L111.6 124.7L111.5 124L111.4 123.3L111.4 122.6L111.4 121.9L111.6 121.1L111.8 120.4L112.1 119.7L112.4 119L112.9 118.3L113.4 117.7L114 117.2L114.7 116.6L115.5 116.2L116.3 115.8L117.1 115.5L118 115.3L118.9 115.2L119.9 115.2L120.8 115.3L121.8 115.4L122.8 115.7L123.7 116.1L124.6 116.6L125.5 117.2L126.3 118L127.1 118.8L127.8 119.7L128.4 120.6L128.9 121.7L129.2 122.8L129.5 124L129.7 125.2L129.7 126.5L129.6 127.8L129.4 129.1L129 130.3L128.4 131.6L127.8 132.8L127 134L126 135L125 136L123.8 137L122.5 137.7L121.1 138.4L119.6 138.9L118 139.3L116.4 139.5L114.7 139.5L113 139.4L111.3 139.1L109.6 138.5L107.9 137.8L106.3 137L104.8 135.9L103.3 134.6L102 133.2L100.8 131.7L99.8 129.9L98.9 128.1L98.2 126.1L97.7 124L97.4 121.8L97.4 119.6L97.6 117.4L98 115.1L98.7 112.9L99.6 110.7L100.8 108.5L102.2 106.5L103.9 104.6L105.8 102.8L107.8 101.2L110.1 99.8L112.6 98.7L115.2 97.7L118 97.1L120.9 96.7L123.8 96.7L126.8 96.9L129.8 97.5L132.8 98.4L135.7 99.6L138.5 101.2L141.3 103.1L143.8 105.3L146.1 107.8L148.2 110.5L150.1 113.6L151.6 116.9L152.8 120.3L153.7 124L154.2 127.8L154.3 131.7L153.9 135.7L153.2 139.7L152 143.6L150.3 147.5L148.3 151.3L145.8 154.9L142.9 158.2L139.6 161.3L135.9 164.1" /><path class="faint" d="M116.4 124L116.4 123.8L116.4 123.7L116.4 123.5L116.4 123.3L116.5 123.1L116.6 122.9L116.6 122.8L116.8 122.6L116.9 122.5L117 122.3L117.2 122.2L117.4 122.1L117.6 122L117.8 121.9L118 121.9L118.2 121.8L118.5 121.8L118.7 121.9L118.9 121.9L119.2 122L119.4 122.1L119.6 122.2L119.8 122.3L120 122.5L120.2 122.7L120.4 122.9L120.5 123.2L120.7 123.4L120.7 123.7L120.8 124L120.9 124.3L120.9 124.6L120.8 124.9L120.8 125.2L120.7 125.5L120.6 125.9L120.4 126.2L120.2 126.4L120 126.7L119.7 126.9L119.4 127.2L119.1 127.4L118.7 127.5L118.4 127.6L118 127.7L117.6 127.8L117.2 127.8L116.8 127.8L116.4 127.7L115.9 127.6L115.5 127.4L115.1 127.2L114.8 126.9L114.4 126.6L114.1 126.3L113.8 125.9L113.5 125.4L113.3 125L113.2 124.5L113 124L113 123.5L113 122.9L113 122.4L113.1 121.8L113.3 121.3L113.5 120.7L113.8 120.2L114.1 119.7L114.5 119.2L115 118.8L115.5 118.4L116.1 118.1L116.7 117.8L117.3 117.6L118 117.4L118.7 117.3L119.4 117.3L120.2 117.4L120.9 117.5L121.6 117.7L122.3 118L123 118.4L123.7 118.9L124.3 119.4L124.9 120L125.4 120.7L125.8 121.5L126.2 122.3L126.5 123.1L126.7 124L126.8 124.9L126.9 125.9L126.8 126.9L126.6 127.8L126.3 128.8L125.9 129.7L125.4 130.7L124.8 131.5L124.1 132.4L123.3 133.1L122.4 133.8L121.4 134.4L120.3 134.9L119.2 135.3L118 135.6L116.8 135.7L115.5 135.8L114.2 135.7L112.9 135.4L111.6 135L110.4 134.5L109.2 133.8L108 133L106.9 132.1L105.9 131L105 129.8L104.2 128.5L103.5 127.1L103 125.6L102.6 124L102.4 122.4L102.4 120.7L102.5 119L102.9 117.3L103.4 115.6L104.1 113.9L105 112.3L106 110.7L107.3 109.3L108.7 107.9L110.3 106.7L112 105.7L113.9 104.8L115.9 104.1L118 103.6L120.2 103.3L122.4 103.3L124.7 103.5L126.9 103.9L129.2 104.6L131.4 105.5L133.6 106.7L135.6 108.1L137.5 109.8L139.3 111.7L140.9 113.8L142.3 116.1L143.5 118.6L144.4 121.2L145 124L145.4 126.9L145.5 129.8L145.2 132.8L144.6 135.9L143.7 138.9L142.5 141.8L140.9 144.6L139 147.4L136.8 149.9L134.3 152.3L131.5 154.4L128.5 156.2L125.2 157.8L121.7 159L118 159.9L114.2 160.4L110.3 160.4L106.3 160.1L102.3 159.3L98.3 158.1L94.4 156.5L90.6 154.4L87 151.9L83.6 149L80.5 145.7L77.7 142L75.2 137.9L73.2 133.5L71.5 128.9" /><path d="M196.5 118.8L196.5 118.9L196.4 119L196.3 119L196.2 119.1L196.1 119.1L195.9 119.1L195.8 119.1L195.7 119.1L195.6 119.1L195.4 119.1L195.3 119.1L195.2 119L195.1 118.9L195 118.8L194.8 118.7L194.8 118.6L194.7 118.5L194.6 118.4L194.5 118.2L194.5 118.1L194.5 117.9L194.4 117.7L194.4 117.6L194.5 117.4L194.5 117.2L194.6 117.1L194.6 116.9L194.7 116.7L194.9 116.6L195 116.4L195.1 116.3L195.3 116.2L195.5 116.1L195.7 116L195.9 115.9L196.1 115.9L196.4 115.9L196.6 115.9L196.8 115.9L197.1 115.9L197.3 116L197.5 116.1L197.7 116.3L198 116.4L198.2 116.6L198.3 116.8L198.5 117.1L198.6 117.3L198.8 117.6L198.8 117.9L198.9 118.2L198.9 118.5L198.9 118.8L198.9 119.1L198.8 119.5L198.7 119.8L198.6 120.1L198.4 120.4L198.2 120.7L197.9 121L197.6 121.2L197.3 121.4L196.9 121.6L196.6 121.8L196.2 121.9L195.8 122L195.3 122L194.9 122L194.5 122L194 121.8L193.6 121.7L193.1 121.5L192.7 121.2L192.3 120.9L192 120.6L191.6 120.2L191.3 119.8L191 119.3L190.8 118.8L190.7 118.3L190.6 117.7L190.5 117.1L190.5 116.5L190.6 115.9L190.7 115.3L190.9 114.7L191.2 114.1L191.6 113.5L192 113L192.4 112.5L193 112L193.6 111.6L194.2 111.2L194.9 110.9L195.7 110.7L196.4 110.5L197.2 110.5L198.1 110.5L198.9 110.6L199.7 110.8L200.6 111.1L201.4 111.4L202.1 111.9L202.9 112.5L203.6 113.1L204.2 113.9L204.8 114.7L205.3 115.6L205.7 116.5L206 117.5L206.2 118.6L206.3 119.7L206.3 120.8L206.1 122L205.9 123.1L205.5 124.2L205 125.3L204.3 126.4L203.6 127.4L202.7 128.4L201.7 129.3L200.6 130L199.3 130.7L198 131.3L196.6 131.7L195.2 132L193.7 132.1L192.1 132.1L190.6 131.9L189 131.5L187.5 131L185.9 130.3L184.5 129.4L183.1 128.3L181.8 127.1L180.6 125.8L179.5 124.2L178.6 122.6L177.8 120.8L177.3 118.9L176.9 116.9L176.7 114.8L176.7 112.7" /><path class="faint" d="M51.6 130.8L51.5 130.8L51.4 130.8L51.3 130.7L51.3 130.7L51.2 130.6L51.1 130.5L51 130.4L51 130.3L50.9 130.2L50.9 130.1L50.8 130L50.8 129.9L50.8 129.7L50.8 129.6L50.8 129.5L50.9 129.3L50.9 129.2L51 129.1L51.1 129L51.2 128.8L51.3 128.7L51.4 128.6L51.5 128.5L51.7 128.5L51.8 128.4L52 128.4L52.2 128.3L52.4 128.3L52.6 128.3L52.7 128.4L52.9 128.4L53.1 128.5L53.3 128.6L53.5 128.7L53.6 128.8L53.8 129L53.9 129.2L54.1 129.4L54.2 129.6L54.3 129.8L54.3 130L54.4 130.3L54.4 130.5L54.4 130.8L54.3 131.1L54.2 131.3L54.1 131.6L54 131.8L53.8 132.1L53.7 132.3L53.4 132.5L53.2 132.7L52.9 132.9L52.6 133.1L52.3 133.2L52 133.3L51.6 133.3L51.3 133.3L50.9 133.3L50.5 133.3L50.1 133.2L49.8 133L49.4 132.8L49.1 132.6L48.7 132.3L48.4 132L48.1 131.7L47.9 131.3L47.7 130.9L47.5 130.4L47.4 130L47.3 129.5L47.3 128.9L47.3 128.4L47.4 127.9L47.5 127.4L47.7 126.8L48 126.3L48.3 125.8L48.7 125.4L49.1 124.9L49.6 124.5L50.2 124.2L50.8 123.9L51.4 123.7L52.1 123.5L52.8 123.4L53.5 123.3L54.2 123.4L55 123.5L55.7 123.7L56.5 124L57.2 124.4L57.9 124.8L58.5 125.3L59.2 126L59.7 126.7L60.2 127.4L60.6 128.3L61 129.2L61.2 130.1L61.4 131.1L61.4 132.1L61.4 133.2L61.2 134.2L60.9 135.3L60.5 136.3L60 137.3L59.3 138.3L58.6 139.2L57.7 140.1L56.7 140.9L55.6 141.6L54.5 142.2L53.2 142.7L51.9 143L50.5 143.2L49 143.3L47.5 143.2L46.1 143L44.6 142.6L43.1 142L41.6 141.3L40.3 140.4L38.9 139.3L37.7 138.1L36.6 136.7L35.6 135.1L34.8 133.5L34.1 131.7L33.6 129.8" /><circle class="dot" cx="118" cy="124" r="2" /><text class="formula" x="130" y="244" text-anchor="middle">∇ × v = ω</text></svg><figcaption>Moti dell’acqua</figcaption></figure></aside>
+</div>
+<section aria-labelledby="h-cta" class="cta-band">
+<h2 id="h-cta">Ti serve qualcosa di simile?</h2>
+<p>Sviluppo siti, web app e app per iOS e Android, dall'idea alla pubblicazione. Raccontami il tuo progetto.</p>
+<a class="btn btn-primary" href="../index.html#contatti">Scrivimi</a>
+</section>
+</div>
+<nav aria-label="Altre tavole" class="pager wrap"><a class="prev" href="maps-scraper.html" rel="prev"><span class="pager-label">Tav. VII, precedente</span><b>Maps Scraper</b></a><a class="next" href="sentimentitle.html" rel="next"><span class="pager-label">Tav. IX, successiva</span><b>SentimenTitle</b></a></nav>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="inner">
-      <p>© 2026 William Ragusa</p>
-      <p>Catania, Sicilia</p>
-    </div>
-  </div>
-</footer>
-<script src="../assets/js/site.js" defer></script>
-</body>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>© 2026 William Ragusa</p>
+        <p>Catania, Sicilia</p>
+      </div>
+    </footer>
+  </body>
 </html>
